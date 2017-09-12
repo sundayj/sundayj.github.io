@@ -16,7 +16,7 @@ header {
 .jlsunday {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     /*+placement: anchor-top-left;*/
     position: absolute;
     left: 0;
@@ -26,7 +26,7 @@ header {
 }
 
 .logo {
-    width: 80%;
+    width: 100%;
 }
 
 .logo span.signature img {
@@ -75,6 +75,12 @@ header {
     display: none;
     overflow: hidden;
     background-color: #333;
+    width: 61%;
+    /*+placement: anchor-top-right;*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 24px;
 }
 
 #myMainNav ul li {
@@ -88,7 +94,7 @@ header {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
     width: 100%;
 }
 
@@ -139,17 +145,23 @@ header {
     
     .mainnav {
         overflow: hidden;
-        background-color: #333;
         height: auto;
         display: block;
     }
     
-    .navcol {
+    .navrow {
         width: 100%;
     }
     
-    .navrow {
-        width: 20%;
+    .navcol {
+        width: 108px;
+        float: left;
+        /*+placement: margin-auto;*/
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        left: 0;
+        top: 0;
     }
     
     #myMainNav ul li {
@@ -158,12 +170,12 @@ header {
     }
     
     #myMainNav ul li.nav-item a {
-        display: inline-block;
+        display: inline;
         color: #F2F2F2;
         text-align: center;
         padding: 4px 0px;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 19px;
         float: left;
     }
     
@@ -171,7 +183,6 @@ header {
         float: left;
         display: inline;
         color: #F2F2F2;
-        text-align: right;
         text-decoration: none;
         font-size: 17px;
     }
@@ -208,6 +219,42 @@ header {
         vertical-align: middle;
         width: 85%;
         margin: 0 auto;
-        
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .aboutme p {
+        width: 81%;
+        font-size: 20px;
+    }
+    
+    .aboutme div h3 {
+        font-size: 25px;
+    }
+    
+    .aboutme div h1 {
+        font-size: 40px;
+    }
+    
+    .logo div div#myMainNav.mainnav {
+        width: 64%;
+    }
+    
+    #myMainNav ul li.nav-item a {
+        font-size: 20px;
+    }
+    
+    .navrow {
+        width: 100%;
+    }
+    
+    .navcol {
+        width: 25%;
+        /*+placement: margin-auto;*/
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        left: 0;
+        top: 0;
     }
 }
