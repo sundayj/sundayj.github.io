@@ -1,15 +1,20 @@
 /* Mobile First */
+
 * {
     box-sizing: border-box;
 }
+
 body {
     background-color: #333332;
+    color: white;
 }
+
 header {
     width: 100%;
     height: auto;
     background-color: #333332;
 }
+
 .jlsunday {
     text-decoration: none;
     color: white;
@@ -21,12 +26,15 @@ header {
     margin-left: 110px;
     margin-top: 39px;
 }
+
 .logo {
     width: 100%;
 }
+
 .logo span.signature img {
     margin: 8px;
 }
+
 .hamburger {
     display: inline-block;
     cursor: pointer;
@@ -37,6 +45,7 @@ header {
     margin-right: 18px;
     margin-top: 20px;
 }
+
 .bar1,
 .bar2,
 .bar3 {
@@ -46,20 +55,30 @@ header {
     margin: 6px 0;
     transition: 0.4s;
 }
+
+
 /* Rotate first bar */
+
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
 }
+
+
 /* Fade out the second bar */
+
 .change .bar2 {
     opacity: 0;
 }
+
+
 /* Rotate last bar */
+
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
+
 .mainnav {
     display: none;
     overflow: hidden;
@@ -71,10 +90,12 @@ header {
     top: 0;
     margin-top: 24px;
 }
+
 #myMainNav ul li {
     list-style: none;
     text-decoration: none;
 }
+
 #myMainNav ul li.nav-item a {
     display: block;
     color: #F2F2F2;
@@ -84,10 +105,12 @@ header {
     font-size: 15px;
     width: 100%;
 }
+
 #myMainNav ul li.nav-item a:hover {
     background-color: #DDD;
     color: black;
 }
+
 .aboutme {
     width: 100%;
     color: white;
@@ -95,77 +118,39 @@ header {
     padding-top: 38px;
     background: url(/assets/images/other-images/Abstract-Commission.jpg) center / cover no-repeat scroll;
 }
+
 .aboutme div h1 {
     font-size: 32px;
 }
+
 .aboutme div h3 {
     font-size: 21px;
 }
+
 .aboutme p {
     width: 80%;
     margin: 0 auto;
     font-size: 16px;
     line-height: 1.5;
 }
+
 .profilephotocontainer {
     width: 75%;
     margin: 40px auto 0;
 }
+
 .profilephoto {
     display: block;
     border-style: none;
     vertical-align: middle;
     width: 100%;
 }
+
 .portfolio {
     width: 100%;
     height: auto;
 }
-.webdevrow {
-    width: 100%;
-    height: 50%;
-    text-align: center;
-    margin-bottom: 19px;
-}
-.scstatefair {
-    width: 100%;
-}
-.portfolio ul {
-    padding: 0;
-}
-.portfolio ul li {
-    text-decoration: none;
-    list-style: none;
-}
-.webdevrow label {
-    color: white;
-    font-size: 16px;
-}
-.utilcalc {
-    width: 100%;
-}
-.weblab {
-    width: 100%;
-}
-.cssadv {
-    width: 100%;
-}
-.cssfin {
-    width: 100%;
-}
-.jsfin {
-    width: 100%;
-}
-.htmlfin {
-    width: 100%;
-}
-.webdevcol-1 {
-    width: 33.33%;
-    height: 50%;
-}
-.webdevcol-2 {
-    width: 25%;
-}
+
 @media screen and (min-width: 600px) {
     .hamburger {
         display: none;
@@ -236,45 +221,8 @@ header {
         width: 85%;
         margin: 0 auto;
     }
-    .portfolio {
-        width: 100%;
-        height: auto;
-    }
-    .webdevrow {
-        width: 100%;
-        height: 50%;
-    }
-    .webdevrow label {
-        font-size: 20px;
-    }
-    .webdevcol-1 {
-        width: 100%;
-    }
-    .scstatefair {
-        width: 100%;
-    }
-    .utilcalc {
-        width: 100%;
-    }
-    .weblab {
-        width: 100%;
-    }
-    .webdevcol-2 {
-        width: 100%;
-    }
-    .cssadv {
-        width: 100%;
-    }
-    .cssfin {
-        width: 100%;
-    }
-    .jsfin {
-        width: 100%;
-    }
-    .htmlfin {
-        width: 100%;
-    }
 }
+
 @media screen and (max-width: 825px) {
     .aboutme p {
         width: 81%;
@@ -303,58 +251,5 @@ header {
         position: relative;
         left: 0;
         top: 0;
-    }
-    .portfolio {
-        width: 100%;
-        height: 1000px;
-    }
-    .webdevrow {
-        width: 100%;
-        height: 50%;
-    }
-    .scstatefair {
-        width: 100%;
-    }
-    .webdevcol-1 {
-        width: 33.33%;
-        height: 50%;
-    }
-    .webdevcol-2 {
-        width: 25%;
-    }
-    .portfolio {
-        width: 100%;
-        height: auto;
-    }
-    .webdevrow {
-        width: 100%;
-        height: 50%;
-    }
-    .webdevcol-1 {
-        width: 100%;
-    }
-    .scstatefair {
-        width: 100%;
-    }
-    .utilcalc {
-        width: 100%;
-    }
-    .weblab {
-        width: 100%;
-    }
-    .webdevcol-2 {
-        width: 100%;
-    }
-    .cssadv {
-        width: 100%;
-    }
-    .cssfin {
-        width: 100%;
-    }
-    .jsfin {
-        width: 100%;
-    }
-    .htmlfin {
-        width: 100%;
     }
 }
