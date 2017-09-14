@@ -1,5 +1,4 @@
 /* Mobile First */
-
 * {
     box-sizing: border-box;
 }
@@ -56,24 +55,18 @@ header {
     transition: 0.4s;
 }
 
-
 /* Rotate first bar */
-
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-
 /* Fade out the second bar */
-
 .change .bar2 {
     opacity: 0;
 }
 
-
 /* Rotate last bar */
-
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
@@ -149,20 +142,88 @@ header {
 .portfolio {
     width: 100%;
     height: auto;
+    text-align: center;
+}
+
+.portfolio label {
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: underline;
+}
+
+.portfolio p a {
+    color: #4CCEDF;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+
+.row {
+    width: 100%;
+    padding-bottom: 14px;
+}
+
+.row img {
+    width: 100%;
+}
+
+div.resume {
+    color: black;
+}
+
+div.stack {
+    background-color: rgb(32, 172, 190);
+    padding-top: 14px;
+}
+
+.col-4 {
+    background-color: rgb(32, 172, 190);
+    width: 100%;
+    overflow: scroll;
+}
+
+table {
+    background-color: #4CCEDF;
+    border: 1px solid #9CE1E9;
+}
+
+thead {
+    font-weight: bold;
+}
+
+td {
+    padding: 4px;
+    font-size: 16px;
+    border-top: 1px solid #9CE1E9;
+    border-bottom: 1px solid #9CE1E9;
+}
+
+.resume div {
+    text-align: center;
+}
+
+div.experience {
+    background-color: white;
 }
 
 @media screen and (min-width: 600px) {
     .hamburger {
         display: none;
     }
+    
     .mainnav {
         overflow: hidden;
         height: auto;
         display: block;
     }
+    
     .navrow {
         width: 100%;
     }
+    
     .navcol {
         width: 108px;
         float: left;
@@ -173,10 +234,12 @@ header {
         left: 0;
         top: 0;
     }
+    
     #myMainNav ul li {
         list-style: none;
         text-decoration: none;
     }
+    
     #myMainNav ul li.nav-item a {
         display: inline;
         color: #F2F2F2;
@@ -186,6 +249,7 @@ header {
         font-size: 19px;
         float: left;
     }
+    
     .mainnav a {
         float: left;
         display: inline;
@@ -193,20 +257,25 @@ header {
         text-decoration: none;
         font-size: 17px;
     }
+    
     .mainnav a:hover {
         background-color: #DDD;
         color: black;
     }
+    
     .aboutme {
         height: 100%;
         background: url(/assets/images/other-images/Abstract-Commission.jpg) center / cover no-repeat fixed;
     }
+    
     .aboutme div h1 {
         font-size: 53px;
     }
+    
     .aboutme div h3 {
         font-size: 35px;
     }
+    
     .aboutme p {
         width: 800px;
         margin: 0 auto;
@@ -214,6 +283,7 @@ header {
         line-height: 1.7;
         text-align: center;
     }
+    
     .profilephoto {
         display: block;
         border-style: none;
@@ -228,21 +298,27 @@ header {
         width: 81%;
         font-size: 20px;
     }
+    
     .aboutme div h3 {
         font-size: 25px;
     }
+    
     .aboutme div h1 {
         font-size: 40px;
     }
+    
     .logo div div#myMainNav.mainnav {
         width: 64%;
     }
+    
     #myMainNav ul li.nav-item a {
         font-size: 20px;
     }
+    
     .navrow {
         width: 100%;
     }
+    
     .navcol {
         width: 25%;
         /*+placement: margin-auto;*/
