@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Quicksand', monospace;
+}
+
 body {
     background-color: #333332;
     color: white;
@@ -114,6 +118,7 @@ header {
 
 .aboutme div h1 {
     font-size: 32px;
+    font-family: 'Pacifico', cursive;
 }
 
 .aboutme div h3 {
@@ -145,6 +150,10 @@ header {
     text-align: center;
 }
 
+h1#portfolio {
+    padding-top: 17px;
+}
+
 .portfolio label {
     font-weight: bold;
     line-height: 1.5;
@@ -170,6 +179,10 @@ header {
     width: 100%;
 }
 
+.portfolio img:hover {
+    background-color: rgba(193, 243, 254, 0.280);
+}
+
 div.resume {
     color: black;
 }
@@ -177,17 +190,21 @@ div.resume {
 div.stack {
     background-color: rgb(32, 172, 190);
     padding-top: 14px;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
 }
 
 .col-4 {
     background-color: rgb(32, 172, 190);
     width: 100%;
     overflow: scroll;
+    padding-bottom: 69px;
 }
 
 table {
     background-color: #4CCEDF;
     border: 1px solid #9CE1E9;
+    margin: 0 auto;
 }
 
 thead {
@@ -207,6 +224,101 @@ td {
 
 div.experience {
     background-color: white;
+}
+
+div.experience h1 {
+    margin-top: 389px;
+    padding-top: 30px;
+}
+
+div.accordion {
+    width: 90%;
+    margin: 0 auto;
+}
+
+div.position,
+div.school {
+    border: 1px solid black;
+    margin-top: 3px;
+    padding-right: 15px;
+    font-weight: bold;
+    /*+border-radius: 22px;*/
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -khtml-border-radius: 22px;
+    border-radius: 22px;
+    box-shadow: 1px 8px #0F1819;
+    margin-bottom: 14px;
+}
+
+div.position.active,
+div.position:hover,
+div.school.active,
+div.school:hover {
+    background-color: rgba(22, 179, 214, 0.280);
+}
+
+div.position:after,
+div.school:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bolder;
+    float: right;
+    margin-top: -41px;
+    padding: 0px;
+    margin-left: 5px;
+}
+
+div.position.active:after,
+div.school.active:after {
+    content: "\2212";
+}
+
+div.jobsummary,
+div.details {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+div.position:hover,
+div.school:hover {
+    background-color: rgba(22, 179, 214, 0.280);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+div.education {
+    background-color: white;
+    padding-top: 37px;
+    margin-top: -15px;
+    padding-bottom: 45px;
+}
+
+.contactme {
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+
+div.social {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.social h1 {
+    text-shadow: 1px 8px #0F1819;
+}
+
+a.fa {
+    font-size: 52px;
+    margin: 22px;
+    color: #3999A6;
+    text-decoration: none;
+    text-shadow: 1px 8px #0F1819;
 }
 
 @media screen and (min-width: 600px) {
