@@ -27,7 +27,7 @@ header {
     left: 0;
     top: 0;
     margin-left: 110px;
-    margin-top: 39px;
+    margin-top: 24px;
 }
 
 .logo {
@@ -85,7 +85,7 @@ header {
     position: absolute;
     right: 0;
     top: 0;
-    margin-top: 24px;
+    margin-top: 16px;
 }
 
 #myMainNav ul li {
@@ -144,6 +144,25 @@ header {
     line-height: 1.5;
 }
 
+span#show-aboutme p {
+    cursor: pointer;
+    display: block;
+    width: 141px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.read-more-about-me {
+    display: none;
+}
+
+span.show-less-about-me p {
+    cursor: pointer;
+    width: 141px;
+    font-size: 20px;
+    font-style: italic;
+}
+
 .profilephotocontainer {
     width: 75%;
     margin: 40px auto 0;
@@ -180,8 +199,10 @@ h1#portfolio {
 
 .portfolio p {
     font-size: 15px;
-    width: 250px;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 0px 30px;
+    text-align: justify;
 }
 
 [class*="col-"] {
@@ -249,7 +270,7 @@ div.experience {
 div.experience h1 {
     margin-top: 313px;
     padding-top: 104px;
-    text-shadow: 0px 3px #61D1DD;
+    text-shadow: 0px 3px #B0B0B0;
 }
 
 div.accordion {
@@ -321,7 +342,7 @@ div.education {
 }
 
 .education h1 {
-    text-shadow: 0px 3px #61D1DD;
+    text-shadow: 0px 3px #B0B0B0;
 }
 
 .contactme {
@@ -380,6 +401,8 @@ div.social {
     text-align: center;
     padding-bottom: 30px;
     padding-top: 10px;
+    margin-top: 15px;
+    background: linear-gradient(rgba(34, 166, 183, 1), rgba(51, 51, 50, 0));
 }
 
 .social h1 {
@@ -394,62 +417,63 @@ a.fa {
     text-shadow: 1px 8px #0F1819;
 }
 
+a.fa:hover {
+    color: #FFFFFF;
+}
+
+.footerlogo .signature img {
+    width: 93px;
+}
+
+.copyright {
+    float: left;
+    /*+placement: 0px 28px;*/
+    position: relative;
+    left: 0px;
+    top: 28px;
+}
+
+.col-8 {
+    text-align: center;
+}
+
+.deviantart {
+    margin-bottom: 31px;
+}
+
+.otherlinks a {
+    text-decoration: none;
+    color: #1BAFC4;
+    /*+placement: ;*/
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.vida a:hover,
+.deviantart a:hover {
+    color: #FFFFFF;
+}
+
+.col-9 {
+    text-align: center;
+}
+
+.copyright {
+    margin-top: -22px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.col-11 {
+    text-align: center;
+    text-shadow: 1px 8px #0F1819;
+    padding-bottom: 0px;
+}
+
 @media screen and (min-width: 600px) {
-    .hamburger {
-        display: none;
-    }
-    
-    .mainnav {
-        overflow: hidden;
-        height: auto;
-        display: block;
-    }
-    
-    .navrow {
-        width: 100%;
-    }
-    
-    .navcol {
-        width: 108px;
-        float: left;
-        /*+placement: margin-auto;*/
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        left: 0;
-        top: 0;
-    }
-    
-    #myMainNav ul li {
-        list-style: none;
-        text-decoration: none;
-    }
-    
-    #myMainNav ul li.nav-item a {
-        display: inline;
-        color: #F2F2F2;
-        text-align: center;
-        padding: 4px 0px;
-        text-decoration: none;
-        font-size: 19px;
-        float: left;
-    }
-    
-    .mainnav a {
-        float: left;
-        display: inline;
-        color: #F2F2F2;
-        text-decoration: none;
-        font-size: 17px;
-    }
-    
-    .mainnav a:hover {
-        background-color: #DDD;
-        color: black;
-    }
-    
     .aboutme {
-        height: 100%;
+        height: auto;
         background: url(/assets/images/other-images/Abstract-Commission.jpg) center / cover no-repeat fixed;
     }
     
@@ -475,6 +499,47 @@ a.fa {
         vertical-align: middle;
         width: 85%;
         margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 730px) {
+    .hamburger {
+        display: none;
+    }
+    
+    .mainnav {
+        overflow: hidden;
+        height: auto;
+        display: block;
+        margin-right: 23px;
+        padding-right: 24px;
+    }
+    
+    .navrow {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navcol {
+        width: 108px;
+        float: left;
+        /*+placement: margin-auto;*/
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        left: 0;
+        top: 0;
+        padding-bottom: 0px;
+        margin-bottom: 15px;
+    }
+    
+    #myMainNav ul li.nav-item a {
+        display: inline;
+        color: #F2F2F2;
+        text-align: center;
+        padding: 4px 0px;
+        text-decoration: none;
+        font-size: 19px;
     }
 }
 

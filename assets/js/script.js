@@ -14,7 +14,6 @@ function maindropdown() {
 
 document.getElementById("hamburger").addEventListener("click", maindropdown);
 
-
 //Accordion for Experience Section
 var acc = document.getElementsByClassName("position");
 var i;
@@ -47,3 +46,18 @@ for (i = 0; i < acc.length; i++) {
         }
     }
 }
+
+//About Me Show and Hide
+//When "Show More" is clicked, the "about me" section expands, the "show more" button disappears, and a "show less" button appears.
+//When the "show less" button is clicked, the "about me" section closes, and the "show more" button reappears.
+$(document).ready(function () {
+    $("#show-aboutme").click(function () {
+        $(".read-more-about-me").slideToggle();
+        $("#show-aboutme").toggle();
+    })
+
+    $(".show-less-about-me").click(function () {
+        $(".read-more-about-me").slideToggle();
+        $("#show-aboutme").toggle();
+    })
+});

@@ -6,8 +6,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=100%, initial-scale=1, minimum scale=1, user-scalable=no, maximum-scale=1" />
-    <meta name="description" content="Justin Sunday, Justin L. Sunday, Web Development Portfolio, Web Developer, Front-End Development, Front-End Developer, Back-End Development, Back-End Developer, Fine-Artist, Painter, 2-D Artist, Traditional Artist, Graphic Designer" />
-    <!--    Hello! Welcome to my portfolio. Thank you for checking out my source code.
+    <meta name="description" content="Web development, software development, and web design portfolio for Justin L. Sunday. Originally a Fine-Arts graduate from the University of South Carolina in 2010, Justin discovered a passion for web development in early 2017. With the help of friends, an exceptional mentor, and a supporting wife, Justin quickly grew, learning and cultivating many new skills along the way. Highly organized, tenacious, and possessing an insatiable appetite for learning new things, Justin has finally found his calling in an ever-growing and constantly fluctuating field that draws out his passion for creation intellectual growth. " />
+    <!--    Hello! Welcome to my portfolio. Thank you for checking out my source code. Don't forget to check out my site on both mobile and large screens. The portfolio section has completely different functionality when viewed on larger screens, so be sure to check it out!
   If you have any suggestions, comments, or would like to contact me for work, please contact me at justin.sunday@live.com.-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -16,8 +16,11 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/foundation-6_grid_visibility_only/css/foundation.min.css">
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand|VT323" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> </head>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+</head>
 
 <body>
     <header>
@@ -57,23 +60,42 @@
     <div class="aboutme">
         <div>
             <h1 id="about">Justin L. Sunday</h1>
-            <h3>Web Developer</h3>
+            <h3>Software and Web Developer/Designer</h3>
             <div>
                 <p>Organized analytical thinker effective in working with others to provide exemplary customer service experiences. Flexible and adaptable to meet the requirements of the task at hand. Educationally well-rounded with a variety of work experiences that lend well to diversifying my application of techniques toward outside-the-box problem solving. Experienced in both digital and traditional work environments. Recent recipient and graduate of the Midlands Technical College TechHire Scholarship.
                     <br> </p>
             </div>
+            <span id="show-aboutme" class="show-more-about-me"><p>Show More</p></span>
+
+            <div class="read-more-about-me">
+                <br><br>
+                <p>Originally a Fine-Arts graduate from the University of South Carolina in 2010, Justin discovered a passion for web development in early 2017. With the help of friends, an exceptional mentor, and a supporting wife, Justin quickly grew, learning and cultivating many new skills along the way. Highly organized, tenacious, and possessing an insatiable appetite for learning new things, Justin has finally found his calling in an ever-growing and constantly fluctuating field that draws out his passion for creation intellectual growth.</p>
+                <span class="show-less-about-me"><p>Show Less</p></span>
+
+            </div>
         </div>
         <div class="profilephotocontainer"> <img src="assets/images/other-images/profile-photo-1352x1098.png" alt="Justin Sunday" title="Justin Sunday" class="profilephoto"> </div>
     </div>
-    <div class="portfolio">
+    <div class="portfolio grid-container full">
 
         <!-- Collapse portfolo in mobile view. Also, add description as hoverable. Need to save more space.-->
 
         <h1 id="portfolio">Portfolio</h1>
         <h2>Professional Work</h2>
         <h3>Severien: July 2017-Present</h3>
-        <div class="row">
-            <div class="col-1">
+        <div class="featured-project grid-x small-12">
+            <div class="small-12 medium-6 medium-offset-3 large-4 large-offset-4 cell">
+                <div class="row">
+                    <label for="Musical Ladder">Musical Ladder</label>
+                </div>
+                <div class="row">
+                    <a href="https://sundayj.github.io/Musical_Ladder_UX-UI/" target="_blank"><img src="assets/images/web-dev-portfolio/ML_Student_Landing-Page.png" alt="Musical Ladder System - Fresh UX-UI Design" name="Daily Report"></a>
+                </div>
+                <p>The Musical Ladder system hired Severien to clean up and completely redesign their web application. I was charged with the task of designing, building, and implementing a brand new front-end user experience for both the mobile and desktop versions of the app. As I was designing, I had to keep code modularity in mind, as the app would be finalized using the Laravel PHP framework. <a href="https://github.com/sundayj/Musical_Ladder_UX-UI">here</a>.</p>
+            </div>
+        </div>
+        <div class="grid-x">
+            <div class="small-12 medium-6 large-4 cell">
                 <div class="row">
                     <label for="Daily Report">SC State Fair Daily Report</label>
                 </div>
@@ -82,72 +104,83 @@
                 </div>
                 <p>This form utilizes jquery and some basic functionality using angularjs. Currently in the process of transitioning this version into PHP, where it will load information from the state fair's SQL database and update on click of the submit button. Source files and assets can be found <a href="https://github.com/sundayj/statefairconcessions">here</a>.</p>
             </div>
-            <div class="col-1">
+            <div class="small-12 medium-6 large-4 cell">
                 <div class="row">
                     <label for="Food Stand Quality Check">SC State Fair Food Stand Quality Check</label>
                 </div>
                 <div class="row">
-                    <a href="https://sundayj.github.io/sc-state-fair-food-stand-quality-check/"><img src="assets/images/web-dev-portfolio/food-stand-quality-check.png" alt="Food Stand Quality Check" name="Food Stand Quality Check"></a>
+                    <a href="https://sundayj.github.io/sc-state-fair-food-stand-quality-check/" target="_blank"><img src="assets/images/web-dev-portfolio/food-stand-quality-check.png" alt="Food Stand Quality Check" name="Food Stand Quality Check"></a>
                 </div>
                 <p>A form built for the SC state fair to assist the inspectors with their data logs. Validation wasn't included in this form as it wasn't required. Source code can be found <a href="https://github.com/sundayj/sc-state-fair-food-stand-quality-check">here</a>.</p>
             </div>
-            <div class="col-1">
+            <div class="small-12 medium-6 medium-offset-3 large-4 large-offset-0 cell">
                 <div class="row">
                     <label for="Concession Evaluation Field Observation">SC State Fair Concession Evaluation Field Observation</label>
                 </div>
                 <div class="row">
-                    <a href="https://sundayj.github.io/concession-evaluation-field-observation/"><img src="assets/images/web-dev-portfolio/concessionevaluation-fieldobservation.png" alt="Concession Evaluation Field Observation" name="Concession Evaluation Field Observation"></a>
+                    <a href="https://sundayj.github.io/concession-evaluation-field-observation/" target="_blank"><img src="assets/images/web-dev-portfolio/concessionevaluation-fieldobservation.png" alt="Concession Evaluation Field Observation" name="Concession Evaluation Field Observation"></a>
                 </div>
                 <p>Another form to assist the SC State Fair Inspectors in their data cataloging. Validation wasn't included in this form as it wasn't required. Source code can be found <a href="https://github.com/sundayj/concession-evaluation-field-observation">here</a>.</p>
             </div>
         </div>
+
         <h2>Continued Education</h2>
-        <div class="row">
-            <div class="row">
-                <label for="Utilities Calculator">Utilities Calculator (angularJS)</label>
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <a href="https://sundayj.github.io/utilities-calculator-angularjs/" target="_blank"><img src="assets/images/web-dev-portfolio/utilities-calculator.png" alt="Utilities Calculator" class="utilcalc" name="Utilities Calculator"></a>
+        <div class="grid-x">
+            <div class="small-12 medium-6 medium-offset-3 large-4 large-offset-4">
+                <div class="row">
+                    <label for="Utilities Calculator">Utilities Calculator (angularJS)</label>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <a href="https://sundayj.github.io/utilities-calculator-angularjs/" target="_blank"><img src="assets/images/web-dev-portfolio/utilities-calculator.png" alt="Utilities Calculator" class="utilcalc" name="Utilities Calculator"></a>
+                    </div>
                 </div>
                 <p>A simple app for calculating electricity costs for different light bulbs. Source code nd assets can be found <a href="https://github.com/sundayj/utilities-calculator-angularjs">here</a>.</p>
             </div>
         </div>
         <h2>TechHire Classwork</h2>
-        <div class="row">
-            <div class="row">
-                <label for="Website Production Lab">Website Production Lab</label>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <a href="https://sundayj.github.io/Website_Production_Lab/" target="_blank"><img src="assets/images/web-dev-portfolio/webproductionlab.png" alt="Web Lab Final" class="weblab" name="Website Production Lab"></a>
+        <div class="grid-x">
+            <div class="small-12 medium-6 large-3 cell">
+                <div class="row">
+                    <label for="Website Production Lab">Website Production Lab</label>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <a href="https://sundayj.github.io/Website_Production_Lab/" target="_blank"><img src="assets/images/web-dev-portfolio/webproductionlab.png" alt="Web Lab Final" class="weblab" name="Website Production Lab"></a>
+                    </div>
                 </div>
                 <p>In the Midlands TechHire program, this project was a final culmination of everything we had learned throughout the front-end development program. Started and completed from scratch, we followed directions out of small book to complete a "five page" website for Adventures Insurance. Due to the length of the directions in the book, I will not include of them in this repository, but I will try to describe the main objectives in this "README" file. We were given three days to complete this project. I received the grade of "A." More information <a href="https://github.com/sundayj/Website_Production_Lab/blob/master/README.md">here</a>.</p>
             </div>
-            <div class="row">
-                <label for="CSS3 Advanced Final Project">CSS3 Advanced Final Project</label>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <a href="https://sundayj.github.io/css3_advanced_final_project/" target="_blank"><img src="assets/images/web-dev-portfolio/css3advanced.png" alt="CSS3 Advanced Final" class="cssadv" name="CSS3 Advanced Final Project"></a>
+            <div class="small-12 medium-6 large-3 cell">
+                <div class="row">
+                    <label for="CSS3 Advanced Final Project">CSS3 Advanced Final Project</label>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <a href="https://sundayj.github.io/css3_advanced_final_project/" target="_blank"><img src="assets/images/web-dev-portfolio/css3advanced.png" alt="CSS3 Advanced Final" class="cssadv" name="CSS3 Advanced Final Project"></a>
+                    </div>
                 </div>
                 <p>Upon completion of the CSS3 Advanced class from the Midlands Technical College TechHire program, we were asked to follow specific directions to create our third simple webpage. Here, I will include all of the files for the project in order to show my beginnings as a web developer. Recieved a grade of "A." For more information, click <a href="https://github.com/sundayj/css3_advanced_final_project">here</a>.</p>
             </div>
-            <div class="row">
-                <label for="Javascript Final Project">Javascript Final Project</label>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <a href="https://sundayj.github.io/Javascript-Final-Project/" target="_blank"><img src="assets/images/web-dev-portfolio/javascriptproject.png" alt="Javascript Final" class="jsfin" name="Javascript Final Project"></a>
+            <div class="small-12 medium-6 large-3 cell">
+                <div class="row">
+                    <label for="Javascript Final Project">Javascript Final Project</label>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <a href="https://sundayj.github.io/Javascript-Final-Project/" target="_blank"><img src="assets/images/web-dev-portfolio/javascriptproject.png" alt="Javascript Final" class="jsfin" name="Javascript Final Project"></a>
+                    </div>
                 </div>
                 <p>Upon completion of the Javascript class from the Midlands Technical College TechHire program, we were asked to follow specific directions to create our fourth simple webpage. Here, I will include all of the files for the project in order to show my beginnings as a web developer. Received a grade of "A." For more information, please click <a href="https://github.com/sundayj/Javascript-Final-Project">here</a>.</p>
             </div>
-            <div class="row">
-                <label for="HTML5 Final Project">HTML5 Final Project</label>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <a href="https://sundayj.github.io/HTML5-Class-Project/" target="_blank"><img src="assets/images/web-dev-portfolio/html5project.png" alt="HTML Final" class="htmlfin" name="HTML5 Final Project"></a>
+            <div class="small-12 medium-6 large-3 cell">
+                <div class="row">
+                    <label for="HTML5 Final Project">HTML5 Final Project</label>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <a href="https://sundayj.github.io/HTML5-Class-Project/" target="_blank"><img src="assets/images/web-dev-portfolio/html5project.png" alt="HTML Final" class="htmlfin" name="HTML5 Final Project"></a>
+                    </div>
                 </div>
                 <p>Upon completion of the HTML5 class from the Midlands Technical College TechHire program, we were asked to follow specific directions to create our first simple webpage. Here, I will include all of the files for the first project in order to show my beginnings as a web developer. Received a grade of A-. For more information, please click <a href="https://github.com/sundayj/HTML5-Class-Project">here</a>.</p>
             </div>
@@ -258,122 +291,132 @@
                 </div>
             </div>
         </div>
-        <div class="experience">
+
+        <div class="experience grid-container full">
             <h1>Experience</h1>
-            <div class="accordion">
-                <div class="position"> <span></span>
-                    <h3>Web-Developer, Severien; Columbia, SC - July 2017-Present</h3>
-                </div>
-                <div class="jobsummary">
-                    <p>Report directly to and collaborate with lead developer. Responsible for designing, creating, testing, and implementing dynamic, interactive, and responsive web pages, intuitive data storing and calculating forms, and single page web applications. Extensive work with building responsive, dynamic, mobile-first front-end user experiences with HTML, CSS, JavaScript, and frameworks such as Bootstrap, W3.CSS, and jQuery. Also, experience personally developing online single-page form applications using AngularJS and an Apache-MySQL-PHP stack.</p>
-                </div>
-                <div class="position"> <span></span>
-                    <h3>ACE Certified Personal Trainer, Personally Fit; Columbia, SC - May 2015-June 2017</h3>
-                </div>
-                <div class="jobsummary">
-                    <p>I weekly train 20+ clients with diverse careers, backgrounds, exercise experience, and pre-existing injuries and conditions to exercise safely in order to meet their goals using a variety of methods and equipment. For my certification, I maintain continuing education in order to stay on top of current exercise trends and science-based research.</p>
-                </div>
-                <div class="position"> <span></span>
-                    <h3>Doorman, The Heritage Condominiums; Columbia, SC - January 2008-Present</h3>
-                </div>
-                <div class="jobsummary">
-                    <p>As doorman, I greet guests, residents, and contractors into the building as well as guard the keys, doors, and deliveries of the residents. I watch cameras and record the goings-on of the building. The Heritage currently uses my method of organization of the residents’ personal information. I was also offered the Head Doorman position in 2010, but I declined the offer in order to pursue further education.</p>
-                </div>
-                <div class="position"> <span></span>
-                    <h3>Art Teacher, Studio Cellar; Columbia, SC - January 2015-June 2015</h3>
-                </div>
-                <div class="jobsummary">
-                    <p>Prepared, organized, and led diverse groups of people of varying artistic experience to paint and finish paintings of varying difficulty within a 2 hour time limit while still giving an entertaining experience and ensuring that no customer was left behind.</p>
-                </div>
-                <div class="position"> <span></span>
-                    <h3>Radiology Technician Assistant, Lexington Medical Center; West Columbia, SC - May 2012-October 2014</h3>
-                </div>
-                <div class="jobsummary">
-                    <p>In providing excellent care, I helped prepare patients for exams, transported patients to and from rooms and departments in a timely manner while still observing their various medical conditions and limitations. Utilized simple programs for data storage and retrieval of patient information.</p>
-                </div>
-                <br>
-            </div>
-        </div>
-        <div class="education">
-            <h1>Education</h1>
-            <div class="accordion">
-                <div class="school"> <span></span>
-                    <h3>Midlands Technical College, West Columbia, SC - Web Development, 2017</h3>
-                </div>
-                <div class="details">
-                    <p>Awarded TechHire Scholarship:
-                        <br>
-                        <br> Web Developers help design and create simple websites and web-enabled software systems. Participants receive hands-on training in HTML5, CSS3, JavaScript and Adobe Photoshop.
-                        <br>
-                        <br> Course Curriculum:
-                        <br>
-                        <br> Visual StudioHTML5
-                        <br> CSS3
-                        <br> Javascript
-                        <br> Front-End Development Project
-                        <br> Interpersonal Strategies for Success
-                        <br> Social Media Basics
-                        <br> Search Engine Optimization
-                        <br> HTML5 App Developer Boot camp
-                        <br> Interpersonal Strategies for Success
-                        <br>
-                        <br> This program is only available to Midlands TechHire participants.
-                        <br>
-                        <br> Midlands TechHire is fully funded by the U.S. Department of Labor, Employment and Training Administration. The award amount received over a 4-year period is $4,000,000 and is effective from July 1, 2016 to June 30, 2020. The program provides training for participants in the three-county area served by Midlands Technical College.</p>
+            <div class="grid-x">
+                <div class="accordion small-11 medium-8 large-6 cell">
+                    <div class="position"> <span></span>
+                        <h3>Web-Developer, Severien; Columbia, SC - July 2017-Present</h3>
+                    </div>
+                    <div class="jobsummary">
+                        <p>Report directly to and collaborate with lead developer. Responsible for designing, creating, testing, and implementing dynamic, interactive, and responsive web pages, intuitive data storing and calculating forms, and single page web applications. Extensive work with building responsive, dynamic, mobile-first front-end user experiences with HTML, CSS, JavaScript, and frameworks such as Bootstrap, W3.CSS, and jQuery. Also, experience personally developing online single-page form applications using AngularJS and an Apache-MySQL-PHP stack.</p>
+                    </div>
+                    <div class="position"> <span></span>
+                        <h3>ACE Certified Personal Trainer, Personally Fit; Columbia, SC - May 2015-June 2017</h3>
+                    </div>
+                    <div class="jobsummary">
+                        <p>I weekly train 20+ clients with diverse careers, backgrounds, exercise experience, and pre-existing injuries and conditions to exercise safely in order to meet their goals using a variety of methods and equipment. For my certification, I maintain continuing education in order to stay on top of current exercise trends and science-based research.</p>
+                    </div>
+                    <div class="position"> <span></span>
+                        <h3>Doorman, The Heritage Condominiums; Columbia, SC - January 2008-Present</h3>
+                    </div>
+                    <div class="jobsummary">
+                        <p>As doorman, I greet guests, residents, and contractors into the building as well as guard the keys, doors, and deliveries of the residents. I watch cameras and record the goings-on of the building. The Heritage currently uses my method of organization of the residents’ personal information. I was also offered the Head Doorman position in 2010, but I declined the offer in order to pursue further education.</p>
+                    </div>
+                    <div class="position"> <span></span>
+                        <h3>Art Teacher, Studio Cellar; Columbia, SC - January 2015-June 2015</h3>
+                    </div>
+                    <div class="jobsummary">
+                        <p>Prepared, organized, and led diverse groups of people of varying artistic experience to paint and finish paintings of varying difficulty within a 2 hour time limit while still giving an entertaining experience and ensuring that no customer was left behind.</p>
+                    </div>
+                    <div class="position"> <span></span>
+                        <h3>Radiology Technician Assistant, Lexington Medical Center; West Columbia, SC - May 2012-October 2014</h3>
+                    </div>
+                    <div class="jobsummary">
+                        <p>In providing excellent care, I helped prepare patients for exams, transported patients to and from rooms and departments in a timely manner while still observing their various medical conditions and limitations. Utilized simple programs for data storage and retrieval of patient information.</p>
+                    </div>
                     <br>
                 </div>
-                <div class="school"> <span></span>
-                    <h3>Midlands Technical College, West Columbia, SC - Associate in Science, 2012</h3>
-                </div>
-                <div class="details">
-                    <p>Obtained Associate in Science degree with a focus on Physics, Chemistry, and Biology.</p>
-                </div>
-                <div class="school"> <span></span>
-                    <h3>University of South Carolina, Columbia, SC - Bachelor of Fine Arts, 2010</h3>
-                </div>
-                <div class="details">
+            </div>
+        </div>
 
-                    <p>Graduated with Cum Laude Honors.
-                        <br> Three Consecutive Semesters on the Dean’s List.
-                        <br> Major focus in Painting.
-                        <br> Minor in Art History.</p>
+        <div class="education grid-container full">
+            <h1>Education</h1>
+            <div class="grid-x">
+                <div class="accordion small-11 medium-8 large-6 cell">
+                    <div class="school"> <span></span>
+                        <h3>Midlands Technical College, West Columbia, SC - Web Development, 2017</h3>
+                    </div>
+                    <div class="details">
+                        <p>Awarded TechHire Scholarship:
+                            <br>
+                            <br> Web Developers help design and create simple websites and web-enabled software systems. Participants receive hands-on training in HTML5, CSS3, JavaScript and Adobe Photoshop.
+                            <br>
+                            <br> Course Curriculum:
+                            <br>
+                            <br> Visual StudioHTML5
+                            <br> CSS3
+                            <br> Javascript
+                            <br> Front-End Development Project
+                            <br> Interpersonal Strategies for Success
+                            <br> Social Media Basics
+                            <br> Search Engine Optimization
+                            <br> HTML5 App Developer Boot camp
+                            <br> Interpersonal Strategies for Success
+                            <br>
+                            <br> This program is only available to Midlands TechHire participants.
+                            <br>
+                            <br> Midlands TechHire is fully funded by the U.S. Department of Labor, Employment and Training Administration. The award amount received over a 4-year period is $4,000,000 and is effective from July 1, 2016 to June 30, 2020. The program provides training for participants in the three-county area served by Midlands Technical College.</p>
+                        <br>
+                    </div>
+                    <div class="school"> <span></span>
+                        <h3>Midlands Technical College, West Columbia, SC - Associate in Science, 2012</h3>
+                    </div>
+                    <div class="details">
+                        <p>Obtained Associate in Science degree with a focus on Physics, Chemistry, and Biology.</p>
+                    </div>
+                    <div class="school"> <span></span>
+                        <h3>University of South Carolina, Columbia, SC - Bachelor of Fine Arts, 2010</h3>
+                    </div>
+                    <div class="details">
 
+                        <p>Graduated with Cum Laude Honors.
+                            <br> Three Consecutive Semesters on the Dean’s List.
+                            <br> Major focus in Painting.
+                            <br> Minor in Art History.</p>
+
+                    </div>
+                    <div class="school"> <span></span>
+                        <h3>Midlands Technical College, West Columbia, SC - Associate in Arts, 2008</h3>
+                    </div>
+                    <div class="details">
+                        <p>Honored with Scholar’s List in 2007.</p>
+                    </div>
+                    <br>
                 </div>
-                <div class="school"> <span></span>
-                    <h3>Midlands Technical College, West Columbia, SC - Associate in Arts, 2008</h3>
-                </div>
-                <div class="details">
-                    <p>Honored with Scholar’s List in 2007.</p>
-                </div>
-                <br>
             </div>
         </div>
     </div>
 
 
 
-    <div class="connect" id="connect">
+    <div class="connect grid-container full" id="connect">
         <div class="contactme">
             <h1>Contact Me</h1>
-            <form action="">
-                <div class="row">
+            <div class="grid-x">
+                <div class="small-12 medium-6 medium-offset-3 large-4 large-offset-4 cell">
+                    <form action="">
+                        <div class="row">
 
-                    <div class="col-5"><label for="name">Name:</label></div>
-                    <div class="col-5"><input type="text" name="name"></div>
-                    <div class="col-5"><label for="email">E-mail:</label></div>
-                    <div class="col-5"><input type="email" name="email"></div>
-                    <div class="col-5"><label for="phone">Phone:</label></div>
-                    <div class="col-5"><input type="tel" name="phone"></div>
-                </div>
-                <div class="row">
-                    <div class="col-6"><label for="comments">Message:</label></div>
-                    <div class="col-6"><textarea rows="7" cols="40" name="comments"></textarea></div>
-                </div>
-                <div class="row">
-                    <div class="col-6"><button type="submit">Submit</button></div>
-                </div>
+                            <div class="col-5"><label for="name">Name:</label></div>
+                            <div class="col-5"><input type="text" name="name"></div>
+                            <div class="col-5"><label for="email">E-mail:</label></div>
+                            <div class="col-5"><input type="email" name="email"></div>
+                            <div class="col-5"><label for="phone">Phone:</label></div>
+                            <div class="col-5"><input type="tel" name="phone"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><label for="comments">Message:</label></div>
+                            <div class="col-6"><textarea rows="7" cols="40" name="comments"></textarea></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6"><button type="submit">Submit</button></div>
+                        </div>
 
-            </form>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="row social">
             <div class="row">
@@ -381,9 +424,9 @@
                     <h1>Let's Connect!</h1>
                 </div>
             </div>
-            <span><a class="fa fa-facebook" href="www.facebook.com/justin.sunday" target="_blank"></a></span>
-            <span><a class="fa fa-linkedin" href="www.linkedin.com/in/justin-sunday" target="_blank"></a></span>
-            <span><a class="fa fa-github" href="www.github.com/sundayj" target="_blank"></a></span>
+            <span><a class="fa fa-facebook" href="https://www.facebook.com/justinsundayart/" target="_blank"></a></span>
+            <span><a class="fa fa-linkedin" href="https://www.linkedin.com/in/justin-sunday" target="_blank"></a></span>
+            <span><a class="fa fa-github" href="https://www.github.com/sundayj" target="_blank"></a></span>
         </div>
     </div>
 
@@ -391,16 +434,33 @@
 
 
     <footer>
-        <div class="footerlogo">
-            <span class="signature">
+        <div class="row otherlinks">
+            <div class="col-11">
+                <h2>Other Links</h2>
+            </div>
+            <div class="vida col-8"><a href="https://shopvida.com/collections/justin-sunday" target="_blank">My Vida Collection</a></div>
+            <div class="deviantart col-8"><a href="https://sundayprism.deviantart.com" target="_blank">Deviantart Profile</a></div>
+        </div>
+        <div class="row">
+            <div class="footerlogo col-9">
+                <span class="signature">
                     <img src="assets/images/other-images/signature-400x278.png" alt="JLSignature" title="JLSignature" media-simple="true" style="height: 3.8rem;">
             </span>
+                <div class="copyright col-10">&copy;Copyright 2017
+                    <script>
+                        new Date().getFullYear() > 2017 && document.write("-" + new Date().getFullYear());
+
+                    </script>JLSunday
+                </div>
+            </div>
         </div>
-        <div class="copyright">&copy;Copyright 2017</div>
-        <div class="otherlinks">
-            <a href=""></a>
-        </div>
+
+
+
     </footer>
+    <script src="assets/foundation-6_grid_visibility_only/js/vendor/foundation.js"></script>
+    <script src="assets/foundation-6_grid_visibility_only/js/vendor/jquery.js"></script>
+    <script src="assets/foundation-6_grid_visibility_only/js/vendor/what-input.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
