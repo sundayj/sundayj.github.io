@@ -10,12 +10,15 @@ html {
 body {
     background-color: #333332;
     color: white;
+    margin-top: 30px;
 }
 
 header {
     width: 100%;
     height: auto;
     background-color: #333332;
+    position: fixed;
+    top: 0;
 }
 
 .jlsunday {
@@ -142,6 +145,7 @@ header {
     margin: 0 auto;
     font-size: 16px;
     line-height: 1.5;
+    text-align: justify;
 }
 
 span#show-aboutme p {
@@ -154,6 +158,7 @@ span#show-aboutme p {
 
 .read-more-about-me {
     display: none;
+    text-align: justify;
 }
 
 span.show-less-about-me p {
