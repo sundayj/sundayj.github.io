@@ -476,6 +476,10 @@ a.fa:hover {
     padding-bottom: 0px;
 }
 
+.disclosure {
+    background-color: rgba(148, 0, 0, 0.418);
+}
+
 @media screen and (min-width: 600px) {
     .aboutme {
         height: auto;
