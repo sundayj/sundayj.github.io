@@ -512,8 +512,20 @@ a.fa:hover {
 }
 
 @media screen and (min-width: 730px) {
+    body {
+        font-size: 21px;
+    }
+    
+    .portfolio p {
+        font-size: 18px;
+    }
+    
     .hamburger {
         display: none;
+    }
+    
+    td {
+        font-size: 25px;
     }
     
     .mainnav {
