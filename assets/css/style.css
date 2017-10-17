@@ -478,6 +478,7 @@ a.fa:hover {
 
 .disclosure {
     background-color: rgba(148, 0, 0, 0.418);
+    border: 1px solid #940000;
 }
 
 @media screen and (min-width: 600px) {
