@@ -1,4 +1,5 @@
 /* Mobile First */
+
 * {
     box-sizing: border-box;
 }
@@ -25,12 +26,16 @@ header {
     text-decoration: none;
     color: white;
     font-size: 25px;
+    position: relative;
+    top: 11px;
     /*+placement: anchor-top-left;*/
+    /*
     position: absolute;
     left: 0;
     top: 0;
     margin-left: 110px;
     margin-top: 24px;
+*/
 }
 
 .logo {
@@ -39,6 +44,11 @@ header {
 
 .logo span.signature img {
     margin: 8px;
+}
+
+.nav-items a {
+    padding-top: 23px;
+    text-align: center;
 }
 
 .hamburger {
@@ -63,17 +73,20 @@ header {
 }
 
 /* Rotate first bar */
+
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 /* Fade out the second bar */
+
 .change .bar2 {
     opacity: 0;
 }
 
 /* Rotate last bar */
+
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
@@ -83,17 +96,22 @@ header {
     display: none;
     overflow: hidden;
     background-color: #333;
-    width: 61%;
+    /*    width: 61%;*/
     /*+placement: anchor-top-right;*/
+    /*
     position: absolute;
     right: 0;
     top: 0;
+*/
+}
+
+.nav-items a {
+    display: none;
 }
 
 #myMainNav ul li {
     list-style: none;
     text-decoration: none;
-    width: 123px;
 }
 
 #myMainNav ul li.nav-item a {
@@ -480,20 +498,27 @@ a.fa:hover {
     border: 1px solid #940000;
 }
 
+@media screen and (min-width: 40em) {
+    .nav-items a {
+        display: inline-block;
+    }
+}
+
+
 @media screen and (min-width: 600px) {
     .aboutme {
         height: auto;
         background: url(/assets/images/other-images/Abstract-Commission.jpg) center / cover no-repeat fixed;
     }
-    
+
     .aboutme div h1 {
         font-size: 53px;
     }
-    
+
     .aboutme div h3 {
         font-size: 35px;
     }
-    
+
     .aboutme p {
         width: 800px;
         margin: 0 auto;
@@ -501,7 +526,7 @@ a.fa:hover {
         line-height: 1.7;
         text-align: center;
     }
-    
+
     .profilephoto {
         display: block;
         border-style: none;
@@ -515,19 +540,19 @@ a.fa:hover {
     body {
         font-size: 21px;
     }
-    
+
     .portfolio p {
         font-size: 18px;
     }
-    
+
     .hamburger {
         display: none;
     }
-    
+
     td {
         font-size: 25px;
     }
-    
+
     .mainnav {
         overflow: hidden;
         height: auto;
@@ -535,12 +560,12 @@ a.fa:hover {
         margin-right: 23px;
         padding-right: 24px;
     }
-    
+
     .navrow {
         width: 100%;
         text-align: center;
     }
-    
+
     .navcol {
         width: 108px;
         float: left;
@@ -553,12 +578,10 @@ a.fa:hover {
         padding-bottom: 0px;
         margin-bottom: 15px;
     }
-    
+
     #myMainNav ul li.nav-item a {
-        display: inline;
         color: #F2F2F2;
         text-align: center;
-        padding: 4px 0px;
         text-decoration: none;
         font-size: 19px;
     }
@@ -569,27 +592,27 @@ a.fa:hover {
         width: 81%;
         font-size: 20px;
     }
-    
+
     .aboutme div h3 {
         font-size: 25px;
     }
-    
+
     .aboutme div h1 {
         font-size: 40px;
     }
-    
+
     .logo div div#myMainNav.mainnav {
-        width: 64%;
+        /*        width: 64%;*/
     }
-    
+
     #myMainNav ul li.nav-item a {
         font-size: 20px;
     }
-    
+
     .navrow {
         width: 100%;
     }
-    
+
     .navcol {
         width: 25%;
         /*+placement: margin-auto;*/
@@ -599,4 +622,24 @@ a.fa:hover {
         left: 0;
         top: 0;
     }
+}
+
+
+
+.signature {
+    padding-left: 18px;
+}
+
+.nav-holder {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+header span {
+    padding-top: 15px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
 }
