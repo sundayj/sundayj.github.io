@@ -1,1 +1,512 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-07T16:14:56-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">JLSunday</title><subtitle>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</subtitle></feed>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JLSunday</title>
+    <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 07 Dec 2021 16:16:00 -0500</pubDate>
+    <lastBuildDate>Tue, 07 Dec 2021 16:16:00 -0500</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Helpful Dev Tools - Part One</title>
+        <description>&lt;p&gt;Welcome to my first blog post! Since the goal of this blog is to provide a
+variety of useful information and resources on Full-Stack development, what
+better way to start off than with a post on great development tools? Seriously,
+you can’t develop great software without great development tools! :sunglasses:&lt;/p&gt;
+
+&lt;h2 id=&quot;online-dev-tools&quot;&gt;Online Dev Tools&lt;/h2&gt;
+&lt;p&gt;This list contains online-based tools, or sites full of tools, for
+developers. Many of these focus on web-development, but many are useful
+regardless of the development you’re focusing on.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;&lt;strong&gt;Pro-Tip:&lt;/strong&gt;&lt;/em&gt; Be on the lookout for list items marked with :star:! These are the tools I use often and highly recommend.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;jsonformatterorg&quot;&gt;&lt;a href=&quot;https://jsonformatter.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JSONFormatter.org&lt;/a&gt;&lt;/h3&gt;
+
+&lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
+    &lt;a href=&quot;https://jsonformatter.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
+        &lt;img src=&quot;/images/other-images/jsonformatterscreenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;https://jsonformatter.org/&quot; title=&quot;JSONFormatter&quot; loading=&quot;lazy&quot; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption&gt;
+        Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;While the JSON formatter is front and center, this website offers a huge list
+of other extremely useful tools. Those shown in the toolbar are just a small
+offering. While a few of the tools offered are similar to those offered
+elsewhere, this is my favorite site for these tools.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-youll-find-on-jsonformatterorg&quot;&gt;What you’ll find on &lt;a href=&quot;https://jsonformatter.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JSONFormatter.org&lt;/a&gt;:&lt;/h4&gt;
+
+&lt;div class=&quot;tool-list&quot;&gt;
+    &lt;details open=&quot;&quot;&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;JSON Tools&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;JSON Formatter&lt;/li&gt;
+            &lt;li&gt;JSON Validator&lt;/li&gt;
+            &lt;li&gt;JSON Editor&lt;/li&gt;
+            &lt;li&gt;JSON Pretty Print&lt;/li&gt;
+            &lt;li&gt;JSON Viewer&lt;/li&gt;
+            &lt;li&gt;JSON Parser&lt;/li&gt;
+            &lt;li&gt;JSON Minify&lt;/li&gt;
+            &lt;li&gt;JSON Reader&lt;/li&gt;
+            &lt;li&gt;JSON Stringify Online&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;Converters&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;JSON to XML&lt;/li&gt;
+            &lt;li&gt;JSON to CSV&lt;/li&gt;
+            &lt;li&gt;JSON to YAML&lt;/li&gt;
+            &lt;li&gt;JSON to TSV&lt;/li&gt;
+            &lt;li&gt;JSON to String&lt;/li&gt;
+            &lt;li&gt;XML to JSON&lt;/li&gt;
+            &lt;li&gt;XML to CSV&lt;/li&gt;
+            &lt;li&gt;XML to YAML&lt;/li&gt;
+            &lt;li&gt;RSS to JSON&lt;/li&gt;
+            &lt;li&gt;YAML to JSON&lt;/li&gt;
+            &lt;li&gt;YAML to XML&lt;/li&gt;
+            &lt;li&gt;YAML to CSV&lt;/li&gt;
+            &lt;li&gt;CSV to JSON&lt;/li&gt;
+            &lt;li&gt;CSV to XML&lt;/li&gt;
+            &lt;li&gt;CSV to YAML&lt;/li&gt;
+            &lt;li&gt;CSV to HTML&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;XML Tools&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;XML Formatter&lt;/li&gt;
+            &lt;li&gt;XML Minify&lt;/li&gt;
+            &lt;li&gt;XML Viewer&lt;/li&gt;
+            &lt;li&gt;XML Pretty Print&lt;/li&gt;
+            &lt;li&gt;XML Validator&lt;/li&gt;
+            &lt;li&gt;XML Editor&lt;/li&gt;
+            &lt;li&gt;XML Parser&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;YAML Tools&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;YAML Validator&lt;/li&gt;
+            &lt;li&gt;YAML Viewer&lt;/li&gt;
+            &lt;li&gt;YAML Formatter&lt;/li&gt;
+            &lt;li&gt;YAML Parser&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;HTML Tools&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;HTML Formatter&lt;/li&gt;
+            &lt;li&gt;HTML Pretty Print&lt;/li&gt;
+            &lt;li&gt;HTML Validator&lt;/li&gt;
+            &lt;li&gt;HTML Viewer&lt;/li&gt;
+            &lt;li&gt;HTML Editor&lt;/li&gt;
+            &lt;li&gt;JSBeautifier&lt;/li&gt;
+            &lt;li&gt;HTML Minify&lt;/li&gt;
+            &lt;li&gt;JADE to HTML&lt;/li&gt;
+            &lt;li&gt;HTML to JADE&lt;/li&gt;
+            &lt;li&gt;EXCEL to HTML&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;Code Escaping Tools&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;HTML Escape/Unescape&lt;/li&gt;
+            &lt;li&gt;XML Escape/Unescape&lt;/li&gt;
+            &lt;li&gt;Javascript Escape/Unescape&lt;/li&gt;
+            &lt;li&gt;Java Escape/Unescape&lt;/li&gt;
+            &lt;li&gt;.Net Escape/Unescape&lt;/li&gt;
+            &lt;li&gt;JSON Escape/Unescape&lt;/li&gt;
+            &lt;li&gt;CSV Escape/Unescape&lt;/li&gt;
+            &lt;li&gt;SQL Escape/Unescape&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;JavaScript Tools&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;JSBeautifier&lt;/li&gt;
+            &lt;li&gt;Javascript Pretty Print&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;JSON5 Tools&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;JSON5 Formatter&lt;/li&gt;
+            &lt;li&gt;JSON5 Validator&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;URL Encoding Tools&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;URL Encode/Decode&lt;/li&gt;
+            &lt;li&gt;JSON URL Encode/Decode&lt;/li&gt;
+            &lt;li&gt;XML URL Encode/Decode&lt;/li&gt;
+            &lt;li&gt;YAML URL Encode/Decode&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;Base64 Encoders&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Base64 to JSON / JSON to Base64&lt;/li&gt;
+            &lt;li&gt;Base64 to XML / XML to Base64&lt;/li&gt;
+            &lt;li&gt;Base64 to YAML / YAML to Base64&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;CSS Converters&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Minify CSS&lt;/li&gt;
+            &lt;li&gt;CSS Beautifier&lt;/li&gt;
+            &lt;li&gt;CSS Formatter&lt;/li&gt;
+            &lt;li&gt;CSS Pretty Print&lt;/li&gt;
+            &lt;li&gt;CSS to LESS&lt;/li&gt;
+            &lt;li&gt;CSS to SCSS&lt;/li&gt;
+            &lt;li&gt;CSS to SASS&lt;/li&gt;
+            &lt;li&gt;CSS to Stylus&lt;/li&gt;
+            &lt;li&gt;Stylus to CSS&lt;/li&gt;
+            &lt;li&gt;Stylus to LESS&lt;/li&gt;
+            &lt;li&gt;Stylus to SCSS&lt;/li&gt;
+            &lt;li&gt;Stylus to SASS&lt;/li&gt;
+            &lt;li&gt;LESS to CSS&lt;/li&gt;
+            &lt;li&gt;LESS to SCSS&lt;/li&gt;
+            &lt;li&gt;LESS to SASS&lt;/li&gt;
+            &lt;li&gt;LESS to Stylus&lt;/li&gt;
+            &lt;li&gt;SCSS to CSS&lt;/li&gt;
+            &lt;li&gt;SCSS to LESS&lt;/li&gt;
+            &lt;li&gt;SCSS to SASS&lt;/li&gt;
+            &lt;li&gt;SCSS to Stylus&lt;/li&gt;
+            &lt;li&gt;SASS to CSS&lt;/li&gt;
+            &lt;li&gt;SASS to LESS&lt;/li&gt;
+            &lt;li&gt;SASS to SCSS&lt;/li&gt;
+            &lt;li&gt;SASS to Stylus&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;Data to Class - :star: My Personal Favorites!&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;JSON to Java&lt;/li&gt;
+            &lt;li&gt;JSON to Python :star:&lt;/li&gt;
+            &lt;li&gt;JSON to Objective-C&lt;/li&gt;
+            &lt;li&gt;JSON to JSON Schema&lt;/li&gt;
+            &lt;li&gt;JSON to Swift&lt;/li&gt;
+            &lt;li&gt;JSON to C#&lt;/li&gt;
+            &lt;li&gt;JSON to Go&lt;/li&gt;
+            &lt;li&gt;JSON to Rust&lt;/li&gt;
+            &lt;li&gt;JSON to Crystal&lt;/li&gt;
+            &lt;li&gt;JSON to C++&lt;/li&gt;
+            &lt;li&gt;JSON to TypeScript :star:&lt;/li&gt;
+            &lt;li&gt;JSON to JavaScript Proptypes&lt;/li&gt;
+            &lt;li&gt;JSON to Flow&lt;/li&gt;
+            &lt;li&gt;JSON to Kotlin&lt;/li&gt;
+            &lt;li&gt;JSON to Elm&lt;/li&gt;
+            &lt;li&gt;JSON to Ruby&lt;/li&gt;
+            &lt;li&gt;JSON to Dart&lt;/li&gt;
+            &lt;li&gt;JSON to Pike&lt;/li&gt;
+            &lt;li&gt;JSON to Haskell&lt;/li&gt;
+            &lt;li&gt;XML to Java&lt;/li&gt;
+            &lt;li&gt;XML to Python&lt;/li&gt;
+            &lt;li&gt;XML to Objective-C&lt;/li&gt;
+            &lt;li&gt;XML to JSON Schema&lt;/li&gt;
+            &lt;li&gt;XML to Swift&lt;/li&gt;
+            &lt;li&gt;XML to C#&lt;/li&gt;
+            &lt;li&gt;XML to Go&lt;/li&gt;
+            &lt;li&gt;XML to Rust&lt;/li&gt;
+            &lt;li&gt;XML to Crystal&lt;/li&gt;
+            &lt;li&gt;XML to C++&lt;/li&gt;
+            &lt;li&gt;XML to TypeScript&lt;/li&gt;
+            &lt;li&gt;XML to JavaScript Proptypes&lt;/li&gt;
+            &lt;li&gt;XML to Flow&lt;/li&gt;
+            &lt;li&gt;XML to Kotlin&lt;/li&gt;
+            &lt;li&gt;XML to Elm&lt;/li&gt;
+            &lt;li&gt;XML to Ruby&lt;/li&gt;
+            &lt;li&gt;XML to Dart&lt;/li&gt;
+            &lt;li&gt;XML to Pike&lt;/li&gt;
+            &lt;li&gt;XML to Haskell&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;Online Formatters&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;JSON Formatter&lt;/li&gt;
+            &lt;li&gt;JSON5 Formatter&lt;/li&gt;
+            &lt;li&gt;XML Formatter&lt;/li&gt;
+            &lt;li&gt;HTML Formatter&lt;/li&gt;
+            &lt;li&gt;YAML Formatter&lt;/li&gt;
+            &lt;li&gt;JavaScript Formatter&lt;/li&gt;
+            &lt;li&gt;CSS Formatter&lt;/li&gt;
+            &lt;li&gt;C# Formatter&lt;/li&gt;
+            &lt;li&gt;Java Formatter&lt;/li&gt;
+            &lt;li&gt;GraphQL Formatter&lt;/li&gt;
+            &lt;li&gt;Angular Formatter&lt;/li&gt;
+            &lt;li&gt;Vue JS Formatter&lt;/li&gt;
+            &lt;li&gt;LESS Formatter&lt;/li&gt;
+            &lt;li&gt;SCSS Formatter&lt;/li&gt;
+            &lt;li&gt;TypeScript Formatter&lt;/li&gt;
+            &lt;li&gt;Babel Formatter&lt;/li&gt;
+            &lt;li&gt;Markdown Formatter&lt;/li&gt;
+            &lt;li&gt;MDX Formatter&lt;/li&gt;
+            &lt;li&gt;Glimmer JS Formatter&lt;/li&gt;
+            &lt;li&gt;LWC Formatter&lt;/li&gt;
+            &lt;li&gt;PHP Formatter&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;dl&gt;
+    &lt;dt&gt;&lt;em&gt;&lt;strong&gt;FAVORITES:&lt;/strong&gt;&lt;/em&gt;&lt;/dt&gt;
+    &lt;dt&gt;:star: &lt;a href=&quot;https://jsonformatter.org/json-to-typescript#Sample&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JSON to TypeScript&lt;/a&gt;&lt;/dt&gt;
+    &lt;dt&gt;:star: &lt;a href=&quot;https://jsonformatter.org/json-to-python#Sample&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JSON to Python&lt;/a&gt;&lt;/dt&gt;
+    &lt;dd&gt;I use these tools often when designing programs/interfaces that consume JSON REST API responses. Utilizing these tools
+allow you to transform JSON objects to TypeScript Interfaces or Python classes, respectively. You may need to make a few tweaks,
+but they will still save you a ton of time.&lt;/dd&gt;
+  &lt;/dl&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;toolsfromdev&quot;&gt;&lt;a href=&quot;https://tools.fromdev.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Tools.FromDev&lt;/a&gt;&lt;/h3&gt;
+
+&lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
+    &lt;a href=&quot;https://tools.fromdev.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
+        &lt;img src=&quot;/images/other-images/toolsfromdevscreenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;https://tools.fromdev.com/&quot; title=&quot;Tools.FromDev&quot; loading=&quot;lazy&quot; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption&gt;
+        Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tools.fromdev.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Tools.FromDev&lt;/a&gt; is a great, and super easy to
+navigate, site with a variety of useful tools. It is also open source on
+&lt;a href=&quot;https://github.com/fromdev/tools&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;GitHub&lt;/a&gt;, so check it out, fork it, and
+contribute!&lt;/p&gt;
+
+&lt;h4 id=&quot;what-youll-find-on-toolsfromdev&quot;&gt;What you’ll find on &lt;a href=&quot;https://tools.fromdev.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Tools.FromDev&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;While there are many tools on &lt;a href=&quot;https://tools.fromdev.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Tools.FromDev&lt;/a&gt;, I am
+going to list the ones I believe to be the most useful, but feel free to check
+them all out.&lt;/p&gt;
+
+&lt;div class=&quot;tool-list&quot;&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;String Utility Tools&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;
+                HTML, JavaScript, and XML Escape Tools - Some characters have special
+                meaning in HTML, JavaScript, and XML. Use this tool to &quot;escape&quot; those
+                characters in order to use them within their respective languages.
+            &lt;/li&gt;
+            &lt;li&gt;
+                URL Encode | Decode - Similar to the escape tools, this tool transforms
+                URLs into strings that won&apos;t confuse a server.
+            &lt;/li&gt;
+            &lt;li&gt;
+                Change Case - Change the case of strings to and from lowercase, uppercase,
+                and camel-case.
+            &lt;/li&gt;
+            &lt;li&gt;
+                Remove Stopwords - Remove stopwords to assist with machine learning and
+                natural language processing.
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;SEO&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Title Maker - Blog Article Title Generator Tool.&lt;/li&gt;
+            &lt;li&gt;Meta Tags - Meta Tag Generator Tool.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;Converters&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;CSV / JSON :star:&lt;/li&gt;
+            &lt;li&gt;CSV / HTML&lt;/li&gt;
+            &lt;li&gt;HTML Table / JSON&lt;/li&gt;
+            &lt;li&gt;XML / JSON&lt;/li&gt;
+            &lt;li&gt;JSON / Property&lt;/li&gt;
+            &lt;li&gt;
+                HTML Link Extractor - Want to extract all links from a webpage, but don&apos;t
+                have time to do it programatically? Try this out!
+            &lt;/li&gt;
+            &lt;li&gt;Create HTML Link - Generate a proper HTML link tag with data.&lt;/li&gt;
+            &lt;li&gt;
+                Text to HTML List - Generate a properly formatted list for use in HTML
+                markup.
+            &lt;/li&gt;
+            &lt;li&gt;Image to Base-64&lt;/li&gt;
+            &lt;li&gt;HEIC to JPG, JPEG, PNG or GIF&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;h5 style=&quot;display: inline&quot;&gt;
+                &lt;b&gt;Code Generators&lt;/b&gt;
+            &lt;/h5&gt;
+        &lt;/summary&gt;
+        &lt;ul&gt;
+            &lt;li&gt;CSS Button Generator&lt;/li&gt;
+            &lt;li&gt;Bar Code Generator&lt;/li&gt;
+            &lt;li&gt;Cool Team Name Generator - Just for fun!&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;dl&gt;
+    &lt;dt&gt;&lt;em&gt;&lt;strong&gt;FAVORITE:&lt;/strong&gt;&lt;/em&gt;&lt;/dt&gt;
+    &lt;dt&gt;:star: &lt;a href=&quot;https://tools.fromdev.com/csv-to-json-converter.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;CSV / JSON Converter&lt;/a&gt;&lt;/dt&gt;
+    &lt;dd&gt;If you’re given test/mock data in CSV format, but you need it to be in JSON format to truly utilize/test it, then look no further than this converter!&lt;/dd&gt;
+  &lt;/dl&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;dbdiagramio&quot;&gt;&lt;a href=&quot;https://dbdiagram.io/home&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;dbdiagram.io&lt;/a&gt;&lt;/h3&gt;
+
+&lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
+    &lt;a href=&quot;https://dbdiagram.io/home&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
+        &lt;img src=&quot;/images/other-images/dbdiagramio-screenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;Screenshot image generated by Screenshot Rocks&quot; loading=&quot;lazy&quot; title=&quot;DBDiagram.io&quot; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption&gt;
+        Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Before a coworker showed me this site, I used
+&lt;a href=&quot;https://mermaid-js.github.io/mermaid-live-editor/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;MermaidJS&lt;/a&gt;
+or &lt;a href=&quot;https://plantuml.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;PlantUML&lt;/a&gt; to design database diagrams. However, this site not only allows you to export your
+diagram as an image or pdf, but it also allows you to integrate with your database and generate sql!&lt;/p&gt;
+
+&lt;h3 id=&quot;screenshotrocks&quot;&gt;&lt;a href=&quot;https://screenshot.rocks/app&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;ScreenShot.Rocks&lt;/a&gt;&lt;/h3&gt;
+
+&lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
+    &lt;a href=&quot;https://screenshot.rocks/app&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
+        &lt;img src=&quot;/images/other-images/screenshot-rocks.png&quot; class=&quot;kg-image&quot; alt=&quot;https://screenshot.rocks/app&quot; loading=&quot;lazy&quot; title=&quot;Screenshot.Rocks&quot; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption&gt;
+        Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://screenshot.rocks/app&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;ScreenShot.Rocks&lt;/a&gt; is a great online tool, especially for bloggers. I actually used
+ScreenShot.Rocks in this post, as you may have noticed from the image captions. All you have to do is enter the URL of
+the site you wish to create a screenshot for, and ScreenShot.Rocks does the rest. If you’d like, you can even edit the style,
+browser, and media type used to display the screenshot.&lt;/p&gt;
+
+&lt;h3 id=&quot;x-team-radio&quot;&gt;&lt;a href=&quot;https://radio.x-team.com/?utm_source=xweekly&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;X-Team Radio&lt;/a&gt;&lt;/h3&gt;
+
+&lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
+    &lt;a href=&quot;https://radio.x-team.com/?utm_source=xweekly&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
+        &lt;img src=&quot;/images/other-images/x-team-radio.png&quot; class=&quot;kg-image&quot; alt=&quot;https://radio.x-team.com/?utm_source=xweekly&quot; loading=&quot;lazy&quot; title=&quot;X-Team Radio&quot; /&gt;
+    &lt;/a&gt;
+    &lt;figcaption&gt;
+        Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://radio.x-team.com/?utm_source=xweekly&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;X-Team Radio&lt;/a&gt; is a great free online radio catered towards programmers.
+&lt;a href=&quot;https://x-team.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;X-Team&lt;/a&gt; is a fully remote software development company. They publish a great weekly newsletter and also
+provide this awesome radio! You can even change the theme (My fav is the Witcher theme) and chat with other listeners if you like.
+Oh, and yes, I do consider this to be a productivity tool, because how better to get into the zone and get some work done than to listen to some awesome tunes?&lt;/p&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
+
+&lt;p&gt;So there you have it; Five great development tool sites. Are there any other tools that you’d like to see on this list?
+Any comments, concerns, suggestions, or requests? Please leave a comment below, or feel free to contact me via one of the links under my “About Me.”
+Thanks for reading, and stay tuned; There is more where this came from!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Dec 2021 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/tools/2021/12/06/software-tools.html</link>
+        <guid isPermaLink="true">http://localhost:4000/tools/2021/12/06/software-tools.html</guid>
+        
+        <category>tools</category>
+        
+        <category>software</category>
+        
+        <category>recommendations</category>
+        
+        <category>web-tools</category>
+        
+        <category>database</category>
+        
+        <category>sql</category>
+        
+        <category>javascript</category>
+        
+        <category>productivity</category>
+        
+        
+        <category>Tools</category>
+        
+      </item>
+    
+  </channel>
+</rss>
