@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Helpful Dev Tools - Part One
+title: 5 Great Free Software Development Tools
 categories: Tools
 tags: [tools, software, recommendations, web-tools, database, sql, javascript, productivity]
 comments: true
