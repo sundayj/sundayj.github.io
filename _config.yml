@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 google_site_verification: googlefaa44c25cb0b8aa8.html
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jlsunday.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_username: JustinSunday13
 github_username:  sundayj
