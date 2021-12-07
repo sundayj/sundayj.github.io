@@ -23,7 +23,7 @@ email: admin@jlsunday.com
 description: >- # this means to ignore newlines until "baseurl:"
   Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!
 
-google_site_verification: googlefaa44c25cb0b8aa8.html
+google_site_verification: ''
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jlsunday.com" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -35,7 +35,7 @@ linkedin_username: justin-sunday
 favicon: "/images/favicon.ico"
 aboutme: ""
 aboutme_photo: "/images/other-images/profile-photo-1352x1098.png"
-google_analytics_key: "" # UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
+google_analytics_key: "G-4Z30BJZ3LK" # UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
 
 
 
