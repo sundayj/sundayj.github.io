@@ -261,10 +261,13 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2021.5)
+      tzinfo (>= 1.0.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8-x64-mingw32)
     unicode-display_width (1.8.0)
+    wdm (0.1.1)
     webrick (1.7.0)
     zeitwerk (2.5.1)
 
@@ -272,7 +275,14 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  gemoji (~> 3.0)
   github-pages (~> 219)
+  jekyll-feed (~> 0.12)
+  jekyll-gist
+  jemoji (~> 0.12.0)
+  tzinfo (~> 1.2)
+  tzinfo-data
+  wdm (~> 0.1.1)
   webrick (~> 1.7)
 
 BUNDLED WITH
