@@ -1,0 +1,251 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: JLSunday
+email: admin@jlsunday.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!
+
+google_site_verification: googlefaa44c25cb0b8aa8.html
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+twitter_username: JustinSunday13
+github_username:  sundayj
+disqus_shortname: jlsunday-com
+linkedin_username: justin-sunday
+
+favicon: "/images/favicon.ico"
+aboutme: ""
+aboutme_photo: "/images/other-images/profile-photo-1352x1098.png"
+google_analytics_key: "" # UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
+
+
+
+disqus:
+  shortname: jlsunday-com
+
+social:
+  name: Justin Sunday
+  links:
+    - https://twitter.com/JustinSunday13
+    - https://www.linkedin.com/in/justin-sunday/
+    - https://github.com/sundayj/
+
+# Build settings
+markdown: kramdown
+#highlighter: pygments
+kramdown:
+        input: GFM
+        syntax_highlighter: rouge
+        gfm_emojis: true
+paginate: 5
+excerpt_separator: <!-- more -->
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+### Site setting:
+ShowContactInfo: "True" # Personal Info (twitter,GitHub,email) can be seen on aboutme-sidebar, this info only shown where ShowContactInfo == True
+default_column: "two" # blog style: two columns, if default_column != "two", you will see a one column blog.
+default_locale: "en" # blog sidebar language set, only include: English (en), Chinese (cn), Japanese (jp), Polish (pl), Korean (kr),  Russian (ru), Turkish (tr), and Indonesian (id).
+
+locales:
+    en:
+      Aboutme: "About Me"
+      Archives: "Archives"
+      Blogroll: "Blogroll"
+      Categories: "Categories"
+      Copyright_Notice: "Copyright Notice"
+      Recent_Posts: "Recent Posts"
+      Tags: "Tags"
+      Previous: "Older"
+      Next: "Newer"
+      PostedInCategories: "Posted in"
+      Taggedwith: "and tagged"
+      PostDate: "on "
+      Google_search: "Site Search"
+      Home: "Home"
+      About: "About"
+      Guestbook: "Guestbook"
+      RSS-Feed: "RSS-Feed"
+    cn:
+      Aboutme: "关于我"
+      Archives: "存档"
+      Blogroll: "良师益友"        
+      Categories: "分类目录"    
+      Copyright_Notice: "版权声明"
+      Recent_Posts: "近期文章"
+      Tags: "标签" 
+      Previous: "前一页"
+      Next: "后一页"
+      PostedInCategories: "目录:"   
+      Taggedwith: "| 标签:"
+      PostDate: "| 发表时间: "
+      Google_search: "站内搜索"
+      Home: "首页"
+      About: "关于"
+      Guestbook: "留言"
+      RSS-Feed: "订阅"
+    jp:
+      Aboutme: "著者"
+      Archives: "アーカイブ"
+      Blogroll: "ブログロール"
+      Categories: "カテゴリー"
+      Copyright_Notice: "著作権表示"
+      Recent_Posts: "最近の投稿"
+      Tags: "タグ"
+      Previous: "前の記事"
+      Next: "次の記事"
+      PostedInCategories: "カテゴリー："
+      Taggedwith: "| タグ："
+      PostDate: "| 投稿日時: "
+      Google_search: "サイト内検索"
+      Home: "ホーム"
+      About: "このブログについて"
+      Guestbook: "メッセージ"
+      RSS-Feed: "購読"
+    pl:
+      Aboutme: "O mnie"
+      Archives: "Archiwum"
+      Blogroll: "Odnośniki"
+      Categories: "Kategorie"
+      Copyright_Notice: "Prawa autorskie"
+      Recent_Posts: "Najnowsze wpisy"
+      Tags: "Tagi"
+      Previous: "Starsze"
+      Next: "Nowsze"
+      PostedInCategories: "Kategoria"
+      Taggedwith: "tagi"
+      PostDate: "on "
+      Google_search: "Wyszukiwarka"
+      Home: "Strona główna"
+      About: "O mnie"
+      Guestbook: "Księga gości"
+      RSS-Feed: "Subskrypcja"
+    kr:
+      Aboutme: "저자 소개"
+      Archives: "모든 게시물"
+      Blogroll: "참조 링크"
+      Categories: "카테고리"
+      Copyright_Notice: "저작권"
+      Recent_Posts: "최근 게시물"
+      Tags: "태그"
+      Previous: "이전 게시물"
+      Next: "다음 게시물"
+      PostedInCategories: "카테고리: "
+      Taggedwith: "태그: "
+      PostDate: "작성일: "
+      Google_search: "게시물 검색"
+      Home: "홈"
+      About: "소개"
+      Guestbook: "방명록"
+      RSS-Feed: "구독하기"
+    ru:
+      Aboutme: "Обо мне" # = 'About me'
+      Archives: "Архив"
+      Blogroll: "Ссылки" # = 'Links'
+      Categories: "Разделы"
+      Copyright_Notice: "Авторские права"
+      Recent_Posts: "Свежие посты"
+      Tags: "Теги"
+      Previous: "Предыдущий пост"          # = 'Previous post'
+      Next: "Следующий пост"               # = 'Next post'
+      PostedInCategories: "Опубликовано в" # = 'Posted in'
+      Taggedwith: "с тегами"
+      PostDate: ""
+      Google_search: "Поиск на Google"
+      Home: "Домой"
+      About: "О блоге"            # = 'About blog'
+      Guestbook: "Гостевая книга"
+      RSS-Feed: "Подписаться"
+    tr:
+      Aboutme: "Hakkımda"
+      Archives: "Arşivler"
+      Blogroll: "Bağlantılar"
+      Categories: "Kategoriler"
+      Copyright_Notice: "Telif Hakkı Bildirimi"
+      Recent_Posts: "Son Yazılar"
+      Tags: "Etiketler"
+      Previous: "Daha Eski"
+      Next: "Daha Yeni"
+      PostedInCategories: "Şuraya gönderildi:"
+      Taggedwith: "ve şöyle etiketlendi:"
+      PostDate: "şu tarihte:"
+      Google_search: "Sitede Ara"
+      Home: "Anasayfa"
+      About: "Hakkında"
+      Guestbook: "Konuk Defteri"
+      RSS-Feed: "Abone Ol"
+    id:
+      Aboutme: "Tentang Saya"
+      Archives: "Arsip"
+      Blogroll: "Blog teman"
+      Categories: "Kategori"
+      Copyright_Notice: "Legal Formal"
+      Recent_Posts: "Post Terkini"
+      Tags: "Tag"
+      Previous: "Lebih lama"
+      Next: "Lebih baru"
+      PostedInCategories: "Diposting di"
+      Taggedwith: "dan ditag"
+      PostDate: "pada "
+      Google_search: "Pencarian Situs"
+      Home: "Beranda"
+      About: "Tentang"
+      Guestbook: "Buku tamu"
+      RSS-Feed: "Langganan"
+
+### Blog-roll info, only name can be shown on the page.
+
+Blogroll:
+     - name: Joel on Software
+       href: https://www.joelonsoftware.com/
+       title: Joel on Software
+     - name: Kevin Risden's Blog
+       href: https://risdenk.github.io/
+       title: Kevin Risden's Blog
+     - name: X-Team
+       href: https://x-team.com/blog/
+       title: X-Team
+
+
+
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

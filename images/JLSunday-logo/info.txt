@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: IBMPlexMono-Text
+font link: https://fonts.google.com/specimen/IBM+Plex+Mono
+font author: Mike Abbink
+font author site: https://www.mikeabbink.com/
+
+
+icon designer: Darrin Loeliger
+icon designer link: /MrMuma
+        
+
+fontColor: {"hex":"#11D5CB"}
+bgColor: {"hex":"transparent"}
+iconColor: {"hex":"#11D5CB"}
+
+      
