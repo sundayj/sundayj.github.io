@@ -109,3 +109,6 @@ In case you haven't noticed yet, most of the tutorials and articles you read onl
 - [Pluralsight](https://www.pluralsight.com/) - Can be expensive, but there is a free trial. Excellent and professional video tutorials on a range of tech topics. One of my go-tos.
 - Advent of Code
 - 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMzg0MzAwOTg4XX0=
+-->
