@@ -275,7 +275,6 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  gemoji (~> 3.0)
   github-pages (~> 219)
   jekyll-feed (~> 0.12)
   jekyll-gist

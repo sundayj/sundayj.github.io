@@ -2,7 +2,7 @@
 layout: post
 title: 5 Great Free Software Development Tools
 categories: Tools
-tags: [tools, software, recommendations, web-tools, database, sql, javascript, productivity]
+tags: [tools, software, recommendations, web-tools, database, sql, javascript, productivity, code-converters, code-generators]
 comments: true
 summary: This is part one of a series of posts in which I will be sharing my favorite Development tools. Part one focuses on 5 dev tools that can be found and utilized online.
 ---

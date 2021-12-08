@@ -38,7 +38,6 @@ aboutme_photo: "/images/other-images/profile-photo-1352x1098.png"
 google_analytics_key: "G-4Z30BJZ3LK" # UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
 
 
-
 disqus:
   shortname: jlsunday-com
 
@@ -61,6 +60,7 @@ excerpt_separator: <!-- more -->
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jemoji
 
 ### Site setting:
 ShowContactInfo: "True" # Personal Info (twitter,GitHub,email) can be seen on aboutme-sidebar, this info only shown where ShowContactInfo == True
