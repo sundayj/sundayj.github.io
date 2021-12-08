@@ -5,8 +5,8 @@
     <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Dec 2021 20:58:20 -0500</pubDate>
-    <lastBuildDate>Tue, 07 Dec 2021 20:58:20 -0500</lastBuildDate>
+    <pubDate>Wed, 08 Dec 2021 09:51:55 -0500</pubDate>
+    <lastBuildDate>Wed, 08 Dec 2021 09:51:55 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -497,15 +497,17 @@ Thanks for reading, and stay tuned; There is more where this came from!&lt;/p&gt
         
         <category>database</category>
         
-        <category>sql</category>
+        <category>SQL</category>
         
-        <category>javascript</category>
+        <category>JavaScript</category>
         
         <category>productivity</category>
         
         <category>code-converters</category>
         
         <category>code-generators</category>
+        
+        <category>list</category>
         
         
         <category>Tools</category>
