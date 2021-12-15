@@ -221,7 +221,10 @@ Blogroll:
        title: Joel on Software
      - name: Kevin Risden's Blog
        href: https://risdenk.github.io/
-       title: Kevin Risden's Blog
+       title: Blog and Tutorials by Kevin Risden
+     - name: Flavio Copes
+       href: https://flaviocopes.com/
+       title: Blog and Tutorials by Flavio Copes
      - name: X-Team
        href: https://x-team.com/blog/
        title: X-Team

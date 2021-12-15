@@ -1,0 +1,5 @@
+- What are Snippets?
+- Why you should use snippets
+- Snippets in VSCode
+- Snippets in Webstorm
+- Pros and Cons to Snippet Extensions
