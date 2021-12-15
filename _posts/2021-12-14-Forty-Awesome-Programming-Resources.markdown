@@ -7,14 +7,14 @@ comments: true
 summary: 40 awesome programming resources regarding tools, IDEs, VS Code Extensions, tutorial sites, and newsletters. 
 ---
 
-<figure class="kg-card kg-image-card kg-card-hascaption">
+## Intro
+
+<figure class="kg-card kg-image-card kg-card-hascaption" style="margin-top: 20px;">
         <img src="{{ "/images/other-images/40-awesome-programming-resources-markdown-screenshot.png" | prepend: site.baseurl }}" class="kg-image" alt="40 Awesome Programming Resources Markdown Screenshot" loading="lazy" title="40 Awesome Programming Resources Markdown Screenshot">
     <figcaption>
         A screenshot of this post as a Markdown WIP. Image created by the author.
     </figcaption>
 </figure>
-
-## Intro
 
 First off, I just want to mention that this post, actually, the majority of this site was written in markdown.
 Markdown is extremely useful in reading and writing documentation for source code, taking notes, and even writing websites. I'll have more on Markdown below.
