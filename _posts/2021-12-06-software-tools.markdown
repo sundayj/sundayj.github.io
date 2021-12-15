@@ -8,7 +8,7 @@ summary: This is part one of a series of posts in which I will be sharing my fav
 ---
 
 Welcome to my first blog post! Since the goal of this blog is to provide a
-variety of useful information and resources on Full-Stack development, what
+variety of useful information and resources on Full-Stack development, what 
 better way to start off than with a post on great development tools? Seriously,
 you can't develop great software without great development tools! :sunglasses:
 

@@ -5,8 +5,8 @@
     <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 15 Dec 2021 13:31:54 -0500</pubDate>
-    <lastBuildDate>Wed, 15 Dec 2021 13:31:54 -0500</lastBuildDate>
+    <pubDate>Wed, 15 Dec 2021 15:10:28 -0500</pubDate>
+    <lastBuildDate>Wed, 15 Dec 2021 15:10:28 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -300,7 +300,7 @@ Thanks for reading, and stay tuned; There is more where this came from!&lt;/p&gt
       <item>
         <title>5 Great Free Software Development Tools</title>
         <description>&lt;p&gt;Welcome to my first blog post! Since the goal of this blog is to provide a
-variety of useful information and resources on Full-Stack development, what
+variety of useful information and resources on Full-Stack development, what 
 better way to start off than with a post on great development tools? Seriously,
 you can’t develop great software without great development tools! :sunglasses:&lt;/p&gt;
 
