@@ -33,7 +33,7 @@
             {{ post.summary }}
             <p style="text-align: right"><a href="{{ post.url | prepend: site.baseurl }}">Read more</a></p>
             {% elsif post.content contains site.excerpt_separator %}
-            {{ post.excerpt }}
+            {{ post.summary }}
             <p style="text-align: right"><a href="{{ post.url | prepend: site.baseurl }}">Read more</a></p>
             {% else %}
             {{ post.content }}
