@@ -32,12 +32,11 @@ github_username:  sundayj
 disqus_shortname: jlsunday-com
 linkedin_username: justin-sunday
 
-favicon: "favicon.ico"
+favicon: "/images/favicon.ico"
 aboutme: ""
 aboutme_photo: "/images/other-images/profile-photo-1352x1098.png"
 google_analytics_key: "G-4Z30BJZ3LK" # UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
 
-show_drafts: false
 
 disqus:
   shortname: jlsunday-com

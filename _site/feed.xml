@@ -3,10 +3,10 @@
   <channel>
     <title>JLSunday</title>
     <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
-    <link>https://jlsunday.com/</link>
-    <atom:link href="https://jlsunday.com/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 16 Dec 2021 22:14:58 -0500</pubDate>
-    <lastBuildDate>Thu, 16 Dec 2021 22:14:58 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 16 Dec 2021 09:34:02 -0500</pubDate>
+    <lastBuildDate>Thu, 16 Dec 2021 09:34:02 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -253,8 +253,8 @@ Thanks for reading, and stay tuned; There is more where this came from!&lt;/p&gt
 &lt;p&gt;See you soon!&lt;/p&gt;
 </description>
         <pubDate>Tue, 14 Dec 2021 00:00:00 -0500</pubDate>
-        <link>https://jlsunday.com/resources/2021/12/14/Forty-Awesome-Programming-Resources.html</link>
-        <guid isPermaLink="true">https://jlsunday.com/resources/2021/12/14/Forty-Awesome-Programming-Resources.html</guid>
+        <link>http://localhost:4000/resources/2021/12/14/Forty-Awesome-Programming-Resources.html</link>
+        <guid isPermaLink="true">http://localhost:4000/resources/2021/12/14/Forty-Awesome-Programming-Resources.html</guid>
         
         <category>tools</category>
         
@@ -647,7 +647,7 @@ them all out.&lt;/p&gt;
             &lt;/li&gt;
             &lt;li&gt;
                 URL Encode | Decode - Similar to the escape tools, this tool transforms
-                URLs into strings that won't confuse a server.
+                URLs into strings that won&apos;t confuse a server.
             &lt;/li&gt;
             &lt;li&gt;
                 Change Case - Change the case of strings to and from lowercase, uppercase,
@@ -683,7 +683,7 @@ them all out.&lt;/p&gt;
             &lt;li&gt;XML / JSON&lt;/li&gt;
             &lt;li&gt;JSON / Property&lt;/li&gt;
             &lt;li&gt;
-                HTML Link Extractor - Want to extract all links from a webpage, but don't
+                HTML Link Extractor - Want to extract all links from a webpage, but don&apos;t
                 have time to do it programatically? Try this out!
             &lt;/li&gt;
             &lt;li&gt;Create HTML Link - Generate a proper HTML link tag with data.&lt;/li&gt;
@@ -772,8 +772,8 @@ Any comments, concerns, suggestions, or requests? Please leave a comment below, 
 Thanks for reading, and stay tuned; There is more where this came from!&lt;/p&gt;
 </description>
         <pubDate>Mon, 06 Dec 2021 00:00:00 -0500</pubDate>
-        <link>https://jlsunday.com/tools/2021/12/06/software-tools.html</link>
-        <guid isPermaLink="true">https://jlsunday.com/tools/2021/12/06/software-tools.html</guid>
+        <link>http://localhost:4000/tools/2021/12/06/software-tools.html</link>
+        <guid isPermaLink="true">http://localhost:4000/tools/2021/12/06/software-tools.html</guid>
         
         <category>tools</category>
         
