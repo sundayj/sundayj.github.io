@@ -18,8 +18,8 @@
 <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
 <meta name="keywords" content="{{ site.keywords }}">
-
-<link rel="icon" href="{{site.favicon | prepend:site.baseurl}}">
+<!-- | prepend:site.baseurl-->
+<link rel="icon" href="{{site.favicon}}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl  }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | prepend: site.baseurl }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | prepend: site.baseurl }}">
@@ -32,7 +32,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-{% include google_search.js %}
+{% include search-lunar.js %}
 {% include google_analytics.js %}
 {% include ban.js %}
 
