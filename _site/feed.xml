@@ -5,8 +5,8 @@
     <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 16 Dec 2021 09:34:02 -0500</pubDate>
-    <lastBuildDate>Thu, 16 Dec 2021 09:34:02 -0500</lastBuildDate>
+    <pubDate>Wed, 29 Dec 2021 12:50:21 -0500</pubDate>
+    <lastBuildDate>Wed, 29 Dec 2021 12:50:21 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -14,11 +14,18 @@
         <description>&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot; style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img src=&quot;/images/other-images/40-awesome-programming-resources-markdown-screenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; loading=&quot;lazy&quot; title=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; /&gt;
+        &lt;img alt=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; src=&quot;/images/other-images/40-awesome-programming-resources-markdown-screenshot.png&quot; class=&quot;kg-image&quot; loading=&quot;lazy&quot; title=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of this post as a Markdown WIP. Image created by the author.
     &lt;/figcaption&gt;
 &lt;/figure&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;&lt;strong&gt;UPDATED 2021/12/29&lt;/strong&gt;&lt;/em&gt;&lt;br /&gt;
+Added “Best practices for writing code comments” to “General”.&lt;br /&gt;
+Added Stack Overflow’s newsletter, &lt;em&gt;The Overflow&lt;/em&gt;, to “Newsletters”.&lt;br /&gt;
+Appended info to the end of “My Newsletter” in “Newsletters”.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;First off, I just want to mention that this post, actually, the majority of this site was written in markdown.
 Markdown is extremely useful in reading and writing documentation for source code, taking notes, and even writing websites. I’ll have more on Markdown below.&lt;/p&gt;
@@ -185,6 +192,12 @@ Sure, it’s nice to know, especially if you just need to do a quick pull, but i
 
 &lt;h3 id=&quot;general&quot;&gt;General&lt;/h3&gt;
 &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Best practices for writing code comments&lt;/a&gt; :star: :star: :star:
+    &lt;ul&gt;
+      &lt;li&gt;I personally do my best to follow these guidelines, and I can’t recommend enough that you strive to do the same. Good comments save so much development time and prevent a lot of frustration.&lt;/li&gt;
+      &lt;li&gt;Comments help with type hinting in IDEs, tracking down usages, and they help devs understand what was going through your mind and why you made the choices you did.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.freecodecamp.org/news/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;FreeCodeCamp&lt;/a&gt; :star:
     &lt;ul&gt;
       &lt;li&gt;A great general resource for free tutorials, articles, and news for all things related to coding and programming. I recommend signing up for their newsletter.&lt;/li&gt;
@@ -219,10 +232,11 @@ Yes, yes, I know… Sometimes our mailboxes can get cluttered with junk or stuff
 seemed like a good idea at the time. However, even if you delete 90% of the emails you receive from these sources, then you actually
 occasionally open one of them on a whim one day, I can pretty much guarantee you won’t regret it, and you will find something new and cool.&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;X-Team’s Newsletter - A weekly email that contains links to cool repos, top stories regarding tech, some of their own tutorials and articles, as well as a link to their awesome radio. Sign up &lt;a href=&quot;https://x-team.com/blog/#subscribe&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Free Code Camp’s Newsletter - A weekly email with at least 5 links to great tutorials, interviews, and tech news. Sign up &lt;a href=&quot;https://www.freecodecamp.org/email-sign-up/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;X-Team’s Newsletter :star: - A weekly email that contains links to cool repos, top stories regarding tech, some of their own tutorials and articles, as well as a link to their awesome radio. Sign up &lt;a href=&quot;https://x-team.com/blog/#subscribe&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Free Code Camp’s Newsletter :star: - A weekly email with at least 5 links to great tutorials, interviews, and tech news. Sign up &lt;a href=&quot;https://www.freecodecamp.org/email-sign-up/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Stack Overflow’s Newsletter, &lt;a href=&quot;https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Overflow&lt;/a&gt; - From their site description, “A newsletter by developers, for developers, curated by Cassidy Williams and the Stack Overflow team. Every week, we’ll share a collection of great questions from our community, news and articles from our blog, and awesome links from around the web.”&lt;/li&gt;
   &lt;li&gt;PyCoder’s Weekly Newsletter - A weekly Python specific newsletter. Each email contains articles, Python community announcements, popular discussions on social media, Python job listings, tutorials, repos, and more! Sign up &lt;a href=&quot;https://pycoders.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;My Newsletter - …Coming Soon! Until then, you can subscribe to my RSS feed with your favorite RSS feed aggregator, Outlook, or Chrome extension. My favorite RSS Feed reader is &lt;a href=&quot;https://nodetics.com/feedbro/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;FeedBro&lt;/a&gt;. Check it out!&lt;/li&gt;
+  &lt;li&gt;My Newsletter :star: :star: :star: :wink: - …Coming Soon! Until then, you can subscribe to my RSS feed with your favorite RSS feed aggregator, Outlook, or Chrome extension. My favorite RSS Feed reader is &lt;a href=&quot;https://nodetics.com/feedbro/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;FeedBro&lt;/a&gt;. Check it out! Many email clients also allow you to add RSS feeds to your inbox list (Such as Outlook).&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h2&gt;
@@ -245,6 +259,7 @@ Thanks for reading, and stay tuned; There is more where this came from!&lt;/p&gt
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;12 Code Games for Fun and Practice&lt;/li&gt;
+  &lt;li&gt;A list of my favorite cheatsheets&lt;/li&gt;
   &lt;li&gt;A Deep Dive into Git Extensions and What Makes it Great&lt;/li&gt;
   &lt;li&gt;A Deep Dive into DBeaver and What Makes it Great&lt;/li&gt;
   &lt;li&gt;How to Create a Python GUI Executable, Complete with an Installer&lt;/li&gt;
@@ -647,7 +662,7 @@ them all out.&lt;/p&gt;
             &lt;/li&gt;
             &lt;li&gt;
                 URL Encode | Decode - Similar to the escape tools, this tool transforms
-                URLs into strings that won&apos;t confuse a server.
+                URLs into strings that won't confuse a server.
             &lt;/li&gt;
             &lt;li&gt;
                 Change Case - Change the case of strings to and from lowercase, uppercase,
@@ -683,7 +698,7 @@ them all out.&lt;/p&gt;
             &lt;li&gt;XML / JSON&lt;/li&gt;
             &lt;li&gt;JSON / Property&lt;/li&gt;
             &lt;li&gt;
-                HTML Link Extractor - Want to extract all links from a webpage, but don&apos;t
+                HTML Link Extractor - Want to extract all links from a webpage, but don't
                 have time to do it programatically? Try this out!
             &lt;/li&gt;
             &lt;li&gt;Create HTML Link - Generate a proper HTML link tag with data.&lt;/li&gt;

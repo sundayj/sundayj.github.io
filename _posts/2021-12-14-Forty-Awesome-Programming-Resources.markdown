@@ -10,11 +10,16 @@ summary: 40 awesome programming resources regarding tools, IDEs, VS Code Extensi
 ## Intro
 
 <figure class="kg-card kg-image-card kg-card-hascaption" style="margin-top: 20px;">
-        <img src="{{ "/images/other-images/40-awesome-programming-resources-markdown-screenshot.png" | prepend: site.baseurl }}" class="kg-image" alt="40 Awesome Programming Resources Markdown Screenshot" loading="lazy" title="40 Awesome Programming Resources Markdown Screenshot">
+        <img alt="40 Awesome Programming Resources Markdown Screenshot" src="{{ '/images/other-images/40-awesome-programming-resources-markdown-screenshot.png' | prepend: site.baseurl }}" class="kg-image" loading="lazy" title="40 Awesome Programming Resources Markdown Screenshot">
     <figcaption>
         A screenshot of this post as a Markdown WIP. Image created by the author.
     </figcaption>
 </figure>
+
+> _**UPDATED 2021/12/29**_<br>
+> Added "Best practices for writing code comments" to "General".<br>
+> Added Stack Overflow's newsletter, _The Overflow_, to "Newsletters".<br>
+> Appended info to the end of "My Newsletter" in "Newsletters".
 
 First off, I just want to mention that this post, actually, the majority of this site was written in markdown.
 Markdown is extremely useful in reading and writing documentation for source code, taking notes, and even writing websites. I'll have more on Markdown below.
@@ -140,6 +145,9 @@ In case you haven't noticed yet, most of the tutorials and articles you read onl
 - [Resources to Learn Git](https://try.github.io/){:target="_blank"}{:rel="noopener noreferrer"} - More Git Learning Resources
 
 ### General
+- [Best practices for writing code comments](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/){:target="_blank"}{:rel="noopener noreferrer"} :star: :star: :star:
+  - I personally do my best to follow these guidelines, and I can't recommend enough that you strive to do the same. Good comments save so much development time and prevent a lot of frustration.
+  - Comments help with type hinting in IDEs, tracking down usages, and they help devs understand what was going through your mind and why you made the choices you did.
 - [FreeCodeCamp](https://www.freecodecamp.org/news/){:target="_blank"}{:rel="noopener noreferrer"} :star:
   - A great general resource for free tutorials, articles, and news for all things related to coding and programming. I recommend signing up for their newsletter.
   - 5,000+ free tutorials.
@@ -163,10 +171,11 @@ via newsletters and other blogs. So, here I am going to list a few newsletters t
 Yes, yes, I know... Sometimes our mailboxes can get cluttered with junk or stuff we signed up for that
 seemed like a good idea at the time. However, even if you delete 90% of the emails you receive from these sources, then you actually
 occasionally open one of them on a whim one day, I can pretty much guarantee you won't regret it, and you will find something new and cool.
-- X-Team's Newsletter - A weekly email that contains links to cool repos, top stories regarding tech, some of their own tutorials and articles, as well as a link to their awesome radio. Sign up [here](https://x-team.com/blog/#subscribe){:target="_blank"}{:rel="noopener noreferrer"}.
-- Free Code Camp's Newsletter - A weekly email with at least 5 links to great tutorials, interviews, and tech news. Sign up [here](https://www.freecodecamp.org/email-sign-up/){:target="_blank"}{:rel="noopener noreferrer"}
+- X-Team's Newsletter :star: - A weekly email that contains links to cool repos, top stories regarding tech, some of their own tutorials and articles, as well as a link to their awesome radio. Sign up [here](https://x-team.com/blog/#subscribe){:target="_blank"}{:rel="noopener noreferrer"}.
+- Free Code Camp's Newsletter :star: - A weekly email with at least 5 links to great tutorials, interviews, and tech news. Sign up [here](https://www.freecodecamp.org/email-sign-up/){:target="_blank"}{:rel="noopener noreferrer"}
+- Stack Overflow's Newsletter, [The Overflow](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/){:target="_blank"}{:rel="noopener noreferrer"} - From their site description, "A newsletter by developers, for developers, curated by Cassidy Williams and the Stack Overflow team. Every week, we’ll share a collection of great questions from our community, news and articles from our blog, and awesome links from around the web."
 - PyCoder's Weekly Newsletter - A weekly Python specific newsletter. Each email contains articles, Python community announcements, popular discussions on social media, Python job listings, tutorials, repos, and more! Sign up [here](https://pycoders.com/){:target="_blank"}{:rel="noopener noreferrer"}
-- My Newsletter - ...Coming Soon! Until then, you can subscribe to my RSS feed with your favorite RSS feed aggregator, Outlook, or Chrome extension. My favorite RSS Feed reader is [FeedBro](https://nodetics.com/feedbro/){:target="_blank"}{:rel="noopener noreferrer"}. Check it out!
+- My Newsletter :star: :star: :star: :wink: - ...Coming Soon! Until then, you can subscribe to my RSS feed with your favorite RSS feed aggregator, Outlook, or Chrome extension. My favorite RSS Feed reader is [FeedBro](https://nodetics.com/feedbro/){:target="_blank"}{:rel="noopener noreferrer"}. Check it out! Many email clients also allow you to add RSS feeds to your inbox list (Such as Outlook).
 
 ## Final Thoughts
 
@@ -184,6 +193,7 @@ A teaser of topics in the works:
   - Snippets in Webstorm
   - Pros and Cons to Snippet Extensions
 - 12 Code Games for Fun and Practice
+- A list of my favorite cheatsheets
 - A Deep Dive into Git Extensions and What Makes it Great
 - A Deep Dive into DBeaver and What Makes it Great
 - How to Create a Python GUI Executable, Complete with an Installer
