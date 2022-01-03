@@ -140,24 +140,6 @@ h2,h3,h4 {
   margin-bottom: 20px;
 }
 
-/**
- * TOCBot style overrides
- */
-.table-of-contents{
-  background-color: $toc-background-color;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-}
-
-.js-toc{
-  margin-bottom: 25px;
-}
-
-.toc-link::before{
-  display: none !important;
-}
-
 .is-active-link {
   font-weight: normal !important;
 }

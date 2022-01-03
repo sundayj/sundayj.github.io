@@ -8,5 +8,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="instantsearch.js" level="application" />
+    <orderEntry type="library" name="moment.js" level="application" />
+    <orderEntry type="library" name="anchor-js" level="application" />
+    <orderEntry type="library" name="d11d7e2fdd" level="application" />
   </component>
 </module>

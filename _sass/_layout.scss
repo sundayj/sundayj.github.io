@@ -198,14 +198,15 @@
 
 
 #markdown-toc{
-  float: right;
-  width:50%;
+  width:100%;
   background:#f4f7f8;
   padding:20px 15px;
+  margin-left:0;
+
   li{
     padding-top:10px;
     position:relative; 
-    list-style-type:none;  
+    list-style-type:inherit;
   }
 }
 
@@ -217,7 +218,6 @@
   display:block;
   font-size:18px
 }
-
 
 .post-content {
   p { padding:$spacing-unit/5 0; } 
@@ -320,6 +320,13 @@ time{
   // border-radius:50%;
   margin: 0 auto;
   display: block;
+}
+
+#contact-me{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 

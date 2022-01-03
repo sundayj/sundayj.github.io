@@ -5,7 +5,11 @@ categories: Tools
 tags: [tools, software, recommendations, web-tools, database, SQL, JavaScript, productivity, code-converters, code-generators, list]
 comments: true
 summary: This is part one of a series of posts in which I will be sharing my favorite Development tools. Part one focuses on 5 dev tools that can be found and utilized online.
+las_modified_at: 2021-12-20 12:00:00 +0000
 ---
+
+* TOC
+{:toc}
 
 Welcome to my first blog post! Since the goal of this blog is to provide a
 variety of useful information and resources on Full-Stack development, what 

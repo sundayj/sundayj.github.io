@@ -5,13 +5,33 @@
     <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Dec 2021 12:50:21 -0500</pubDate>
-    <lastBuildDate>Wed, 29 Dec 2021 12:50:21 -0500</lastBuildDate>
+    <pubDate>Mon, 03 Jan 2022 15:19:02 -0500</pubDate>
+    <lastBuildDate>Mon, 03 Jan 2022 15:19:02 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>40 Awesome Programming Resources</title>
-        <description>&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#intro&quot; id=&quot;markdown-toc-intro&quot;&gt;Intro&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#tools&quot; id=&quot;markdown-toc-tools&quot;&gt;Tools&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#ides-and-apps&quot; id=&quot;markdown-toc-ides-and-apps&quot;&gt;IDEs and Apps&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#time-trackers&quot; id=&quot;markdown-toc-time-trackers&quot;&gt;Time Trackers&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#vs-code-extensions&quot; id=&quot;markdown-toc-vs-code-extensions&quot;&gt;VS Code Extensions&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#learning-resources-and-tutorials-by-language&quot; id=&quot;markdown-toc-learning-resources-and-tutorials-by-language&quot;&gt;Learning Resources and Tutorials by Language&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#sql&quot; id=&quot;markdown-toc-sql&quot;&gt;SQL&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#python&quot; id=&quot;markdown-toc-python&quot;&gt;Python&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#markdown&quot; id=&quot;markdown-toc-markdown&quot;&gt;Markdown&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#git&quot; id=&quot;markdown-toc-git&quot;&gt;Git&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#general&quot; id=&quot;markdown-toc-general&quot;&gt;General&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#newsletters&quot; id=&quot;markdown-toc-newsletters&quot;&gt;Newsletters&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#final-thoughts&quot; id=&quot;markdown-toc-final-thoughts&quot;&gt;Final Thoughts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot; style=&quot;margin-top: 20px;&quot;&gt;
         &lt;img alt=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; src=&quot;/images/other-images/40-awesome-programming-resources-markdown-screenshot.png&quot; class=&quot;kg-image&quot; loading=&quot;lazy&quot; title=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; /&gt;
@@ -314,7 +334,25 @@ Thanks for reading, and stay tuned; There is more where this came from!&lt;/p&gt
     
       <item>
         <title>5 Great Free Software Development Tools</title>
-        <description>&lt;p&gt;Welcome to my first blog post! Since the goal of this blog is to provide a
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#online-dev-tools&quot; id=&quot;markdown-toc-online-dev-tools&quot;&gt;Online Dev Tools&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#jsonformatterorg&quot; id=&quot;markdown-toc-jsonformatterorg&quot;&gt;JSONFormatter.org&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#what-youll-find-on-jsonformatterorg&quot; id=&quot;markdown-toc-what-youll-find-on-jsonformatterorg&quot;&gt;What you’ll find on JSONFormatter.org:&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toolsfromdev&quot; id=&quot;markdown-toc-toolsfromdev&quot;&gt;Tools.FromDev&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#what-youll-find-on-toolsfromdev&quot; id=&quot;markdown-toc-what-youll-find-on-toolsfromdev&quot;&gt;What you’ll find on Tools.FromDev&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#dbdiagramio&quot; id=&quot;markdown-toc-dbdiagramio&quot;&gt;dbdiagram.io&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#screenshotrocks&quot; id=&quot;markdown-toc-screenshotrocks&quot;&gt;ScreenShot.Rocks&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#x-team-radio&quot; id=&quot;markdown-toc-x-team-radio&quot;&gt;X-Team Radio&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#final-thoughts&quot; id=&quot;markdown-toc-final-thoughts&quot;&gt;Final Thoughts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Welcome to my first blog post! Since the goal of this blog is to provide a
 variety of useful information and resources on Full-Stack development, what 
 better way to start off than with a post on great development tools? Seriously,
 you can’t develop great software without great development tools! :sunglasses:&lt;/p&gt;

@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta property="og:title" content="JLSunday">
 <title>JLSunday</title>
@@ -34,15 +34,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-<script language="Javascript" type="text/javascript">
-function search_google()
-{
-  var query = document.getElementById("google-search").value;
-  window.open("http://google.com/search?q=" + query
-      + "%20site:" + "http://localhost:4000");
-}
-</script>
+<script src="https://kit.fontawesome.com/d11d7e2fdd.js" crossorigin="anonymous"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4Z30BJZ3LK"></script>
@@ -116,7 +108,17 @@ for (var b = blocklink.length; b--;) {
         
         
         
+        <a class="page-link" href="/search/">Site Search</a>
+        
+        
+        
         <a class="page-link" href="/feed.xml">RSS-Feed</a>
+        
+        
+        
+        
+        
+        
         
         
         
@@ -305,12 +307,12 @@ for (var b = blocklink.length; b--;) {
 <script type="text/javascript">
 $(function(){
   $(document).keydown(function(e) {
-    if (e.target.nodeName.toUpperCase() != 'BODY') return;
+    if (e.target.nodeName.toUpperCase() !== 'BODY') return;
     var url = false;
-        if (e.which == 37 || e.which == 74) {  // Left arrow and J
+        if (e.which === 37 || e.which === 74) {  // Left arrow and J
         
         }
-        else if (e.which == 39 || e.which == 75) {  // Right arrow and K
+        else if (e.which === 39 || e.which === 75) {  // Right arrow and K
             
         }
         if (url) {
@@ -321,43 +323,37 @@ $(function(){
 </script>
 
 
-
   </div>
   <div class="col-sm-2">
 <div class="sidebar-module about">
   <h4>About Me</h4>
-  <img title="" src="/images/other-images/profile-photo-1352x1098.png" alt=""/>
-  <span></span>
+  <img title="Justin L Sunday" src="/images/other-images/profile-photo-1352x1098.png" alt="Justin L Sunday"/>
+  <span>Hello, my name is Justin! I live in the US with my wife, amazing daughter, and our crazy canines.  I'm extremely passionate about software development, programming, absorbing every bit of knowledge I can, and sharing that knowledge with anyone interested in learning.</span>
   <br />
 
   
 
   You can contact me via: <br />
-
-  
-  <a href="mailto:admin@jlsunday.com" title="mailto: admin@jlsunday.com"><i class="fa fa-envelope-square fa-3x"></i></a>&nbsp;
-  
-  
-  <a href="https://github.com/sundayj" title="GithubID: sundayj"><i class="fa fa-github-square fa-3x"></i></a>&nbsp;
-  
-  
-  <a href="https://twitter.com/JustinSunday13" title="TwitterID: JustinSunday13"><i class="fa fa-twitter-square fa-3x"></i></a>
-  
-  
-  <a href="https://www.linkedin.com/in/justin-sunday" title="LinkedIn: justin-sunday"><i class="fa fa-linkedin-square fa-3x"></i></a>
-  
-  
-
+  <section id="contact-me">
+    
+    <a href="mailto:admin@jlsunday.com" title="mailto: admin@jlsunday.com"><i class="fa fa-envelope-square fa-3x"></i></a>
+    
+    
+    <a href="https://github.com/sundayj" title="GithubID: sundayj"><i class="fa fa-github-square fa-3x"></i></a>
+    
+    
+    <a href="https://twitter.com/JustinSunday13" title="TwitterID: JustinSunday13"><i class="fa fa-twitter-square fa-3x"></i></a>
+    
+    
+    <a href="https://www.linkedin.com/in/justin-sunday" title="LinkedIn: justin-sunday"><i class="fa fa-linkedin-square fa-3x"></i></a>
+    
+    
+    <a href="https://stackoverflow.com/users/story/8513024?view=Timeline" title="StackOverflow: 8513024"><i class="fa fa-stack-overflow" style="font-size: 2.5em"></i></a>
+    
+    
+  </section>
+  You can also contact me via the form located in the "About" page, <a href="/about/#contact-me">here</a>.
 </div>
-
-<div class="sidebar-module">
-  <h4>Site Search</h4>
-  <form onsubmit="search_google()" >
-    <input type="text" id="google-search" placeholder="Google search" />
-    <input type="submit" name="sa" value="Go" />
-  </form>
-</div>
-
 
 <div class="sidebar-module">
   <h4>Recent Posts</h4>
@@ -474,7 +470,6 @@ $(function(){
 </div>
 
 
-
   
 
   <footer class="site-footer">
@@ -494,104 +489,21 @@ $(function(){
   <script src="/js/totop.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
 
-  <script type="text/javascript">
-    tocbot.init({
-        toSelector: '.js-toc',
-        contentSelector: '.post-content',
-        headingSelector: 'h1, h2, h3',
-        // Headings that match the ignoreSelector will be skipped.
-        ignoreSelector: '.js-toc-ignore',
-        // For headings inside relative or absolute positioned containers within content
-        hasInnerContainers: true,
-        // Main class to add to links.
-        linkClass: 'toc-link',
-        // Extra classes to add to links.
-        extraLinkClasses: '',
-        // Class to add to active links,
-        // the link corresponding to the top most heading on the page.
-        activeLinkClass: 'is-active-link',
-        // Main class to add to lists.
-        listClass: 'toc-list',
-        // Extra classes to add to lists.
-        extraListClasses: '',
-        // Class that gets added when a list should be collapsed.
-        isCollapsedClass: 'is-collapsed',
-        // Class that gets added when a list should be able
-        // to be collapsed but isn't necessarily collapsed.
-        collapsibleClass: 'is-collapsible',
-        // Class to add to list items.
-        listItemClass: 'toc-list-item',
-        // Class to add to active list items.
-        activeListItemClass: 'is-active-li',
-        // How many heading levels should not be collapsed.
-        // For example, number 6 will show everything since
-        // there are only 6 heading levels and number 0 will collapse them all.
-        // The sections that are hidden will open
-        // and close as you scroll to headings within them.
-        collapseDepth: 0,
-        // Smooth scrolling enabled.
-        scrollSmooth: true,
-        // Smooth scroll duration.
-        scrollSmoothDuration: 420,
-        // Smooth scroll offset.
-        scrollSmoothOffset: 0,
-        // Callback for scroll end.
-        scrollEndCallback: function (e) {
-        },
-        // Headings offset between the headings and the top of the document (this is meant for minor adjustments).
-        headingsOffset: 1,
-        // Timeout between events firing to make sure it's
-        // not too rapid (for performance reasons).
-        throttleTimeout: 50,
-        // Element to add the positionFixedClass to.
-        positionFixedSelector: null,
-        // Fixed position class to add to make sidebar fixed after scrolling
-        // down past the fixedSidebarOffset.
-        positionFixedClass: 'is-position-fixed',
-        // fixedSidebarOffset can be any number but by default is set
-        // to auto which sets the fixedSidebarOffset to the sidebar
-        // element's offsetTop from the top of the document on init.
-        fixedSidebarOffset: 'auto',
-        // includeHtml can be set to true to include the HTML markup from the
-        // heading node instead of just including the textContent.
-        includeHtml: false,
-        // includeTitleTags automatically sets the html title tag of the link
-        // to match the title. This can be useful for SEO purposes or
-        // when truncating titles.
-        includeTitleTags: false,
-        // onclick function to apply to all links in toc. will be called with
-        // the event as the first parameter, and this can be used to stop,
-        // propagation, prevent default or perform action
-        onClick: function (e) {
-        },
-        // orderedList can be set to false to generate unordered lists (ul)
-        // instead of ordered lists (ol)
-        orderedList: true,
-        // If there is a fixed article scroll container, set to calculate titles' offset
-        scrollContainer: null,
-        // prevent ToC DOM rendering if it's already rendered by an external system
-        skipRendering: false,
-        // Optional callback to change heading labels.
-        // For example it can be used to cut down and put ellipses on multiline headings you deem too long.
-        // Called each time a heading is parsed. Expects a string and returns the modified label to display.
-        // Additionally, the attribute `data-heading-label` may be used on a heading to specify
-        // a shorter string to be used in the TOC.
-        // function (string) => string
-        headingLabelCallback: false,
-        // ignore headings that are hidden in DOM
-        ignoreHiddenElements: false,
-        // Optional callback to modify properties of parsed headings.
-        // The heading element is passed in node parameter and information parsed by default parser is provided in obj parameter.
-        // Function has to return the same or modified obj.
-        // The heading will be excluded from TOC if nothing is returned.
-        // function (object, HTMLElement) => object | void
-        headingObjectCallback: null,
-        // Set the base path, useful if you use a `base` tag in `head`.
-        basePath: '',
-        // Only takes affect when `tocSelector` is scrolling,
-        // keep the toc scroll position in sync with the content.
-        disableTocScrollSync: false
-    });
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script>
+    anchors.add();
+</script>
+
+  <script>
+    function readingTime() {
+        const text = document.getElementById("article").innerText;
+        const wpm = 200;
+        const words = text.trim().split(/\s+/).length;
+        const time = Math.ceil(words / wpm);
+        const textToAdd = time <= 1 ? `${time} minute` : `${time} minutes`;
+        document.getElementById("reading-time").innerText = textToAdd;
+    }
+    readingTime();
 </script>
 
 

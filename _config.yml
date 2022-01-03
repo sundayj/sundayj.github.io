@@ -20,20 +20,38 @@
 
 title: JLSunday
 email: admin@jlsunday.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- # this means to ignore newlines
   Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!
 
 google_site_verification: ''
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jlsunday.com" # the base hostname & protocol for your site, e.g. http://example.com
+publisher: "JLSunday"
 
 twitter_username: JustinSunday13
 github_username:  sundayj
 disqus_shortname: jlsunday-com
 linkedin_username: justin-sunday
+stackoverflow_userid: 8513024
+
+algolia:
+  application_id: NOSLLDLG24
+  index_name: posts
+  search_only_api_key: 446836c037be07a8fff66ade8d708aee
+  files_to_exclude:
+    - a_home.md
+    - b_about.md
+    - c_archives.md
+    - d_categories.md
+    - e_tags.md
+    - f_search.md
 
 favicon: "/images/favicon.ico"
-aboutme: ""
+author: Justin L Sunday
+aboutme: >-
+  Hello, my name is Justin! I live in the US with my wife, amazing daughter, and our crazy canines. 
+  I'm extremely passionate about software development, programming, absorbing every bit of knowledge
+  I can, and sharing that knowledge with anyone interested in learning.
 aboutme_photo: "/images/other-images/profile-photo-1352x1098.png"
 google_analytics_key: "G-4Z30BJZ3LK" # UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
 
@@ -47,6 +65,7 @@ social:
     - https://twitter.com/JustinSunday13
     - https://www.linkedin.com/in/justin-sunday/
     - https://github.com/sundayj/
+    - https://stackoverflow.com/users/story/8513024?view=Timeline
 
 # Build settings
 markdown: kramdown
@@ -61,6 +80,8 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jemoji
+  - jekyll-news-sitemap
+  - jekyll-sitemap
 
 ### Site setting:
 ShowContactInfo: "True" # Personal Info (twitter,GitHub,email) can be seen on aboutme-sidebar, this info only shown where ShowContactInfo == True
@@ -81,7 +102,7 @@ locales:
       PostedInCategories: "Posted in"
       Taggedwith: "and tagged"
       PostDate: "on "
-      Google_search: "Site Search"
+      Search: "Site Search"
       Home: "Home"
       About: "About"
       Guestbook: "Guestbook"
@@ -99,7 +120,7 @@ locales:
       PostedInCategories: "目录:"   
       Taggedwith: "| 标签:"
       PostDate: "| 发表时间: "
-      Google_search: "站内搜索"
+      Search: "站内搜索"
       Home: "首页"
       About: "关于"
       Guestbook: "留言"
@@ -117,7 +138,7 @@ locales:
       PostedInCategories: "カテゴリー："
       Taggedwith: "| タグ："
       PostDate: "| 投稿日時: "
-      Google_search: "サイト内検索"
+      Search: "サイト内検索"
       Home: "ホーム"
       About: "このブログについて"
       Guestbook: "メッセージ"
@@ -135,7 +156,7 @@ locales:
       PostedInCategories: "Kategoria"
       Taggedwith: "tagi"
       PostDate: "on "
-      Google_search: "Wyszukiwarka"
+      Search: "Wyszukiwarka"
       Home: "Strona główna"
       About: "O mnie"
       Guestbook: "Księga gości"
@@ -153,7 +174,7 @@ locales:
       PostedInCategories: "카테고리: "
       Taggedwith: "태그: "
       PostDate: "작성일: "
-      Google_search: "게시물 검색"
+      Search: "게시물 검색"
       Home: "홈"
       About: "소개"
       Guestbook: "방명록"
@@ -171,7 +192,7 @@ locales:
       PostedInCategories: "Опубликовано в" # = 'Posted in'
       Taggedwith: "с тегами"
       PostDate: ""
-      Google_search: "Поиск на Google"
+      Search: "Поиск на Google"
       Home: "Домой"
       About: "О блоге"            # = 'About blog'
       Guestbook: "Гостевая книга"
@@ -189,7 +210,7 @@ locales:
       PostedInCategories: "Şuraya gönderildi:"
       Taggedwith: "ve şöyle etiketlendi:"
       PostDate: "şu tarihte:"
-      Google_search: "Sitede Ara"
+      Search: "Sitede Ara"
       Home: "Anasayfa"
       About: "Hakkında"
       Guestbook: "Konuk Defteri"
@@ -207,7 +228,7 @@ locales:
       PostedInCategories: "Diposting di"
       Taggedwith: "dan ditag"
       PostDate: "pada "
-      Google_search: "Pencarian Situs"
+      Search: "Pencarian Situs"
       Home: "Beranda"
       About: "Tentang"
       Guestbook: "Buku tamu"
