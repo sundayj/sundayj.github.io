@@ -45,6 +45,17 @@ algolia:
     - d_categories.md
     - e_tags.md
     - f_search.md
+  settings:
+      attributesToHighlight:
+        - categories
+        - content
+        - headings
+        - html
+        - tags
+        - title
+      attributesToSnippet:
+        - content:10
+        - summary:10
 
 favicon: "/images/favicon.ico"
 author: Justin L Sunday

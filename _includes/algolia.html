@@ -117,7 +117,8 @@
             instantsearch.widgets.hits({
                 container: '#search-hits',
                 templates: {
-                    item: hitTemplate
+                    item: hitTemplate,
+                    empty: '<p class="info">No results were found... Try changing your query or checking out the "Categories" or "Tags" pages.</p>'
                 }
             })
     );

@@ -1,6 +1,7 @@
 <script>
     function readingTime() {
-        const text = document.getElementById("article").innerText;
+        if (!document.getElementById("article")){return;}
+        const text = document.getElementById("article")?.innerText;
         const wpm = 200;
         const words = text.trim().split(/\s+/).length;
         const time = Math.ceil(words / wpm);

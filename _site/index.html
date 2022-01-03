@@ -73,7 +73,7 @@ for (var b = blocklink.length; b--;) {
         <span>JLSunday</span>
       </a>
     </h1>
-    <h3 class="site-meta"></h3>
+    
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -436,18 +436,17 @@ $(function(){
 <div class="sidebar-module">
   <h4>Blogroll</h4>
   
-  <li><a href="https://www.joelonsoftware.com/" title="Joel on Software">Joel on Software</a></li>
+  <li><a href="https://www.joelonsoftware.com/"  target="_blank" rel="noopener noreferrer" title="Joel on Software">Joel on Software</a></li>
   
-  <li><a href="https://risdenk.github.io/" title="Blog and Tutorials by Kevin Risden">Kevin Risden's Blog</a></li>
+  <li><a href="https://risdenk.github.io/"  target="_blank" rel="noopener noreferrer" title="Blog and Tutorials by Kevin Risden">Kevin Risden's Blog</a></li>
   
-  <li><a href="https://flaviocopes.com/" title="Blog and Tutorials by Flavio Copes">Flavio Copes</a></li>
+  <li><a href="https://flaviocopes.com/"  target="_blank" rel="noopener noreferrer" title="Blog and Tutorials by Flavio Copes">Flavio Copes</a></li>
   
-  <li><a href="https://x-team.com/blog/" title="X-Team">X-Team</a></li>
+  <li><a href="https://x-team.com/blog/"  target="_blank" rel="noopener noreferrer" title="X-Team">X-Team</a></li>
   
-  <li><a href="https://stackoverflow.blog/" title="Stack Overflow's Blog, The Overflow">The Overflow</a></li>
+  <li><a href="https://stackoverflow.blog/"  target="_blank" rel="noopener noreferrer" title="Stack Overflow's Blog, The Overflow">The Overflow</a></li>
   
 </div>
-
 
 <div class="sidebar-module">
   <h4>Archives</h4>
@@ -496,7 +495,8 @@ $(function(){
 
   <script>
     function readingTime() {
-        const text = document.getElementById("article").innerText;
+        if (!document.getElementById("article")){return;}
+        const text = document.getElementById("article")?.innerText;
         const wpm = 200;
         const words = text.trim().split(/\s+/).length;
         const time = Math.ceil(words / wpm);
