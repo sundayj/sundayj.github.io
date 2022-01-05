@@ -1,10 +1,12 @@
 ---
 layout: post
 title: 40 Awesome Programming Resources
+canonical_url: 'https://jlsunday.com/resources/2021/12/14/Forty-Awesome-Programming-Resources.html'
 categories: Resources
 tags: [tools, software, list, IDEs, database-manager, database, VSCode, DBeaver, markdown, time-trackers, VSCode-Extensions, resources, SQL, Python, Git, full-stack, newsletter, games]
 comments: true
 summary: 40 awesome programming resources regarding tools, IDEs, VS Code Extensions, tutorial sites, and newsletters.
+description: 40 awesome programming resources regarding tools, IDEs, VS Code Extensions, tutorial sites, and newsletters.
 last_modified_at: 2021-12-29 12:50:00 +0000
 ---
 

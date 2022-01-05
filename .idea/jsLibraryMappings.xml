@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{anchor-js, d11d7e2fdd, instantsearch.js, moment.js}" />
+    <file url="PROJECT" libraries="{anchor-js, classic-10_7_dtp, d11d7e2fdd, instantsearch.js, mc-validate, moment.js}" />
   </component>
 </project>

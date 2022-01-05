@@ -12,5 +12,7 @@
     <orderEntry type="library" name="moment.js" level="application" />
     <orderEntry type="library" name="anchor-js" level="application" />
     <orderEntry type="library" name="d11d7e2fdd" level="application" />
+    <orderEntry type="library" name="mc-validate" level="application" />
+    <orderEntry type="library" name="classic-10_7_dtp" level="application" />
   </component>
 </module>

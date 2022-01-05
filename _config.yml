@@ -18,21 +18,41 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# Site Meta and SEO
 title: JLSunday
 email: admin@jlsunday.com
 description: >- # this means to ignore newlines
   Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!
-
+tagline: Programming and web development tutorials, snippets, and other resources.
 google_site_verification: ''
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jlsunday.com" # the base hostname & protocol for your site, e.g. http://example.com
 publisher: "JLSunday"
+logo: "/images/JLSunday-logo/JLSunday.png"
+favicon: "/images/favicon.ico"
+image: "/images/JLSunday-logo/icon.png"
+
+author:
+  name: Justin L Sunday
+  url: https://JLSunday.com/
+twitter:
+  username: JustinSunday13
+  card: summary
+  creator: JustinSunday13
+facebook:
+  publisher: JLSundayDev
+#  app_id: 1234
+#  admins: 1234
+
+
+
 
 twitter_username: JustinSunday13
 github_username:  sundayj
 disqus_shortname: jlsunday-com
 linkedin_username: justin-sunday
 stackoverflow_userid: 8513024
+facebook_username: JLSundayDev
 
 algolia:
   application_id: NOSLLDLG24
@@ -57,8 +77,7 @@ algolia:
         - content:10
         - summary:10
 
-favicon: "/images/favicon.ico"
-author: Justin L Sunday
+
 aboutme: >-
   Hello, my name is Justin! I live in the US with my wife, amazing daughter, and our crazy canines. 
   I'm extremely passionate about software development, programming, absorbing every bit of knowledge
@@ -74,25 +93,27 @@ social:
   name: Justin Sunday
   links:
     - https://twitter.com/JustinSunday13
-    - https://www.linkedin.com/in/justin-sunday/
-    - https://github.com/sundayj/
+    - https://www.linkedin.com/in/justin-sunday
+    - https://www.facebook.com/JLSundayDev
+    - https://github.com/sundayj
     - https://stackoverflow.com/users/story/8513024?view=Timeline
 
 # Build settings
 markdown: kramdown
 #highlighter: pygments
 kramdown:
-        input: GFM
-        syntax_highlighter: rouge
-        gfm_emojis: true
+  input: GFM
+  syntax_highlighter: rouge
+  gfm_emojis: true
 paginate: 5
 excerpt_separator: <!-- more -->
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jemoji
-  - jekyll-news-sitemap
-  - jekyll-sitemap
+#  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-seo
 
 ### Site setting:
 ShowContactInfo: "True" # Personal Info (twitter,GitHub,email) can be seen on aboutme-sidebar, this info only shown where ShowContactInfo == True
@@ -117,7 +138,7 @@ locales:
       Home: "Home"
       About: "About"
       Guestbook: "Guestbook"
-      RSS-Feed: "RSS-Feed"
+      Subscribe: "Subscribe"
     cn:
       Aboutme: "关于我"
       Archives: "存档"
@@ -135,7 +156,7 @@ locales:
       Home: "首页"
       About: "关于"
       Guestbook: "留言"
-      RSS-Feed: "订阅"
+      Subscribe: "订阅"
     jp:
       Aboutme: "著者"
       Archives: "アーカイブ"
@@ -153,7 +174,7 @@ locales:
       Home: "ホーム"
       About: "このブログについて"
       Guestbook: "メッセージ"
-      RSS-Feed: "購読"
+      Subscribe: "購読"
     pl:
       Aboutme: "O mnie"
       Archives: "Archiwum"
@@ -171,7 +192,7 @@ locales:
       Home: "Strona główna"
       About: "O mnie"
       Guestbook: "Księga gości"
-      RSS-Feed: "Subskrypcja"
+      Subscribe: "Subskrypcja"
     kr:
       Aboutme: "저자 소개"
       Archives: "모든 게시물"
@@ -189,7 +210,7 @@ locales:
       Home: "홈"
       About: "소개"
       Guestbook: "방명록"
-      RSS-Feed: "구독하기"
+      Subscribe: "구독하기"
     ru:
       Aboutme: "Обо мне" # = 'About me'
       Archives: "Архив"
@@ -207,7 +228,7 @@ locales:
       Home: "Домой"
       About: "О блоге"            # = 'About blog'
       Guestbook: "Гостевая книга"
-      RSS-Feed: "Подписаться"
+      Subscribe: "Подписаться"
     tr:
       Aboutme: "Hakkımda"
       Archives: "Arşivler"
@@ -225,7 +246,7 @@ locales:
       Home: "Anasayfa"
       About: "Hakkında"
       Guestbook: "Konuk Defteri"
-      RSS-Feed: "Abone Ol"
+      Subscribe: "Abone Ol"
     id:
       Aboutme: "Tentang Saya"
       Archives: "Arsip"
@@ -243,7 +264,7 @@ locales:
       Home: "Beranda"
       About: "Tentang"
       Guestbook: "Buku tamu"
-      RSS-Feed: "Langganan"
+      Subscribe: "Langganan"
 
 ### Blog-roll info, only name can be shown on the page.
 

@@ -329,6 +329,9 @@ time{
   flex-direction: row;
 }
 
+.fb-like.fb_iframe_widget {
+  margin-top: 10px;
+}
 
 
 /**
@@ -344,4 +347,18 @@ q:after {
   content:'』';
   color: #DD1144;
   font-weight:bold;
+}
+
+/**
+ * AnchorJS styles
+ */
+//.anchorjs-link {
+//  display: inline-block;
+//  background: url("/images/hyperlink.svg") no-repeat;
+//  margin-left: 8px;
+//  width: 14px;
+//  height: 24px;
+//}
+.anchorjs-link {
+  font-family: 'Font Awesome 5 Free', serif !important;
 }
