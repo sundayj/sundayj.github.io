@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Site Updates
-canonical_url: 'https://jlsunday.com/updates/2022/01/06/site-updates.html'
+canonical_url: 'https://jlsunday.com/updates/2022/01/06/site-update.html'
 categories: Updates
 tags: [updates, site-updates]
 comments: true
