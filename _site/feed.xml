@@ -5,9 +5,57 @@
     <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 05 Jan 2022 12:31:58 -0500</pubDate>
-    <lastBuildDate>Wed, 05 Jan 2022 12:31:58 -0500</lastBuildDate>
+    <pubDate>Thu, 06 Jan 2022 11:56:12 -0500</pubDate>
+    <lastBuildDate>Thu, 06 Jan 2022 11:56:12 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Site Updates</title>
+        <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;Under Construction&quot; src=&quot;/images/other-images/undraw_Building_re_xfcm.png&quot; loading=&quot;lazy&quot; title=&quot;Under Construction&quot; /&gt;
+    &lt;figcaption&gt;
+        Image provided by &lt;a href=&quot;https://undraw.co/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;unDraw&lt;/a&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Hi everyone! I know it’s been awhile since my last post. I promise I have good reasons, and here they are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First: The holidays. Between Christmas and New Years with the family, it has been hard to find time to write.&lt;/li&gt;
+  &lt;li&gt;My team at work has shrunk, so some re-allocation of projects has taken a lot of my time.&lt;/li&gt;
+  &lt;li&gt;Finally, I’ve been updating the site. You may have noticed some of the changes, but if not, I’ll list them here:
+    &lt;ul&gt;
+      &lt;li&gt;Improved SEO with better front matter, meta tags, and a sitemap.&lt;/li&gt;
+      &lt;li&gt;I’ve implemented Algolia search and placed it into the &lt;a href=&quot;/search/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Site Search&lt;/a&gt; page.&lt;/li&gt;
+      &lt;li&gt;In the &lt;em&gt;About&lt;/em&gt; page, you can now find a &lt;a href=&quot;/about/#contact-me&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Contact Me&lt;/a&gt; form. Please feel free to send me suggestions or any other queries you may have for me.&lt;/li&gt;
+      &lt;li&gt;I changed the commenting system from Disqus to &lt;a href=&quot;https://www.htmlcommentbox.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;HTML Comment Box&lt;/a&gt;.
+        &lt;ul&gt;
+          &lt;li&gt;Not as many features, true, but: NO ADS on the site from which I get no portion of the proceeds!&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;While the RSS Feed still exists, I’ve created a new &lt;a href=&quot;/subscribe/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Subscribe&lt;/a&gt; page where you can you choose to subscribe to the blog via a MailChimp form, or the good ‘ol RSS Feed. Not that the MailChimp for will send you email updates, whereas the RSS Feed will notify you via the means you used to subscribe.&lt;/li&gt;
+      &lt;li&gt;I added Facebook &lt;em&gt;Like&lt;/em&gt; and &lt;em&gt;Share&lt;/em&gt; buttons to the side panel that allow you to like the &lt;a href=&quot;https://www.facebook.com/JLSundayDev&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JLSunday.com&lt;/a&gt; Facebook page and share this website with your friends on Facebook.&lt;/li&gt;
+      &lt;li&gt;Last, but not least, I added a &lt;em&gt;My Résumé&lt;/em&gt; link in the navigation that opens up my most current, and printable Résumé, in a new tab.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;final-words&quot;&gt;Final Words&lt;/h2&gt;
+
+&lt;p&gt;Well, that’s all I have for today. As always, feel free to leave comment below, or contact me via any of the many methods available. Don’t forget to &lt;a href=&quot;/subscribe/&quot;&gt;subscribe&lt;/a&gt;! More posts are coming your way!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Jan 2022 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/updates/2022/01/06/site-update.html</link>
+        <guid isPermaLink="true">http://localhost:4000/updates/2022/01/06/site-update.html</guid>
+        
+        <category>updates</category>
+        
+        <category>site-updates</category>
+        
+        
+        <category>Updates</category>
+        
+      </item>
     
       <item>
         <title>40 Awesome Programming Resources</title>

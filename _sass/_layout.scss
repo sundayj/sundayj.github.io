@@ -290,7 +290,7 @@
 }
 
 
-/*time style of tages and categories*/
+/*time style of tags and categories*/
 
 time{
   margin-left: 15px;
@@ -305,9 +305,6 @@ time{
 
 .about{
   img {
-    // height: 128px;
-    // width: 128px;
-    // border-radius:50%;
     margin: 0 auto;
     display: block;
   }
@@ -315,9 +312,6 @@ time{
 
 
 .img-about{
-  // height: 128px;
-  // width: 128px;
-  // border-radius:50%;
   margin: 0 auto;
   display: block;
 }
@@ -352,13 +346,6 @@ q:after {
 /**
  * AnchorJS styles
  */
-//.anchorjs-link {
-//  display: inline-block;
-//  background: url("/images/hyperlink.svg") no-repeat;
-//  margin-left: 8px;
-//  width: 14px;
-//  height: 24px;
-//}
 .anchorjs-link {
   font-family: 'Font Awesome 5 Free', serif !important;
 }
