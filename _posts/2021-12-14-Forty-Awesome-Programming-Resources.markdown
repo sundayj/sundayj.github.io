@@ -6,6 +6,7 @@ categories: Resources
 tags: [tools, software, list, IDEs, database-manager, database, VSCode, DBeaver, markdown, time-trackers, VSCode-Extensions, resources, SQL, Python, Git, full-stack, newsletter, games]
 comments: true
 image: '/images/other-images/40-awesome-programming-resources-markdown-screenshot.png'
+excerpt: 40 awesome programming resources regarding tools, IDEs, VS Code Extensions, tutorial sites, and newsletters.
 summary: 40 awesome programming resources regarding tools, IDEs, VS Code Extensions, tutorial sites, and newsletters.
 description: 40 awesome programming resources regarding tools, IDEs, VS Code Extensions, tutorial sites, and newsletters.
 last_modified_at: 2021-12-29 12:50:00 +0000

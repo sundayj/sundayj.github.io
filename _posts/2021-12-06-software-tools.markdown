@@ -5,6 +5,7 @@ canonical_url: 'https://jlsunday.com/tools/2021/12/06/software-tools.html'
 categories: Tools
 tags: [tools, software, recommendations, web-tools, database, SQL, JavaScript, productivity, code-converters, code-generators, list]
 comments: true
+excerpt: This should explain the lull in content to those wondering.
 summary: This is part one of a series of posts in which I will be sharing my favorite Development tools. Part one focuses on 5 dev tools that can be found and utilized online.
 description: This is part one of a series of posts in which I will be sharing my favorite Development tools. Part one focuses on 5 dev tools that can be found and utilized online.
 las_modified_at: 2021-12-20 12:00:00 +0000
