@@ -4,7 +4,6 @@ title: Terms of Service
 permalink: /terms-of-service/
 ---
 
-<h2>Terms of Service</h2>
 <p>These Terms of Service govern your use of the website located at <a href="https://jlsunday.com">https://jlsunday.com</a> and any related services provided by JLSunday. </p>
 <p>By accessing <a href="https://jlsunday.com">https://jlsunday.com</a>, you agree to abide by these Terms of Service and to comply with all applicable laws and regulations. If you do not agree with these Terms of Service, you are prohibited from using or accessing this website or using any other services provided by JLSunday. </p>
 <p>We, JLSunday, reserve the right to review and amend any of these Terms of Service at our sole discretion. Upon doing so, we will update this page. Any changes to these Terms of Service will take effect immediately from the date of publication. </p>

@@ -4,7 +4,6 @@ title: Cookie Policy
 permalink: /cookie-policy/
 ---
 
-<h2>Cookie Policy</h2>
 <p>We use cookies to help improve your experience of our website at <a href="https://jlsunday.com">https://jlsunday.com</a>. This cookie policy is part of JLSunday&#39;s privacy policy. It covers the use of cookies between your device and our site. </p>
 <p>We also provide basic information on third-party services we may use, who may also use cookies as part of their service. This policy does not cover their cookies. </p>
 <p>If you don’t wish to accept cookies from us, you should instruct your browser to refuse cookies from <a href="https://jlsunday.com">https://jlsunday.com</a>. In such a case, we may be unable to provide you with some of your desired content and services. </p>
