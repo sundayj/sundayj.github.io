@@ -10,9 +10,11 @@
         {% for page in site.pages %}
         {% if page.title %}
         {% if page.url != '/feed.xml' %}
+        {% if page.url != '/privacy-policy/' %}
         <a class="page-link"
-           href="{{ page.url | prepend: site.baseurl }}">{{ page.title | replace: page.title, site.locales[site.default_locale].[page.title] }}
+           href="{{ page.url | prepend: site.url }}">{{ page.title | replace: page.title, site.locales[site.default_locale].[page.title] }}
         </a>
+        {% endif %}
         {% endif %}
         {% endif %}
         {% endfor %}

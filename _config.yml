@@ -119,6 +119,9 @@ plugins:
 ShowContactInfo: "True" # Personal Info (twitter,GitHub,email) can be seen on aboutme-sidebar, this info only shown where ShowContactInfo == True
 default_column: "two" # blog style: two columns, if default_column != "two", you will see a one column blog.
 default_locale: "en" # blog sidebar language set, only include: English (en), Chinese (cn), Japanese (jp), Polish (pl), Korean (kr),  Russian (ru), Turkish (tr), and Indonesian (id).
+feed:
+  excerpt_only: true
+
 
 locales:
     en:

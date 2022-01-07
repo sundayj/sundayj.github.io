@@ -1,19 +1,21 @@
 ---
 layout: post
 title: Site Updates
-canonical_url: 'https://jlsunday.com/updates/2022/01/06/site-update.html'
+feed:
+  excerpt_only: true
+excerpt: This should explain the lull in content to those wondering.
+summary: This should explain the lull in content to those wondering.
+description: No new content has been posted lately, because I've been upgrading aspects of the site.
+canonical_url: https://jlsunday.com/updates/2022/01/06/site-update.html
 categories: Updates
 tags: [updates, site-updates]
 comments: true
 image: '/images/other-images/undraw_Building_re_xfcm.png'
-excerpt: This should explain the lull in content to those wondering.
-summary: This should explain the lull in content to those wondering.
-description: No new content has been posted lately, because I've been upgrading aspects of the site.
 last_modified_at: 2022-01-06 00:00:00 +0000
 ---
 
 <figure style="margin-top: 20px;">
-        <img alt="Under Construction" src="{{ '/images/other-images/undraw_Building_re_xfcm.png' | prepend: site.baseurl }}" loading="lazy" title="Under Construction">
+        <img alt="Under Construction" src="{{ '/images/other-images/undraw_Building_re_xfcm.png' | prepend: site.url }}" loading="lazy" title="Under Construction">
     <figcaption>
         Image provided by <a href="https://undraw.co/" target="_blank" rel="noopener noreferrer">unDraw</a>
     </figcaption>

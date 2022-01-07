@@ -5,14 +5,14 @@
     <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 Jan 2022 12:10:25 -0500</pubDate>
-    <lastBuildDate>Thu, 06 Jan 2022 12:10:25 -0500</lastBuildDate>
+    <pubDate>Fri, 07 Jan 2022 08:13:31 -0500</pubDate>
+    <lastBuildDate>Fri, 07 Jan 2022 08:13:31 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>Site Updates</title>
         <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Under Construction&quot; src=&quot;/images/other-images/undraw_Building_re_xfcm.png&quot; loading=&quot;lazy&quot; title=&quot;Under Construction&quot; /&gt;
+        &lt;img alt=&quot;Under Construction&quot; src=&quot;http://localhost:4000/images/other-images/undraw_Building_re_xfcm.png&quot; loading=&quot;lazy&quot; title=&quot;Under Construction&quot; /&gt;
     &lt;figcaption&gt;
         Image provided by &lt;a href=&quot;https://undraw.co/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;unDraw&lt;/a&gt;
     &lt;/figcaption&gt;
@@ -27,14 +27,14 @@
     &lt;ul&gt;
       &lt;li&gt;Improved SEO with better front matter, meta tags, and a sitemap.&lt;/li&gt;
       &lt;li&gt;I’ve implemented Algolia search and placed it into the &lt;a href=&quot;/search/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Site Search&lt;/a&gt; page.&lt;/li&gt;
-      &lt;li&gt;In the &lt;em&gt;About&lt;/em&gt; page, you can now find a &lt;a href=&quot;/about/#contact-me&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Contact Me&lt;/a&gt; form. Please feel free to send me suggestions or any other queries you may have for me.&lt;/li&gt;
+      &lt;li&gt;In the &lt;em&gt;About&lt;/em&gt; page, you can now find a &lt;a href=&quot;/about/#contact-me&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Contact Me&lt;/a&gt; form. Please feel free to send me suggestions or any other queries you may have.&lt;/li&gt;
       &lt;li&gt;I changed the commenting system from Disqus to &lt;a href=&quot;https://www.htmlcommentbox.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;HTML Comment Box&lt;/a&gt;.
         &lt;ul&gt;
           &lt;li&gt;Not as many features, true, but: NO ADS on the site from which I get no portion of the proceeds!&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
-      &lt;li&gt;While the RSS Feed still exists, I’ve created a new &lt;a href=&quot;/subscribe/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Subscribe&lt;/a&gt; page where you can you choose to subscribe to the blog via a MailChimp form, or the good ‘ol RSS Feed. Not that the MailChimp for will send you email updates, whereas the RSS Feed will notify you via the means you used to subscribe.&lt;/li&gt;
-      &lt;li&gt;I added Facebook &lt;em&gt;Like&lt;/em&gt; and &lt;em&gt;Share&lt;/em&gt; buttons to the side panel that allow you to like the &lt;a href=&quot;https://www.facebook.com/JLSundayDev&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JLSunday.com&lt;/a&gt; Facebook page and share this website with your friends on Facebook.&lt;/li&gt;
+      &lt;li&gt;While the RSS Feed still exists, I’ve created a new &lt;a href=&quot;/subscribe/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Subscribe&lt;/a&gt; page where you can choose to subscribe to the blog via either a MailChimp form, or the good ‘ol RSS Feed. Note that the MailChimp form will send you email updates, whereas the RSS Feed will notify you via the means you used to subscribe.&lt;/li&gt;
+      &lt;li&gt;I added Facebook &lt;em&gt;Like&lt;/em&gt; and &lt;em&gt;Share&lt;/em&gt; buttons to the side panel that allow you to &lt;em&gt;Like&lt;/em&gt; the &lt;a href=&quot;https://www.facebook.com/JLSundayDev&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JLSunday.com&lt;/a&gt; Facebook page and &lt;em&gt;Share&lt;/em&gt; this website with your friends on Facebook.&lt;/li&gt;
       &lt;li&gt;Last, but not least, I added a &lt;em&gt;My Résumé&lt;/em&gt; link in the navigation that opens up my most current, and printable Résumé, in a new tab.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -42,7 +42,7 @@
 
 &lt;h2 id=&quot;final-words&quot;&gt;Final Words&lt;/h2&gt;
 
-&lt;p&gt;Well, that’s all I have for today. As always, feel free to leave comment below, or contact me via any of the many methods available. Don’t forget to &lt;a href=&quot;/subscribe/&quot;&gt;subscribe&lt;/a&gt;! More posts are coming your way!&lt;/p&gt;
+&lt;p&gt;Well, that’s all I have for today. As always, feel free to leave a comment below, or contact me via any of the many methods available. Don’t forget to &lt;a href=&quot;/subscribe/&quot;&gt;subscribe&lt;/a&gt;! More posts are coming your way. As always, thanks for reading!&lt;/p&gt;
 </description>
         <pubDate>Thu, 06 Jan 2022 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/updates/2022/01/06/site-update.html</link>
@@ -82,7 +82,7 @@
 &lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot; style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; src=&quot;/images/other-images/40-awesome-programming-resources-markdown-screenshot.png&quot; class=&quot;kg-image&quot; loading=&quot;lazy&quot; title=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; /&gt;
+        &lt;img alt=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/40-awesome-programming-resources-markdown-screenshot.png&quot; class=&quot;kg-image&quot; loading=&quot;lazy&quot; title=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of this post as a Markdown WIP. Image created by the author.
     &lt;/figcaption&gt;
@@ -418,7 +418,7 @@ regardless of the development you’re focusing on.&lt;/p&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://jsonformatter.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;/images/other-images/jsonformatterscreenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;https://jsonformatter.org/&quot; title=&quot;JSONFormatter&quot; loading=&quot;lazy&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/images/other-images/jsonformatterscreenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;https://jsonformatter.org/&quot; title=&quot;JSONFormatter&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
@@ -715,7 +715,7 @@ but they will still save you a ton of time.&lt;/dd&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://tools.fromdev.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;/images/other-images/toolsfromdevscreenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;https://tools.fromdev.com/&quot; title=&quot;Tools.FromDev&quot; loading=&quot;lazy&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/images/other-images/toolsfromdevscreenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;https://tools.fromdev.com/&quot; title=&quot;Tools.FromDev&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
@@ -822,7 +822,7 @@ them all out.&lt;/p&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://dbdiagram.io/home&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;/images/other-images/dbdiagramio-screenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;Screenshot image generated by Screenshot Rocks&quot; loading=&quot;lazy&quot; title=&quot;DBDiagram.io&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/images/other-images/dbdiagramio-screenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;Screenshot image generated by Screenshot Rocks&quot; loading=&quot;lazy&quot; title=&quot;DBDiagram.io&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
@@ -838,7 +838,7 @@ diagram as an image or pdf, but it also allows you to integrate with your databa
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://screenshot.rocks/app&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;/images/other-images/screenshot-rocks.png&quot; class=&quot;kg-image&quot; alt=&quot;https://screenshot.rocks/app&quot; loading=&quot;lazy&quot; title=&quot;Screenshot.Rocks&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/images/other-images/screenshot-rocks.png&quot; class=&quot;kg-image&quot; alt=&quot;https://screenshot.rocks/app&quot; loading=&quot;lazy&quot; title=&quot;Screenshot.Rocks&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
@@ -854,7 +854,7 @@ browser, and media type used to display the screenshot.&lt;/p&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://radio.x-team.com/?utm_source=xweekly&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;/images/other-images/x-team-radio.png&quot; class=&quot;kg-image&quot; alt=&quot;https://radio.x-team.com/?utm_source=xweekly&quot; loading=&quot;lazy&quot; title=&quot;X-Team Radio&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/images/other-images/x-team-radio.png&quot; class=&quot;kg-image&quot; alt=&quot;https://radio.x-team.com/?utm_source=xweekly&quot; loading=&quot;lazy&quot; title=&quot;X-Team Radio&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
