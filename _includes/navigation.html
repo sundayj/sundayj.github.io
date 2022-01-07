@@ -11,14 +11,18 @@
         {% if page.title %}
         {% if page.url != '/feed.xml' %}
         {% if page.url != '/privacy-policy/' %}
+        {% if page.url != '/terms-of-service/' %}
+        {% if page.url != '/cookie-policy/' %}
         <a class="page-link"
            href="{{ page.url | prepend: site.url }}">{{ page.title | replace: page.title, site.locales[site.default_locale].[page.title] }}
         </a>
         {% endif %}
         {% endif %}
         {% endif %}
+        {% endif %}
+        {% endif %}
         {% endfor %}
-        <a href="https://rxresu.me/r/1zmmc6" target="_blank" rel="noopener noreferrer" class="page-link">
+        <a href="{{ '/assets/JustinSunday_Resume_2022-01-07.pdf' |  prepend: site.url }}" target="_blank" rel="noopener noreferrer" class="page-link">
             My Résumé
         </a>
         {% comment %}<span class="page-link">Résumé</span>{% endcomment %}
