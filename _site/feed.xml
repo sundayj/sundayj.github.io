@@ -5,9 +5,315 @@
     <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 07 Jan 2022 09:34:52 -0500</pubDate>
-    <lastBuildDate>Fri, 07 Jan 2022 09:34:52 -0500</lastBuildDate>
+    <pubDate>Sun, 09 Jan 2022 23:31:03 -0500</pubDate>
+    <lastBuildDate>Sun, 09 Jan 2022 23:31:03 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Building an App with Angular, Part 1: Introduction</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#intro&quot; id=&quot;markdown-toc-intro&quot;&gt;Intro&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-project&quot; id=&quot;markdown-toc-the-project&quot;&gt;The Project&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#requirements&quot; id=&quot;markdown-toc-requirements&quot;&gt;Requirements&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#external-resources&quot; id=&quot;markdown-toc-external-resources&quot;&gt;External Resources&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#differences&quot; id=&quot;markdown-toc-differences&quot;&gt;Differences&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#project-structure&quot; id=&quot;markdown-toc-project-structure&quot;&gt;Project Structure&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#services&quot; id=&quot;markdown-toc-services&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#models&quot; id=&quot;markdown-toc-models&quot;&gt;Models&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#components&quot; id=&quot;markdown-toc-components&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#useful-additions&quot; id=&quot;markdown-toc-useful-additions&quot;&gt;Useful Additions&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#http-interceptor&quot; id=&quot;markdown-toc-http-interceptor&quot;&gt;HTTP Interceptor&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-snackbar&quot; id=&quot;markdown-toc-the-snackbar&quot;&gt;The Snackbar&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#log-service&quot; id=&quot;markdown-toc-log-service&quot;&gt;Log Service&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#final-words&quot; id=&quot;markdown-toc-final-words&quot;&gt;Final Words&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;Angular Windows&quot; src=&quot;http://localhost:4000/images/other-images/ricardo-gomez-angel-HT8paJ-1-TU-unsplash.jpg&quot; loading=&quot;lazy&quot; title=&quot;How do you like these angles?&quot; /&gt;
+    &lt;figcaption&gt;
+        Photo by &lt;a href=&quot;https://unsplash.com/@rgaleria?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Ricardo Gomez Angel&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/angular?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;
+
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;IMPORTANT:&lt;/strong&gt;
+This tutorial utilizes Angular 12. I realize Angular 13 is now published. If enough people request it, then I may make a tutorial
+on how to upgrade between the two versions. Afterwards, the new version will be available in this project’s repo.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Hello, and welcome to my first posted Angular tutorial! Originally, I was going to go over how to create an Angular app from scratch,
+but the &lt;a href=&quot;https://v12.angular.io/tutorial#tour-of-heroes-app-and-tutorial&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Angular Tour of Heroes App and Tutorial&lt;/a&gt;
+already does such a great job of that. So, what I am going to be doing in this series of posts is going over some of the more complicated
+aspects of building an app with Angular. This first post will serve as an intro to the project, explaining the structure, and the
+“why” behind some choices I’ve made. The next few posts will show how to implement some basic services and components that are useful for
+any modern web app that consumes REST APIs. Then, in a few later posts, I will be covering Angular Material tables, forms,
+state-management with NGRx, and more.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-project&quot;&gt;The Project&lt;/h3&gt;
+
+&lt;p&gt;This project is really just the completed &lt;em&gt;Tour of Heroes&lt;/em&gt; app from the Angular tutorial. However, there are some important differences.
+First, I decided to use the Angular &lt;em&gt;Tour of Heroes&lt;/em&gt; app, because the point of this tutorial isn’t “How to Design an App”, “How to Plan an App”,
+“How to Invent an App,” or anything like that. Rather, for the purposes of this series, I just need a basic app; Something with basic
+functionality that can be expanded upon with more in-depth and complex examples. It is important to understand that I am not claiming
+that this is an original app of my own creation.&lt;/p&gt;
+
+&lt;h3 id=&quot;requirements&quot;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;I’ve listed the requirements for this project here, as copied from the repo’s package.json:&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;dependencies&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@angular/animations&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~12.2.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@angular/cdk&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;^12.2.13&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@angular/common&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~12.2.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@angular/compiler&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~12.2.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@angular/core&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~12.2.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@angular/flex-layout&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;^12.0.0-beta.35&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@angular/forms&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~12.2.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@angular/material&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;^12.2.13&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@angular/platform-browser&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~12.2.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@angular/platform-browser-dynamic&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~12.2.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@angular/router&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~12.2.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;angular-in-memory-web-api&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;^0.12.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;rxjs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~6.6.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;tslib&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;^2.3.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;zone.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~0.11.4&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;devDependencies&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@angular-devkit/build-angular&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~12.2.13&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@angular/cli&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~12.2.13&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@angular/compiler-cli&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~12.2.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@types/jasmine&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~3.8.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;@types/node&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;^12.11.1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;jasmine-core&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~3.8.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;karma&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~6.3.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;karma-chrome-launcher&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~3.1.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;karma-coverage&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~2.0.3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;karma-jasmine&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~4.0.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;karma-jasmine-html-reporter&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~1.7.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;typescript&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;~4.3.5&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;external-resources&quot;&gt;External Resources&lt;/h3&gt;
+
+&lt;p&gt;The following links are the references I used when implementing the new additions to the project. You may find them useful as well.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://v12.angular.io/docs&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Angular’s Official Documentation&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://v12.angular.io/cli&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Angular CLI Reference&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://v12.material.angular.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Angular Material&lt;/a&gt; - Material Design Components for Angular&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://google.github.io/material-design-icons/#icon-font-for-the-web&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Material Design Icons&lt;/a&gt; - Important for the icons used in this project to display correctly.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/angular/flex-layout&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Flex-Layout&lt;/a&gt; - Very useful for quickly implementing
+flexbox layouts without having to deal with all CSS styling.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;differences&quot;&gt;Differences&lt;/h3&gt;
+
+&lt;p&gt;As I stated before, there are certain differences between this project and the &lt;em&gt;Tour of Heroes&lt;/em&gt; app’s original code.
+So, if you want to follow along, I recommend cloning this project directly from my GitHub repo instead of cloning the original
+&lt;em&gt;Tour of Heroes&lt;/em&gt;. However, cloning the original &lt;em&gt;Tour of Heroes&lt;/em&gt; code, then implementing the same changes made in this
+project could also be a great exercise.&lt;/p&gt;
+
+&lt;h4 id=&quot;project-structure&quot;&gt;Project Structure&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# This tree was printed in Windows Terminal using the 'tree' command.&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# See https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/tree for more info.&lt;/span&gt;
+├───app
+│   │   app-routing.module.ts
+│   │   app.component.css
+│   │   app.component.html
+│   │   app.component.spec.ts
+│   │   app.component.ts
+│   │   app.module.ts
+│   │   mock-heroes.ts
+│   │
+│   ├───components
+│   │   ├───dashboard
+│   │   │       dashboard.component.css
+│   │   │       dashboard.component.html
+│   │   │       dashboard.component.spec.ts
+│   │   │       dashboard.component.ts
+│   │   │
+│   │   ├───hero-detail
+│   │   │       hero-detail.component.css
+│   │   │       hero-detail.component.html
+│   │   │       hero-detail.component.ts
+│   │   │
+│   │   ├───hero-search
+│   │   │       hero-search.component.css
+│   │   │       hero-search.component.html
+│   │   │       hero-search.component.ts
+│   │   │
+│   │   ├───heroes
+│   │   │       heroes.component.css
+│   │   │       heroes.component.html
+│   │   │       heroes.component.ts
+│   │   │
+│   │   └───snackbar-content
+│   │           snackbar-content.component.css
+│   │           snackbar-content.component.html
+│   │           snackbar-content.component.spec.ts
+│   │           snackbar-content.component.ts
+│   │
+│   ├───htpp-interceptor
+│   │       http-interceptor.interceptor.spec.ts
+│   │       http-interceptor.interceptor.ts
+│   │
+│   ├───models
+│   │       hero.ts
+│   │
+│   └───services
+│       ├───hero-service
+│       │       hero.service.spec.ts
+│       │       hero.service.ts
+│       │
+│       ├───in-memory-data
+│       │       &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-memory-data&lt;/span&gt;.service.spec.ts
+│       │       &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-memory-data&lt;/span&gt;.service.ts
+│       │
+│       ├───log-service
+│       │       log.service.spec.ts
+│       │       log.service.ts
+│       │
+│       └───snackbar-service
+│               snackbar.service.spec.ts
+│               snackbar.service.ts
+│
+├───assets
+│       .gitkeep
+│
+├───environments
+│       environment.prod.ts
+│       environment.ts
+│
+│   favicon.ico
+│   index.html
+│   main.ts
+│   polyfills.ts
+│   styles.css
+│   test.ts
+│
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;services&quot;&gt;Services&lt;/h4&gt;
+
+&lt;p&gt;As shown above, in the Project Structure, I’ve moved the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hero.service.ts&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;in-memory-data.service.ts&lt;/code&gt; files into
+their respective folders within the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;services&lt;/code&gt; folder. For now, since this is a small app, I will keep all services
+within this folder for better organization and to make them easier to find. Now, if the app were larger, like
+Enterprise level, then I may opt to put the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;heroes&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hero-detail&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hero-search&lt;/code&gt; components into a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hero&lt;/code&gt; folder
+along with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hero-service&lt;/code&gt;, whereas the more generic services would stay within a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shared/services/&lt;/code&gt; folder. For now, though,
+this structure will suffice.&lt;/p&gt;
+
+&lt;h4 id=&quot;models&quot;&gt;Models&lt;/h4&gt;
+
+&lt;p&gt;Like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;services&lt;/code&gt;, I’ve also created a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;models&lt;/code&gt; folder that will house all the app’s object models. Again, this will help
+with organization by keeping all similar file types together. Also like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;services&lt;/code&gt;, if the app were larger, I may opt to
+put &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;models&lt;/code&gt; folders within their respective components and keep a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shared/models/&lt;/code&gt; folder for those more generic
+models utilized throughout the app.&lt;/p&gt;
+
+&lt;h4 id=&quot;components&quot;&gt;Components&lt;/h4&gt;
+
+&lt;p&gt;Similar to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;services&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;models&lt;/code&gt;, I’ve moved all components into a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;components&lt;/code&gt; folder. Otherwise, the components,
+along with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;models&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;services&lt;/code&gt; folders would’ve been listed together alphabetically, and it makes more sense
+to keep like with like. It also makes things easier to see in an explorer view.&lt;/p&gt;
+
+&lt;h2 id=&quot;useful-additions&quot;&gt;Useful Additions&lt;/h2&gt;
+
+&lt;p&gt;The following sections give a bit of detail on the extra additions that aren’t present in the original &lt;em&gt;Tour of Heroes&lt;/em&gt;.
+All of these additions are actually tightly coupled together and are each fired off in sequence, especially when
+requesting data from a server. So, I am going to be detailing them in the order in which Angular will be utilizing them:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;The HTTP Interceptor&lt;/strong&gt; - Whenever the app makes a request to a server, or receives a response from the server, this
+interceptor does exactly as the name implies - It intercepts the call/response.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Snackbar&lt;/strong&gt; - Every App needs to be let its user know when an action is successful, or not, and that is where this comes in.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Log Service&lt;/strong&gt; - During development, and especially when debugging, logging comes in very handy. You’ll see how this service can be very helpful.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;http-interceptor&quot;&gt;HTTP Interceptor&lt;/h3&gt;
+
+&lt;p&gt;As stated above, the HTTP Interceptor &lt;em&gt;intercepts&lt;/em&gt; any outgoing or incoming requests to a server. There can be many uses
+for an HTTP Interceptor, but the main reason for the one in this project is to assist with logging, debugging, and notifying
+users of completed tasks. How to implement the HTTP Interceptor into an Angular app will be covered in the next post.
+For more information on Angular HTTP Interceptors, see their documentation, &lt;a href=&quot;https://v12.angular.io/guide/http#intercepting-requests-and-responses&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-snackbar&quot;&gt;The Snackbar&lt;/h3&gt;
+
+&lt;p&gt;Now, the normal &lt;em&gt;Tour of Heroes&lt;/em&gt; app makes use of a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;message&lt;/code&gt; service that logs simple messages to the window for the user.
+While we understand that, for the sake of their tutorial, that was all that was needed for the original &lt;em&gt;Tour of Heroes&lt;/em&gt;,
+we also know that it is a very common scenario for a developer to want to build a notification of some kind to pass messages
+to a user and that those simple messages wouldn’t cut it in a production app. The third post in this series will explore
+how to implement the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;snackbar&lt;/code&gt; to create a reusable, and modular, component that can notify users of any action taking
+place throughout the app.&lt;/p&gt;
+
+&lt;h3 id=&quot;log-service&quot;&gt;Log Service&lt;/h3&gt;
+
+&lt;p&gt;If you’ve ever written anything for the front-end, then surely you’ve used something like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;console.log('Insert important note here...'')&lt;/code&gt;
+at some point. The log service we will be implementing will show you how to make that logging uniform and how to utilize
+it the same way throughout your app, as well as printing easy-on-the-eyes and even easier to read notes.&lt;/p&gt;
+
+&lt;h2 id=&quot;final-words&quot;&gt;Final Words&lt;/h2&gt;
+
+&lt;p&gt;Thank you for reading! Hopefully, this post has given you some idea of what to expect in the upcoming posts. You don’t have
+to worry about waiting too long for the next post to be published, because it is already in the works. I was honestly intending
+to make this tutorial one long post, but thought better of it once I saw just how long it was becoming. So, to make it easier
+on you, the reader, to not only read without falling asleep, but also to pace yourself while following along, I’ve decided to
+break the tutorial into several posts.&lt;/p&gt;
+
+&lt;p&gt;Finally, as always, let me know what you think in the comments, shoot me a message through the &lt;a href=&quot;https://jlsunday.com/about/#contact-me&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Contact Me&lt;/a&gt;
+form, or any of my social links in the sidebar. How do you feel about this project? Are these things that you find interesting for learning Angular?
+Would you prefer that I use a different set of components? Is there a particular component, service, directive, or anything else that you’d
+like me to add to these tutorials? Just let me know!&lt;/p&gt;
+
+&lt;p&gt;See you soon!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 09 Jan 2022 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/tutorials/angular/2022/01/09/Building-an-Angular-App-Part1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/tutorials/angular/2022/01/09/Building-an-Angular-App-Part1.html</guid>
+        
+        <category>tutorial</category>
+        
+        <category>Angular</category>
+        
+        <category>front-end</category>
+        
+        <category>Typescript</category>
+        
+        <category>JavaScript</category>
+        
+        <category>Angular-Material</category>
+        
+        <category>services</category>
+        
+        <category>in-memory-database</category>
+        
+        <category>flex-layout</category>
+        
+        <category>interceptors</category>
+        
+        <category>logging</category>
+        
+        <category>snackbar</category>
+        
+        
+        <category>Tutorials</category>
+        
+        <category>Angular</category>
+        
+      </item>
     
       <item>
         <title>Site Updates</title>
@@ -311,7 +617,7 @@ occasionally open one of them on a whim one day, I can pretty much guarantee you
 
 &lt;hr /&gt;
 
-&lt;p&gt;So there you have it; 40 awesome development resources! Is there anything else that you’d like to see on this list?
+&lt;p&gt;So there you have it; 40 awesome development resources! Is there anything else that you’d like to see on this list? Anything I may have missed, or maybe something that is on the list that you think should be removed?
 Any comments, concerns, suggestions, or requests? Please leave a comment below, or feel free to contact me via one of the links under my “About Me.”
 Thanks for reading, and stay tuned; There is more where this came from!&lt;/p&gt;
 

@@ -189,7 +189,7 @@ occasionally open one of them on a whim one day, I can pretty much guarantee you
 
 ---
 
-So there you have it; 40 awesome development resources! Is there anything else that you'd like to see on this list?
+So there you have it; 40 awesome development resources! Is there anything else that you'd like to see on this list? Anything I may have missed, or maybe something that is on the list that you think should be removed?
 Any comments, concerns, suggestions, or requests? Please leave a comment below, or feel free to contact me via one of the links under my "About Me."
 Thanks for reading, and stay tuned; There is more where this came from!
 

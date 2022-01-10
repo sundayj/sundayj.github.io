@@ -59,17 +59,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_drafts/Building-an-Angular-App" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\justi\github-blog\sundayj.github.io\_drafts\Building-an-Angular-App" />
       <recent name="C:\Users\justi\github-blog\sundayj.github.io" />
       <recent name="C:\Users\justi\github-blog\sundayj.github.io\_includes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\justi\github-blog\sundayj.github.io\_drafts\Building-an-Angular-App" />
       <recent name="C:\Users\justi\github-blog\sundayj.github.io\assets\fonts" />
     </key>
   </component>
@@ -89,7 +91,8 @@
       <workItem from="1641500772732" duration="289000" />
       <workItem from="1641526592983" duration="5027000" />
       <workItem from="1641560467809" duration="2997000" />
-      <workItem from="1641586353243" duration="10000" />
+      <workItem from="1641586353243" duration="600000" />
+      <workItem from="1641688467003" duration="19421000" />
     </task>
     <servers />
   </component>
