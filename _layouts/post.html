@@ -20,6 +20,11 @@ layout: default
     <time itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">
     {{ site.locales[site.default_locale].PostDate }}{{ page.date | date: "%b %-d, %Y" }}
     </time>
+    {% if page.last_modified_at %}
+    <time itemprop="dateModified" datetime="{{ page.last_modified_at }}">
+     and edited on {{ page.last_modified_at | date: "%b %-d, %Y" }}
+    </time>
+    {% endif %}
     </p>
     <p>
       <i class="far fa-clock"></i> Reading time: About <span id="reading-time"></span>.

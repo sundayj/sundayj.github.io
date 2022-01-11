@@ -3,32 +3,52 @@ layout: post
 title: "Building an App with Angular, Part 1: Introduction"
 summary: Part one introduces the project and sets the stage for the following parts in the series.
 excerpt: Part one introduces the project and sets the stage for the following parts in the series.
-description: This post introduces the project and sets the stage for the following posts in the series. The series will cover HTTP Interceptors, logging, snackbar messages, angular material data tables, NGRx and more.
+description: >-
+    This post introduces the project and sets the stage for the following posts in the series.
+    The series will cover HTTP Interceptors, logging, snackbar messages, angular material data tables, NGRx and more.
 canonical_url: https://JLSunday.com/tutorials/angular/2022/01/09/Building-an-Angular-App-Part1.html
 categories:
     Tutorials
     Angular
-tags: [tutorial, Angular, front-end, Typescript, JavaScript, Angular-Material, services, in-memory-database, flex-layout, interceptors, logging, snackbar]
+tags:
+    tutorial
+    Angular
+    front-end
+    Typescript
+    JavaScript
+    Angular-Material
+    services
+    in-memory-database
+    flex-layout
+    interceptors
+    logging
+    snackbar
+image: https://JLSunday.com/images/other-images/undraw_Maker_launch_re_rq81.png
 comments: true
-last_modified_at: 1/9/2022
+last_modified_at: 2022/01/11
 ---
+
+<figure style="margin-top: 20px;">
+        <img alt="Angular Windows"  src="{{ '/images/other-images/undraw_Maker_launch_re_rq81.png' | prepend: site.url }}" loading="lazy" title="How do you like these angles?">
+    <figcaption>
+        Photo by <a href="https://undraw.co/search">unDraw.co</a>
+    </figcaption>
+</figure>
 
 * TOC
 {:toc}
 
-<figure style="margin-top: 20px;">
-        <img alt="Angular Windows" src="{{ '/images/other-images/ricardo-gomez-angel-HT8paJ-1-TU-unsplash.jpg' | prepend: site.url }}" loading="lazy" title="How do you like these angles?">
-    <figcaption>
-        Photo by <a href="https://unsplash.com/@rgaleria?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ricardo Gomez Angel</a> on <a href="https://unsplash.com/s/photos/angular?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-    </figcaption>
-</figure>
-
 ## Intro
 
-> **IMPORTANT:**
+> **IMPORTANT**<br>
 > This tutorial utilizes Angular 12. I realize Angular 13 is now published. If enough people request it, then I may make a tutorial
 > on how to upgrade between the two versions. Afterwards, the new version will be available in this project's repo.
+
+
+> **Part One - Intro Repo**<br>
+> If you want to follow along with the progression of the app, you can find the repo for this part of the project under the
+> [PartOne-Introduction](https://github.com/sundayj/JLSundayAngular/tree/PartOne-Introduction){:target="_blank"}{:rel="noopener noreferrer"}
+> branch.
 
 Hello, and welcome to my first posted Angular tutorial! Originally, I was going to go over how to create an Angular app from scratch,
 but the [Angular Tour of Heroes App and Tutorial](https://v12.angular.io/tutorial#tour-of-heroes-app-and-tutorial){:target="_blank"}{:rel="noopener noreferrer"}
@@ -45,6 +65,20 @@ First, I decided to use the Angular *Tour of Heroes* app, because the point of t
 "How to Invent an App," or anything like that. Rather, for the purposes of this series, I just need a basic app; Something with basic
 functionality that can be expanded upon with more in-depth and complex examples. It is important to understand that I am not claiming
 that this is an original app of my own creation.
+
+### The Repository
+
+The main repo for this project is the [JLSundayAngular](https://github.com/sundayj/JLSundayAngular){:target="_blank"}{:rel="noopener noreferrer"}
+repo's main branch. It will always contain the current state of the project. To make the project easy to follow along with, I will
+have branches for each part of the project containing the final state of the app at that point in the project. So, if
+you want to start the project from the state displayed in this post (recommended), then you should clone the 
+[PartOne-Introduction](https://github.com/sundayj/JLSundayAngular/tree/PartOne-Introduction){:target="_blank"}{:rel="noopener noreferrer"}
+branch. The following post will have its own branch containing the final state of the app as described in that post.
+
+So, effectively, you can clone the PartOne-Introduction branch and get familiar with it during this post. Then, when the next
+post is published, you can follow along with that post. Finally, by the end of the next post, what you have should match what sits in the repo
+for that specific post. I hope that is easy to understand. If not, please leave a comment at the bottom, via the [Contact Form]({{"/about/#contact-me" | prepend: site.url}})
+, or contact me via one of the many means in the sidebar.
 
 ### Requirements
 
@@ -101,9 +135,10 @@ flexbox layouts without having to deal with all CSS styling.
 ### Differences
 
 As I stated before, there are certain differences between this project and the *Tour of Heroes* app's original code.
-So, if you want to follow along, I recommend cloning this project directly from my GitHub repo instead of cloning the original
-*Tour of Heroes*. However, cloning the original *Tour of Heroes* code, then implementing the same changes made in this
-project could also be a great exercise.
+So, if you want to follow along, I recommend cloning this project directly from my GitHub repo,
+[here](https://github.com/sundayj/JLSundayAngular/tree/PartOne-Introduction){:target="_blank"}{:rel="noopener noreferrer"},
+instead of cloning the original *Tour of Heroes*. However, cloning the original *Tour of Heroes* code, then
+implementing the same changes made in this project could also be a great exercise.
 
 #### Project Structure
 
@@ -224,7 +259,8 @@ requesting data from a server. So, I am going to be detailing them in the order 
 As stated above, the HTTP Interceptor *intercepts* any outgoing or incoming requests to a server. There can be many uses
 for an HTTP Interceptor, but the main reason for the one in this project is to assist with logging, debugging, and notifying
 users of completed tasks. How to implement the HTTP Interceptor into an Angular app will be covered in the next post.
-For more information on Angular HTTP Interceptors, see their documentation, [here](https://v12.angular.io/guide/http#intercepting-requests-and-responses){:target="_blank"}{:rel="noopener noreferrer"}
+For more information on Angular HTTP Interceptors, see their documentation,
+[here](https://v12.angular.io/guide/http#intercepting-requests-and-responses){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### The Snackbar
 
@@ -249,7 +285,8 @@ to make this tutorial one long post, but thought better of it once I saw just ho
 on you, the reader, to not only read without falling asleep, but also to pace yourself while following along, I've decided to
 break the tutorial into several posts.
 
-Finally, as always, let me know what you think in the comments, shoot me a message through the [Contact Me](https://jlsunday.com/about/#contact-me){:target="_blank"}{:rel="noopener noreferrer"}
+Finally, as always, let me know what you think in the comments, shoot me a message through the
+[Contact Me](https://jlsunday.com/about/#contact-me){:target="_blank"}{:rel="noopener noreferrer"}
 form, or any of my social links in the sidebar. How do you feel about this project? Are these things that you find interesting for learning Angular?
 Would you prefer that I use a different set of components? Is there a particular component, service, directive, or anything else that you'd
 like me to add to these tutorials? Just let me know!

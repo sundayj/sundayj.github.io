@@ -11,7 +11,6 @@ categories: Updates
 tags: [updates, site-updates]
 comments: true
 image: '/images/other-images/undraw_Building_re_xfcm.png'
-last_modified_at: 2022-01-06 00:00:00 +0000
 ---
 
 <figure style="margin-top: 20px;">

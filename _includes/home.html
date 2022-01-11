@@ -25,6 +25,11 @@
                 <time itemprop="datePublished" datetime="{{ post.date | date: '%Y-%m-%d' }}">
                     {{ site.locales[site.default_locale].PostDate }}{{ post.date | date: "%b %-d, %Y" }}
                 </time>
+                {% if post.last_modified_at %}
+                    <time itemprop="dateModified" datetime="{{ post.last_modified_at }}">
+                        and edited on {{ post.last_modified_at | date: "%b %-d, %Y" }}
+                    </time>
+                {% endif %}
             </p>
         </header>
 

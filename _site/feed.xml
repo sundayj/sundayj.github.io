@@ -5,15 +5,23 @@
     <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 09 Jan 2022 23:31:03 -0500</pubDate>
-    <lastBuildDate>Sun, 09 Jan 2022 23:31:03 -0500</lastBuildDate>
+    <pubDate>Tue, 11 Jan 2022 09:24:06 -0500</pubDate>
+    <lastBuildDate>Tue, 11 Jan 2022 09:24:06 -0500</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>Building an App with Angular, Part 1: Introduction</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+        <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;Angular Windows&quot; src=&quot;http://localhost:4000/images/other-images/undraw_Maker_launch_re_rq81.png&quot; loading=&quot;lazy&quot; title=&quot;How do you like these angles?&quot; /&gt;
+    &lt;figcaption&gt;
+        Photo by &lt;a href=&quot;https://undraw.co/search&quot;&gt;unDraw.co&lt;/a&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#intro&quot; id=&quot;markdown-toc-intro&quot;&gt;Intro&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#the-project&quot; id=&quot;markdown-toc-the-project&quot;&gt;The Project&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-repository&quot; id=&quot;markdown-toc-the-repository&quot;&gt;The Repository&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#requirements&quot; id=&quot;markdown-toc-requirements&quot;&gt;Requirements&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#external-resources&quot; id=&quot;markdown-toc-external-resources&quot;&gt;External Resources&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#differences&quot; id=&quot;markdown-toc-differences&quot;&gt;Differences&lt;/a&gt;        &lt;ul&gt;
@@ -34,20 +42,19 @@
   &lt;li&gt;&lt;a href=&quot;#final-words&quot; id=&quot;markdown-toc-final-words&quot;&gt;Final Words&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Angular Windows&quot; src=&quot;http://localhost:4000/images/other-images/ricardo-gomez-angel-HT8paJ-1-TU-unsplash.jpg&quot; loading=&quot;lazy&quot; title=&quot;How do you like these angles?&quot; /&gt;
-    &lt;figcaption&gt;
-        Photo by &lt;a href=&quot;https://unsplash.com/@rgaleria?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Ricardo Gomez Angel&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/angular?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;
-
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
-
 &lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;IMPORTANT:&lt;/strong&gt;
+  &lt;p&gt;&lt;strong&gt;IMPORTANT&lt;/strong&gt;&lt;br /&gt;
 This tutorial utilizes Angular 12. I realize Angular 13 is now published. If enough people request it, then I may make a tutorial
 on how to upgrade between the two versions. Afterwards, the new version will be available in this project’s repo.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Part One - Intro Repo&lt;/strong&gt;&lt;br /&gt;
+If you want to follow along with the progression of the app, you can find the repo for this part of the project under the
+&lt;a href=&quot;https://github.com/sundayj/JLSundayAngular/tree/PartOne-Introduction&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;PartOne-Introduction&lt;/a&gt;
+branch.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Hello, and welcome to my first posted Angular tutorial! Originally, I was going to go over how to create an Angular app from scratch,
@@ -65,6 +72,20 @@ First, I decided to use the Angular &lt;em&gt;Tour of Heroes&lt;/em&gt; app, bec
 “How to Invent an App,” or anything like that. Rather, for the purposes of this series, I just need a basic app; Something with basic
 functionality that can be expanded upon with more in-depth and complex examples. It is important to understand that I am not claiming
 that this is an original app of my own creation.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-repository&quot;&gt;The Repository&lt;/h3&gt;
+
+&lt;p&gt;The main repo for this project is the &lt;a href=&quot;https://github.com/sundayj/JLSundayAngular&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JLSundayAngular&lt;/a&gt;
+repo’s main branch. It will always contain the current state of the project. To make the project easy to follow along with, I will
+have branches for each part of the project containing the final state of the app at that point in the project. So, if
+you want to start the project from the state displayed in this post (recommended), then you should clone the 
+&lt;a href=&quot;https://github.com/sundayj/JLSundayAngular/tree/PartOne-Introduction&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;PartOne-Introduction&lt;/a&gt;
+branch. The following post will have its own branch containing the final state of the app as described in that post.&lt;/p&gt;
+
+&lt;p&gt;So, effectively, you can clone the PartOne-Introduction branch and get familiar with it during this post. Then, when the next
+post is published, you can follow along with that post. Finally, by the end of the next post, what you have should match what sits in the repo
+for that specific post. I hope that is easy to understand. If not, please leave a comment at the bottom, via the &lt;a href=&quot;http://localhost:4000/about/#contact-me&quot;&gt;Contact Form&lt;/a&gt;
+, or contact me via one of the many means in the sidebar.&lt;/p&gt;
 
 &lt;h3 id=&quot;requirements&quot;&gt;Requirements&lt;/h3&gt;
 
@@ -124,9 +145,10 @@ flexbox layouts without having to deal with all CSS styling.&lt;/li&gt;
 &lt;h3 id=&quot;differences&quot;&gt;Differences&lt;/h3&gt;
 
 &lt;p&gt;As I stated before, there are certain differences between this project and the &lt;em&gt;Tour of Heroes&lt;/em&gt; app’s original code.
-So, if you want to follow along, I recommend cloning this project directly from my GitHub repo instead of cloning the original
-&lt;em&gt;Tour of Heroes&lt;/em&gt;. However, cloning the original &lt;em&gt;Tour of Heroes&lt;/em&gt; code, then implementing the same changes made in this
-project could also be a great exercise.&lt;/p&gt;
+So, if you want to follow along, I recommend cloning this project directly from my GitHub repo,
+&lt;a href=&quot;https://github.com/sundayj/JLSundayAngular/tree/PartOne-Introduction&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;,
+instead of cloning the original &lt;em&gt;Tour of Heroes&lt;/em&gt;. However, cloning the original &lt;em&gt;Tour of Heroes&lt;/em&gt; code, then
+implementing the same changes made in this project could also be a great exercise.&lt;/p&gt;
 
 &lt;h4 id=&quot;project-structure&quot;&gt;Project Structure&lt;/h4&gt;
 
@@ -248,7 +270,8 @@ interceptor does exactly as the name implies - It intercepts the call/response.&
 &lt;p&gt;As stated above, the HTTP Interceptor &lt;em&gt;intercepts&lt;/em&gt; any outgoing or incoming requests to a server. There can be many uses
 for an HTTP Interceptor, but the main reason for the one in this project is to assist with logging, debugging, and notifying
 users of completed tasks. How to implement the HTTP Interceptor into an Angular app will be covered in the next post.
-For more information on Angular HTTP Interceptors, see their documentation, &lt;a href=&quot;https://v12.angular.io/guide/http#intercepting-requests-and-responses&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+For more information on Angular HTTP Interceptors, see their documentation,
+&lt;a href=&quot;https://v12.angular.io/guide/http#intercepting-requests-and-responses&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;the-snackbar&quot;&gt;The Snackbar&lt;/h3&gt;
 
@@ -273,7 +296,8 @@ to make this tutorial one long post, but thought better of it once I saw just ho
 on you, the reader, to not only read without falling asleep, but also to pace yourself while following along, I’ve decided to
 break the tutorial into several posts.&lt;/p&gt;
 
-&lt;p&gt;Finally, as always, let me know what you think in the comments, shoot me a message through the &lt;a href=&quot;https://jlsunday.com/about/#contact-me&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Contact Me&lt;/a&gt;
+&lt;p&gt;Finally, as always, let me know what you think in the comments, shoot me a message through the
+&lt;a href=&quot;https://jlsunday.com/about/#contact-me&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Contact Me&lt;/a&gt;
 form, or any of my social links in the sidebar. How do you feel about this project? Are these things that you find interesting for learning Angular?
 Would you prefer that I use a different set of components? Is there a particular component, service, directive, or anything else that you’d
 like me to add to these tutorials? Just let me know!&lt;/p&gt;
