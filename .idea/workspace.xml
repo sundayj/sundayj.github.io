@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e477bb09-ddcf-4ab9-ab6e-9fdb4cc810d7" name="Changes" comment="" />
+    <list default="true" id="e477bb09-ddcf-4ab9-ab6e-9fdb4cc810d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/images/JLSunday-logo/JLSunday-no-background-25percent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/JLSunday-logo/JLSunday-no-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/other-images/undraw_Design_objectives_re_94pd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/other-images/undraw_approve_qwp7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/other-images/undraw_design_components_9vy6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/JustinSunday_Resume_2022-01-07.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/JustinSunday_Resume_2022-01-07.pdf" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +58,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="21oCzKkWikfOmS3lhCPqsodsjhZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -54,16 +68,21 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="GitStage.ChangesTree.GroupingKeys" value="directory&#10;module&#10;repository" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/_drafts/Building-an-Angular-App" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
+    ]
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\justi\github-blog\sundayj.github.io\_drafts\Building-an-Angular-App" />
@@ -71,6 +90,7 @@
       <recent name="C:\Users\justi\github-blog\sundayj.github.io\_includes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\justi\github-blog\sundayj.github.io\_posts" />
       <recent name="C:\Users\justi\github-blog\sundayj.github.io\_drafts\Building-an-Angular-App" />
       <recent name="C:\Users\justi\github-blog\sundayj.github.io\assets\fonts" />
     </key>
@@ -95,6 +115,12 @@
       <workItem from="1641688467003" duration="20207000" />
       <workItem from="1641824651315" duration="6000" />
       <workItem from="1641849639836" duration="4861000" />
+      <workItem from="1642293379973" duration="583000" />
+      <workItem from="1642976126625" duration="66000" />
+      <workItem from="1650646769855" duration="5315000" />
+      <workItem from="1651155090509" duration="241000" />
+      <workItem from="1654442766674" duration="12000" />
+      <workItem from="1654442807828" duration="43000" />
     </task>
     <servers />
   </component>
@@ -111,6 +137,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
