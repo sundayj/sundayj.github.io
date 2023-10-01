@@ -8,12 +8,11 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.0.6.1)
+    activesupport (7.0.8)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 0.7, < 2)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
-      zeitwerk (~> 2.2, >= 2.2.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
     algolia_html_extractor (2.6.4)
@@ -37,13 +36,13 @@ GEM
       http_parser.rb (~> 0)
     ethon (0.16.0)
       ffi (>= 1.15.0)
-    execjs (2.9.0)
+    execjs (2.9.1)
     faraday (2.7.11)
       base64
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
-    ffi (1.15.5)
+    ffi (1.16.2-x64-mingw-ucrt)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
@@ -289,12 +288,11 @@ GEM
       tilt (~> 2.0)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    thread_safe (0.3.6)
     tilt (2.3.0)
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
-    tzinfo (1.2.11)
-      thread_safe (~> 0.1)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
     tzinfo-data (1.2023.3)
       tzinfo (>= 1.0.0)
     unf (0.1.4)
@@ -304,26 +302,25 @@ GEM
     verbal_expressions (0.1.5)
     wdm (0.1.1)
     webrick (1.8.1)
-    zeitwerk (2.6.11)
 
 PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
-  eventmachine (= 1.2.7)!
+  eventmachine!
   github-pages
   jekyll-admin
-  jekyll-algolia (~> 1.0)
-  jekyll-feed (~> 0.12)
+  jekyll-algolia
+  jekyll-feed
   jekyll-gist
   jekyll-seo
   jekyll-seo-tag
   jekyll-sitemap
-  jemoji (~> 0.12.0)
-  tzinfo (~> 1.2)
+  jemoji
+  tzinfo
   tzinfo-data
   wdm (~> 0.1.1)
-  webrick (~> 1.7)
+  webrick
 
 BUNDLED WITH
    2.4.19
