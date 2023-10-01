@@ -29,7 +29,7 @@ last_modified_at: 2022/01/11
 ---
 
 <figure style="margin-top: 20px;">
-        <img alt="Angular Windows"  src="{{ '/images/other-images/undraw_Maker_launch_re_rq81.png' | prepend: site.url }}" loading="lazy" title="How do you like these angles?">
+        <img alt="Angular Windows"  src="{{ '/images/other-images/undraw/undraw_Maker_launch_re_rq81.png' | prepend: site.url }}" loading="lazy" title="How do you like these angles?">
     <figcaption>
         Photo by <a href="https://undraw.co/search">unDraw.co</a>
     </figcaption>

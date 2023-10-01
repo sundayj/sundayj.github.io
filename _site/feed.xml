@@ -5,14 +5,1028 @@
     <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Jan 2022 09:24:06 -0500</pubDate>
-    <lastBuildDate>Tue, 11 Jan 2022 09:24:06 -0500</lastBuildDate>
-    <generator>Jekyll v3.9.0</generator>
+    <pubDate>Thu, 21 Sep 2023 09:24:05 -0400</pubDate>
+    <lastBuildDate>Thu, 21 Sep 2023 09:24:05 -0400</lastBuildDate>
+    <generator>Jekyll v3.9.3</generator>
+    
+      <item>
+        <title>Comparing Pixel Art Editors, Part One: Aseprite</title>
+        <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;Design Components&quot; src=&quot;http://localhost:4000/images/other-images/undraw/undraw_design_components_9vy6.png&quot; loading=&quot;lazy&quot; title=&quot;Design Components&quot; /&gt;
+    &lt;figcaption&gt;
+        Image provided by &lt;a href=&quot;https://undraw.co/search&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;unDraw.co&lt;/a&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#intro&quot; id=&quot;markdown-toc-intro&quot;&gt;Intro&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#feature-comparison-table&quot; id=&quot;markdown-toc-feature-comparison-table&quot;&gt;Feature Comparison Table&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#feature-breakdown&quot; id=&quot;markdown-toc-feature-breakdown&quot;&gt;Feature Breakdown&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#tools&quot; id=&quot;markdown-toc-tools&quot;&gt;Tools&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#aseprite&quot; id=&quot;markdown-toc-aseprite&quot;&gt;Aseprite&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#extras&quot; id=&quot;markdown-toc-extras&quot;&gt;Extras&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#where-to-get-it&quot; id=&quot;markdown-toc-where-to-get-it&quot;&gt;Where to Get It?&lt;/a&gt;            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;#supported-platforms&quot; id=&quot;markdown-toc-supported-platforms&quot;&gt;Supported Platforms&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#compile-your-own-copy&quot; id=&quot;markdown-toc-compile-your-own-copy&quot;&gt;Compile Your Own Copy&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#download-the-trial-version&quot; id=&quot;markdown-toc-download-the-trial-version&quot;&gt;Download the Trial Version&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#buy-an-official-copy&quot; id=&quot;markdown-toc-buy-an-official-copy&quot;&gt;Buy an Official Copy&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#grafx2&quot; id=&quot;markdown-toc-grafx2&quot;&gt;GrafX2&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#where-to-get-it-1&quot; id=&quot;markdown-toc-where-to-get-it-1&quot;&gt;Where to Get It?&lt;/a&gt;            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;#supported-platforms-1&quot; id=&quot;markdown-toc-supported-platforms-1&quot;&gt;Supported Platforms&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#pixieditor&quot; id=&quot;markdown-toc-pixieditor&quot;&gt;PixiEditor&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#libresprite&quot; id=&quot;markdown-toc-libresprite&quot;&gt;LibreSprite&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#libresprite-dotto&quot; id=&quot;markdown-toc-libresprite-dotto&quot;&gt;LibreSprite Dotto&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#jpixel&quot; id=&quot;markdown-toc-jpixel&quot;&gt;JPixel&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#pixelorama&quot; id=&quot;markdown-toc-pixelorama&quot;&gt;Pixelorama&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#pixel-studio&quot; id=&quot;markdown-toc-pixel-studio&quot;&gt;Pixel Studio&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#graphics-gale&quot; id=&quot;markdown-toc-graphics-gale&quot;&gt;Graphics Gale&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#piskel&quot; id=&quot;markdown-toc-piskel&quot;&gt;Piskel&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lospec-pixel-editor&quot; id=&quot;markdown-toc-lospec-pixel-editor&quot;&gt;LoSpec Pixel Editor&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#pixilart&quot; id=&quot;markdown-toc-pixilart&quot;&gt;PixilArt&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#pro-motion&quot; id=&quot;markdown-toc-pro-motion&quot;&gt;Pro Motion&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#other-resources&quot; id=&quot;markdown-toc-other-resources&quot;&gt;Other Resources&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#pixel-art-tutorials&quot; id=&quot;markdown-toc-pixel-art-tutorials&quot;&gt;Pixel Art Tutorials&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#free-game-resources&quot; id=&quot;markdown-toc-free-game-resources&quot;&gt;Free Game Resources&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;Hello again! In this post I will be comparing various pixel art editing tools. My ADD has decided it is time for me to
+create my own video game, which is something I have been wanting to do for years. I may decide to do more posts on video
+game development as my journey progresses, but who knows? I’ve known for a long time now that I want my game to have pixel
+graphics, and, with my experience as an artist, I knew that I wanted to create my own art for my game. However, with my
+propensity for abandoning personal projects, I figure it is best to create my game with as many free/open-source tools
+as possible. While searching for the best pixel editor, I’ve come across many tools, and have downloaded and tested them
+all to some degree. This post is as much to help myself decide on a final tool as to help any of you, good readers, that
+may face a similar dilemma.&lt;/p&gt;
+
+&lt;p&gt;Of course, each of these tools have their pros and cons, which we will explore, but they also vary in their offered
+features. It is those features that I will be comparing the most deeply. Hopefully, by the end of this post, I will have
+chosen the editor for me, and, with any luck, you will have a better idea of the editor you’d like to use, as well.&lt;/p&gt;
+
+&lt;h2 id=&quot;feature-comparison-table&quot;&gt;Feature Comparison Table&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;First, probably the most important part of this whole post: The Feature Comparison Table! The header row and first
+column are sticky, so you can freely scroll in order to cross-reference each feature with each of the reviewed tools.
+Also, clicking on one of the tools’ names in the table header will take you straight to its respective review in the post
+below.&lt;/p&gt;
+
+&lt;p&gt;Finally, a few notes about the icons in the table:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;If you see a &lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;, it is because I couldn’t definitively tell if the feature exists in that tool.&lt;/li&gt;
+  &lt;li&gt;For LibreSprite Dotto, it is still very early in its development, so, while the features may be marked as absent, many
+of the features are planned for its future development and can be seen on their &lt;a href=&quot;https://github.com/LibreSprite/Dotto#version-roadmap&quot; target=&quot;_blank&quot; rel=&quot;
+noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Open this table in a separate tab by clicking &lt;a href=&quot;http://localhost:4000/Sprite-Editor-Comparison-Table&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;div id=&quot;fixedTable&quot;&gt;
+    &lt;table&gt;
+        &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Feature&lt;/th&gt;
+            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#aseprite&quot;&gt;Aseprite&lt;/a&gt;&lt;/th&gt;
+            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#grafx2&quot;&gt;GrafX2&lt;/a&gt;&lt;/th&gt;
+            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#pixieditor&quot;&gt;PixiEditor&lt;/a&gt;&lt;/th&gt;
+            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#libresprite&quot;&gt;LibreSprite&lt;/a&gt;&lt;/th&gt;
+            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#libresprite-dotto&quot;&gt;LibreSprite Dotto&lt;/a&gt;&lt;/th&gt;
+            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#jpixel&quot;&gt;JPixel&lt;/a&gt;&lt;/th&gt;
+            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#pixelorama&quot;&gt;Pixelorama&lt;/a&gt;&lt;/th&gt;
+            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#pixel-studio&quot;&gt;Pixel Studio&lt;/a&gt;&lt;/th&gt;
+            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#graphics-gale&quot;&gt;Graphics Gale&lt;/a&gt;&lt;/th&gt;
+            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#piskel&quot;&gt;Piskel&lt;/a&gt;&lt;/th&gt;
+            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#lospec-pixel-editor&quot;&gt;LoSpec Pixel Editor&lt;/a&gt;&lt;/th&gt;
+            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#pixilart&quot;&gt;PixilArt&lt;/a&gt;&lt;/th&gt;
+            &lt;!--- th&gt;Pyxel Edit&lt;/th&gt; --&gt;
+            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#pro-motion&quot;&gt;Pro Motion Free&lt;/a&gt;&lt;/th&gt;
+            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#pro-motion&quot;&gt;Pro Motion Full&lt;/a&gt;&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Pixel Perfect&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Layers&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Symmetry Mirror Pen&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Auto-Shade/Shading Mode&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;RotSprite Rotation&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Custom Brushes&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Anti-Aliasing&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Tile Mode&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;File Export - PNG Image Sequences&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;File Export - Animated GIFs&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;File Export - Sprite Sheets&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Animation - Frames&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Animation - Frame Tags&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Animation - Onion Skin&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Animation - Playback Modes&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Palette - Export/Import&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Extensibility&lt;/th&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+
+        &lt;tr class=&quot;costTable&quot;&gt;
+            &lt;th&gt;Cost&lt;/th&gt;
+            &lt;td&gt;
+                &lt;b&gt;Three Options:&lt;/b&gt;&lt;br /&gt;
+                &lt;b&gt;1.&lt;/b&gt; &lt;b&gt;Free*&lt;/b&gt;&lt;br /&gt;
+                &lt;b&gt;2.&lt;/b&gt; Trial Version&lt;br /&gt;
+                &lt;b&gt;3.&lt;/b&gt; $20&lt;br /&gt;
+            &lt;/td&gt;&lt;!--- Aseprite --&gt;
+            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
+            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
+            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
+            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
+            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
+            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
+            &lt;td&gt;&lt;b&gt;Three Options:&lt;/b&gt;&lt;br /&gt;
+                &lt;b&gt;1.&lt;/b&gt; &lt;b&gt;Free&lt;/b&gt;&lt;br /&gt;
+                &lt;b&gt;2.&lt;/b&gt; Pro&lt;br /&gt;
+                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- $7.99&lt;br /&gt;
+                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Removes Ads&lt;br /&gt;
+                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Unlocks features like Tile mode&lt;br /&gt;
+                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- More details &lt;a href=&quot;https://github.com/hippogamesunity/PixelStudioHub/wiki/Shop&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;&lt;br /&gt;
+                &lt;b&gt;3.&lt;/b&gt; Pro Cross&lt;br /&gt;
+                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- $11.99&lt;br /&gt;
+                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Same as Pro&lt;br /&gt;
+                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Allows you to use Pro cross-platform&lt;br /&gt;
+                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- More details &lt;a href=&quot;https://github.com/hippogamesunity/PixelStudioHub/wiki/Shop&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;
+            &lt;/td&gt;&lt;!--- Pixel Studio --&gt;
+            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
+            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
+            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
+            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
+            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
+            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
+            &lt;td&gt;
+                - $39.00&lt;br /&gt;
+                - $19 to upgrade from previous version&lt;br /&gt;
+                - More details &lt;a href=&quot;https://www.cosmigo.com/pixel_animation_software/downloads&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;
+            &lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;&lt;strong&gt;GENERAL BLOG UPDATE&lt;/strong&gt;&lt;/em&gt;&lt;br /&gt;
+I know it’s been a few months since I last posted, and I sincerely apologize if you were following my Angular series.
+I started a new job as a senior developer back in February, and it has consumed most of my time.
+I do plan to get back to the Angular tutorial eventually, but I have no immediate plans for it.
+If anyone is really interested in the Angular series, then please contact me; I’m much more likely to get back to it
+if I know there are people interested or dependent on the series.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;feature-breakdown&quot;&gt;Feature Breakdown&lt;/h3&gt;
+&lt;div class=&quot;tool-list&quot;&gt;
+    &lt;details open=&quot;&quot;&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;b&gt;Pixel Perfect&lt;/b&gt;
+        &lt;/summary&gt;
+        Allows you to draw prettier lines an curves. Without a Pixel Perfect feature, lines drawn freehand will usually
+        have extra pixels that give lines a distorted or bumpy look in places where it should look straighter. Pixel
+        Perfect helps with this either by deleting extra pixels as you go, or by creating a pixel at a diagonal to
+        give a better angled look.
+        &lt;figure&gt;
+            &lt;img alt=&quot;Layer Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/pixel-perfect-example.png&quot; loading=&quot;lazy&quot; title=&quot;Layer Example&quot; /&gt;
+            &lt;figcaption&gt;
+                Image borrowed from &lt;a href=&quot;https://medium.com/pixel-grimoire/how-to-start-making-pixel-art-7-e504bfa4ddf2&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Pixel Grimoire&lt;/a&gt;
+            &lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;b&gt;Layers&lt;/b&gt;
+        &lt;/summary&gt;
+        Layers are transparent sheets that allow you to separate elements of your art. This separation allows you to draw
+        on one layer without fear of affecting other layers. This helps greatly with animation, or giving a feeling of
+        depth to your art.
+        &lt;figure&gt;
+            &lt;img alt=&quot;Pixel Perfect Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/1Layer-Layers-9.webp&quot; loading=&quot;lazy&quot; title=&quot;Pixel Perfect Example&quot; /&gt;
+            &lt;figcaption&gt;
+                Image borrowed from &lt;a href=&quot;https://learnindie.com/pixel-art-aseprite-1-layers/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;LearnIndie.com&lt;/a&gt;
+            &lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;b&gt;Symmetry Mirror Pen&lt;/b&gt;
+        &lt;/summary&gt;
+        Symmetry tools, or mirror pens, allow you to draw art that is perfectly symmetrical vertically and/or horizontally.
+        This can be useful for patterns and designs, or even drawing the front view of a characters face.
+        &lt;figure&gt;
+            &lt;img alt=&quot;Symmetry Pen Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/symmetry-tool-example.gif&quot; loading=&quot;lazy&quot; title=&quot;Symmetry Pen Example&quot; /&gt;
+            &lt;figcaption&gt;
+                Image borrowed from &lt;a href=&quot;https://i.imgur.com/pj3ykyd.gif&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;https://i.imgur.com/pj3ykyd.gif&lt;/a&gt;
+            &lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;b&gt;Auto-Shade/Shading Mode&lt;/b&gt;
+        &lt;/summary&gt;
+        Auto-Shade tools allow you to darken or lighten an area of your art by simply drawing over it again.
+        &lt;figure&gt;
+            &lt;img alt=&quot;Shading Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/shading_example.gif&quot; loading=&quot;lazy&quot; title=&quot;Shading Example&quot; /&gt;
+            &lt;figcaption&gt;
+                Image borrowed from &lt;a href=&quot;https://www.aseprite.org/docs/shading/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Aseprite.org&lt;/a&gt;
+            &lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;b&gt;RotSprite Rotation&lt;/b&gt;
+        &lt;/summary&gt;
+        RotSprite allows you to rotate all, or part, of your artwork without losing any resolution. In the image below,
+        the sprite on the left was rotated without RotSprite, but the sprite on the right was rotated with RotSprite.
+        &lt;figure&gt;
+            &lt;img alt=&quot;RotSprite Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/rotsprite-example.png&quot; loading=&quot;lazy&quot; title=&quot;RotSprite Example&quot; /&gt;
+            &lt;figcaption&gt;
+                Image borrowed from &lt;a href=&quot;https://forum.yoyogames.com/index.php?threads/solved-image_angle-ruins-sprites.54514/#lg=_xfUid-2-1655259916&amp;amp;slide=0&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;https://i.imgur.com/vHOtruN.png&lt;/a&gt;
+            &lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;b&gt;Custom Brushes&lt;/b&gt;
+        &lt;/summary&gt;
+        Custom brushes allow you to recreate a look/feel of an area of art and use it as the pen itself.
+        &lt;figure&gt;
+            &lt;img alt=&quot;Custom Brush Gif&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/custom-brush.gif&quot; loading=&quot;lazy&quot; title=&quot;Custom Brush Gif&quot; /&gt;
+            &lt;figcaption&gt;
+                Image borrowed from &lt;a href=&quot;https://www.aseprite.org/assets/images/custom-brush.gif&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Aseprite.org&lt;/a&gt;
+            &lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;b&gt;Anti-Aliasing&lt;/b&gt;
+        &lt;/summary&gt;
+        Anti-Aliasing is useful for softening edges of your art and removing the bumpy look in places where the edges should be softer.
+        &lt;figure&gt;
+            &lt;img alt=&quot;Anti-Aliasing Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/anti-alias-example.png&quot; loading=&quot;lazy&quot; title=&quot;Anti-Aliasing Example&quot; /&gt;
+            &lt;figcaption&gt;
+                Image borrowed from &lt;a href=&quot;https://medium.com/pixel-grimoire/how-to-start-making-pixel-art-4-ff4bfcd2d085&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Pixel Grimoire&lt;/a&gt;
+            &lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;b&gt;Tile Mode&lt;/b&gt;
+        &lt;/summary&gt;
+        Tiles are images that can be duplicated and placed throughout an artwork to create a pattern or texture.
+        &lt;figure&gt;
+            &lt;img alt=&quot;Small Tile Tutorial&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/tile-tutorial.gif&quot; loading=&quot;lazy&quot; title=&quot;Small Tile Tutorial&quot; /&gt;
+            &lt;figcaption&gt;
+                Image borrowed from &lt;a href=&quot;https://blog.studiominiboss.com/pixelart&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Studio Mini Boss&lt;/a&gt;
+            &lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;b&gt;File Export&lt;/b&gt;
+        &lt;/summary&gt;
+        Most of these editors allow you to export in PNG, at least, but some allow you to export to a variety of other
+        file types, including GIF, or even sprite sheets.
+        &lt;ul&gt;
+            &lt;li&gt;PNG&lt;/li&gt;
+            &lt;li&gt;Animated GIFs&lt;/li&gt;
+            &lt;li&gt;Sprite Sheets&lt;/li&gt;
+            &lt;ul&gt;
+                &lt;li&gt;A &lt;em&gt;sprite sheet&lt;/em&gt; is an image that consists of several smaller images. Combining the small
+                images in one big image improves the game performance, reduces the memory usage, and speeds up the
+                startup and loading time of the game.
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;figure&gt;
+                &lt;img alt=&quot;Sprite Sheet Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/sonic3_spritesheet_example.png&quot; loading=&quot;lazy&quot; title=&quot;Sprite Sheet Example&quot; /&gt;
+                &lt;figcaption&gt;
+                    Image borrowed from &lt;a href=&quot;https://demyanov.dev/javascript-canvas-sprite-animation&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;demyanov.dev&lt;/a&gt;
+                &lt;/figcaption&gt;
+            &lt;/figure&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;b&gt;Animation&lt;/b&gt;
+        &lt;/summary&gt;
+        Since I&apos;m looking for an editor that I can use for game development assets, animation is a big thing for me. Because
+        of this, we will look at several features related to animation.
+        &lt;ul&gt;
+            &lt;li&gt;Frames&lt;/li&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                    Frames are individual images, usually duplicates of a sprite with small changes that, when put together
+                    in sequence, creates an animation.
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;li&gt;Frame Tags&lt;/li&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                    Frame tags are just a little extra that helps to organize your frames. This one isn&apos;t as important
+                    to me, but it is a nice bit of icing on the cake.
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;li&gt;Onion Skin&lt;/li&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                    Onion skin is another great feature to have when creating sprite animations. I&apos;d like to say it isn&apos;t
+                    important, but I&apos;d be lying, haha. Onion skins show the outline of frames, or frame, that are
+                    adjacent to the frame you&apos;re currently editing. This allows you to see the placement of your sprite
+                    before and/or after the image you&apos;re editing and helps to create more accurate animations. It is a
+                    huge time saver.
+                    &lt;/li&gt;
+                &lt;figure&gt;
+                    &lt;img alt=&quot;Onion Skin Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/screenshot_onion_skinning.jpg&quot; loading=&quot;lazy&quot; title=&quot;Onion Skin Example&quot; /&gt;
+                    &lt;figcaption&gt;
+                        Image borrowed from &lt;a href=&quot;https://www.cosmigo.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Cosmigo&lt;/a&gt;
+                    &lt;/figcaption&gt;
+                &lt;/figure&gt;
+                &lt;/ul&gt;
+            &lt;li&gt;Playback Modes&lt;/li&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                    Playback modes can encompass a few different things. Som can allow you to loop frame sections in
+                    forward, reverse, and even ping-pong modes. Some just allow you to change preview speed.
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;b&gt;Palette&lt;/b&gt;
+        &lt;/summary&gt;
+        Coming from a fine-art background, the palette is very important to me. Most of these tools have great features
+        that allow you to adjust your palette.
+        &lt;ul&gt;
+            &lt;li&gt;Export/Import&lt;/li&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Some of these editors allow you to import from an existing image, which can be very useful if you want to keep to a certain style.&lt;/li&gt;
+                &lt;li&gt;Some of these tools have specific palette file formats, while others may let you import from palette
+                file formats used by other programs, such as Photoshop&apos;s palette file format.Import from a specific palette file format.&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/ul&gt;
+    &lt;/details&gt;
+    &lt;details&gt;
+        &lt;summary style=&quot;cursor: pointer&quot;&gt;
+            &lt;b&gt;Extensibility&lt;/b&gt;
+        &lt;/summary&gt;
+        In this context, extensibility refers to the ability to customize the editor to your needs. In this case, I
+        don&apos;t just mean the ability to be able to change the tool&apos;s color theme; I mean the ability to extend the functions
+        of the tool and add features, tools, or functions that either enhance the tool&apos;s current functionality or adds
+        new capabilities to the tool. Now, this isn&apos;t a deal-breaker by any means, but it is a very-nice-to-have.
+    &lt;/details&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;aseprite&quot;&gt;&lt;a href=&quot;https://www.aseprite.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Aseprite&lt;/a&gt;&lt;/h3&gt;
+
+&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;Aseprite Trial Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/aseprite-trial-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Aseprite Trial Screenshot&quot; /&gt;
+    &lt;figcaption&gt;
+        Screenshot of a new sprite window in Aseprite.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Aseprite seems to be the standard in pixel art circles. If you visit any pixel or game resource sites, or if you
+just do a search for “pixels” in general, then you are likely to see Aseprite mentioned multiple times. Because of this,
+I will cover this editor first, and I will be honest with you, after reviewing this editor, I’ve grown to like it quite
+a bit. I will continue to review the others, but they will have to blow me away to make me choose them over Aseprite…&lt;/p&gt;
+
+&lt;p&gt;At first glance, when opening the editor, it isn’t quite obvious why. The UI is a bit basic, very simple, and it doesn’t
+look very feature-rich. However, once you start digging into the program, playing with the tools and settings, then you
+start to see that this editor actually has quite a lot to offer.&lt;/p&gt;
+
+&lt;p&gt;One thing that Aseprite does well that I was surprised, and disappointed, to find in regard to the other editors while
+writing this post and doing my research, is that Aseprite is &lt;strong&gt;very&lt;/strong&gt; well documented! Their website &lt;a href=&quot;https://www.aseprite.org/&quot; target=&quot;_
+blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Aseprite.org&lt;/a&gt; does a great job listing its features and providing documentation. Also, if you’re
+new to pixel art, like I am, then you will also be happy to see that Aseprite has a thriving &lt;a href=&quot;https://community.aseprite.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;community&lt;/a&gt; with everything from &lt;a href=&quot;https://community.aseprite.org/c/artwork/8&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;galleries&lt;/a&gt;
+and &lt;a href=&quot;https://community.aseprite.org/c/guides/14&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;guides&lt;/a&gt; to &lt;a href=&quot;https://community.aseprite.org/c/help/9&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;help&lt;/a&gt; and &lt;a href=&quot;https://community.aseprite.org/c/announcements/10&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;announcements&lt;/a&gt;.
+Getting started with Aseprite, or getting assistance, shouldn’t be a hassle while utilizing this tool.&lt;/p&gt;
+
+&lt;p&gt;Aseprite’s UI is unique to all the other editors on this list. You can see from the screenshot above that the UI has a
+very pixelated design. While this is unique, and I personally like it, some professionals may be put off by this design
+choice. True, it doesn’t have the same modern polish as something like Photoshop, but it does give the editor a more beginner-friendly
+feel while still offering all the professional features seen in the editors with a more modern UI. Besides, sometimes all
+it takes to give something a modern feel is to simply update the theme, which Aseprite allows you to do by either creating your
+own, or by downloading pre-made themes. Check out some of the most popular ones &lt;a href=&quot;https://github.com/aseprite/themes&quot; target=&quot;_blank&quot; rel=&quot;noopener
+noreferrer&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;extras&quot;&gt;Extras&lt;/h4&gt;
+&lt;p&gt;Perhaps one of the best features about Aseprite is that it allows you to add extensions and custom scripts to help automate
+some of the more tedious aspects of pixel art creation. Check out this &lt;a href=&quot;https://itch.io/tools/tag-aseprite&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;link&lt;/a&gt; to find a plethora of extensions available for Aseprite. After a quick perusal of the link myself, I think my personal
+favorite is the &lt;a href=&quot;https://thkaspar.itch.io/magic-pencil&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Magic Pencil&lt;/a&gt;. Check
+out this gif showing what the magic pencil can do:&lt;/p&gt;
+
+&lt;figure style=&quot;margin-top: 20px; width: 50%;&quot;&gt;
+        &lt;img alt=&quot;Magic Pencil GIF&quot; src=&quot;https://img.itch.zone/aW1hZ2UvMTU1NzE3Mi85MDg3MzIzLmdpZg==/347x500/JHRwSW.gif&quot; loading=&quot;lazy&quot; title=&quot;Magic Pencil GIF&quot; /&gt;
+    &lt;figcaption&gt;
+        Image provided by &lt;a href=&quot;https://thkaspar.itch.io/magic-pencil&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Magic Pencil&lt;/a&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;where-to-get-it&quot;&gt;Where to Get It?&lt;/h4&gt;
+&lt;p&gt;Until August 2016, Aseprite was completely &lt;a href=&quot;https://opensource.org/osd&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;open source&lt;/a&gt;,
+but now it is licensed under the &lt;a href=&quot;https://github.com/aseprite/aseprite/blob/main/EULA.txt&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Aseprite EULA&lt;/a&gt;.
+The TLDR of the EULA basically states that you can still clone the &lt;a href=&quot;https://github.com/aseprite/aseprite&quot; target=&quot;_blank&quot; rel=&quot;noopener
+noreferrer&quot;&gt;source code&lt;/a&gt;, modify it, and compile it for &lt;strong&gt;FREE&lt;/strong&gt;, but you can’t share or sell a compiled copy, or use its code in
+your own project (unless it is code that existed before the introduction of the EULA).&lt;/p&gt;
+
+&lt;h5 id=&quot;supported-platforms&quot;&gt;Supported Platforms&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;Windows&lt;/li&gt;
+  &lt;li&gt;macOS&lt;/li&gt;
+  &lt;li&gt;Ubuntu 32-bit and 64-bit .deb packages for Ubuntu 18.04 or greater. These packages can be uncompressed and executed in other Linux distributions, too (Fedora, etc.).&lt;/li&gt;
+  &lt;li&gt;Steam&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;compile-your-own-copy&quot;&gt;Compile Your Own Copy&lt;/h5&gt;
+&lt;p&gt;If you want Aseprite for &lt;strong&gt;FREE&lt;/strong&gt;, as mentioned above, you can compile it yourself by following the instructions &lt;a href=&quot;https://github.com/aseprite/aseprite/blob/main/INSTALL.md&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;. &lt;del&gt;However, I will tell you from my own experience that it isn’t easy. I spent
+many days and a few sleepless nights trying to compile and run Aseprite for myself, but never had any success&lt;/del&gt;. I was able to
+finally get it to compile, but I could never get it to open successfully, as it would crash and close immediately after opening.
+There are a ton of tutorials and even some other blog posts and
+&lt;a href=&quot;https://www.reddit.com/r/PixelArt/comments/i387m1/guide_how_to_build_aseprite_from_source_aseprite/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;reddit posts&lt;/a&gt;
+online that walk you through the process, &lt;del&gt;but even following those, I never got it to work&lt;/del&gt;. Now, I use my computer for
+all sorts of development purposes, so it is possible that I have some conflicting packages, or something, but I don’t
+think it is worth the time to continue to troubleshoot for myself. Also, if you compile it yourself, and you ever want to
+update the application, then you will have to repeat the process in order to update it. Now, if you have Windows, then you
+may want to check out The Lite Crafter’s &lt;a href=&quot;https://github.com/TheLiteCrafter/AsepriteTool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;AsepriteTool&lt;/a&gt;
+which supposedly builds Aseprite for you and will even update it for you, &lt;del&gt;but, again, I didn’t have any luck with it&lt;/del&gt;.&lt;/p&gt;
+
+&lt;p&gt;So, when I started writing this post, I had been unsuccessful when I tried to compile Aseprite myself. However, I did figure
+out my issue: I had MSys2 installed on my computer. Aseprite’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;install.md&lt;/code&gt; warns you about that, and I thought I had deleted
+MSys from my system, but apparently an older install of Visual Studio that I had on my computer previously installed MSys
+as part of some other feature I downloaded. So, I uninstalled the Visual Studio, and pretty much everything I’ve ever installed
+for Visual Studio that I don’t currently use in any projects and reran the Aseprite Tool, mentioned above, and it worked!&lt;/p&gt;
+
+&lt;h5 id=&quot;download-the-trial-version&quot;&gt;Download the Trial Version&lt;/h5&gt;
+&lt;p&gt;Aseprite also offers a free official trial version that has all the full features of the editor unlocked, if you want to
+give it a shot before paying for the full official version. Be aware, however, that any work you create using the trial
+version &lt;strong&gt;CANNOT&lt;/strong&gt; be saved. So, don’t think that you can just live with the trial version forever :cry:. If you want to
+give it a try, then you can download the trial &lt;a href=&quot;https://www.aseprite.org/trial/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h5 id=&quot;buy-an-official-copy&quot;&gt;Buy an Official Copy&lt;/h5&gt;
+&lt;p&gt;If you’re really serious about Aseprite and really want your own copy, then you really should consider paying the $20 and
+buying it directly from the developer. It’s a one-time fee, and it includes all future upgrades. Plus, it supports the developer
+and helps to keep the development and improvement of Aseprite ongoing. To see what you get when you buy the full version,
+check their FAQ, &lt;a href=&quot;https://www.aseprite.org/faq/#what-do-i-get-when-i-buy-aseprite&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;.
+If you think Aseprite is the tool for you, and you’re ready to pay for the full official version, then you can do so on their website
+&lt;a href=&quot;https://www.aseprite.org/download/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;https://store.steampowered.com/app/431730/Aseprite/&quot; target=&quot;_blank&quot; rel=&quot;
+noopener noreferrer&quot;&gt;Steam&lt;/a&gt;, or &lt;a href=&quot;https://dacap.itch.io/aseprite&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Itch.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;grafx2&quot;&gt;&lt;a href=&quot;http://grafx2.chez.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;GrafX2&lt;/a&gt;&lt;/h3&gt;
+
+&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;GrafX2 Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/grafx2-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;GrafX2 Screenshot&quot; /&gt;
+    &lt;figcaption&gt;
+        Image borrowed from &lt;a href=&quot;http://grafx2.chez.com/index.php?static2/screenshots&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;grafx2.chez.com&lt;/a&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;GrafX2… Wow. Now &lt;em&gt;this&lt;/em&gt; is an interesting program. Honestly, I almost didn’t add it to the list. However, it has been
+around for about twenty years and, when doing a search for pixel editors, this tool is listed quite a bit, so it must be
+worth at least checking out, right?&lt;/p&gt;
+
+&lt;p&gt;Now, if you’re a coder/programmer, then you’ve probably heard of Vi, Vim, and/or Emacs. To me, GrafX2 is the pixel
+editors’ equivalent those code editors. I say that, because, like the aforementioned code editors, GrafXx2 has a very minimal
+UI and its design is very reminiscent of MSDOS, which makes sense, because it is actually an upgraded &lt;a href=&quot;http://grafx2.chez.com/index.php?article6/differences-with-the-dos-version&quot; target=&quot;_
+blank&quot; rel=&quot;noopener noreferrer&quot;&gt;port&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, for a program that has been around so long, finding information about its documentation and/or features is
+a very hard task. Because of this, you may notice several &lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt; icons in the comparison table under
+GrafX2’s name. However, the documentation that I did find does mention that you can press &lt;kbd&gt;F1&lt;/kbd&gt; when selecting any
+of GrafX2’s tools and a help message will display with more info about the tool.&lt;/p&gt;
+
+&lt;p&gt;I played around in GrafX2 for a bit, but ultimately, I don’t think this is the program for me. If you like a minimal UI,
+tons of customizable keyboard shortcuts, and a no-fuss interface, then this may be the program for you. I definitely recommend
+downloading it and playing with it, regardless. May review of this tool may seem negative, but I actually have a ton of
+respect for this program and, if I had the time to spend on learning it through a ton of trial and error, then I would
+certainly keep it in my toolbox, but as it stands, I think I will be going for a more modern pixel editor.&lt;/p&gt;
+
+&lt;h4 id=&quot;where-to-get-it-1&quot;&gt;Where to Get It?&lt;/h4&gt;
+
+&lt;p&gt;If you would like to try out GrafX2 for yourself, then you can download it for &lt;strong&gt;FREE&lt;/strong&gt; from their website, &lt;a href=&quot;http://grafx2.chez.com/index.php?static3/downloads&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;supported-platforms-1&quot;&gt;Supported Platforms&lt;/h5&gt;
+&lt;p&gt;The main platforms supported for GrafX2 are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Windows&lt;/li&gt;
+  &lt;li&gt;Haiku&lt;/li&gt;
+  &lt;li&gt;Linux&lt;/li&gt;
+  &lt;li&gt;Atari: 2.8, Nightly builds&lt;/li&gt;
+  &lt;li&gt;GP2x&lt;/li&gt;
+  &lt;li&gt;Nintendo Switch&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Other platforms supported, and usually provided by third-parties, can be found on their website, &lt;a href=&quot;http://grafx2.chez.com/index.php?static3/downloads&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;pixieditor&quot;&gt;&lt;a href=&quot;https://pixieditor.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;PixiEditor&lt;/a&gt;&lt;/h3&gt;
+
+&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;Pixi Editor Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/pixi-editor-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixi Editor Screenshot&quot; /&gt;
+    &lt;figcaption&gt;
+        Image provided by &lt;a href=&quot;https://pixieditor.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;pixieditor.net.&lt;/a&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;libresprite&quot;&gt;LibreSprite&lt;/h3&gt;
+
+&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;LibreSprite Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/libresprite-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LibreSprite Screenshot&quot; /&gt;
+    &lt;figcaption&gt;
+        A screenshot of a new window and canvas in LibreSprite.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Free to compile or download&lt;/li&gt;
+  &lt;li&gt;Forked from Aseprite’s last open source release&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;libresprite-dotto&quot;&gt;LibreSprite Dotto&lt;/h3&gt;
+
+&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;LibreSprite Dotto Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/dotto-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LibreSprite Dotto Screenshot&quot; /&gt;
+    &lt;figcaption&gt;
+        A screenshot of a new window and canvas in LibreSprite Dotto.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Free to compile or download&lt;/li&gt;
+  &lt;li&gt;A rewrite of the original LibreSprite that contains more features&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;jpixel&quot;&gt;JPixel&lt;/h3&gt;
+
+&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;JPixel Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/jpixel-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;JPixel Screenshot&quot; /&gt;
+    &lt;figcaption&gt;
+        A screenshot of a new window and canvas in JPixel.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Free&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pixelorama&quot;&gt;Pixelorama&lt;/h3&gt;
+
+&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;Pixelorama Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/pixelorama-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixelorama Screenshot&quot; /&gt;
+    &lt;figcaption&gt;
+        A screenshot of a new window and canvas in Pixelorama.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Free&lt;/li&gt;
+  &lt;li&gt;Online and Desktop&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pixel-studio&quot;&gt;Pixel Studio&lt;/h3&gt;
+
+&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;Pixel Studio Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/pixel-studio-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixel Studio Screenshot&quot; /&gt;
+    &lt;figcaption&gt;
+        A screenshot of a new window and canvas in Pixel Studio.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Free&lt;/li&gt;
+  &lt;li&gt;Online, Desktop, and Mobile&lt;/li&gt;
+  &lt;li&gt;Tablet Support&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;graphics-gale&quot;&gt;Graphics Gale&lt;/h3&gt;
+
+&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;Graphics Gale Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/graphics-gale-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Graphics Gale Screenshot&quot; /&gt;
+    &lt;figcaption&gt;
+        A screenshot of a new window and canvas in Graphics Gale.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Free&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;piskel&quot;&gt;Piskel&lt;/h3&gt;
+
+&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;Piskel Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/piskel-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Piskel Screenshot&quot; /&gt;
+    &lt;figcaption&gt;
+        A screenshot of a project inside Piskel.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Free&lt;/li&gt;
+  &lt;li&gt;Online&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;lospec-pixel-editor&quot;&gt;LoSpec Pixel Editor&lt;/h3&gt;
+
+&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;LoSpec Editor Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/lospec-editor-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LoSpec Editor Screenshot&quot; /&gt;
+    &lt;figcaption&gt;
+        A screenshot of a project inside the LoSpec editor. This beautiful artwork has been provided by my 4-year-old. :heart_eyes:
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Free&lt;/li&gt;
+  &lt;li&gt;Online&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pixilart&quot;&gt;PixilArt&lt;/h3&gt;
+
+&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;Pixil Art Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/pixil-art-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixil Art Screenshot&quot; /&gt;
+    &lt;figcaption&gt;
+        A screenshot of a new window and canvas in Pixil Art.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Free&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pro-motion&quot;&gt;Pro Motion&lt;/h3&gt;
+
+&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
+        &lt;img alt=&quot;Promotion Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/promotion-screenshot.jpg&quot; loading=&quot;lazy&quot; title=&quot;Promotion Screenshot&quot; /&gt;
+    &lt;figcaption&gt;
+        Image provided by &lt;a href=&quot;https://www.cosmigo.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Cosmigo&lt;/a&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Paid&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;other-resources&quot;&gt;Other Resources&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;pixel-art-tutorials&quot;&gt;Pixel Art Tutorials&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://opengameart.org/content/les-forges-pixel-art-course&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Les Forges Pixel Art Course&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.studiominiboss.com/pixelart&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Studio Mini Boss’ Blog - Pixel Art Tutorials&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/pixel-grimoire/intro/home&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Pedro Medeiros’ Pixel Grimoire&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;free-game-resources&quot;&gt;Free Game Resources&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://opengameart.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;OpenGameArt.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Itch.io&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lospec.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Lospec&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Pixel Art Tutorials&lt;/li&gt;
+      &lt;li&gt;Palettes&lt;/li&gt;
+      &lt;li&gt;Other Resources&lt;/li&gt;
+      &lt;li&gt;Jobs Board&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sat, 11 Jun 2022 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html</link>
+        <guid isPermaLink="true">http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html</guid>
+        
+        <category>tools</category>
+        
+        <category>pixel-art</category>
+        
+        <category>game-development</category>
+        
+        <category>tool-comparison</category>
+        
+        <category>tool-review</category>
+        
+        
+        <category>Tools</category>
+        
+        <category>Reviews</category>
+        
+      </item>
     
       <item>
         <title>Building an App with Angular, Part 1: Introduction</title>
         <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Angular Windows&quot; src=&quot;http://localhost:4000/images/other-images/undraw_Maker_launch_re_rq81.png&quot; loading=&quot;lazy&quot; title=&quot;How do you like these angles?&quot; /&gt;
+        &lt;img alt=&quot;Angular Windows&quot; src=&quot;http://localhost:4000/images/other-images/undraw/undraw_Maker_launch_re_rq81.png&quot; loading=&quot;lazy&quot; title=&quot;How do you like these angles?&quot; /&gt;
     &lt;figcaption&gt;
         Photo by &lt;a href=&quot;https://undraw.co/search&quot;&gt;unDraw.co&lt;/a&gt;
     &lt;/figcaption&gt;
@@ -152,7 +1166,7 @@ implementing the same changes made in this project could also be a great exercis
 
 &lt;h4 id=&quot;project-structure&quot;&gt;Project Structure&lt;/h4&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# This tree was printed in Windows Terminal using the 'tree' command.&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# This tree was printed in Windows Terminal using the &apos;tree&apos; command.&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# See https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/tree for more info.&lt;/span&gt;
 ├───app
 │   │   app-routing.module.ts
@@ -284,7 +1298,7 @@ place throughout the app.&lt;/p&gt;
 
 &lt;h3 id=&quot;log-service&quot;&gt;Log Service&lt;/h3&gt;
 
-&lt;p&gt;If you’ve ever written anything for the front-end, then surely you’ve used something like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;console.log('Insert important note here...'')&lt;/code&gt;
+&lt;p&gt;If you’ve ever written anything for the front-end, then surely you’ve used something like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;console.log(&apos;Insert important note here...&apos;&apos;)&lt;/code&gt;
 at some point. The log service we will be implementing will show you how to make that logging uniform and how to utilize
 it the same way throughout your app, as well as printing easy-on-the-eyes and even easier to read notes.&lt;/p&gt;
 
@@ -342,7 +1356,7 @@ like me to add to these tutorials? Just let me know!&lt;/p&gt;
       <item>
         <title>Site Updates</title>
         <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Under Construction&quot; src=&quot;http://localhost:4000/images/other-images/undraw_Building_re_xfcm.png&quot; loading=&quot;lazy&quot; title=&quot;Under Construction&quot; /&gt;
+        &lt;img alt=&quot;Under Construction&quot; src=&quot;http://localhost:4000/images/other-images/undraw/undraw_Building_re_xfcm.png&quot; loading=&quot;lazy&quot; title=&quot;Under Construction&quot; /&gt;
     &lt;figcaption&gt;
         Image provided by &lt;a href=&quot;https://undraw.co/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;unDraw&lt;/a&gt;
     &lt;/figcaption&gt;
@@ -1078,7 +2092,7 @@ them all out.&lt;/p&gt;
             &lt;/li&gt;
             &lt;li&gt;
                 URL Encode | Decode - Similar to the escape tools, this tool transforms
-                URLs into strings that won't confuse a server.
+                URLs into strings that won&apos;t confuse a server.
             &lt;/li&gt;
             &lt;li&gt;
                 Change Case - Change the case of strings to and from lowercase, uppercase,
@@ -1114,7 +2128,7 @@ them all out.&lt;/p&gt;
             &lt;li&gt;XML / JSON&lt;/li&gt;
             &lt;li&gt;JSON / Property&lt;/li&gt;
             &lt;li&gt;
-                HTML Link Extractor - Want to extract all links from a webpage, but don't
+                HTML Link Extractor - Want to extract all links from a webpage, but don&apos;t
                 have time to do it programatically? Try this out!
             &lt;/li&gt;
             &lt;li&gt;Create HTML Link - Generate a proper HTML link tag with data.&lt;/li&gt;

@@ -14,7 +14,7 @@ image: '/images/other-images/undraw_Building_re_xfcm.png'
 ---
 
 <figure style="margin-top: 20px;">
-        <img alt="Under Construction" src="{{ '/images/other-images/undraw_Building_re_xfcm.png' | prepend: site.url }}" loading="lazy" title="Under Construction">
+        <img alt="Under Construction" src="{{ '/images/other-images/undraw/undraw_Building_re_xfcm.png' | prepend: site.url }}" loading="lazy" title="Under Construction">
     <figcaption>
         Image provided by <a href="https://undraw.co/" target="_blank" rel="noopener noreferrer">unDraw</a>
     </figcaption>
