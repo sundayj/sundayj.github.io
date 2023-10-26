@@ -16,31 +16,33 @@
         <hr>
         <meta itemprop="keywords" content="{{ post.tags | join: ',' }}"/>
         <h6 class="card-subtitle mb-2 text-body-secondary">
-            <span class="post-meta"><i class="bi bi-archive"
-                                       title="{{ locales[site.default_locale].Categories }}"></i></span>
-            {%- for cat in post.categories -%}
-                <a href="{{ site.baseurl }}/categories/#{{ cat }}"
-                   title="{{ cat }}">{{ cat }}</a>{%- unless post.categories.last == cat -%}, {%- endunless -%}
-            {%- endfor -%}
-            {%- if post.tags != empty -%}
-                <span class="post-meta"><i class="bi bi-tags" title="{{ locales[site.default_locale].Tags }}"></i></span>
-                {%- for tag in post.tags -%}
-                    <a href="{{ site.baseurl }}/tags/#{{ tag }}"
-                       title="{{ tag }}">{{ tag }}</a>{%- unless post.tags.last == tag -%}, {%- endunless -%}
-                {%- endfor -%}
-            {%- endif -%}
             <time itemprop="datePublished" datetime="{{ post.date | date: '%Y-%m-%d' }}">
                 <span class="post-meta"><i class="bi bi-calendar-event"
                                            title="{{ locales[site.default_locale].PostDate }}"></i></span>{{ post.date | date: "%b %-d, %Y" }}
             </time>
-            {%- if post.last_modified_at -%}
+            {% if post.last_modified_at %}
                 <time itemprop="dateModified" datetime="{{ post.last_modified_at }}">
                     <span class="post-meta">
                         <i class="bi bi-pencil-square" title="{{ locales[site.default_locale].EditDate }}"></i>
                     </span> {{ post.last_modified_at | date: "%b %-d, %Y" }}
                 </time>
-            {%- endif -%}
+            {% endif %}
+            <span class="post-meta"><i class="bi bi-archive"
+                                       title="{{ locales[site.default_locale].Categories }}"></i></span>
+            {% for cat in post.categories %}
+                <a href="{{ site.baseurl }}/categories/#{{ cat }}"
+                   title="{{ cat }}">{{ cat }}</a>{%- unless post.categories.last == cat -%}, {%- endunless -%}
+            {% endfor %}
+            {% if post.tags != empty %}
+                <br>
+                <span class="post-meta"><i class="bi bi-tags" title="{{ locales[site.default_locale].Tags }}"></i></span>
+                {% for tag in post.tags %}
+                    <a href="{{ site.baseurl }}/tags/#{{ tag }}"
+                       title="{{ tag }}">{{ tag }}</a>{% unless post.tags.last == tag %}, {% endunless %}
+                {% endfor %}
+            {% endif %}
         </h6>
+        <hr>
         <article itemprop="articleBody">
             {%- if post.summary -%}
                 <p class="card-text">{{ post.summary }}</p>

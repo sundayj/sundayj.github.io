@@ -1,30 +1,22 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html data-bs-theme="dark" lang="en"><head>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
 <meta name="keywords" content="">
+<meta name="twitter:description" content="Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!">
 
-<link rel="icon" href="/images/favicon.ico">
+<link rel="canonical" href="http://localhost:4000/">
+<link rel="alternate" type="application/atom+xml" title="JLSunday" href="http://localhost:4000/feed.xml"><link rel="icon" href="http://localhost:4000/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/favicon-16x16.png">
-<link rel="manifest" href="http://localhost:4000/site.webmanifest">
-<link rel="stylesheet" href="http://localhost:4000/css/main.css">
-<link rel="canonical" href="http://localhost:4000/">
-<link rel="alternate" type="application/atom+xml" title="JLSunday" href="http://localhost:4000/feed.xml">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.1.1/tocbot.css">
-
+<link rel="manifest" href="http://localhost:4000/site.webmanifest"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/night-owl.min.css" integrity="sha512-i5X6Fdn/ZqvGSqPrdMa3FgcpXM/Nr6YccSKFYT93zljl/HZDEpvBbE5Pxp91eiWGccZLrL/LDQJd7fjTRYsVaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="http://localhost:4000/assets/scss/main.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script src="https://kit.fontawesome.com/d11d7e2fdd.js" crossorigin="anonymous"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="https://kit.fontawesome.com/d11d7e2fdd.js" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4Z30BJZ3LK"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -33,22 +25,18 @@
 
     gtag('config', 'G-4Z30BJZ3LK');
 </script>
-
 <script type='text/javascript'>
-var blocklink = ['http://humanorightswatch.org','http://o-o-6-o-o.com','http://darodar.com','http://blackhatworth.com','http://hulfingtonpost.com','http://bestwebsitesawards.com','http://darodar.com','http://buttons-for-website.com','http://ilovevitaly.co','http://semalt.com','http://priceg.com','http://simple-share-buttons.com','http://googlsucks.com','http://4webmasters.org','http://aliexpress.com','http://addons.mozilla.org/en-US/firefox/addon/ilovevitaly/','http://free-share-buttons.com','http://buttons-for-your-website.com','http://theguardlan.com','http://buy-cheap-online.info','http://best-seo-offer.com','http://4webmasters.org','http://trafficmonetize.org','http://howtostopreferralspam.eu','http://ilovevitaly.com','http://sanjosestartups.com','http://free-social-buttons.com','http://best-seo-offer.com','http://guardlink.org','http://www.event-tracking.com','http://www3.free-social-buttons.com','http://www1.free-social-buttons.com','http://www2.free-social-buttons.com','http://websites-reviews.com','http://floating-share-buttons.com','http://satellite.maps.ilovevitaly.com','http://free-social-buttons.com','http://www.event-tracking.com','http://erot.co'];
-for (var b = blocklink.length; b--;) {
-  if (document.referrer.match(blocklink[b]))
+    const blocklink = ['http://humanorightswatch.org', 'http://o-o-6-o-o.com', 'http://darodar.com', 'http://blackhatworth.com', 'http://hulfingtonpost.com', 'http://bestwebsitesawards.com', 'http://darodar.com', 'http://buttons-for-website.com', 'http://ilovevitaly.co', 'http://semalt.com', 'http://priceg.com', 'http://simple-share-buttons.com', 'http://googlsucks.com', 'http://4webmasters.org', 'http://aliexpress.com', 'http://addons.mozilla.org/en-US/firefox/addon/ilovevitaly/', 'http://free-share-buttons.com', 'http://buttons-for-your-website.com', 'http://theguardlan.com', 'http://buy-cheap-online.info', 'http://best-seo-offer.com', 'http://4webmasters.org', 'http://trafficmonetize.org', 'http://howtostopreferralspam.eu', 'http://ilovevitaly.com', 'http://sanjosestartups.com', 'http://free-social-buttons.com', 'http://best-seo-offer.com', 'http://guardlink.org', 'http://www.event-tracking.com', 'http://www3.free-social-buttons.com', 'http://www1.free-social-buttons.com', 'http://www2.free-social-buttons.com', 'http://websites-reviews.com', 'http://floating-share-buttons.com', 'http://satellite.maps.ilovevitaly.com', 'http://free-social-buttons.com', 'http://www.event-tracking.com', 'http://erot.co'];
+    for (let b = blocklink.length; b--;) {
+    if (document.referrer.match(blocklink[b]))
     window.location = "http://www.google.com";
 }
 </script>
-
-
-
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>JLSunday | Programming and web development tutorials, snippets, and other resources.</title>
 <meta name="generator" content="Jekyll v3.9.3" />
 <meta property="og:title" content="JLSunday" />
-<meta name="author" content="Justin L Sunday" />
+<meta name="author" content="Justin L. Sunday" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!" />
 <meta property="og:description" content="Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!" />
@@ -58,865 +46,812 @@ for (var b = blocklink.length; b--;) {
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="JLSunday" />
-<meta name="twitter:site" content="@JustinSunday13" />
-<meta name="twitter:creator" content="@Justin L Sunday" />
-<meta property="article:publisher" content="JLSundayDev" />
-<meta property="fb:app_id" content="647682663047582" />
 <meta name="google-site-verification" content="" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Justin L Sunday","url":"https://JLSunday.com/"},"description":"Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!","headline":"JLSunday","name":"Justin Sunday","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/JLSunday-logo/JLSunday.png"},"name":"Justin L Sunday"},"sameAs":["https://twitter.com/JustinSunday13","https://www.linkedin.com/in/justin-sunday","https://www.facebook.com/JLSundayDev","https://github.com/sundayj","https://stackoverflow.com/users/story/8513024?view=Timeline"],"url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Justin L. Sunday","url":"https://JLSunday.com/"},"description":"Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!","headline":"JLSunday","name":"JLSunday","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
-
-
-<meta name="twitter:description" content="Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!">
 </head>
-
-
 <body>
-
-<div class="container">
-
-  <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="4ktIzsLp"></script>
-<header class="site-header">
-  <div class="wrapper">
-
-    <h1 class="site-title">
-      <a href="/">
-        <img class="logo" src="http://localhost:4000/images/JLSunday-logo/icon.png" alt="JLSunday Logo" title="JLSunday" loading="lazy">
-        <span>JLSunday</span>
-      </a>
-    </h1>
-    
-
-    <nav class="site-nav">
-    <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-            <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-            <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-            <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
+    <div class="container-fluid min-vh-100 d-flex flex-column justify-content-between">
+      <div class="page-content container-fluid"><svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path
+      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+    />
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path
+      d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+    />
+    <path
+      d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+    />
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path
+      d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+    />
+  </symbol>
+</svg>
+<nav id="navbar" class="navbar navbar-expand-lg bg-body">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img
+        id="site-logo"
+        src="http://localhost:4000/assets/images/JLSunday-logo/JLSunday-no-background.png"
+        alt="DevSculptor"
+        width="200"
+      />
     </a>
-    <div class="trigger">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a class="page-link"
-           href="http://localhost:4000/">Home
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarToggler"
+      aria-controls="navbarToggler"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav collapse navbar-collapse justify-content-center" id="navbarToggler">
+      <ul class="navbar-nav"><li class="nav-item">
+        <a
+          class="nav-link link-body-emphasis"
+          aria-current="page"
+          href="http://localhost:4000">
+          Home
         </a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a class="page-link"
-           href="http://localhost:4000/about/">About
+      </li><li class="nav-item">
+        <a
+          class="nav-link link-body-emphasis"
+          aria-current="page"
+          href="http://localhost:4000/about">
+          About
         </a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a class="page-link"
-           href="http://localhost:4000/archives/">Archives
+      </li><li class="nav-item">
+        <a
+          class="nav-link link-body-emphasis"
+          aria-current="page"
+          href="http://localhost:4000/archives">
+          Archives
         </a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a class="page-link"
-           href="http://localhost:4000/categories/">Categories
+      </li><li class="nav-item">
+        <a
+          class="nav-link link-body-emphasis"
+          aria-current="page"
+          href="http://localhost:4000/categories">
+          Categories
         </a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a class="page-link"
-           href="http://localhost:4000/tags/">Tags
+      </li><li class="nav-item">
+        <a
+          class="nav-link link-body-emphasis"
+          aria-current="page"
+          href="http://localhost:4000/tags">
+          Tags
         </a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a class="page-link"
-           href="http://localhost:4000/search/">Site Search
+      </li><li class="nav-item">
+        <a
+          class="nav-link link-body-emphasis"
+          aria-current="page"
+          href="http://localhost:4000/search">
+          Site Search
         </a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a class="page-link"
-           href="http://localhost:4000/subscribe/">Subscribe
+      </li><li class="nav-item">
+        <a
+          class="nav-link link-body-emphasis"
+          aria-current="page"
+          href="http://localhost:4000/subscribe">
+          Subscribe
         </a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a href="http://localhost:4000/assets/JustinSunday_Resume_2023-09-14.pdf" target="_blank" rel="noopener noreferrer" class="page-link">
-            My Résumé
+      </li><li class="nav-item">
+        <a
+          class="nav-link link-body-emphasis"
+          aria-current="page"
+          href="http://localhost:4000/projects">
+          Projects
         </a>
-        
-        
-        
-            
-            
-        
-            
-            
-        
-    </div>
+      </li><li class="nav-item">
+        <a
+          class="nav-link link-body-emphasis"
+          aria-current="page"
+          href="http://localhost:4000/assets/JustinSunday_Resume_2023-09-14.pdf"target="_blank" rel="noopener noreferrer">
+          Résumé
+        </a>
+      </li></ul>
+    </div><div class="nav-item dropdown mx-auto">
+    <button
+      class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+      id="bd-theme"
+      type="button"
+      aria-expanded="false"
+      data-bs-toggle="dropdown"
+      data-bs-display="static"
+      aria-label="Toggle Theme (dark)"
+      title="Toggle Theme"
+    >
+      <svg class="bi my-1 theme-icon-active">
+        <use href="#moon-stars-fill"></use>
+      </svg>
+      <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul
+      class="dropdown-menu dropdown-menu-end"
+      aria-labelledby="bd-theme-text"
+    >
+      <li>
+        <button
+          type="button"
+          class="dropdown-item d-flex align-items-center"
+          data-bs-theme-value="light"
+          aria-pressed="false"
+        >
+          <svg class="bi me-2 opacity-50 theme-icon">
+            <use href="#sun-fill"></use>
+          </svg>
+          Light
+          <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+        </button>
+      </li>
+      <li>
+        <button
+          type="button"
+          class="dropdown-item d-flex align-items-center active"
+          data-bs-theme-value="dark"
+          aria-pressed="true"
+        >
+          <svg class="bi me-2 opacity-50 theme-icon">
+            <use href="#moon-stars-fill"></use>
+          </svg>
+          Dark
+          <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+        </button>
+      </li>
+    </ul>
+  </div></div>
 </nav>
+<div class="page-content container mt-5">
+                <div class="home row">
+    <div class="post col-md-8 mx-auto" itemscope itemtype="https://schema.org/BlogPosting">
 
-
-  </div>
-
-</header>
-
-
-    
-
-  <div class="page-content col-sm-8">
-    <div class="home">
-    <div class="post" itemscope itemtype="https://schema.org/BlogPosting">
-
-        
-
-        <header class="post-header">
-            <h1 itemprop="name" class="post-title">
-                <a itemprop="url" class="post-link"
-                   href="http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html">Comparing Pixel Art Editors, Part One: Aseprite</a>
-            </h1>
-            <meta itemprop="keywords" content="tools,pixel-art,game-development,tool-comparison,tool-review"/>
-            <p class="post-meta">
-                Posted in
-                
-                <a href="/categories/#Tools">Tools</a>, 
-                
-                <a href="/categories/#Reviews">Reviews</a>
-                
-                
-                and tagged
-                
-                <a href="/tags/#tools"
-                   title="tools">tools</a>, 
-                
-                <a href="/tags/#pixel-art"
-                   title="pixel-art">pixel-art</a>, 
-                
-                <a href="/tags/#game-development"
-                   title="game-development">game-development</a>, 
-                
-                <a href="/tags/#tool-comparison"
-                   title="tool-comparison">tool-comparison</a>, 
-                
-                <a href="/tags/#tool-review"
-                   title="tool-review">tool-review</a>
-                
-                
-                <time itemprop="datePublished" datetime="2022-06-11">
-                    on Jun 11, 2022
-                </time>
-                
+        <div class="card"><div class="card-body">
+        <h3 itemprop="name" class="card-title">
+            <a itemprop="url" class="post-link" href="http://localhost:4000/tools/2022/06/11/Comparing-Pixel-Art-Editors.html">
+                Comparing Pixel Art Editors, Part One: Aseprite
+            </a>
+        </h3>
+        <hr>
+        <meta itemprop="keywords" content="tools,pixel-art,game-development,tool-comparison,tool-review"/>
+        <h6 class="card-subtitle mb-2 text-body-secondary">
+            <time itemprop="datePublished" datetime="2022-06-11">
+                <span class="post-meta"><i class="bi bi-calendar-event"
+                                           title="Date Posted"></i></span>Jun 11, 2022
+            </time>
+            
                 <time itemprop="dateModified" datetime="2022/06/11">
-                    and edited on Jun 11, 2022
+                    <span class="post-meta">
+                        <i class="bi bi-pencil-square" title="Date Edited"></i>
+                    </span> Jun 11, 2022
                 </time>
-                
-            </p>
-        </header>
-
-        <article class="post-content" itemprop="articleBody">
             
-            Part one of a series of posts comparing various Pixel Art Editors. Part one gives an intro to this series of posts and gives a short review of Aseprite.A comparison of various pixel art editing tools.
-            <p style="text-align: right"><a href="http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html">Read more</a></p>
+            <span class="post-meta"><i class="bi bi-archive"
+                                       title="Categories"></i></span>
             
-        </article>
-        <hr/>
-
-        
-
-        <header class="post-header">
-            <h1 itemprop="name" class="post-title">
-                <a itemprop="url" class="post-link"
-                   href="http://localhost:4000/tutorials/angular/2022/01/09/Building-an-Angular-App-Part1.html">Building an App with Angular, Part 1: Introduction</a>
-            </h1>
-            <meta itemprop="keywords" content="tutorial,Angular,front-end,Typescript,JavaScript,Angular-Material,services,in-memory-database,flex-layout,interceptors,logging,snackbar"/>
-            <p class="post-meta">
-                Posted in
+                <a href="/categories/#Tools"
+                   title="Tools">Tools</a>
+            
+                <br>
+                <span class="post-meta"><i class="bi bi-tags" title="Tags"></i></span>
                 
-                <a href="/categories/#Tutorials">Tutorials</a>, 
+                    <a href="/tags/#tools"
+                       title="tools">tools</a>, 
                 
-                <a href="/categories/#Angular">Angular</a>
+                    <a href="/tags/#pixel-art"
+                       title="pixel-art">pixel-art</a>, 
                 
+                    <a href="/tags/#game-development"
+                       title="game-development">game-development</a>, 
                 
-                and tagged
+                    <a href="/tags/#tool-comparison"
+                       title="tool-comparison">tool-comparison</a>, 
                 
-                <a href="/tags/#tutorial"
-                   title="tutorial">tutorial</a>, 
+                    <a href="/tags/#tool-review"
+                       title="tool-review">tool-review</a>
                 
-                <a href="/tags/#Angular"
-                   title="Angular">Angular</a>, 
-                
-                <a href="/tags/#front-end"
-                   title="front-end">front-end</a>, 
-                
-                <a href="/tags/#Typescript"
-                   title="Typescript">Typescript</a>, 
-                
-                <a href="/tags/#JavaScript"
-                   title="JavaScript">JavaScript</a>, 
-                
-                <a href="/tags/#Angular-Material"
-                   title="Angular-Material">Angular-Material</a>, 
-                
-                <a href="/tags/#services"
-                   title="services">services</a>, 
-                
-                <a href="/tags/#in-memory-database"
-                   title="in-memory-database">in-memory-database</a>, 
-                
-                <a href="/tags/#flex-layout"
-                   title="flex-layout">flex-layout</a>, 
-                
-                <a href="/tags/#interceptors"
-                   title="interceptors">interceptors</a>, 
-                
-                <a href="/tags/#logging"
-                   title="logging">logging</a>, 
-                
-                <a href="/tags/#snackbar"
-                   title="snackbar">snackbar</a>
-                
-                
-                <time itemprop="datePublished" datetime="2022-01-09">
-                    on Jan 9, 2022
-                </time>
-                
+            
+        </h6>
+        <hr>
+        <article itemprop="articleBody"><p class="card-text">Part one of a series of posts comparing various Pixel Art Editors. Part one gives an intro to this series of posts and gives a short review of Aseprite.A comparison of various pixel art editing tools.</p>
+                <div style="text-align: right"><a href="http://localhost:4000/tools/2022/06/11/Comparing-Pixel-Art-Editors.html">Read more</a></div></article>
+    </div>
+</div>
+<br><div class="card"><div class="card-body">
+        <h3 itemprop="name" class="card-title">
+            <a itemprop="url" class="post-link" href="http://localhost:4000/angular/2022/01/09/Building-an-Angular-App-Part1.html">
+                Building an App with Angular, Part 1: Introduction
+            </a>
+        </h3>
+        <hr>
+        <meta itemprop="keywords" content="tutorial,Angular,front-end,Typescript,JavaScript,Angular-Material,services,in-memory-database,flex-layout,interceptors,logging,snackbar"/>
+        <h6 class="card-subtitle mb-2 text-body-secondary">
+            <time itemprop="datePublished" datetime="2022-01-09">
+                <span class="post-meta"><i class="bi bi-calendar-event"
+                                           title="Date Posted"></i></span>Jan 9, 2022
+            </time>
+            
                 <time itemprop="dateModified" datetime="2022/01/11">
-                    and edited on Jan 11, 2022
+                    <span class="post-meta">
+                        <i class="bi bi-pencil-square" title="Date Edited"></i>
+                    </span> Jan 11, 2022
                 </time>
-                
-            </p>
-        </header>
-
-        <article class="post-content" itemprop="articleBody">
             
-            Part one introduces the project and sets the stage for the following parts in the series.
-            <p style="text-align: right"><a href="http://localhost:4000/tutorials/angular/2022/01/09/Building-an-Angular-App-Part1.html">Read more</a></p>
+            <span class="post-meta"><i class="bi bi-archive"
+                                       title="Categories"></i></span>
             
-        </article>
-        <hr/>
-
-        
-
-        <header class="post-header">
-            <h1 itemprop="name" class="post-title">
-                <a itemprop="url" class="post-link"
-                   href="http://localhost:4000/updates/2022/01/06/site-update.html">Site Updates</a>
-            </h1>
-            <meta itemprop="keywords" content="updates,site-updates"/>
-            <p class="post-meta">
-                Posted in
-                
-                <a href="/categories/#Updates">Updates</a>
-                
-                
-                and tagged
-                
-                <a href="/tags/#updates"
-                   title="updates">updates</a>, 
-                
-                <a href="/tags/#site-updates"
-                   title="site-updates">site-updates</a>
-                
-                
-                <time itemprop="datePublished" datetime="2022-01-06">
-                    on Jan 6, 2022
-                </time>
-                
-            </p>
-        </header>
-
-        <article class="post-content" itemprop="articleBody">
+                <a href="/categories/#Angular"
+                   title="Angular">Angular</a>
             
-            This should explain the lull in content to those wondering.
-            <p style="text-align: right"><a href="http://localhost:4000/updates/2022/01/06/site-update.html">Read more</a></p>
+                <br>
+                <span class="post-meta"><i class="bi bi-tags" title="Tags"></i></span>
+                
+                    <a href="/tags/#tutorial"
+                       title="tutorial">tutorial</a>, 
+                
+                    <a href="/tags/#Angular"
+                       title="Angular">Angular</a>, 
+                
+                    <a href="/tags/#front-end"
+                       title="front-end">front-end</a>, 
+                
+                    <a href="/tags/#Typescript"
+                       title="Typescript">Typescript</a>, 
+                
+                    <a href="/tags/#JavaScript"
+                       title="JavaScript">JavaScript</a>, 
+                
+                    <a href="/tags/#Angular-Material"
+                       title="Angular-Material">Angular-Material</a>, 
+                
+                    <a href="/tags/#services"
+                       title="services">services</a>, 
+                
+                    <a href="/tags/#in-memory-database"
+                       title="in-memory-database">in-memory-database</a>, 
+                
+                    <a href="/tags/#flex-layout"
+                       title="flex-layout">flex-layout</a>, 
+                
+                    <a href="/tags/#interceptors"
+                       title="interceptors">interceptors</a>, 
+                
+                    <a href="/tags/#logging"
+                       title="logging">logging</a>, 
+                
+                    <a href="/tags/#snackbar"
+                       title="snackbar">snackbar</a>
+                
             
-        </article>
-        <hr/>
-
-        
-
-        <header class="post-header">
-            <h1 itemprop="name" class="post-title">
-                <a itemprop="url" class="post-link"
-                   href="http://localhost:4000/resources/2021/12/14/Forty-Awesome-Programming-Resources.html">40 Awesome Programming Resources</a>
-            </h1>
-            <meta itemprop="keywords" content="tools,software,list,IDEs,database-manager,database,VSCode,DBeaver,markdown,time-trackers,VSCode-Extensions,resources,SQL,Python,Git,full-stack,newsletter,games"/>
-            <p class="post-meta">
-                Posted in
+        </h6>
+        <hr>
+        <article itemprop="articleBody"><p class="card-text">Part one introduces the project and sets the stage for the following parts in the series.</p>
+                <div style="text-align: right"><a href="http://localhost:4000/angular/2022/01/09/Building-an-Angular-App-Part1.html">Read more</a></div></article>
+    </div>
+</div>
+<br><div class="card"><div class="card-body">
+        <h3 itemprop="name" class="card-title">
+            <a itemprop="url" class="post-link" href="http://localhost:4000/updates/2022/01/06/site-update.html">
+                Site Updates
+            </a>
+        </h3>
+        <hr>
+        <meta itemprop="keywords" content="updates,site-updates"/>
+        <h6 class="card-subtitle mb-2 text-body-secondary">
+            <time itemprop="datePublished" datetime="2022-01-06">
+                <span class="post-meta"><i class="bi bi-calendar-event"
+                                           title="Date Posted"></i></span>Jan 6, 2022
+            </time>
+            
+            <span class="post-meta"><i class="bi bi-archive"
+                                       title="Categories"></i></span>
+            
+                <a href="/categories/#Updates"
+                   title="Updates">Updates</a>
+            
+                <br>
+                <span class="post-meta"><i class="bi bi-tags" title="Tags"></i></span>
                 
-                <a href="/categories/#Resources">Resources</a>
+                    <a href="/tags/#updates"
+                       title="updates">updates</a>, 
                 
+                    <a href="/tags/#site-updates"
+                       title="site-updates">site-updates</a>
                 
-                and tagged
-                
-                <a href="/tags/#tools"
-                   title="tools">tools</a>, 
-                
-                <a href="/tags/#software"
-                   title="software">software</a>, 
-                
-                <a href="/tags/#list"
-                   title="list">list</a>, 
-                
-                <a href="/tags/#IDEs"
-                   title="IDEs">IDEs</a>, 
-                
-                <a href="/tags/#database-manager"
-                   title="database-manager">database-manager</a>, 
-                
-                <a href="/tags/#database"
-                   title="database">database</a>, 
-                
-                <a href="/tags/#VSCode"
-                   title="VSCode">VSCode</a>, 
-                
-                <a href="/tags/#DBeaver"
-                   title="DBeaver">DBeaver</a>, 
-                
-                <a href="/tags/#markdown"
-                   title="markdown">markdown</a>, 
-                
-                <a href="/tags/#time-trackers"
-                   title="time-trackers">time-trackers</a>, 
-                
-                <a href="/tags/#VSCode-Extensions"
-                   title="VSCode-Extensions">VSCode-Extensions</a>, 
-                
-                <a href="/tags/#resources"
-                   title="resources">resources</a>, 
-                
-                <a href="/tags/#SQL"
-                   title="SQL">SQL</a>, 
-                
-                <a href="/tags/#Python"
-                   title="Python">Python</a>, 
-                
-                <a href="/tags/#Git"
-                   title="Git">Git</a>, 
-                
-                <a href="/tags/#full-stack"
-                   title="full-stack">full-stack</a>, 
-                
-                <a href="/tags/#newsletter"
-                   title="newsletter">newsletter</a>, 
-                
-                <a href="/tags/#games"
-                   title="games">games</a>
-                
-                
-                <time itemprop="datePublished" datetime="2021-12-14">
-                    on Dec 14, 2021
-                </time>
-                
+            
+        </h6>
+        <hr>
+        <article itemprop="articleBody"><p class="card-text">This should explain the lull in content to those wondering.</p>
+                <div style="text-align: right"><a href="http://localhost:4000/updates/2022/01/06/site-update.html">Read more</a></div></article>
+    </div>
+</div>
+<br><div class="card"><div class="card-body">
+        <h3 itemprop="name" class="card-title">
+            <a itemprop="url" class="post-link" href="http://localhost:4000/resources/2021/12/14/Forty-Awesome-Programming-Resources.html">
+                40 Awesome Programming Resources
+            </a>
+        </h3>
+        <hr>
+        <meta itemprop="keywords" content="tools,software,list,IDEs,database-manager,database,VSCode,DBeaver,markdown,time-trackers,VSCode-Extensions,resources,SQL,Python,Git,full-stack,newsletter,games"/>
+        <h6 class="card-subtitle mb-2 text-body-secondary">
+            <time itemprop="datePublished" datetime="2021-12-14">
+                <span class="post-meta"><i class="bi bi-calendar-event"
+                                           title="Date Posted"></i></span>Dec 14, 2021
+            </time>
+            
                 <time itemprop="dateModified" datetime="2021-12-29 12:50:00 +0000">
-                    and edited on Dec 29, 2021
+                    <span class="post-meta">
+                        <i class="bi bi-pencil-square" title="Date Edited"></i>
+                    </span> Dec 29, 2021
                 </time>
+            
+            <span class="post-meta"><i class="bi bi-archive"
+                                       title="Categories"></i></span>
+            
+                <a href="/categories/#Resources"
+                   title="Resources">Resources</a>
+            
+                <br>
+                <span class="post-meta"><i class="bi bi-tags" title="Tags"></i></span>
                 
-            </p>
-        </header>
-
-        <article class="post-content" itemprop="articleBody">
+                    <a href="/tags/#tools"
+                       title="tools">tools</a>, 
+                
+                    <a href="/tags/#software"
+                       title="software">software</a>, 
+                
+                    <a href="/tags/#list"
+                       title="list">list</a>, 
+                
+                    <a href="/tags/#IDEs"
+                       title="IDEs">IDEs</a>, 
+                
+                    <a href="/tags/#database-manager"
+                       title="database-manager">database-manager</a>, 
+                
+                    <a href="/tags/#database"
+                       title="database">database</a>, 
+                
+                    <a href="/tags/#VSCode"
+                       title="VSCode">VSCode</a>, 
+                
+                    <a href="/tags/#DBeaver"
+                       title="DBeaver">DBeaver</a>, 
+                
+                    <a href="/tags/#markdown"
+                       title="markdown">markdown</a>, 
+                
+                    <a href="/tags/#time-trackers"
+                       title="time-trackers">time-trackers</a>, 
+                
+                    <a href="/tags/#VSCode-Extensions"
+                       title="VSCode-Extensions">VSCode-Extensions</a>, 
+                
+                    <a href="/tags/#resources"
+                       title="resources">resources</a>, 
+                
+                    <a href="/tags/#SQL"
+                       title="SQL">SQL</a>, 
+                
+                    <a href="/tags/#Python"
+                       title="Python">Python</a>, 
+                
+                    <a href="/tags/#Git"
+                       title="Git">Git</a>, 
+                
+                    <a href="/tags/#full-stack"
+                       title="full-stack">full-stack</a>, 
+                
+                    <a href="/tags/#newsletter"
+                       title="newsletter">newsletter</a>, 
+                
+                    <a href="/tags/#games"
+                       title="games">games</a>
+                
             
-            40 awesome programming resources regarding tools, IDEs, VS Code Extensions, tutorial sites, and newsletters.
-            <p style="text-align: right"><a href="http://localhost:4000/resources/2021/12/14/Forty-Awesome-Programming-Resources.html">Read more</a></p>
+        </h6>
+        <hr>
+        <article itemprop="articleBody"><p class="card-text">40 awesome programming resources regarding tools, IDEs, VS Code Extensions, tutorial sites, and newsletters.</p>
+                <div style="text-align: right"><a href="http://localhost:4000/resources/2021/12/14/Forty-Awesome-Programming-Resources.html">Read more</a></div></article>
+    </div>
+</div>
+<br><div class="card"><div class="card-body">
+        <h3 itemprop="name" class="card-title">
+            <a itemprop="url" class="post-link" href="http://localhost:4000/tools/2021/12/06/software-tools.html">
+                5 Great Free Software Development Tools
+            </a>
+        </h3>
+        <hr>
+        <meta itemprop="keywords" content="tools,software,recommendations,web-tools,database,SQL,JavaScript,productivity,code-converters,code-generators,list"/>
+        <h6 class="card-subtitle mb-2 text-body-secondary">
+            <time itemprop="datePublished" datetime="2021-12-06">
+                <span class="post-meta"><i class="bi bi-calendar-event"
+                                           title="Date Posted"></i></span>Dec 6, 2021
+            </time>
             
-        </article>
-        <hr/>
+            <span class="post-meta"><i class="bi bi-archive"
+                                       title="Categories"></i></span>
+            
+                <a href="/categories/#Tools"
+                   title="Tools">Tools</a>
+            
+                <br>
+                <span class="post-meta"><i class="bi bi-tags" title="Tags"></i></span>
+                
+                    <a href="/tags/#tools"
+                       title="tools">tools</a>, 
+                
+                    <a href="/tags/#software"
+                       title="software">software</a>, 
+                
+                    <a href="/tags/#recommendations"
+                       title="recommendations">recommendations</a>, 
+                
+                    <a href="/tags/#web-tools"
+                       title="web-tools">web-tools</a>, 
+                
+                    <a href="/tags/#database"
+                       title="database">database</a>, 
+                
+                    <a href="/tags/#SQL"
+                       title="SQL">SQL</a>, 
+                
+                    <a href="/tags/#JavaScript"
+                       title="JavaScript">JavaScript</a>, 
+                
+                    <a href="/tags/#productivity"
+                       title="productivity">productivity</a>, 
+                
+                    <a href="/tags/#code-converters"
+                       title="code-converters">code-converters</a>, 
+                
+                    <a href="/tags/#code-generators"
+                       title="code-generators">code-generators</a>, 
+                
+                    <a href="/tags/#list"
+                       title="list">list</a>
+                
+            
+        </h6>
+        <hr>
+        <article itemprop="articleBody"><p class="card-text">This is part one of a series of posts in which I will be sharing my favorite Development tools. Part one focuses on 5 dev tools that can be found and utilized online.</p>
+                <div style="text-align: right"><a href="http://localhost:4000/tools/2021/12/06/software-tools.html">Read more</a></div></article>
+    </div>
+</div>
+<br>
 
         
 
-        <header class="post-header">
-            <h1 itemprop="name" class="post-title">
-                <a itemprop="url" class="post-link"
-                   href="http://localhost:4000/tools/2021/12/06/software-tools.html">5 Great Free Software Development Tools</a>
-            </h1>
-            <meta itemprop="keywords" content="tools,software,recommendations,web-tools,database,SQL,JavaScript,productivity,code-converters,code-generators,list"/>
-            <p class="post-meta">
-                Posted in
-                
-                <a href="/categories/#Tools">Tools</a>
-                
-                
-                and tagged
-                
-                <a href="/tags/#tools"
-                   title="tools">tools</a>, 
-                
-                <a href="/tags/#software"
-                   title="software">software</a>, 
-                
-                <a href="/tags/#recommendations"
-                   title="recommendations">recommendations</a>, 
-                
-                <a href="/tags/#web-tools"
-                   title="web-tools">web-tools</a>, 
-                
-                <a href="/tags/#database"
-                   title="database">database</a>, 
-                
-                <a href="/tags/#SQL"
-                   title="SQL">SQL</a>, 
-                
-                <a href="/tags/#JavaScript"
-                   title="JavaScript">JavaScript</a>, 
-                
-                <a href="/tags/#productivity"
-                   title="productivity">productivity</a>, 
-                
-                <a href="/tags/#code-converters"
-                   title="code-converters">code-converters</a>, 
-                
-                <a href="/tags/#code-generators"
-                   title="code-generators">code-generators</a>, 
-                
-                <a href="/tags/#list"
-                   title="list">list</a>
-                
-                
-                <time itemprop="datePublished" datetime="2021-12-06">
-                    on Dec 6, 2021
-                </time>
-                
-            </p>
-        </header>
+    </div>
+    <div class="vr d-none d-md-block" style="padding: 0;"></div>
+    <hr class="d-block d-md-none">
+    <div class="col-md-3 mx-auto">
+        <div class="sidebar-module about container">
+    <h4>About Me</h4><img
+                title="Justin L. Sunday"
+                src="http://localhost:4000/assets/images/author/profile-photo-1352x1098.png"
+                alt="Justin L. Sunday"
+        /><br>
+    <p>Hello, my name is Justin! I live in the US with my wife, amazing daughters, and our crazy canines.  I'm extremely passionate about software development, programming, absorbing every bit of knowledge I can, and sharing that knowledge with anyone interested in learning.</p>
+    <br><section id="contact-me">
+        <p>You can contact me via the <a href="/about/#contact-me">Contact Me</a> form or any of the below options:</p>
+        <div class="row"><div class="col-1 mx-3">
+                    <a href="mailto:admin@jlsunday.com" title="mailto: admin@jlsunday.com"
+                    ><i class="bi bi-envelope" style="font-size: 2rem;"></i
+                        ></a>
+                </div><div class="col-1 mx-3">
+                        <a href="https://twitter.com/JustinSunday13"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           title="X, formerly twitter: JustinSunday13"
+                        ><i class="bi bi-twitter-x" style="font-size: 2rem;"></i>
+                        </a>
+                    </div><div class="col-1 mx-3">
+                        <a href="https://www.facebook.com/JLSundayDev"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           title="Facebook: JLSundayDev"
+                        ><i class="bi bi-facebook" style="font-size: 2rem;"></i>
+                        </a>
+                    </div><div class="col-1 mx-3">
+                        <a href="https://github.com/sundayj"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           title="Github: sundayj"
+                        ><i class="bi bi-github" style="font-size: 2rem;"></i>
+                        </a>
+                    </div><div class="col-1 mx-3">
+                        <a href="https://www.linkedin.com/in/justin-sunday"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           title="Linkedin: justin-sunday"
+                        ><i class="bi bi-linkedin" style="font-size: 2rem;"></i>
+                        </a>
+                    </div><div class="col-1 mx-3">
+                        <a href="https://stackoverflow.com/users/8513024/justin-sunday"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           title="Stackoverflow: Justin Sunday"
+                        ><i class="bi bi-stack-overflow" style="font-size: 2rem;"></i>
+                        </a>
+                    </div></div></section>
 
-        <article class="post-content" itemprop="articleBody">
-            
-            This is part one of a series of posts in which I will be sharing my favorite Development tools. Part one focuses on 5 dev tools that can be found and utilized online.
-            <p style="text-align: right"><a href="http://localhost:4000/tools/2021/12/06/software-tools.html">Read more</a></p>
-            
-        </article>
-        <hr/>
-
-        
+    <div
+            class="fb-like"
+            data-href="http://localhost:4000"
+            data-width=""
+            data-layout="button"
+            data-action="like"
+            data-size="large"
+            data-share="true"
+    ></div>
+</div>
+<div class="sidebar-module container">
+    <h4>Blogroll <span><i class="bi bi-info-circle" title="Hover over the links below for extra details"></i></span></h4><li><a href="https://www.joelonsoftware.com/" target="_blank" rel="noopener noreferrer"
+               title="Joel on Software">Joel on Software</a></li><li><a href="https://risdenk.github.io/" target="_blank" rel="noopener noreferrer"
+               title="Blog and Tutorials by Kevin Risden">Kevin Risden's Blog</a></li><li><a href="https://flaviocopes.com/" target="_blank" rel="noopener noreferrer"
+               title="Blog and Tutorials by Flavio Copes">Flavio Copes</a></li><li><a href="https://x-team.com/blog/" target="_blank" rel="noopener noreferrer"
+               title="X-Team">X-Team</a></li><li><a href="https://stackoverflow.blog/" target="_blank" rel="noopener noreferrer"
+               title="Stack Overflow's Blog, The Overflow">The Overflow</a></li><li><a href="https://realpython.com/" target="_blank" rel="noopener noreferrer"
+               title="Real Python">Real Python</a></li><li><a href="https://www.emergingtechbrew.com/r?kid=51d204" target="_blank" rel="noopener noreferrer"
+               title="Emerging Tech Brew Email Newsletter">Emerging Tech Brew</a></li><li><a href="https://morningbrew.com/daily/r/?kid=51d204" target="_blank" rel="noopener noreferrer"
+               title="Morning Brew Email Newsletter">Morning Brew</a></li><li><a href="https://medium.com/pixel-grimoire" target="_blank" rel="noopener noreferrer"
+               title="Articles on pixel art and game development">The Pixel Grimoire</a></li><li><a href="https://patorjk.com/754575blog/" target="_blank" rel="noopener noreferrer"
+               title="Patrick Gillespie's blog. Has some cool online tools under the software category, like the Text to ASCII Art Generator.">patorjk.com</a></li></div>
 
     </div>
 </div>
 
 
-    <section class="pager">
-  
-  
-</section>
-
-<script src="http://localhost:4000/js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript">
-$(function(){
-  $(document).keydown(function(e) {
-    if (e.target.nodeName.toUpperCase() !== 'BODY') return;
-    var url = false;
-        if (e.which === 37 || e.which === 74) {  // Left arrow and J
-        
-        }
-        else if (e.which === 39 || e.which === 75) {  // Right arrow and K
-            
-        }
-        if (url) {
-            window.location = url;
-        }
-  });
-})
-</script>
-
-
-  </div>
-  <div class="col-sm-2">
-<div class="sidebar-module about">
-  <h4>About Me</h4>
-  <img title="Justin L Sunday" src="/images/other-images/profile-photo-1352x1098.png" alt="Justin L Sunday"/>
-  <span>Hello, my name is Justin! I live in the US with my wife, amazing daughters, and our crazy canines.  I'm extremely passionate about software development, programming, absorbing every bit of knowledge I can, and sharing that knowledge with anyone interested in learning.</span>
-  <br />
-
-  
-
-  You can contact me via: <br />
-  <section id="contact-me">
+            </div>
+        </div><footer class="container-flex bg-body">
+  <p>&copy; <span id="copyYear"></span> Justin L. Sunday</p><p><a
+      href="http://localhost:4000/sitemap.xml"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Site Map</a><span> | </span><a href="http://localhost:4000/privacy-policy/">Privacy Policy</a> <span> | </span>
+    <a href="http://localhost:4000/cookie-policy/">Cookie Policy</a> <span> | </span>
+    <a href="http://localhost:4000/terms-of-service/"
+      >Terms of Service</a
+    ></p><p>
+    Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> on
+    <a href="https://github.com/">Github</a><span> | </span>Theme from
+    <a
+      href="https://github.com/sundayj/DevSculptor"
+      target="_blank"
+      title="Check out the DevSculptor theme at GitHub"
+      aria-label="Check out the DevSculptor theme at GitHub"
+      >sundayj/DevSculptor</a
+    >
     
-    <a href="mailto:admin@jlsunday.com" title="mailto: admin@jlsunday.com"><i class="fa fa-envelope-square fa-3x"></i></a>
-    
-    
-    <a href="https://github.com/sundayj" target="_blank" rel="noopener noreferrer" title="GithubID: sundayj"><i class="fa fa-github-square fa-3x"></i></a>
-    
-    
-    <a href="https://twitter.com/JustinSunday13" target="_blank" rel="noopener noreferrer" title="TwitterID: JustinSunday13"><i class="fa fa-twitter-square fa-3x"></i></a>
-    
-    
-    <a href="https://www.linkedin.com/in/justin-sunday" target="_blank" rel="noopener noreferrer" title="LinkedIn: justin-sunday"><i class="fa fa-linkedin-square fa-3x"></i></a>
-    
-    
-    <a href="https://stackoverflow.com/users/story/8513024?view=Timeline" target="_blank" rel="noopener noreferrer" title="StackOverflow: 8513024"><i class="fa fa-stack-overflow" style="font-size: 2.5em"></i></a>
-    
-    
-  </section>
-  Or via the <a href="/about/#contact-me">Contact Me</a> form.
-  <div class="fb-like" data-href="https://jlsunday.com" data-width="" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
-</div>
-
-<div class="sidebar-module">
-  <h4>Recent Posts</h4>
-  
-  <li>
-  <a href="/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html" title="Comparing Pixel Art Editors, Part One: Aseprite" rel="bookmark">Comparing Pixel Art Editors, Part One: Aseprite</a>
-  </li>
-  
-  <li>
-  <a href="/tutorials/angular/2022/01/09/Building-an-Angular-App-Part1.html" title="Building an App with Angular, Part 1: Introduction" rel="bookmark">Building an App with Angular, Part 1: Introduction</a>
-  </li>
-  
-  <li>
-  <a href="/updates/2022/01/06/site-update.html" title="Site Updates" rel="bookmark">Site Updates</a>
-  </li>
-  
-  <li>
-  <a href="/resources/2021/12/14/Forty-Awesome-Programming-Resources.html" title="40 Awesome Programming Resources" rel="bookmark">40 Awesome Programming Resources</a>
-  </li>
-  
-  <li>
-  <a href="/tools/2021/12/06/software-tools.html" title="5 Great Free Software Development Tools" rel="bookmark">5 Great Free Software Development Tools</a>
-  </li>
-  
-</div>
-
-
-<div class="sidebar-module">
-  <h4>Categories</h4>
-  
-  <li><a href="/categories/#Tools" title="Tools" rel="2">Tools (2)</a></li>
-  
-  <li><a href="/categories/#Resources" title="Resources" rel="1">Resources (1)</a></li>
-  
-  <li><a href="/categories/#Updates" title="Updates" rel="1">Updates (1)</a></li>
-  
-  <li><a href="/categories/#Tutorials" title="Tutorials" rel="1">Tutorials (1)</a></li>
-  
-  <li><a href="/categories/#Angular" title="Angular" rel="1">Angular (1)</a></li>
-  
-  <li><a href="/categories/#Reviews" title="Reviews" rel="1">Reviews (1)</a></li>
-  
-</div>
-
-
-<div class="sidebar-module">
-  <h4>Tags</h4>
-  
-    <a href="/tags/#tools" title="tools" rel="3">tools</a> &nbsp;
-  
-    <a href="/tags/#software" title="software" rel="2">software</a> &nbsp;
-  
-    <a href="/tags/#recommendations" title="recommendations" rel="1">recommendations</a> &nbsp;
-  
-    <a href="/tags/#web-tools" title="web-tools" rel="1">web-tools</a> &nbsp;
-  
-    <a href="/tags/#database" title="database" rel="2">database</a> &nbsp;
-  
-    <a href="/tags/#SQL" title="SQL" rel="2">SQL</a> &nbsp;
-  
-    <a href="/tags/#JavaScript" title="JavaScript" rel="2">JavaScript</a> &nbsp;
-  
-    <a href="/tags/#productivity" title="productivity" rel="1">productivity</a> &nbsp;
-  
-    <a href="/tags/#code-converters" title="code-converters" rel="1">code-converters</a> &nbsp;
-  
-    <a href="/tags/#code-generators" title="code-generators" rel="1">code-generators</a> &nbsp;
-  
-    <a href="/tags/#list" title="list" rel="2">list</a> &nbsp;
-  
-    <a href="/tags/#IDEs" title="IDEs" rel="1">IDEs</a> &nbsp;
-  
-    <a href="/tags/#database-manager" title="database-manager" rel="1">database-manager</a> &nbsp;
-  
-    <a href="/tags/#VSCode" title="VSCode" rel="1">VSCode</a> &nbsp;
-  
-    <a href="/tags/#DBeaver" title="DBeaver" rel="1">DBeaver</a> &nbsp;
-  
-    <a href="/tags/#markdown" title="markdown" rel="1">markdown</a> &nbsp;
-  
-    <a href="/tags/#time-trackers" title="time-trackers" rel="1">time-trackers</a> &nbsp;
-  
-    <a href="/tags/#VSCode-Extensions" title="VSCode-Extensions" rel="1">VSCode-Extensions</a> &nbsp;
-  
-    <a href="/tags/#resources" title="resources" rel="1">resources</a> &nbsp;
-  
-    <a href="/tags/#Python" title="Python" rel="1">Python</a> &nbsp;
-  
-    <a href="/tags/#Git" title="Git" rel="1">Git</a> &nbsp;
-  
-    <a href="/tags/#full-stack" title="full-stack" rel="1">full-stack</a> &nbsp;
-  
-    <a href="/tags/#newsletter" title="newsletter" rel="1">newsletter</a> &nbsp;
-  
-    <a href="/tags/#games" title="games" rel="1">games</a> &nbsp;
-  
-    <a href="/tags/#updates" title="updates" rel="1">updates</a> &nbsp;
-  
-    <a href="/tags/#site-updates" title="site-updates" rel="1">site-updates</a> &nbsp;
-  
-    <a href="/tags/#tutorial" title="tutorial" rel="1">tutorial</a> &nbsp;
-  
-    <a href="/tags/#Angular" title="Angular" rel="1">Angular</a> &nbsp;
-  
-    <a href="/tags/#front-end" title="front-end" rel="1">front-end</a> &nbsp;
-  
-    <a href="/tags/#Typescript" title="Typescript" rel="1">Typescript</a> &nbsp;
-  
-    <a href="/tags/#Angular-Material" title="Angular-Material" rel="1">Angular-Material</a> &nbsp;
-  
-    <a href="/tags/#services" title="services" rel="1">services</a> &nbsp;
-  
-    <a href="/tags/#in-memory-database" title="in-memory-database" rel="1">in-memory-database</a> &nbsp;
-  
-    <a href="/tags/#flex-layout" title="flex-layout" rel="1">flex-layout</a> &nbsp;
-  
-    <a href="/tags/#interceptors" title="interceptors" rel="1">interceptors</a> &nbsp;
-  
-    <a href="/tags/#logging" title="logging" rel="1">logging</a> &nbsp;
-  
-    <a href="/tags/#snackbar" title="snackbar" rel="1">snackbar</a> &nbsp;
-  
-    <a href="/tags/#pixel-art" title="pixel-art" rel="1">pixel-art</a> &nbsp;
-  
-    <a href="/tags/#game-development" title="game-development" rel="1">game-development</a> &nbsp;
-  
-    <a href="/tags/#tool-comparison" title="tool-comparison" rel="1">tool-comparison</a> &nbsp;
-  
-    <a href="/tags/#tool-review" title="tool-review" rel="1">tool-review</a> &nbsp;
-  
-</div>
-
-
-<div class="sidebar-module">
-  <h4>Blogroll</h4>
-  
-  <li><a href="https://www.joelonsoftware.com/"  target="_blank" rel="noopener noreferrer" title="Joel on Software">Joel on Software</a></li>
-  
-  <li><a href="https://risdenk.github.io/"  target="_blank" rel="noopener noreferrer" title="Blog and Tutorials by Kevin Risden">Kevin Risden's Blog</a></li>
-  
-  <li><a href="https://flaviocopes.com/"  target="_blank" rel="noopener noreferrer" title="Blog and Tutorials by Flavio Copes">Flavio Copes</a></li>
-  
-  <li><a href="https://x-team.com/blog/"  target="_blank" rel="noopener noreferrer" title="X-Team">X-Team</a></li>
-  
-  <li><a href="https://stackoverflow.blog/"  target="_blank" rel="noopener noreferrer" title="Stack Overflow's Blog, The Overflow">The Overflow</a></li>
-  
-  <li><a href="https://realpython.com/"  target="_blank" rel="noopener noreferrer" title="Real Python">Real Python</a></li>
-  
-  <li><a href="https://www.emergingtechbrew.com/r?kid=51d204"  target="_blank" rel="noopener noreferrer" title="Emerging Tech Brew Email Newsletter">Emerging Tech Brew</a></li>
-  
-  <li><a href="https://morningbrew.com/daily/r/?kid=51d204"  target="_blank" rel="noopener noreferrer" title="Morning Brew Email Newsletter">Morning Brew</a></li>
-  
-  <li><a href="https://medium.com/pixel-grimoire"  target="_blank" rel="noopener noreferrer" title="Articles on pixel art and game development">The Pixel Grimoire</a></li>
-  
-</div>
-
-<div class="sidebar-module">
-  <h4>Archives</h4>
-
-  
-  
-  
-  
-  
-  <li id="2022" > <a href="/archives/#2022">2022</a></li>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <li id="2021" > <a href="/archives/#2021">2021</a></li>
-  
-  
-  
-  
-  
-
-</div>
-
-
-</div>
-
-
-  
-
-  <footer class="site-footer">
-
-  <p>Copyright &copy; <a href="/">JLSunday</a></p>
-  <p>
-    <a href="http://localhost:4000/sitemap.xml" target="_blank" rel="noopener noreferrer">Site Map</a>
-  | <a href="http://localhost:4000/privacy-policy/">Privacy Policy</a>
-  | <a href="http://localhost:4000/cookie-policy/">Cookie Policy</a>
-  | <a href="http://localhost:4000/terms-of-service/">Terms of Service</a>
   </p>
-  Check out the source code for this site on <a href="https://github.com/sundayj/sundayj.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>.
-  <p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> 
-  on 
-  <a href="https://github.com/">Github</a>
-  | Base Theme <a href="https://github.com/yulijia/freshman21/">Freshman21</a> Design by <a href="https://yulijia.net">Lijia Yu</a>
 
-
-  <div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
-    <a title="Back To Top"><img src="http://localhost:4000/images/topbutton.png"/></a>
-  </div>
-
-  <script src="http://localhost:4000/js/jquery-1.9.1.min.js"></script>
-  <script src="http://localhost:4000/js/totop.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
-<script>
-    anchors.options = {
-        placement: 'left',
-        class: "fas fa-link fa-1x",
-        icon: '',
-        // visible: 'always'
-    };
-    anchors.add();
-</script>
-
-  <script>
+  <div
+    id="totop"
+    style="position: fixed; bottom: 150px; right: 50px; cursor: pointer"
+  >
+    <a title="Back To Top"
+      ><img src="http://localhost:4000/assets/images/topbutton.png" alt="To Top" title="To Top"/></a
+    >
+  </div><script src="http://localhost:4000/assets/js/jquery-1.9.1.min.js"></script>
+<script src="http://localhost:4000/assets/js/totop.js"></script><script>
+document.querySelectorAll(".highlighter-rouge, figure.highlight").forEach(i => {
+    i.setAttribute("data-lang", "code");
+    var l = i.getAttribute("class").split("language-");
+    if (l.length > 1) {
+        var lang = l[1].split(" ");
+        if (lang.length > 0) {
+        i.setAttribute("data-lang", lang[0]);
+        }
+    }
+});
+</script><script>
     function readingTime() {
         if (!document.getElementById("article")){return;}
         const text = document.getElementById("article")?.innerText;
         const wpm = 200;
         const words = text.trim().split(/\s+/).length;
         const time = Math.ceil(words / wpm);
-        const textToAdd = time <= 1 ? `${time} minute` : `${time} minutes`;
-        document.getElementById("reading-time").innerText = textToAdd;
+        document.getElementById("reading-time").innerText = time <= 1 ? `${time} minute` : `${time} minutes`;
     }
     readingTime();
 </script>
+<script>
+    function updateCopyYear(){
+        const startYear = 2023;
+        let text = `${startYear}`;
+        const copyElement = document.getElementById("copyYear");
+        if (!copyElement){return;}
+        const currentYear = new Date().getFullYear();
+        if (currentYear > startYear){
+            text = text + `-${currentYear}`;
+        }
+        copyElement.innerText = text;
+    }
+    updateCopyYear();
+</script><script>
+/*!
+ * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+ * Copyright 2011-2023 The Bootstrap Authors
+ * Licensed under the Creative Commons Attribution 3.0 Unported License.
+ */
 
+ (() => {
+  'use strict'
 
+  const getStoredTheme = () => localStorage.getItem('theme');
+  const setStoredTheme = theme => localStorage.setItem('theme', theme);
+
+  const getPreferredTheme = () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme) {
+      return storedTheme
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  };
+
+  const setTheme = theme => {
+    if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-bs-theme', 'dark')
+    } else {
+      document.documentElement.setAttribute('data-bs-theme', theme)
+    }
+  };
+
+  setTheme(getPreferredTheme());
+
+  const showActiveTheme = (theme, focus = false) => {
+    const themeSwitcher = document.querySelector('#bd-theme')
+
+    if (!themeSwitcher) {
+      return
+    }
+
+    const themeSwitcherText = document.querySelector('#bd-theme-text')
+    const activeThemeIcon = document.querySelector('.theme-icon-active use')
+    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+    const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
+
+    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+      element.classList.remove('active');
+      element.setAttribute('aria-pressed', 'false');
+    });
+
+    btnToActive.classList.add('active');
+    btnToActive.setAttribute('aria-pressed', 'true');
+    activeThemeIcon.setAttribute('href', svgOfActiveBtn);
+    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
+    themeSwitcher.setAttribute('aria-label', themeSwitcherLabel);
+
+    if (focus) {
+      themeSwitcher.focus();
+    }
+  };
+
+  const setLogo = themeColor => {
+    const themeLogo = themeColor == 'dark' ? 'http://localhost:4000/assets/images/JLSunday-logo/JLSunday-no-background.png' : 'http://localhost:4000/assets/images/JLSunday-logo/JLSunday-no-background.png';
+    const logoImgElement = document.getElementById("site-logo");
+    logoImgElement.setAttribute('src', themeLogo);
+  };
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme !== 'light' && storedTheme !== 'dark') {
+      setTheme(getPreferredTheme());
+      setLogo(getPreferredTheme());
+    }
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    showActiveTheme(getPreferredTheme());
+
+    document.querySelectorAll('[data-bs-theme-value]')
+      .forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const theme = toggle.getAttribute('data-bs-theme-value');
+          setStoredTheme(theme);
+          setTheme(theme);
+          showActiveTheme(theme, true);
+          setLogo(getPreferredTheme());
+        })
+      })
+  });
+
+  setLogo(getPreferredTheme());
+})()
+</script><script type="text/javascript">
+    $(function () {
+        $(document).keydown(function (e) {
+            if (e.target.nodeName.toUpperCase() !== 'BODY') return;
+            let url = false;
+            if (e.which === 37 || e.which === 74) {  // Left arrow and J
+                
+                url = '';
+                
+            } else if (e.which === 39 || e.which === 75) {  // Right arrow and K
+                
+                url = '';
+                
+            }
+            if (url) {
+                window.location = url;
+            }
+        });
+    })
+</script>
+<script type="text/javascript">
+    function generateTableOfContents() {
+        const tocContents = document.getElementById('toc-contents');
+        if (!tocContents) return;
+
+        const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+        if (headings.length === 0) return;
+
+        const tocList = document.createElement('ul');
+        let currentLevel = 2;
+        let currentList = tocList;
+
+        // Create an array to store the last list for each level
+        const lastLists = [tocList];
+
+        for (let i = 0; i < headings.length; i++) {
+            const heading = headings[i];
+            const headingLevel = parseInt(heading.tagName.charAt(1));
+
+            // Ensure the level is within bounds
+            if (headingLevel < 2 || headingLevel > 6) continue;
+
+            // Adjust currentLevel and currentList based on the encountered heading level
+            while (currentLevel < headingLevel) {
+                const newList = document.createElement('ul');
+                currentList.appendChild(newList);
+                lastLists[currentLevel] = currentList;
+                currentList = newList;
+                currentLevel++;
+            }
+
+            while (currentLevel > headingLevel) {
+                currentList = lastLists[currentLevel - 1];
+                currentLevel--;
+            }
+
+            const listItem = document.createElement('li');
+            const anchor = document.createElement('a');
+            anchor.textContent = heading.textContent;
+            anchor.href = `#${heading.id}`;
+            listItem.appendChild(anchor);
+            currentList.appendChild(listItem);
+
+            lastLists[currentLevel] = currentList;
+        }
+
+        tocContents.appendChild(tocList);
+    }
+
+    generateTableOfContents();
+</script>
+<script>
+    function toggleTOC() {
+        const sidenav = document.getElementById("toc-sidebar");
+        const chevron = document.getElementById("chevron");
+        const btn = document.getElementById("tocOpenBtn");
+        let ariaValue = btn.getAttribute("aria-expanded");
+
+        sidenav.style.width = sidenav.style.width === "175px" ? "0" : "175px";
+        chevron.style.transform = chevron.style.transform === "rotate(-180deg)" ? "rotate(0deg)" : "rotate(-180deg)";
+        ariaValue === "true" ? btn.setAttribute("aria-expanded", "false") : btn.setAttribute("aria-expanded", "true");
+    }
+</script>
 </footer>
-
-
 </div>
-
-</body>
-
+  </body>
 </html>

@@ -5,63 +5,18 @@
     <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Oct 2023 10:27:52 -0400</pubDate>
-    <lastBuildDate>Thu, 26 Oct 2023 10:27:52 -0400</lastBuildDate>
+    <pubDate>Thu, 26 Oct 2023 11:46:24 -0400</pubDate>
+    <lastBuildDate>Thu, 26 Oct 2023 11:46:24 -0400</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
-
+    
       <item>
         <title>Comparing Pixel Art Editors, Part One: Aseprite</title>
         <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Design Components&quot; src=&quot;http://localhost:4000/images/other-images/undraw/undraw_design_components_9vy6.png&quot; loading=&quot;lazy&quot; title=&quot;Design Components&quot; /&gt;
+        &lt;img alt=&quot;Design Components&quot; src=&quot;http://localhost:4000/assets/images/posts/undraw/undraw_design_components_9vy6.png&quot; loading=&quot;lazy&quot; title=&quot;Design Components&quot; /&gt;
     &lt;figcaption&gt;
         Image provided by &lt;a href=&quot;https://undraw.co/search&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;unDraw.co&lt;/a&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#intro&quot; id=&quot;markdown-toc-intro&quot;&gt;Intro&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#feature-comparison-table&quot; id=&quot;markdown-toc-feature-comparison-table&quot;&gt;Feature Comparison Table&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#feature-breakdown&quot; id=&quot;markdown-toc-feature-breakdown&quot;&gt;Feature Breakdown&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#tools&quot; id=&quot;markdown-toc-tools&quot;&gt;Tools&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#aseprite&quot; id=&quot;markdown-toc-aseprite&quot;&gt;Aseprite&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#extras&quot; id=&quot;markdown-toc-extras&quot;&gt;Extras&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#where-to-get-it&quot; id=&quot;markdown-toc-where-to-get-it&quot;&gt;Where to Get It?&lt;/a&gt;            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;#supported-platforms&quot; id=&quot;markdown-toc-supported-platforms&quot;&gt;Supported Platforms&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#compile-your-own-copy&quot; id=&quot;markdown-toc-compile-your-own-copy&quot;&gt;Compile Your Own Copy&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#download-the-trial-version&quot; id=&quot;markdown-toc-download-the-trial-version&quot;&gt;Download the Trial Version&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a href=&quot;#buy-an-official-copy&quot; id=&quot;markdown-toc-buy-an-official-copy&quot;&gt;Buy an Official Copy&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#grafx2&quot; id=&quot;markdown-toc-grafx2&quot;&gt;GrafX2&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#where-to-get-it-1&quot; id=&quot;markdown-toc-where-to-get-it-1&quot;&gt;Where to Get It?&lt;/a&gt;            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;#supported-platforms-1&quot; id=&quot;markdown-toc-supported-platforms-1&quot;&gt;Supported Platforms&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#pixieditor&quot; id=&quot;markdown-toc-pixieditor&quot;&gt;PixiEditor&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#libresprite&quot; id=&quot;markdown-toc-libresprite&quot;&gt;LibreSprite&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#libresprite-dotto&quot; id=&quot;markdown-toc-libresprite-dotto&quot;&gt;LibreSprite Dotto&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#jpixel&quot; id=&quot;markdown-toc-jpixel&quot;&gt;JPixel&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#pixelorama&quot; id=&quot;markdown-toc-pixelorama&quot;&gt;Pixelorama&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#pixel-studio&quot; id=&quot;markdown-toc-pixel-studio&quot;&gt;Pixel Studio&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#graphics-gale&quot; id=&quot;markdown-toc-graphics-gale&quot;&gt;Graphics Gale&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#piskel&quot; id=&quot;markdown-toc-piskel&quot;&gt;Piskel&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#lospec-pixel-editor&quot; id=&quot;markdown-toc-lospec-pixel-editor&quot;&gt;LoSpec Pixel Editor&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#pixilart&quot; id=&quot;markdown-toc-pixilart&quot;&gt;PixilArt&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#pro-motion&quot; id=&quot;markdown-toc-pro-motion&quot;&gt;Pro Motion&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#other-resources&quot; id=&quot;markdown-toc-other-resources&quot;&gt;Other Resources&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#pixel-art-tutorials&quot; id=&quot;markdown-toc-pixel-art-tutorials&quot;&gt;Pixel Art Tutorials&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#free-game-resources&quot; id=&quot;markdown-toc-free-game-resources&quot;&gt;Free Game Resources&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
@@ -97,10 +52,10 @@ noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Open this table in a separate tab by clicking &lt;a href=&quot;http://localhost:4000/Sprite-Editor-Comparison-Table&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Open this table in a separate tab by clicking&lt;/strong&gt; &lt;a href=&quot;http://localhost:4000/Sprite-Editor-Comparison-Table&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
-&lt;div id=&quot;fixedTable&quot;&gt;
-    &lt;table&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table table-striped table-bordered&quot;&gt;
         &lt;thead&gt;
         &lt;tr&gt;
             &lt;th&gt;Feature&lt;/th&gt;
@@ -496,7 +451,7 @@ if I know there are people interested or dependent on the series.&lt;/p&gt;
         Perfect helps with this either by deleting extra pixels as you go, or by creating a pixel at a diagonal to
         give a better angled look.
         &lt;figure&gt;
-            &lt;img alt=&quot;Layer Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/pixel-perfect-example.png&quot; loading=&quot;lazy&quot; title=&quot;Layer Example&quot; /&gt;
+            &lt;img alt=&quot;Layer Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/pixel-perfect-example.png&quot; loading=&quot;lazy&quot; title=&quot;Layer Example&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://medium.com/pixel-grimoire/how-to-start-making-pixel-art-7-e504bfa4ddf2&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Pixel Grimoire&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -510,7 +465,7 @@ if I know there are people interested or dependent on the series.&lt;/p&gt;
         on one layer without fear of affecting other layers. This helps greatly with animation, or giving a feeling of
         depth to your art.
         &lt;figure&gt;
-            &lt;img alt=&quot;Pixel Perfect Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/1Layer-Layers-9.webp&quot; loading=&quot;lazy&quot; title=&quot;Pixel Perfect Example&quot; /&gt;
+            &lt;img alt=&quot;Pixel Perfect Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/1Layer-Layers-9.webp&quot; loading=&quot;lazy&quot; title=&quot;Pixel Perfect Example&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://learnindie.com/pixel-art-aseprite-1-layers/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;LearnIndie.com&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -523,7 +478,7 @@ if I know there are people interested or dependent on the series.&lt;/p&gt;
         Symmetry tools, or mirror pens, allow you to draw art that is perfectly symmetrical vertically and/or horizontally.
         This can be useful for patterns and designs, or even drawing the front view of a characters face.
         &lt;figure&gt;
-            &lt;img alt=&quot;Symmetry Pen Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/symmetry-tool-example.gif&quot; loading=&quot;lazy&quot; title=&quot;Symmetry Pen Example&quot; /&gt;
+            &lt;img alt=&quot;Symmetry Pen Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/symmetry-tool-example.gif&quot; loading=&quot;lazy&quot; title=&quot;Symmetry Pen Example&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://i.imgur.com/pj3ykyd.gif&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;https://i.imgur.com/pj3ykyd.gif&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -535,7 +490,7 @@ if I know there are people interested or dependent on the series.&lt;/p&gt;
         &lt;/summary&gt;
         Auto-Shade tools allow you to darken or lighten an area of your art by simply drawing over it again.
         &lt;figure&gt;
-            &lt;img alt=&quot;Shading Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/shading_example.gif&quot; loading=&quot;lazy&quot; title=&quot;Shading Example&quot; /&gt;
+            &lt;img alt=&quot;Shading Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/shading_example.gif&quot; loading=&quot;lazy&quot; title=&quot;Shading Example&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://www.aseprite.org/docs/shading/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Aseprite.org&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -548,7 +503,7 @@ if I know there are people interested or dependent on the series.&lt;/p&gt;
         RotSprite allows you to rotate all, or part, of your artwork without losing any resolution. In the image below,
         the sprite on the left was rotated without RotSprite, but the sprite on the right was rotated with RotSprite.
         &lt;figure&gt;
-            &lt;img alt=&quot;RotSprite Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/rotsprite-example.png&quot; loading=&quot;lazy&quot; title=&quot;RotSprite Example&quot; /&gt;
+            &lt;img alt=&quot;RotSprite Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/rotsprite-example.png&quot; loading=&quot;lazy&quot; title=&quot;RotSprite Example&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://forum.yoyogames.com/index.php?threads/solved-image_angle-ruins-sprites.54514/#lg=_xfUid-2-1655259916&amp;amp;slide=0&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;https://i.imgur.com/vHOtruN.png&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -560,7 +515,7 @@ if I know there are people interested or dependent on the series.&lt;/p&gt;
         &lt;/summary&gt;
         Custom brushes allow you to recreate a look/feel of an area of art and use it as the pen itself.
         &lt;figure&gt;
-            &lt;img alt=&quot;Custom Brush Gif&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/custom-brush.gif&quot; loading=&quot;lazy&quot; title=&quot;Custom Brush Gif&quot; /&gt;
+            &lt;img alt=&quot;Custom Brush Gif&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/custom-brush.gif&quot; loading=&quot;lazy&quot; title=&quot;Custom Brush Gif&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://www.aseprite.org/assets/images/custom-brush.gif&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Aseprite.org&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -572,7 +527,7 @@ if I know there are people interested or dependent on the series.&lt;/p&gt;
         &lt;/summary&gt;
         Anti-Aliasing is useful for softening edges of your art and removing the bumpy look in places where the edges should be softer.
         &lt;figure&gt;
-            &lt;img alt=&quot;Anti-Aliasing Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/anti-alias-example.png&quot; loading=&quot;lazy&quot; title=&quot;Anti-Aliasing Example&quot; /&gt;
+            &lt;img alt=&quot;Anti-Aliasing Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/anti-alias-example.png&quot; loading=&quot;lazy&quot; title=&quot;Anti-Aliasing Example&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://medium.com/pixel-grimoire/how-to-start-making-pixel-art-4-ff4bfcd2d085&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Pixel Grimoire&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -584,7 +539,7 @@ if I know there are people interested or dependent on the series.&lt;/p&gt;
         &lt;/summary&gt;
         Tiles are images that can be duplicated and placed throughout an artwork to create a pattern or texture.
         &lt;figure&gt;
-            &lt;img alt=&quot;Small Tile Tutorial&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/tile-tutorial.gif&quot; loading=&quot;lazy&quot; title=&quot;Small Tile Tutorial&quot; /&gt;
+            &lt;img alt=&quot;Small Tile Tutorial&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/tile-tutorial.gif&quot; loading=&quot;lazy&quot; title=&quot;Small Tile Tutorial&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://blog.studiominiboss.com/pixelart&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Studio Mini Boss&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -607,7 +562,7 @@ if I know there are people interested or dependent on the series.&lt;/p&gt;
                 &lt;/li&gt;
             &lt;/ul&gt;
             &lt;figure&gt;
-                &lt;img alt=&quot;Sprite Sheet Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/sonic3_spritesheet_example.png&quot; loading=&quot;lazy&quot; title=&quot;Sprite Sheet Example&quot; /&gt;
+                &lt;img alt=&quot;Sprite Sheet Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/sonic3_spritesheet_example.png&quot; loading=&quot;lazy&quot; title=&quot;Sprite Sheet Example&quot; /&gt;
                 &lt;figcaption&gt;
                     Image borrowed from &lt;a href=&quot;https://demyanov.dev/javascript-canvas-sprite-animation&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;demyanov.dev&lt;/a&gt;
                 &lt;/figcaption&gt;
@@ -645,7 +600,7 @@ if I know there are people interested or dependent on the series.&lt;/p&gt;
                     huge time saver.
                     &lt;/li&gt;
                 &lt;figure&gt;
-                    &lt;img alt=&quot;Onion Skin Example&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/screenshot_onion_skinning.jpg&quot; loading=&quot;lazy&quot; title=&quot;Onion Skin Example&quot; /&gt;
+                    &lt;img alt=&quot;Onion Skin Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/screenshot_onion_skinning.jpg&quot; loading=&quot;lazy&quot; title=&quot;Onion Skin Example&quot; /&gt;
                     &lt;figcaption&gt;
                         Image borrowed from &lt;a href=&quot;https://www.cosmigo.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Cosmigo&lt;/a&gt;
                     &lt;/figcaption&gt;
@@ -693,7 +648,7 @@ if I know there are people interested or dependent on the series.&lt;/p&gt;
 &lt;h3 id=&quot;aseprite&quot;&gt;&lt;a href=&quot;https://www.aseprite.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Aseprite&lt;/a&gt;&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Aseprite Trial Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/aseprite-trial-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Aseprite Trial Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Aseprite Trial Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/aseprite-trial-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Aseprite Trial Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         Screenshot of a new sprite window in Aseprite.
     &lt;/figcaption&gt;
@@ -788,7 +743,7 @@ noopener noreferrer&quot;&gt;Steam&lt;/a&gt;, or &lt;a href=&quot;https://dacap.
 &lt;h3 id=&quot;grafx2&quot;&gt;&lt;a href=&quot;http://grafx2.chez.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;GrafX2&lt;/a&gt;&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;GrafX2 Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/grafx2-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;GrafX2 Screenshot&quot; /&gt;
+        &lt;img alt=&quot;GrafX2 Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/grafx2-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;GrafX2 Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         Image borrowed from &lt;a href=&quot;http://grafx2.chez.com/index.php?static2/screenshots&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;grafx2.chez.com&lt;/a&gt;
     &lt;/figcaption&gt;
@@ -834,7 +789,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;pixieditor&quot;&gt;&lt;a href=&quot;https://pixieditor.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;PixiEditor&lt;/a&gt;&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Pixi Editor Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/pixi-editor-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixi Editor Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Pixi Editor Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/pixi-editor-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixi Editor Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         Image provided by &lt;a href=&quot;https://pixieditor.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;pixieditor.net.&lt;/a&gt;
     &lt;/figcaption&gt;
@@ -843,7 +798,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;libresprite&quot;&gt;LibreSprite&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;LibreSprite Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/libresprite-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LibreSprite Screenshot&quot; /&gt;
+        &lt;img alt=&quot;LibreSprite Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/libresprite-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LibreSprite Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a new window and canvas in LibreSprite.
     &lt;/figcaption&gt;
@@ -857,7 +812,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;libresprite-dotto&quot;&gt;LibreSprite Dotto&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;LibreSprite Dotto Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/dotto-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LibreSprite Dotto Screenshot&quot; /&gt;
+        &lt;img alt=&quot;LibreSprite Dotto Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/dotto-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LibreSprite Dotto Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a new window and canvas in LibreSprite Dotto.
     &lt;/figcaption&gt;
@@ -871,7 +826,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;jpixel&quot;&gt;JPixel&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;JPixel Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/jpixel-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;JPixel Screenshot&quot; /&gt;
+        &lt;img alt=&quot;JPixel Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/jpixel-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;JPixel Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a new window and canvas in JPixel.
     &lt;/figcaption&gt;
@@ -884,7 +839,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;pixelorama&quot;&gt;Pixelorama&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Pixelorama Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/pixelorama-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixelorama Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Pixelorama Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/pixelorama-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixelorama Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a new window and canvas in Pixelorama.
     &lt;/figcaption&gt;
@@ -898,7 +853,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;pixel-studio&quot;&gt;Pixel Studio&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Pixel Studio Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/pixel-studio-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixel Studio Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Pixel Studio Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/pixel-studio-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixel Studio Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a new window and canvas in Pixel Studio.
     &lt;/figcaption&gt;
@@ -913,7 +868,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;graphics-gale&quot;&gt;Graphics Gale&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Graphics Gale Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/graphics-gale-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Graphics Gale Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Graphics Gale Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/graphics-gale-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Graphics Gale Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a new window and canvas in Graphics Gale.
     &lt;/figcaption&gt;
@@ -926,7 +881,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;piskel&quot;&gt;Piskel&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Piskel Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/piskel-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Piskel Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Piskel Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/piskel-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Piskel Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a project inside Piskel.
     &lt;/figcaption&gt;
@@ -940,7 +895,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;lospec-pixel-editor&quot;&gt;LoSpec Pixel Editor&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;LoSpec Editor Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/lospec-editor-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LoSpec Editor Screenshot&quot; /&gt;
+        &lt;img alt=&quot;LoSpec Editor Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/lospec-editor-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LoSpec Editor Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a project inside the LoSpec editor. This beautiful artwork has been provided by my 4-year-old. :heart_eyes:
     &lt;/figcaption&gt;
@@ -954,7 +909,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;pixilart&quot;&gt;PixilArt&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Pixil Art Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/pixil-art-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixil Art Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Pixil Art Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/pixil-art-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixil Art Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a new window and canvas in Pixil Art.
     &lt;/figcaption&gt;
@@ -967,7 +922,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;pro-motion&quot;&gt;Pro Motion&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Promotion Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/pixel-editors/promotion-screenshot.jpg&quot; loading=&quot;lazy&quot; title=&quot;Promotion Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Promotion Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/promotion-screenshot.jpg&quot; loading=&quot;lazy&quot; title=&quot;Promotion Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         Image provided by &lt;a href=&quot;https://www.cosmigo.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Cosmigo&lt;/a&gt;
     &lt;/figcaption&gt;
@@ -1003,58 +958,32 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 11 Jun 2022 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html</link>
-        <guid isPermaLink="true">http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html</guid>
-
+        <link>http://localhost:4000/tools/2022/06/11/Comparing-Pixel-Art-Editors.html</link>
+        <guid isPermaLink="true">http://localhost:4000/tools/2022/06/11/Comparing-Pixel-Art-Editors.html</guid>
+        
         <category>tools</category>
-
+        
         <category>pixel-art</category>
-
+        
         <category>game-development</category>
-
+        
         <category>tool-comparison</category>
-
+        
         <category>tool-review</category>
-
-
+        
+        
         <category>Tools</category>
-
-        <category>Reviews</category>
-
+        
       </item>
-
+    
       <item>
         <title>Building an App with Angular, Part 1: Introduction</title>
         <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Angular Windows&quot; src=&quot;http://localhost:4000/images/other-images/undraw/undraw_Maker_launch_re_rq81.png&quot; loading=&quot;lazy&quot; title=&quot;How do you like these angles?&quot; /&gt;
+        &lt;img alt=&quot;Angular Windows&quot; src=&quot;http://localhost:4000/assets/images/posts/undraw/undraw_Maker_launch_re_rq81.png&quot; loading=&quot;lazy&quot; title=&quot;How do you like these angles?&quot; /&gt;
     &lt;figcaption&gt;
         Photo by &lt;a href=&quot;https://undraw.co/search&quot;&gt;unDraw.co&lt;/a&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#intro&quot; id=&quot;markdown-toc-intro&quot;&gt;Intro&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#the-project&quot; id=&quot;markdown-toc-the-project&quot;&gt;The Project&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#the-repository&quot; id=&quot;markdown-toc-the-repository&quot;&gt;The Repository&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#requirements&quot; id=&quot;markdown-toc-requirements&quot;&gt;Requirements&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#external-resources&quot; id=&quot;markdown-toc-external-resources&quot;&gt;External Resources&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#differences&quot; id=&quot;markdown-toc-differences&quot;&gt;Differences&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#project-structure&quot; id=&quot;markdown-toc-project-structure&quot;&gt;Project Structure&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#services&quot; id=&quot;markdown-toc-services&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#models&quot; id=&quot;markdown-toc-models&quot;&gt;Models&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#components&quot; id=&quot;markdown-toc-components&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#useful-additions&quot; id=&quot;markdown-toc-useful-additions&quot;&gt;Useful Additions&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#http-interceptor&quot; id=&quot;markdown-toc-http-interceptor&quot;&gt;HTTP Interceptor&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#the-snackbar&quot; id=&quot;markdown-toc-the-snackbar&quot;&gt;The Snackbar&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#log-service&quot; id=&quot;markdown-toc-log-service&quot;&gt;Log Service&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#final-words&quot; id=&quot;markdown-toc-final-words&quot;&gt;Final Words&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
@@ -1092,7 +1021,7 @@ that this is an original app of my own creation.&lt;/p&gt;
 &lt;p&gt;The main repo for this project is the &lt;a href=&quot;https://github.com/sundayj/JLSundayAngular&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JLSundayAngular&lt;/a&gt;
 repo’s main branch. It will always contain the current state of the project. To make the project easy to follow along with, I will
 have branches for each part of the project containing the final state of the app at that point in the project. So, if
-you want to start the project from the state displayed in this post (recommended), then you should clone the
+you want to start the project from the state displayed in this post (recommended), then you should clone the 
 &lt;a href=&quot;https://github.com/sundayj/JLSundayAngular/tree/PartOne-Introduction&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;PartOne-Introduction&lt;/a&gt;
 branch. The following post will have its own branch containing the final state of the app as described in that post.&lt;/p&gt;
 
@@ -1429,8 +1358,8 @@ like me to add to these tutorials? Just let me know!&lt;/p&gt;
 &lt;p&gt;See you soon!&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Jan 2022 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/tutorials/angular/2022/01/09/Building-an-Angular-App-Part1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/tutorials/angular/2022/01/09/Building-an-Angular-App-Part1.html</guid>
+        <link>http://localhost:4000/angular/2022/01/09/Building-an-Angular-App-Part1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/angular/2022/01/09/Building-an-Angular-App-Part1.html</guid>
         
         <category>tutorial</category>
         
@@ -1457,8 +1386,6 @@ like me to add to these tutorials? Just let me know!&lt;/p&gt;
         <category>snackbar</category>
         
         
-        <category>Tutorials</category>
-        
         <category>Angular</category>
         
       </item>
@@ -1466,7 +1393,7 @@ like me to add to these tutorials? Just let me know!&lt;/p&gt;
       <item>
         <title>Site Updates</title>
         <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Under Construction&quot; src=&quot;http://localhost:4000/images/other-images/undraw/undraw_Building_re_xfcm.png&quot; loading=&quot;lazy&quot; title=&quot;Under Construction&quot; /&gt;
+        &lt;img alt=&quot;Under Construction&quot; src=&quot;http://localhost:4000/assets/images/posts/undraw/undraw_Building_re_xfcm.png&quot; loading=&quot;lazy&quot; title=&quot;Under Construction&quot; /&gt;
     &lt;figcaption&gt;
         Image provided by &lt;a href=&quot;https://undraw.co/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;unDraw&lt;/a&gt;
     &lt;/figcaption&gt;
@@ -1513,30 +1440,10 @@ like me to add to these tutorials? Just let me know!&lt;/p&gt;
     
       <item>
         <title>40 Awesome Programming Resources</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#intro&quot; id=&quot;markdown-toc-intro&quot;&gt;Intro&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#tools&quot; id=&quot;markdown-toc-tools&quot;&gt;Tools&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#ides-and-apps&quot; id=&quot;markdown-toc-ides-and-apps&quot;&gt;IDEs and Apps&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#time-trackers&quot; id=&quot;markdown-toc-time-trackers&quot;&gt;Time Trackers&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#vs-code-extensions&quot; id=&quot;markdown-toc-vs-code-extensions&quot;&gt;VS Code Extensions&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#learning-resources-and-tutorials-by-language&quot; id=&quot;markdown-toc-learning-resources-and-tutorials-by-language&quot;&gt;Learning Resources and Tutorials by Language&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#sql&quot; id=&quot;markdown-toc-sql&quot;&gt;SQL&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#python&quot; id=&quot;markdown-toc-python&quot;&gt;Python&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#markdown&quot; id=&quot;markdown-toc-markdown&quot;&gt;Markdown&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#git&quot; id=&quot;markdown-toc-git&quot;&gt;Git&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#general&quot; id=&quot;markdown-toc-general&quot;&gt;General&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#newsletters&quot; id=&quot;markdown-toc-newsletters&quot;&gt;Newsletters&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#final-thoughts&quot; id=&quot;markdown-toc-final-thoughts&quot;&gt;Final Thoughts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot; style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; src=&quot;http://localhost:4000/images/other-images/40-awesome-programming-resources-markdown-screenshot.png&quot; class=&quot;kg-image&quot; loading=&quot;lazy&quot; title=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; /&gt;
+        &lt;img alt=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/40-awesome-programming-resources-markdown-screenshot.png&quot; class=&quot;kg-image&quot; loading=&quot;lazy&quot; title=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of this post as a Markdown WIP. Image created by the author.
     &lt;/figcaption&gt;
@@ -1836,25 +1743,7 @@ Thanks for reading, and stay tuned; There is more where this came from!&lt;/p&gt
     
       <item>
         <title>5 Great Free Software Development Tools</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#online-dev-tools&quot; id=&quot;markdown-toc-online-dev-tools&quot;&gt;Online Dev Tools&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#jsonformatterorg&quot; id=&quot;markdown-toc-jsonformatterorg&quot;&gt;JSONFormatter.org&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#what-youll-find-on-jsonformatterorg&quot; id=&quot;markdown-toc-what-youll-find-on-jsonformatterorg&quot;&gt;What you’ll find on JSONFormatter.org:&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#toolsfromdev&quot; id=&quot;markdown-toc-toolsfromdev&quot;&gt;Tools.FromDev&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#what-youll-find-on-toolsfromdev&quot; id=&quot;markdown-toc-what-youll-find-on-toolsfromdev&quot;&gt;What you’ll find on Tools.FromDev&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#dbdiagramio&quot; id=&quot;markdown-toc-dbdiagramio&quot;&gt;dbdiagram.io&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#screenshotrocks&quot; id=&quot;markdown-toc-screenshotrocks&quot;&gt;ScreenShot.Rocks&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#x-team-radio&quot; id=&quot;markdown-toc-x-team-radio&quot;&gt;X-Team Radio&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#final-thoughts&quot; id=&quot;markdown-toc-final-thoughts&quot;&gt;Final Thoughts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Welcome to my first blog post! Since the goal of this blog is to provide a
+        <description>&lt;p&gt;Welcome to my first blog post! Since the goal of this blog is to provide a
 variety of useful information and resources on Full-Stack development, what 
 better way to start off than with a post on great development tools? Seriously,
 you can’t develop great software without great development tools! :sunglasses:&lt;/p&gt;
@@ -1872,7 +1761,7 @@ regardless of the development you’re focusing on.&lt;/p&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://jsonformatter.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/images/other-images/jsonformatterscreenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;https://jsonformatter.org/&quot; title=&quot;JSONFormatter&quot; loading=&quot;lazy&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/images/posts/jsonformatterscreenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;https://jsonformatter.org/&quot; title=&quot;JSONFormatter&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
@@ -2169,7 +2058,7 @@ but they will still save you a ton of time.&lt;/dd&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://tools.fromdev.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/images/other-images/toolsfromdevscreenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;https://tools.fromdev.com/&quot; title=&quot;Tools.FromDev&quot; loading=&quot;lazy&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/images/posts/toolsfromdevscreenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;https://tools.fromdev.com/&quot; title=&quot;Tools.FromDev&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
@@ -2276,7 +2165,7 @@ them all out.&lt;/p&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://dbdiagram.io/home&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/images/other-images/dbdiagramio-screenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;Screenshot image generated by Screenshot Rocks&quot; loading=&quot;lazy&quot; title=&quot;DBDiagram.io&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/images/posts/dbdiagramio-screenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;Screenshot image generated by Screenshot Rocks&quot; loading=&quot;lazy&quot; title=&quot;DBDiagram.io&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
@@ -2292,7 +2181,7 @@ diagram as an image or pdf, but it also allows you to integrate with your databa
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://screenshot.rocks/app&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/images/other-images/screenshot-rocks.png&quot; class=&quot;kg-image&quot; alt=&quot;https://screenshot.rocks/app&quot; loading=&quot;lazy&quot; title=&quot;Screenshot.Rocks&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/images/posts/screenshot-rocks.png&quot; class=&quot;kg-image&quot; alt=&quot;https://screenshot.rocks/app&quot; loading=&quot;lazy&quot; title=&quot;Screenshot.Rocks&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
@@ -2308,7 +2197,7 @@ browser, and media type used to display the screenshot.&lt;/p&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://radio.x-team.com/?utm_source=xweekly&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/images/other-images/x-team-radio.png&quot; class=&quot;kg-image&quot; alt=&quot;https://radio.x-team.com/?utm_source=xweekly&quot; loading=&quot;lazy&quot; title=&quot;X-Team Radio&quot; /&gt;
+        &lt;img src=&quot;http://localhost:4000/assets/images/posts/x-team-radio.png&quot; class=&quot;kg-image&quot; alt=&quot;https://radio.x-team.com/?utm_source=xweekly&quot; loading=&quot;lazy&quot; title=&quot;X-Team Radio&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
