@@ -1,0 +1,149 @@
+- name: X, Formerly Twitter
+  show_in_contact_me: true
+  username: JustinSunday13
+  card: summary
+  creator: JustinSunday13
+  url: https://twitter.com/JustinSunday13
+  icon: bi bi-twitter-x
+- name: facebook
+  show_in_contact_me: true
+  username: JLSundayDev
+  app_id: 647682663047582 # Delete and replace with your own, or just leave it blank.
+  publisher: JLSundayDev
+  url: https://www.facebook.com/JLSundayDev
+  icon: bi bi-facebook
+#  admins: 1234
+- name: github
+  show_in_contact_me: true
+  username: sundayj
+  url: https://github.com/sundayj
+  icon: bi bi-github
+- name: linkedin
+  show_in_contact_me: true
+  username: justin-sunday
+  url: https://www.linkedin.com/in/justin-sunday
+  icon: bi bi-linkedin
+- name: stackoverflow
+  show_in_contact_me: true
+  username: Justin Sunday
+  userid: 8513024
+  url: https://stackoverflow.com/users/8513024/justin-sunday
+  icon: bi bi-stack-overflow
+- name: discus
+  show_in_contact_me: false
+  shortname: # Leave blank if not using Discus
+- name: discord
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-discord
+- name: dribbble
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-dribbble
+- name: gitlab
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-gitlab
+- name: google
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-google
+- name: instagram
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-instagram
+- name: line
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-line
+- name: mastodon
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-mastodon
+- name: medium
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-medium
+- name: facebook messenger
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-messenger
+- name: microsoft teams
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-microsoft-teams
+- name: opencollective
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-opencollective
+- name: reddit
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-reddit
+- name: signal
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-signal
+- name: skype
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-skype
+- name: slack
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-slack
+- name: snapchat
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-snapchat
+- name: sourceforge
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-sourceforge
+- name: telegram
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-telegram
+- name: threads
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-threads
+- name: tiktok
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-tiktok
+- name: twitch
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-twitch
+- name: wechat
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-wechat
+- name: whatsapp
+  show_in_contact_me: false
+  username:
+  url:
+  icon: bi bi-whatsapp

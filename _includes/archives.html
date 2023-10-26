@@ -1,0 +1,28 @@
+{%- if site.posts != empty -%}
+{%- for post in site.posts -%}
+{%- capture date -%}{{ post.date }}{%- endcapture -%}
+{%- capture this_year -%}{{ date | date: "%Y" }}{%- endcapture -%}
+{%- capture number -%}{{ forloop.length }}{%- endcapture -%}
+{%- unless year == this_year -%}
+{%- assign year = this_year -%}
+{%- unless forloop.first -%}
+</ul>
+{%- endunless -%}
+<h2 class="year">{{ date | date: "%Y" }}</h2>
+<ul>
+    {%- endunless -%}
+    <li>
+        <time datetime="{{ post.date | date:"%Y-%m-%d" }}">
+            {{ post.date | date:"%Y-%m-%d" }}
+        </time>
+        &raquo; <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" aria-label="{{ post.title }}">{{ post.title }}</a>
+    </li>
+{%- endfor -%}
+
+{%- else -%}
+
+<span>No posts</span>
+
+{%- endif -%}
+
+

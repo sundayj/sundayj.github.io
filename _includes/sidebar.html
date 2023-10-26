@@ -1,8 +1,6 @@
-<div class="col-sm-2">
-{% include Aboutme.html %}
-{% include Recent_Posts.html %}
-{% include Categories.html %}
-{% include Tags.html %}
-{% include Blogroll.html %}
-{% include Archives.html %}
-</div>
+{%- if site.aboutme.include == true -%}
+    {%- include sidebar/aboutme.html -%}
+{%- endif -%}
+{%- if site.include_blogroll ==true -%}
+    {%- include sidebar/blogroll.html -%}
+{%- endif -%}

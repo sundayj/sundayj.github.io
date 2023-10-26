@@ -5,45 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e477bb09-ddcf-4ab9-ab6e-9fdb4cc810d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Sprite-Editor-Comparison-Table.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/Sprite-Editor-Comparison-Table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_layouts/plain.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2022-06-11-Comparing-Pixel-Art-Editors.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_sticky-table.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/JustinSunday_Resume_2023-09-14.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/other-images/pixel-editors/aseprite-trial-screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/other-images/pixel-editors/dotto-screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/other-images/pixel-editors/graphics-gale-screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/other-images/pixel-editors/jpixel-screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/other-images/pixel-editors/libresprite-screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/other-images/pixel-editors/lospec-editor-screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/other-images/pixel-editors/piskel-screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/other-images/pixel-editors/pixel-perfect-example.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/other-images/pixel-editors/pixel-studio-screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/other-images/pixel-editors/pixelorama-screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/other-images/pixel-editors/pixi-editor-screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/other-images/pixel-editors/pixil-art-screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/other-images/pixel-editors/promotion-screenshot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/other-images/pixel-editors/pyxel-edit-screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_drafts/Practical-Usage-of-TypeScript Generics.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/navigation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2022-01-06-site-update.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-01-06-site-update.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2022-01-09-Building-an-Angular-App-Part1.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-01-09-Building-an-Angular-App-Part1.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/JustinSunday_Resume_2022-01-07.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/other-images/undraw_Building_re_xfcm.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/other-images/undraw/undraw_Building_re_xfcm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/other-images/undraw_Code_typing_re_p8b9.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/other-images/undraw/undraw_Code_typing_re_p8b9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/other-images/undraw_Design_objectives_re_94pd.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/other-images/undraw/undraw_Design_objectives_re_94pd.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/other-images/undraw_Maker_launch_re_rq81.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/other-images/undraw/undraw_Maker_launch_re_rq81.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/other-images/undraw_approve_qwp7.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/other-images/undraw/undraw_approve_qwp7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/other-images/undraw_design_components_9vy6.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/other-images/undraw/undraw_design_components_9vy6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_drafts/windows-terminal-tips-and-tricks.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2021-12-06-software-tools.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2021-12-06-software-tools.markdown" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,28 +66,28 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "migrate-to-devsculptor-them",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\justi\github-blog\sundayj.github.io\_drafts\Building-an-Angular-App" />
@@ -168,6 +131,7 @@
       <workItem from="1694714850434" duration="1886000" />
       <workItem from="1694728163178" duration="964000" />
       <workItem from="1694819456224" duration="14000" />
+      <workItem from="1696880631201" duration="390000" />
     </task>
     <servers />
   </component>

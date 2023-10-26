@@ -1,0 +1,28 @@
+pages:
+  - title: Home
+    url: 
+    new-tab: false
+  - title: About
+    url: /about
+    new-tab: false
+  - title: Archives
+    url: /archives
+    new-tab: false
+  - title: Categories
+    url: /categories
+    new-tab: false
+  - title: Tags
+    url: /tags
+    new-tab: false
+  - title: Search
+    url: /search
+    new-tab: false
+  - title: Subscribe
+    url: /subscribe
+    new-tab: false
+  - title: Projects
+    url: /projects
+    new-tab: false
+  - title: Résumé
+    url: /assets/JustinSunday_Resume_2023-09-14.pdf
+    new-tab: true

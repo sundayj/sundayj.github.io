@@ -1,0 +1,12 @@
+<script>
+document.querySelectorAll(".highlighter-rouge, figure.highlight").forEach(i => {
+    i.setAttribute("data-lang", "code");
+    var l = i.getAttribute("class").split("language-");
+    if (l.length > 1) {
+        var lang = l[1].split(" ");
+        if (lang.length > 0) {
+        i.setAttribute("data-lang", lang[0]);
+        }
+    }
+});
+</script>

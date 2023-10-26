@@ -1,0 +1,24 @@
+.bi {
+  width: 1em;
+  height: 1em;
+  fill: currentcolor;
+}
+
+.color-modes {
+  .dropdown-menu {
+    padding: .25rem;
+
+    li+li {
+      margin-top: .125rem;
+    }
+  }
+
+  .active {
+    font-weight: 600;
+
+    .bi {
+      display: block !important; // stylelint-disable-line declaration-no-important
+    }
+  }
+}
+

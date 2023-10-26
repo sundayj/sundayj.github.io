@@ -1,0 +1,11 @@
+<script>
+    function readingTime() {
+        if (!document.getElementById("article")){return;}
+        const text = document.getElementById("article")?.innerText;
+        const wpm = 200;
+        const words = text.trim().split(/\s+/).length;
+        const time = Math.ceil(words / wpm);
+        document.getElementById("reading-time").innerText = time <= 1 ? `${time} minute` : `${time} minutes`;
+    }
+    readingTime();
+</script>

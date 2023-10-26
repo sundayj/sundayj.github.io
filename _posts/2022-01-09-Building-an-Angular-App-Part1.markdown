@@ -7,36 +7,23 @@ description: >-
     This post introduces the project and sets the stage for the following posts in the series.
     The series will cover HTTP Interceptors, logging, snackbar messages, angular material data tables, NGRx and more.
 canonical_url: https://JLSunday.com/tutorials/angular/2022/01/09/Building-an-Angular-App-Part1.html
-categories:
-    Tutorials
-    Angular
-tags:
-    tutorial
-    Angular
-    front-end
-    Typescript
-    JavaScript
-    Angular-Material
-    services
-    in-memory-database
-    flex-layout
-    interceptors
-    logging
-    snackbar
-image: https://JLSunday.com/images/other-images/undraw_Maker_launch_re_rq81.png
+category: Angular
+tags: [tutorial,Angular,front-end,Typescript,JavaScript,Angular-Material,services,in-memory-database,flex-layout,interceptors,logging,snackbar]
+image: https://JLSunday.com/assets/images/posts/undraw_Maker_launch_re_rq81.png
 comments: true
+date: 2022-01-09
 last_modified_at: 2022/01/11
+author: {{ site.author.name }}
+include_TOC: true
+featured: false
 ---
 
 <figure style="margin-top: 20px;">
-        <img alt="Angular Windows"  src="{{ '/images/other-images/undraw/undraw_Maker_launch_re_rq81.png' | prepend: site.url }}" loading="lazy" title="How do you like these angles?">
+        <img alt="Angular Windows"  src="{{ '/assets/images/posts/undraw/undraw_Maker_launch_re_rq81.png' | prepend: site.url }}" loading="lazy" title="How do you like these angles?">
     <figcaption>
         Photo by <a href="https://undraw.co/search">unDraw.co</a>
     </figcaption>
 </figure>
-
-* TOC
-{:toc}
 
 ## Intro
 

@@ -1,0 +1,61 @@
+<div class="sidebar-module about container">
+    <h4>{{ site.data.locales[site.default_locale].Aboutme }}</h4>
+    {%- assign abmPhoto = site.aboutme.photo -%}
+    {%- if abmPhoto.use_github_avatar -%}
+        {%- avatar{{ site.data.social.github.username }}size = 300 -%}
+    {%- elsif abmPhoto.asset_path -%}
+        <img
+                title="{{ site.author.name }}"
+                src="{{ abmPhoto.asset_path | prepend: site.url }}"
+                alt="{{ site.author.name }}"
+        />
+    {%- elsif abmPhoto.hosted_aboutme_photo -%}
+        <img
+                title="{{ site.author.name }}"
+                src="{{ abmPhoto.hosted_aboutme_photo }}"
+                alt="{{ site.author.name }}"
+        />
+    {%- endif -%}
+    <br>
+    <p>{{ site.aboutme.text }}</p>
+    <br>
+
+    {%- if site.show_contact_info == true -%}
+
+    <section id="contact-me">
+        <p>You can contact me via the <a href="/about/#contact-me">Contact Me</a> form or any of the below options:</p>
+        <div class="row">
+            {%- if site.email != empty -%}
+                <div class="col-1 mx-3">
+                    <a href="mailto:{{ site.email }}" title="mailto: {{ site.email }}"
+                    ><i class="bi bi-envelope" style="font-size: 2rem;"></i
+                        ></a>
+                </div>
+            {%- endif -%}
+            {%- assign socials = site.data.social | where: "show_in_contact_me", "true" -%}
+            {%- if socials -%}
+                {%- for social in socials -%}
+                    <div class="col-1 mx-3">
+                        <a href="{{ social.url }}"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           title="{{ social.name | capitalize }}: {{ social.username }}"
+                        ><i class="{{ social.icon }}" style="font-size: 2rem;"></i>
+                        </a>
+                    </div>
+                {%- endfor -%}
+            {%- endif -%}
+        </div>
+        {%- endif -%}
+    </section>
+
+    <div
+            class="fb-like"
+            data-href="{{ site.url }}"
+            data-width=""
+            data-layout="button"
+            data-action="like"
+            data-size="large"
+            data-share="true"
+    ></div>
+</div>

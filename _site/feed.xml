@@ -8,7 +8,7 @@
     <pubDate>Thu, 26 Oct 2023 10:27:52 -0400</pubDate>
     <lastBuildDate>Thu, 26 Oct 2023 10:27:52 -0400</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
-    
+
       <item>
         <title>Comparing Pixel Art Editors, Part One: Aseprite</title>
         <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
@@ -1005,24 +1005,24 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
         <pubDate>Sat, 11 Jun 2022 00:00:00 -0400</pubDate>
         <link>http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html</link>
         <guid isPermaLink="true">http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html</guid>
-        
+
         <category>tools</category>
-        
+
         <category>pixel-art</category>
-        
+
         <category>game-development</category>
-        
+
         <category>tool-comparison</category>
-        
+
         <category>tool-review</category>
-        
-        
+
+
         <category>Tools</category>
-        
+
         <category>Reviews</category>
-        
+
       </item>
-    
+
       <item>
         <title>Building an App with Angular, Part 1: Introduction</title>
         <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
@@ -1092,7 +1092,7 @@ that this is an original app of my own creation.&lt;/p&gt;
 &lt;p&gt;The main repo for this project is the &lt;a href=&quot;https://github.com/sundayj/JLSundayAngular&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JLSundayAngular&lt;/a&gt;
 repo’s main branch. It will always contain the current state of the project. To make the project easy to follow along with, I will
 have branches for each part of the project containing the final state of the app at that point in the project. So, if
-you want to start the project from the state displayed in this post (recommended), then you should clone the 
+you want to start the project from the state displayed in this post (recommended), then you should clone the
 &lt;a href=&quot;https://github.com/sundayj/JLSundayAngular/tree/PartOne-Introduction&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;PartOne-Introduction&lt;/a&gt;
 branch. The following post will have its own branch containing the final state of the app as described in that post.&lt;/p&gt;
 

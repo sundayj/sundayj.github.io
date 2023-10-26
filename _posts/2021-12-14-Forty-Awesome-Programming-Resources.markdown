@@ -1,24 +1,25 @@
 ---
 layout: post
 title: 40 Awesome Programming Resources
-excerpt: 40 awesome programming resources regarding tools, IDEs, VS Code Extensions, tutorial sites, and newsletters.
+date: 2021-12-14
+last_modified_at: 2021-12-29 12:50:00 +0000
+category: Resources
+author: {{ site.author.name }}
+tags: [tools, software, list, IDEs, database-manager, database, VSCode, DBeaver, markdown, time-trackers, VSCode-Extensions, resources, SQL, Python, Git, full-stack, newsletter, games]
 summary: 40 awesome programming resources regarding tools, IDEs, VS Code Extensions, tutorial sites, and newsletters.
+excerpt: 40 awesome programming resources regarding tools, IDEs, VS Code Extensions, tutorial sites, and newsletters.
 description: 40 awesome programming resources regarding tools, IDEs, VS Code Extensions, tutorial sites, and newsletters.
 canonical_url: 'https://jlsunday.com/resources/2021/12/14/Forty-Awesome-Programming-Resources.html'
-categories: Resources
-tags: [tools, software, list, IDEs, database-manager, database, VSCode, DBeaver, markdown, time-trackers, VSCode-Extensions, resources, SQL, Python, Git, full-stack, newsletter, games]
 comments: true
-image: '/images/other-images/40-awesome-programming-resources-markdown-screenshot.png'
-last_modified_at: 2021-12-29 12:50:00 +0000
+image: '/assets/images/posts/40-awesome-programming-resources-markdown-screenshot.png'
+include_TOC: true
+featured: false
 ---
-
-* TOC
-{:toc}
 
 ## Intro
 
 <figure class="kg-card kg-image-card kg-card-hascaption" style="margin-top: 20px;">
-        <img alt="40 Awesome Programming Resources Markdown Screenshot" src="{{ '/images/other-images/40-awesome-programming-resources-markdown-screenshot.png' | prepend: site.url }}" class="kg-image" loading="lazy" title="40 Awesome Programming Resources Markdown Screenshot">
+        <img alt="40 Awesome Programming Resources Markdown Screenshot" src="{{ '/assets/images/posts/40-awesome-programming-resources-markdown-screenshot.png' | prepend: site.url }}" class="kg-image" loading="lazy" title="40 Awesome Programming Resources Markdown Screenshot">
     <figcaption>
         A screenshot of this post as a Markdown WIP. Image created by the author.
     </figcaption>

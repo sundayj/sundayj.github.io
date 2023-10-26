@@ -1,28 +1,53 @@
-<footer class="site-footer">
+{%- assign locales = site.data.locales -%}
+<footer class="container-flex bg-body">
+  <p>&copy; <span id="copyYear"></span> {{site.author.name}}</p>
 
-  <p>Copyright &copy; <a href="{{ site.baseurl }}/">{{site.title}}</a></p>
+  {%- if site.footer.include_sitemap == true or
+  site.footer.include_privacypolicy == true or
+  site.footer.include_cookiepolicy == true or site.footer.include_terms ==
+  true -%}
   <p>
-    <a href="{{ '/sitemap.xml' | prepend: site.url }}" target="_blank" rel="noopener noreferrer">Site Map</a>
-    | <a href="{{ '/privacy-policy/' | prepend: site.url }}">Privacy Policy</a>
-    | <a href="{{ '/cookie-policy/' | prepend: site.url }}">Cookie Policy</a>
-    | <a href="{{ '/terms-of-service/' | prepend: site.url }}">Terms of Service</a>
+    {%- if site.footer.include_sitemap == true -%}
+    <a
+      href="{{ '/sitemap.xml' | prepend: site.url }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      >{{ locales[site.default_locale].Site_Map }}</a><span> | </span>
+    {%- endif -%} {%- if site.footer.include_privacypolicy == true -%}
+    <a href="{{ '/privacy-policy/' | prepend: site.url }}">{{ locales[site.default_locale].Privacy_Policy }}</a> {%
+    endif -%} {%- if site.footer.include_cookiepolicy == true -%}<span> | </span>
+    <a href="{{ '/cookie-policy/' | prepend: site.url }}">{{ locales[site.default_locale].Cookie_Policy }}</a> {%
+    endif -%} {%- if site.footer.include_terms == true -%}<span> | </span>
+    <a href="{{ '/terms-of-service/' | prepend: site.url }}"
+      >{{ locales[site.default_locale].Terms_of_Service }}</a
+    >
+    {%- endif -%}
   </p>
-  Check out the source code for this site on <a href="https://github.com/sundayj/sundayj.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>.
-  <p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> 
-  on 
-  <a href="https://github.com/">Github</a>
-  | Base Theme <a href="https://github.com/yulijia/freshman21/">Freshman21</a> Design by <a href="https://yulijia.net">Lijia Yu</a>
+  {%- endif -%}
 
+  <p>
+    Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a> on
+    <a href="https://github.com/">Github</a><span> | </span>Theme from
+    <a
+      href="https://github.com/sundayj/DevSculptor"
+      target="_blank"
+      title="Check out the DevSculptor theme at GitHub"
+      aria-label="Check out the DevSculptor theme at GitHub"
+      >sundayj/DevSculptor</a
+    >
+    {% if site.version and site.version != "" %}
+      <span> v{{ site.version }}</span>
+    {% endif %}
+  </p>
 
-  <div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
-    <a title="Back To Top"><img src="{{ "/images/topbutton.png" | prepend: site.url }}"/></a>
+  <div
+    id="totop"
+    style="position: fixed; bottom: 150px; right: 50px; cursor: pointer"
+  >
+    <a title="Back To Top"
+      ><img src="{{ '/assets/images/topbutton.png' | prepend: site.url }}" alt="To Top" title="To Top"/></a
+    >
   </div>
 
-  <script src="{{ "/js/jquery-1.9.1.min.js" | prepend: site.url }}"></script>
-  <script src="{{ "/js/totop.js" | prepend: site.url }}"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
-
-  {% include anchor-links.js %}
-  {% include reading-time.js %}
-
+  {%- include footer/scripts.html -%}
 </footer>

@@ -1,0 +1,42 @@
+- name: DevSculptor Jekyll Theme
+  display: true # Whether to display this project on the projects page.
+  start-month: 9
+  start-year: 2023 # Optional
+  ongoing: true
+  tags: [Jekyll, Theme]
+  skills: [HTML, Liquid, Sass, JavaScript]
+  website: "https://jlsunday.com/DevSculptor"
+  description: "A full-featured, GitHub Pages compatible, Jekyll blog theme tailored to software devs that contains project and resume pages. Contains localization support for multiple languages."
+  images:
+    - title: "Home Page Example - Dark Theme"
+      path: "/assets/images/projects/devsculptor/home-page-example.png"
+      caption: "Home page example with the DevSculptor theme in dark mode."
+    - title: "Home Page Example - Light Theme"
+      path: "/assets/images/projects/devsculptor/home-page-example-light.png"
+      caption: "Home page example with the DevSculptor theme in light mode."
+    - title: "Home Page Example on Mobile - Dark Theme"
+      path: "/assets/images/projects/desvsculptor/20230926-localhost-iphone14promax-homepage-fotor-bg-remover-20231002163813.png"
+      caption: "Home page example on mobile in dark mode."
+    - title: "Home Page Example on Mobile - Light Theme"
+      path: "/assets/images/projects/devsculptor/20231026-jlsunday.com-iphone14promax-fotor-bg-remover-2023102692716.png"
+      caption: "Home page example on mobile in light mode."
+- name: NPM Script Selector
+  display: true
+  start-month: 10
+  start-year: 2023 # Optional
+  ongoing: true
+  tags: [typescript, npm, package, utility, scripts, script, runner, dev tool, tool]
+  skills: [Node, TypeScript, JavaScript]
+  website: "https://www.npmjs.com/package/npm-script-selector"
+  description: >-
+    The NPM Script Selector is a CLI tool for discovering and running project scripts within package.json files.
+    Have you ever worked on a project that contains so many scripts that you can't always remember the available options? That's what happened to me.
+    I currently contribute to a project with 30+ scripts. I became tired of having to open the package file and/or
+    IDE in order to find and run the needed the scripts, so I created this small CLI. Currently, you provide the path
+    to the package.json file, the NPM Script Selector will then list the available scripts for you, where you can
+    interactively select the one you want. It will then run the script for you within the selected project's directory.
+    I plan to add more functionality in the near future. Uses figlet, commander, and inquirer.
+  images:
+    - title: NPM Script Selector Screenshot 20231025
+      path: "/assets/images/projects/npmss/npm-script-selector-screenshot-20231025.png"
+      caption: NPM Script Selector Screenshot 20231025

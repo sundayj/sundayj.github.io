@@ -8,6 +8,14 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    DevSculptor (1.0.2)
+      jekyll (~> 3.9)
+      jekyll-avatar (~> 0.7)
+      jekyll-feed (~> 0.15)
+      jekyll-gist (~> 1.5)
+      jekyll-paginate (~> 1.1)
+      jekyll-seo-tag (~> 2.8)
+      jekyll-sitemap (~> 1.4)
     activesupport (7.0.8)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
@@ -42,8 +50,8 @@ GEM
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
-    ffi (1.16.2)
-    ffi (1.16.2-x64-mingw-ucrt)
+    ffi (1.16.3)
+    ffi (1.16.3-x64-mingw-ucrt)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
@@ -311,12 +319,14 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  DevSculptor (~> 1.0)
   eventmachine!
   github-pages
   jekyll-admin
   jekyll-algolia
   jekyll-feed
   jekyll-gist
+  jekyll-remote-theme (~> 0.4.3)
   jekyll-seo
   jekyll-seo-tag
   jekyll-sitemap
