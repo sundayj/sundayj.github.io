@@ -6,7 +6,7 @@
         {%- assign otherPosts = paginator.posts | where: "featured", false -%}
 
         {% unless featuredPosts == empty %}
-            {%- assign featuredPosts = featuredPosts | sort: "order" -%}
+            {%- assign featuredPosts = featuredPosts -%}
             {%- for fPost in featuredPosts -%}
                 {%- include home/post_card.html post=fPost -%}
             {%- endfor -%}
