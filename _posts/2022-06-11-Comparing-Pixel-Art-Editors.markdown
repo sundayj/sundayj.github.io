@@ -20,6 +20,7 @@ last_modified_at: 2022/06/11
 author: {{ site.author.name }}
 include_TOC: true
 featured: false
+sort: 0
 ---
 
 <figure style="margin-top: 20px;">

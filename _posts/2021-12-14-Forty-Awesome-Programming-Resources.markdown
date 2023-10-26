@@ -14,6 +14,7 @@ comments: true
 image: '/assets/images/posts/40-awesome-programming-resources-markdown-screenshot.png'
 include_TOC: true
 featured: false
+sort: 0
 ---
 
 ## Intro

@@ -15,6 +15,7 @@ image: '/assets/images/posts/undraw_Building_re_xfcm.png'
 author: {{ site.author.name }}
 include_TOC: false
 featured: false
+sort: 0
 ---
 
 <figure style="margin-top: 20px;">

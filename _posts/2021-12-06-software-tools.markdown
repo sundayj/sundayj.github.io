@@ -13,6 +13,7 @@ excerpt: This should explain the lull in content to those wondering.
 description: This is part one of a series of posts in which I will be sharing my favorite Development tools. Part one focuses on 5 dev tools that can be found and utilized online.
 canonical_url: 'https://jlsunday.com/tools/2021/12/06/software-tools.html'
 comments: true
+sort: 0
 ---
 
 Welcome to my first blog post! Since the goal of this blog is to provide a
