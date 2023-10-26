@@ -1,0 +1,8 @@
+{%- assign projects = site.data.projects | where_exp: "item", "item.display == true" -%}
+{%- for proj in projects -%}
+    <div class="row gy-5">
+        <div class="col-sm-12">
+            {%- include projects/project-card.html -%}
+        </div>
+    </div>
+{%- endfor -%}

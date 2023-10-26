@@ -1,44 +1,78 @@
 ---
 layout: default
 ---
+
+{%- assign locales = site.data.locales -%}
+
 <div class="post" itemscope itemtype="https://schema.org/BlogPosting">
+    <header class="post-header text-center">
+        <h1 itemprop="name" class="post-title">{{ page.title }}</h1>
+        <meta itemprop="keywords" content="{{ page.tags | join: ',' }}"/>
+        <p class="post-meta">
+            <span class="post-meta">
+                <i class="bi bi-archive" title="{{ locales[site.default_locale].Categories }}"></i>
+            </span>
+            {%- for cat in page.categories -%}
+                <a href="{{ site.baseurl }}/categories/#{{ cat }}">{{ cat }}</a>
+                {%- unless page.categories.last == cat -%}, {%- endunless -%}
+            {%- endfor -%}
+            {%- if page.tags != empty -%}
+                <span class="post-meta">
+                    <i class="bi bi-tags" title="{{ locales[site.default_locale].Tags }}"></i>
+                </span>
+                {%- for tag in page.tags -%}
+                    <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}"> {{ tag }}</a>
+                    {%- unless page.tags.last == tag -%}, {%- endunless -%}
+                {%- endfor -%}
+            {%- endif -%}
+            <time itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">
+                <span class="post-meta">
+                  <i class="bi bi-calendar-event" title="{{ locales[site.default_locale].PostDate }}"></i>
+                </span> {{ page.date | date: "%b %-d,%Y" }}
+            </time>
+            {%- if page.last_modified_at -%}
+                <time itemprop="dateModified" datetime="{{ page.last_modified_at }}">
+                    <span class="post-meta">
+                        <i class="bi bi-pencil-square" title="{{ locales[site.default_locale].EditDate }}"></i>
+                    </span> {{ page.last_modified_at | date: "%b %-d, %Y" }}
+                </time>
+            {%- endif -%}
+        </p>
+        <p>
+            <i class="far fa-clock"></i> Reading time: About
+            <span id="reading-time"></span>.
+        </p>
+    </header>
 
-  <header class="post-header">
-    <h1 itemprop="name" class="post-title">{{ page.title }}</h1>
-    <meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
-    <p class="post-meta">
-    {{ site.locales[site.default_locale].PostedInCategories }}
-    {% for cat in page.categories %}
-    <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>{% unless page.categories.last == cat %}, {% endunless %}
-    {% endfor %} 
-    {% if page.tags != empty %}
-    {{ site.locales[site.default_locale].Taggedwith }}
-    {% for tag in page.tags %}
-    <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>{% unless page.tags.last == tag %}, {% endunless %}
-    {% endfor %}
-    {% endif %}
-    <time itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">
-    {{ site.locales[site.default_locale].PostDate }}{{ page.date | date: "%b %-d, %Y" }}
-    </time>
-    {% if page.last_modified_at %}
-    <time itemprop="dateModified" datetime="{{ page.last_modified_at }}">
-     and edited on {{ page.last_modified_at | date: "%b %-d, %Y" }}
-    </time>
-    {% endif %}
-    </p>
-    <p>
-      <i class="far fa-clock"></i> Reading time: About <span id="reading-time"></span>.
-    </p>
-  </header>
+    <hr/>
 
-
-  <article class="post-content" id="article" itemprop="articleBody">
-    {{ content }}
-  </article>
-  <hr />
+    <div class="row container">
+        {%- if page.include_TOC -%}
+            {% include toc.html %}
+        {%- endif -%}
+        <div class="col-md-8">
+            <article class="post-content" id="article" itemprop="articleBody">
+                {%- include anchor_headings.html html=content anchorBody="<svg
+          class='octicon'
+          viewBox='0 0 16 16'
+          version='1.1'
+          width='16'
+          height='32'
+          aria-hidden='true'
+        >
+          <path
+            fill-rule='evenodd'
+            d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'
+          ></path></svg
+        >" -%}
+            </article>
+        </div>
+    </div>
 </div>
 
+<hr/>
 
-{% include page_pagination.html %}
-
-{% include comments.html %}
+{%- include page_pagination.html -%}
+{%- if site.comment_box -%}
+    {%- include comments.html -%}
+{%- endif -%}

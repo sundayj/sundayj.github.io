@@ -11,29 +11,23 @@ description: >-
     Part one of a series of posts comparing various Pixel Art Editors. Part one gives an intro to this series of posts
     and gives a short review of Aseprite.A comparison of various pixel art editing tools.
 canonical_url: https://JLSunday.com/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors-Part-1.html
-categories:
-    Tools
-    Reviews
-tags:
-    tools
-    pixel-art
-    game-development
-    tool-comparison
-    tool-review
-image: https://JLSunday.com/images/other-images/undraw_design_components_9vy6.png
+category: Tools
+tags: [tools,pixel-art,game-development,tool-comparison,tool-review]
+image: https://JLSunday.com/images/posts/undraw_design_components_9vy6.png
 comments: true
+date: 2022-06-11
 last_modified_at: 2022/06/11
+author: {{ site.author.name }}
+include_TOC: true
+featured: false
 ---
 
 <figure style="margin-top: 20px;">
-        <img alt="Design Components" src="{{ '/images/other-images/undraw/undraw_design_components_9vy6.png' | prepend: site.url }}" loading="lazy" title="Design Components">
+        <img alt="Design Components" src="{{ '/assets/images/posts/undraw/undraw_design_components_9vy6.png' | prepend: site.url }}" loading="lazy" title="Design Components">
     <figcaption>
         Image provided by <a href="https://undraw.co/search" target="_blank" rel="noopener noreferrer">unDraw.co</a>
     </figcaption>
 </figure>
-
-* TOC
-{:toc}
   
 ## Intro
 
@@ -67,7 +61,7 @@ Finally, a few notes about the icons in the table:
 
 <br>
 
-Open this table in a separate tab by clicking [here]({{ '/Sprite-Editor-Comparison-Table' | prepend: site.url }}){:target="_blank"}{:rel="noopener noreferrer"}
+**Open this table in a separate tab by clicking** [here]({{ '/Sprite-Editor-Comparison-Table' | prepend: site.url }}){:target="_blank"}{:rel="noopener noreferrer"}
 
 {% include Sprite-Editor-Comparison-Table.html %}
 
@@ -93,7 +87,7 @@ Open this table in a separate tab by clicking [here]({{ '/Sprite-Editor-Comparis
         Perfect helps with this either by deleting extra pixels as you go, or by creating a pixel at a diagonal to
         give a better angled look.
         <figure>
-            <img alt="Layer Example" src="{{ '/images/other-images/pixel-editors/pixel-perfect-example.png' | prepend: site.url }}" loading="lazy" title="Layer Example">
+            <img alt="Layer Example" src="{{ '/assets/images/posts/pixel-editors/pixel-perfect-example.png' | prepend: site.url }}" loading="lazy" title="Layer Example">
             <figcaption>
                 Image borrowed from <a href="https://medium.com/pixel-grimoire/how-to-start-making-pixel-art-7-e504bfa4ddf2" target="_blank" rel="noopener noreferrer">The Pixel Grimoire</a>
             </figcaption>
@@ -107,7 +101,7 @@ Open this table in a separate tab by clicking [here]({{ '/Sprite-Editor-Comparis
         on one layer without fear of affecting other layers. This helps greatly with animation, or giving a feeling of
         depth to your art.
         <figure>
-            <img alt="Pixel Perfect Example" src="{{ '/images/other-images/pixel-editors/1Layer-Layers-9.webp' | prepend: site.url }}" loading="lazy" title="Pixel Perfect Example">
+            <img alt="Pixel Perfect Example" src="{{ '/assets/images/posts/pixel-editors/1Layer-Layers-9.webp' | prepend: site.url }}" loading="lazy" title="Pixel Perfect Example">
             <figcaption>
                 Image borrowed from <a href="https://learnindie.com/pixel-art-aseprite-1-layers/" target="_blank" rel="noopener noreferrer">LearnIndie.com</a>
             </figcaption>
@@ -120,7 +114,7 @@ Open this table in a separate tab by clicking [here]({{ '/Sprite-Editor-Comparis
         Symmetry tools, or mirror pens, allow you to draw art that is perfectly symmetrical vertically and/or horizontally.
         This can be useful for patterns and designs, or even drawing the front view of a characters face.
         <figure>
-            <img alt="Symmetry Pen Example" src="{{ '/images/other-images/pixel-editors/symmetry-tool-example.gif' | prepend: site.url }}" loading="lazy" title="Symmetry Pen Example">
+            <img alt="Symmetry Pen Example" src="{{ '/assets/images/posts/pixel-editors/symmetry-tool-example.gif' | prepend: site.url }}" loading="lazy" title="Symmetry Pen Example">
             <figcaption>
                 Image borrowed from <a href="https://i.imgur.com/pj3ykyd.gif" target="_blank" rel="noopener noreferrer">https://i.imgur.com/pj3ykyd.gif</a>
             </figcaption>
@@ -132,7 +126,7 @@ Open this table in a separate tab by clicking [here]({{ '/Sprite-Editor-Comparis
         </summary>
         Auto-Shade tools allow you to darken or lighten an area of your art by simply drawing over it again.
         <figure>
-            <img alt="Shading Example" src="{{ '/images/other-images/pixel-editors/shading_example.gif' | prepend: site.url }}" loading="lazy" title="Shading Example">
+            <img alt="Shading Example" src="{{ '/assets/images/posts/pixel-editors/shading_example.gif' | prepend: site.url }}" loading="lazy" title="Shading Example">
             <figcaption>
                 Image borrowed from <a href="https://www.aseprite.org/docs/shading/" target="_blank" rel="noopener noreferrer">Aseprite.org</a>
             </figcaption>
@@ -145,7 +139,7 @@ Open this table in a separate tab by clicking [here]({{ '/Sprite-Editor-Comparis
         RotSprite allows you to rotate all, or part, of your artwork without losing any resolution. In the image below,
         the sprite on the left was rotated without RotSprite, but the sprite on the right was rotated with RotSprite.
         <figure>
-            <img alt="RotSprite Example" src="{{ '/images/other-images/pixel-editors/rotsprite-example.png' | prepend: site.url }}" loading="lazy" title="RotSprite Example">
+            <img alt="RotSprite Example" src="{{ '/assets/images/posts/pixel-editors/rotsprite-example.png' | prepend: site.url }}" loading="lazy" title="RotSprite Example">
             <figcaption>
                 Image borrowed from <a href="https://forum.yoyogames.com/index.php?threads/solved-image_angle-ruins-sprites.54514/#lg=_xfUid-2-1655259916&slide=0" target="_blank" rel="noopener noreferrer">https://i.imgur.com/vHOtruN.png</a>
             </figcaption>
@@ -157,7 +151,7 @@ Open this table in a separate tab by clicking [here]({{ '/Sprite-Editor-Comparis
         </summary>
         Custom brushes allow you to recreate a look/feel of an area of art and use it as the pen itself.
         <figure>
-            <img alt="Custom Brush Gif" src="{{ '/images/other-images/pixel-editors/custom-brush.gif' | prepend: site.url }}" loading="lazy" title="Custom Brush Gif">
+            <img alt="Custom Brush Gif" src="{{ '/assets/images/posts/pixel-editors/custom-brush.gif' | prepend: site.url }}" loading="lazy" title="Custom Brush Gif">
             <figcaption>
                 Image borrowed from <a href="https://www.aseprite.org/assets/images/custom-brush.gif" target="_blank" rel="noopener noreferrer">Aseprite.org</a>
             </figcaption>
@@ -169,7 +163,7 @@ Open this table in a separate tab by clicking [here]({{ '/Sprite-Editor-Comparis
         </summary>
         Anti-Aliasing is useful for softening edges of your art and removing the bumpy look in places where the edges should be softer.
         <figure>
-            <img alt="Anti-Aliasing Example" src="{{ '/images/other-images/pixel-editors/anti-alias-example.png' | prepend: site.url }}" loading="lazy" title="Anti-Aliasing Example">
+            <img alt="Anti-Aliasing Example" src="{{ '/assets/images/posts/pixel-editors/anti-alias-example.png' | prepend: site.url }}" loading="lazy" title="Anti-Aliasing Example">
             <figcaption>
                 Image borrowed from <a href="https://medium.com/pixel-grimoire/how-to-start-making-pixel-art-4-ff4bfcd2d085" target="_blank" rel="noopener noreferrer">The Pixel Grimoire</a>
             </figcaption>
@@ -181,7 +175,7 @@ Open this table in a separate tab by clicking [here]({{ '/Sprite-Editor-Comparis
         </summary>
         Tiles are images that can be duplicated and placed throughout an artwork to create a pattern or texture.
         <figure>
-            <img alt="Small Tile Tutorial" src="{{ '/images/other-images/pixel-editors/tile-tutorial.gif' | prepend: site.url }}" loading="lazy" title="Small Tile Tutorial">
+            <img alt="Small Tile Tutorial" src="{{ '/assets/images/posts/pixel-editors/tile-tutorial.gif' | prepend: site.url }}" loading="lazy" title="Small Tile Tutorial">
             <figcaption>
                 Image borrowed from <a href="https://blog.studiominiboss.com/pixelart" target="_blank" rel="noopener noreferrer">Studio Mini Boss</a>
             </figcaption>
@@ -204,7 +198,7 @@ Open this table in a separate tab by clicking [here]({{ '/Sprite-Editor-Comparis
                 </li>
             </ul>
             <figure>
-                <img alt="Sprite Sheet Example" src="{{ '/images/other-images/pixel-editors/sonic3_spritesheet_example.png' | prepend: site.url }}" loading="lazy" title="Sprite Sheet Example">
+                <img alt="Sprite Sheet Example" src="{{ '/assets/images/posts/pixel-editors/sonic3_spritesheet_example.png' | prepend: site.url }}" loading="lazy" title="Sprite Sheet Example">
                 <figcaption>
                     Image borrowed from <a href="https://demyanov.dev/javascript-canvas-sprite-animation" target="_blank" rel="noopener noreferrer">demyanov.dev</a>
                 </figcaption>
@@ -242,7 +236,7 @@ Open this table in a separate tab by clicking [here]({{ '/Sprite-Editor-Comparis
                     huge time saver.
                     </li>
                 <figure>
-                    <img alt="Onion Skin Example" src="{{ '/images/other-images/pixel-editors/screenshot_onion_skinning.jpg' | prepend: site.url }}" loading="lazy" title="Onion Skin Example">
+                    <img alt="Onion Skin Example" src="{{ '/assets/images/posts/pixel-editors/screenshot_onion_skinning.jpg' | prepend: site.url }}" loading="lazy" title="Onion Skin Example">
                     <figcaption>
                         Image borrowed from <a href="https://www.cosmigo.com/" target="_blank" rel="noopener noreferrer">Cosmigo</a>
                     </figcaption>
@@ -290,7 +284,7 @@ Open this table in a separate tab by clicking [here]({{ '/Sprite-Editor-Comparis
 ### [Aseprite](https://www.aseprite.org/){:target="_blank"}{:rel="noopener noreferrer"}
 
 <figure style="margin-top: 20px;">
-        <img alt="Aseprite Trial Screenshot" src="{{ '/images/other-images/pixel-editors/aseprite-trial-screenshot.png' | prepend: site.url }}" loading="lazy" title="Aseprite Trial Screenshot">
+        <img alt="Aseprite Trial Screenshot" src="{{ '/assets/images/posts/pixel-editors/aseprite-trial-screenshot.png' | prepend: site.url }}" loading="lazy" title="Aseprite Trial Screenshot">
     <figcaption>
         Screenshot of a new sprite window in Aseprite.
     </figcaption>
@@ -388,7 +382,7 @@ noopener noreferrer"}, or [Itch.io](https://dacap.itch.io/aseprite){:target="_bl
 ### [GrafX2](http://grafx2.chez.com/){:target="_blank"}{:rel="noopener noreferrer"}
 
 <figure style="margin-top: 20px;">
-        <img alt="GrafX2 Screenshot" src="{{ '/images/other-images/pixel-editors/grafx2-screenshot.png' | prepend: site.url }}" loading="lazy" title="GrafX2 Screenshot">
+        <img alt="GrafX2 Screenshot" src="{{ '/assets/images/posts/pixel-editors/grafx2-screenshot.png' | prepend: site.url }}" loading="lazy" title="GrafX2 Screenshot">
     <figcaption>
         Image borrowed from <a href="http://grafx2.chez.com/index.php?static2/screenshots" target="_blank" rel="noopener noreferrer">grafx2.chez.com</a>
     </figcaption>
@@ -434,7 +428,7 @@ Other platforms supported, and usually provided by third-parties, can be found o
 ### [PixiEditor](https://pixieditor.net/){:target="_blank"}{:rel="noopener noreferrer"}
 
 <figure style="margin-top: 20px;">
-        <img alt="Pixi Editor Screenshot" src="{{ '/images/other-images/pixel-editors/pixi-editor-screenshot.png' | prepend: site.url }}" loading="lazy" title="Pixi Editor Screenshot">
+        <img alt="Pixi Editor Screenshot" src="{{ '/assets/images/posts/pixel-editors/pixi-editor-screenshot.png' | prepend: site.url }}" loading="lazy" title="Pixi Editor Screenshot">
     <figcaption>
         Image provided by <a href="https://pixieditor.net/" target="_blank" rel="noopener noreferrer">pixieditor.net.</a>
     </figcaption>
@@ -443,7 +437,7 @@ Other platforms supported, and usually provided by third-parties, can be found o
 ### LibreSprite
 
 <figure style="margin-top: 20px;">
-        <img alt="LibreSprite Screenshot" src="{{ '/images/other-images/pixel-editors/libresprite-screenshot.png' | prepend: site.url }}" loading="lazy" title="LibreSprite Screenshot">
+        <img alt="LibreSprite Screenshot" src="{{ '/assets/images/posts/pixel-editors/libresprite-screenshot.png' | prepend: site.url }}" loading="lazy" title="LibreSprite Screenshot">
     <figcaption>
         A screenshot of a new window and canvas in LibreSprite.
     </figcaption>
@@ -455,7 +449,7 @@ Other platforms supported, and usually provided by third-parties, can be found o
 ### LibreSprite Dotto
 
 <figure style="margin-top: 20px;">
-        <img alt="LibreSprite Dotto Screenshot" src="{{ '/images/other-images/pixel-editors/dotto-screenshot.png' | prepend: site.url }}" loading="lazy" title="LibreSprite Dotto Screenshot">
+        <img alt="LibreSprite Dotto Screenshot" src="{{ '/assets/images/posts/pixel-editors/dotto-screenshot.png' | prepend: site.url }}" loading="lazy" title="LibreSprite Dotto Screenshot">
     <figcaption>
         A screenshot of a new window and canvas in LibreSprite Dotto.
     </figcaption>
@@ -467,7 +461,7 @@ Other platforms supported, and usually provided by third-parties, can be found o
 ### JPixel
 
 <figure style="margin-top: 20px;">
-        <img alt="JPixel Screenshot" src="{{ '/images/other-images/pixel-editors/jpixel-screenshot.png' | prepend: site.url }}" loading="lazy" title="JPixel Screenshot">
+        <img alt="JPixel Screenshot" src="{{ '/assets/images/posts/pixel-editors/jpixel-screenshot.png' | prepend: site.url }}" loading="lazy" title="JPixel Screenshot">
     <figcaption>
         A screenshot of a new window and canvas in JPixel.
     </figcaption>
@@ -478,7 +472,7 @@ Other platforms supported, and usually provided by third-parties, can be found o
 ### Pixelorama
 
 <figure style="margin-top: 20px;">
-        <img alt="Pixelorama Screenshot" src="{{ '/images/other-images/pixel-editors/pixelorama-screenshot.png' | prepend: site.url }}" loading="lazy" title="Pixelorama Screenshot">
+        <img alt="Pixelorama Screenshot" src="{{ '/assets/images/posts/pixel-editors/pixelorama-screenshot.png' | prepend: site.url }}" loading="lazy" title="Pixelorama Screenshot">
     <figcaption>
         A screenshot of a new window and canvas in Pixelorama.
     </figcaption>
@@ -490,7 +484,7 @@ Other platforms supported, and usually provided by third-parties, can be found o
 ### Pixel Studio
 
 <figure style="margin-top: 20px;">
-        <img alt="Pixel Studio Screenshot" src="{{ '/images/other-images/pixel-editors/pixel-studio-screenshot.png' | prepend: site.url }}" loading="lazy" title="Pixel Studio Screenshot">
+        <img alt="Pixel Studio Screenshot" src="{{ '/assets/images/posts/pixel-editors/pixel-studio-screenshot.png' | prepend: site.url }}" loading="lazy" title="Pixel Studio Screenshot">
     <figcaption>
         A screenshot of a new window and canvas in Pixel Studio.
     </figcaption>
@@ -503,7 +497,7 @@ Other platforms supported, and usually provided by third-parties, can be found o
 ### Graphics Gale
 
 <figure style="margin-top: 20px;">
-        <img alt="Graphics Gale Screenshot" src="{{ '/images/other-images/pixel-editors/graphics-gale-screenshot.png' | prepend: site.url }}" loading="lazy" title="Graphics Gale Screenshot">
+        <img alt="Graphics Gale Screenshot" src="{{ '/assets/images/posts/pixel-editors/graphics-gale-screenshot.png' | prepend: site.url }}" loading="lazy" title="Graphics Gale Screenshot">
     <figcaption>
         A screenshot of a new window and canvas in Graphics Gale.
     </figcaption>
@@ -514,7 +508,7 @@ Other platforms supported, and usually provided by third-parties, can be found o
 ### Piskel
 
 <figure style="margin-top: 20px;">
-        <img alt="Piskel Screenshot" src="{{ '/images/other-images/pixel-editors/piskel-screenshot.png' | prepend: site.url }}" loading="lazy" title="Piskel Screenshot">
+        <img alt="Piskel Screenshot" src="{{ '/assets/images/posts/pixel-editors/piskel-screenshot.png' | prepend: site.url }}" loading="lazy" title="Piskel Screenshot">
     <figcaption>
         A screenshot of a project inside Piskel.
     </figcaption>
@@ -526,7 +520,7 @@ Other platforms supported, and usually provided by third-parties, can be found o
 ### LoSpec Pixel Editor
 
 <figure style="margin-top: 20px;">
-        <img alt="LoSpec Editor Screenshot" src="{{ '/images/other-images/pixel-editors/lospec-editor-screenshot.png' | prepend: site.url }}" loading="lazy" title="LoSpec Editor Screenshot">
+        <img alt="LoSpec Editor Screenshot" src="{{ '/assets/images/posts/pixel-editors/lospec-editor-screenshot.png' | prepend: site.url }}" loading="lazy" title="LoSpec Editor Screenshot">
     <figcaption>
         A screenshot of a project inside the LoSpec editor. This beautiful artwork has been provided by my 4-year-old. :heart_eyes:
     </figcaption>
@@ -538,7 +532,7 @@ Other platforms supported, and usually provided by third-parties, can be found o
 ### PixilArt
 
 <figure style="margin-top: 20px;">
-        <img alt="Pixil Art Screenshot" src="{{ '/images/other-images/pixel-editors/pixil-art-screenshot.png' | prepend: site.url }}" loading="lazy" title="Pixil Art Screenshot">
+        <img alt="Pixil Art Screenshot" src="{{ '/assets/images/posts/pixel-editors/pixil-art-screenshot.png' | prepend: site.url }}" loading="lazy" title="Pixil Art Screenshot">
     <figcaption>
         A screenshot of a new window and canvas in Pixil Art.
     </figcaption>
@@ -552,7 +546,7 @@ Other platforms supported, and usually provided by third-parties, can be found o
 ### Pro Motion
 
 <figure style="margin-top: 20px;">
-        <img alt="Promotion Screenshot" src="{{ '/images/other-images/pixel-editors/promotion-screenshot.jpg' | prepend: site.url }}" loading="lazy" title="Promotion Screenshot">
+        <img alt="Promotion Screenshot" src="{{ '/assets/images/posts/pixel-editors/promotion-screenshot.jpg' | prepend: site.url }}" loading="lazy" title="Promotion Screenshot">
     <figcaption>
         Image provided by <a href="https://www.cosmigo.com/" target="_blank" rel="noopener noreferrer">Cosmigo</a>
     </figcaption>

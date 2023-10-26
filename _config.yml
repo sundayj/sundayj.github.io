@@ -20,7 +20,14 @@
 
 # Run the LIVE development server using `bundle exec jekyll serve -o -l`
 
-# Site Meta and SEO
+#### TOC - [ctrl] + [f] to find these sections in the config.
+# - Site Settings, Meta, and SEO
+# - Search
+# - CommentBox
+# - Contact Form
+# - Build Settings
+
+#### Site Settings, Meta, and SEO
 title: JLSunday
 email: admin@jlsunday.com
 description: >- # this means to ignore newlines
@@ -29,299 +36,86 @@ tagline: Programming and web development tutorials, snippets, and other resource
 google_site_verification: ''
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jlsunday.com" # the base hostname & protocol for your site, e.g. http://example.com
-publisher: "JLSunday"
-logo: "/images/JLSunday-logo/JLSunday.png"
-favicon: "/images/favicon.ico"
-image: "/images/JLSunday-logo/icon.png"
-
 author:
-  name: Justin L Sunday
+  name: Justin L. Sunday
   url: https://JLSunday.com/
-twitter:
-  username: JustinSunday13
-  card: summary
-  creator: JustinSunday13
-facebook:
-  app_id: 647682663047582
-  publisher: JLSundayDev
-#  admins: 1234
+default_locale: "en"
+logo_light: "/assets/images/JLSunday-logo/JLSunday-no-background.png"
+logo_dark: "/assets/images/JLSunday-logo/JLSunday-no-background.png"
+show_contact_info: true # Personal Info (twitter,GitHub,email) can be seen in `\_includes\sidebar\aboutme.html`, this info only shown where show_contact_info == true
+include_blogroll: true
+feed:
+  excerpt_only: true
+footer: # Optional links for sitemap, privacy policy, cookie policy, and terms of service. These have placeholders inside that specify the author's/website's names. So, if you are in the United States, theis should be pretty much plug and play. I would definitely recommend that you look these over yourself for safety reasons. I assume no responsibility if you use these provided files. They are meant as placeholders/ templates to be edited for your specific use-case.
+  include_sitemap: true
+  include_privacypolicy: true
+  include_cookiepolicy: true
+  include_terms: true
+aboutme:
+  include: true
+  text: >-
+    Hello, my name is Justin! I live in the US with my wife, amazing daughters, and our crazy canines. 
+    I'm extremely passionate about software development, programming, absorbing every bit of knowledge
+    I can, and sharing that knowledge with anyone interested in learning.
+  photo:
+    use_github_avatar: false
+    asset_path: "/assets/images/author/profile-photo-1352x1098.png" # "/path/to/profile-photo.png"
+    hosted_aboutme_photo: # "https://github.com/sundayj/sundayj.github.io/blob/master/assets/images/author/profile-photo-1352x1098.png?raw=true" # Use if you want to use a photo from somewhere else on the web
+google_analytics_key: "G-4Z30BJZ3LK" # UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
 
-
-
-
-twitter_username: JustinSunday13
-github_username:  sundayj
-disqus_shortname: jlsunday-com
-linkedin_username: justin-sunday
-stackoverflow_userid: 8513024
-facebook_username: JLSundayDev
-
+#### Search
+# If you would like to include algolia search in your site, please refer to this blog post by Algolia: https://www.algolia.com/blog/engineering/instant-search-blog-documentation-jekyll-plugin/
 algolia:
   application_id: NOSLLDLG24
   index_name: posts
   search_only_api_key: 446836c037be07a8fff66ade8d708aee
   files_to_exclude:
-    - a_home.md
-    - b_about.md
-    - c_archives.md
-    - d_categories.md
-    - e_tags.md
-    - f_search.md
+    - pages/home.md
+    - pages/about.md
+    - pages/archives.md
+    - pages/categories.md
+    - pages/tags.md
+    - pages/search.md
   settings:
-      attributesToHighlight:
-        - categories
-        - content
-        - headings
-        - html
-        - tags
-        - title
-      attributesToSnippet:
-        - content:10
-        - summary:10
+    attributesToHighlight:
+      - categories
+      - content
+      - headings
+      - html
+      - tags
+      - title
+    attributesToSnippet:
+      - content:10
+      - summary:10
 
+#### CommentBox
+comment_box: 5706851450617856-proj # project Id
 
-aboutme: >-
-  Hello, my name is Justin! I live in the US with my wife, amazing daughters, and our crazy canines. 
-  I'm extremely passionate about software development, programming, absorbing every bit of knowledge
-  I can, and sharing that knowledge with anyone interested in learning.
-aboutme_photo: "/images/other-images/profile-photo-1352x1098.png"
-google_analytics_key: "G-4Z30BJZ3LK" # UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
+#### Contact Form
+fab_form: Aj7sjuE # form Id
 
-
-disqus:
-  shortname: jlsunday-com
-
-social:
-  name: Justin Sunday
-  links:
-    - https://twitter.com/JustinSunday13
-    - https://www.linkedin.com/in/justin-sunday
-    - https://www.facebook.com/JLSundayDev
-    - https://github.com/sundayj
-    - https://stackoverflow.com/users/story/8513024?view=Timeline
-
-# Build settings
+### Build Settings
+# Kramdown Configuration
 markdown: kramdown
-#highlighter: pygments
+highlighter: rouge
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
-  gfm_emojis: true
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 paginate: 5
 excerpt_separator: <!-- more -->
 plugins:
+  - jekyll-avatar
   - jekyll-feed
   - jekyll-paginate
   - jemoji
-#  - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-seo
+  - jekyll-remote-theme
+  #  - jekyll-sitemap
 
-### Site setting:
-ShowContactInfo: "True" # Personal Info (twitter,GitHub,email) can be seen on aboutme-sidebar, this info only shown where ShowContactInfo == True
-default_column: "two" # blog style: two columns, if default_column != "two", you will see a one column blog.
-default_locale: "en" # blog sidebar language set, only include: English (en), Chinese (cn), Japanese (jp), Polish (pl), Korean (kr),  Russian (ru), Turkish (tr), and Indonesian (id).
-feed:
-  excerpt_only: true
-
-
-locales:
-    en:
-      Aboutme: "About Me"
-      Archives: "Archives"
-      Blogroll: "Blogroll"
-      Categories: "Categories"
-      Copyright_Notice: "Copyright Notice"
-      Recent_Posts: "Recent Posts"
-      Tags: "Tags"
-      Previous: "Older"
-      Next: "Newer"
-      PostedInCategories: "Posted in"
-      Taggedwith: "and tagged"
-      PostDate: "on "
-      Search: "Site Search"
-      Home: "Home"
-      About: "About"
-      Guestbook: "Guestbook"
-      Subscribe: "Subscribe"
-    cn:
-      Aboutme: "关于我"
-      Archives: "存档"
-      Blogroll: "良师益友"        
-      Categories: "分类目录"    
-      Copyright_Notice: "版权声明"
-      Recent_Posts: "近期文章"
-      Tags: "标签" 
-      Previous: "前一页"
-      Next: "后一页"
-      PostedInCategories: "目录:"   
-      Taggedwith: "| 标签:"
-      PostDate: "| 发表时间: "
-      Search: "站内搜索"
-      Home: "首页"
-      About: "关于"
-      Guestbook: "留言"
-      Subscribe: "订阅"
-    jp:
-      Aboutme: "著者"
-      Archives: "アーカイブ"
-      Blogroll: "ブログロール"
-      Categories: "カテゴリー"
-      Copyright_Notice: "著作権表示"
-      Recent_Posts: "最近の投稿"
-      Tags: "タグ"
-      Previous: "前の記事"
-      Next: "次の記事"
-      PostedInCategories: "カテゴリー："
-      Taggedwith: "| タグ："
-      PostDate: "| 投稿日時: "
-      Search: "サイト内検索"
-      Home: "ホーム"
-      About: "このブログについて"
-      Guestbook: "メッセージ"
-      Subscribe: "購読"
-    pl:
-      Aboutme: "O mnie"
-      Archives: "Archiwum"
-      Blogroll: "Odnośniki"
-      Categories: "Kategorie"
-      Copyright_Notice: "Prawa autorskie"
-      Recent_Posts: "Najnowsze wpisy"
-      Tags: "Tagi"
-      Previous: "Starsze"
-      Next: "Nowsze"
-      PostedInCategories: "Kategoria"
-      Taggedwith: "tagi"
-      PostDate: "on "
-      Search: "Wyszukiwarka"
-      Home: "Strona główna"
-      About: "O mnie"
-      Guestbook: "Księga gości"
-      Subscribe: "Subskrypcja"
-    kr:
-      Aboutme: "저자 소개"
-      Archives: "모든 게시물"
-      Blogroll: "참조 링크"
-      Categories: "카테고리"
-      Copyright_Notice: "저작권"
-      Recent_Posts: "최근 게시물"
-      Tags: "태그"
-      Previous: "이전 게시물"
-      Next: "다음 게시물"
-      PostedInCategories: "카테고리: "
-      Taggedwith: "태그: "
-      PostDate: "작성일: "
-      Search: "게시물 검색"
-      Home: "홈"
-      About: "소개"
-      Guestbook: "방명록"
-      Subscribe: "구독하기"
-    ru:
-      Aboutme: "Обо мне" # = 'About me'
-      Archives: "Архив"
-      Blogroll: "Ссылки" # = 'Links'
-      Categories: "Разделы"
-      Copyright_Notice: "Авторские права"
-      Recent_Posts: "Свежие посты"
-      Tags: "Теги"
-      Previous: "Предыдущий пост"          # = 'Previous post'
-      Next: "Следующий пост"               # = 'Next post'
-      PostedInCategories: "Опубликовано в" # = 'Posted in'
-      Taggedwith: "с тегами"
-      PostDate: ""
-      Search: "Поиск на Google"
-      Home: "Домой"
-      About: "О блоге"            # = 'About blog'
-      Guestbook: "Гостевая книга"
-      Subscribe: "Подписаться"
-    tr:
-      Aboutme: "Hakkımda"
-      Archives: "Arşivler"
-      Blogroll: "Bağlantılar"
-      Categories: "Kategoriler"
-      Copyright_Notice: "Telif Hakkı Bildirimi"
-      Recent_Posts: "Son Yazılar"
-      Tags: "Etiketler"
-      Previous: "Daha Eski"
-      Next: "Daha Yeni"
-      PostedInCategories: "Şuraya gönderildi:"
-      Taggedwith: "ve şöyle etiketlendi:"
-      PostDate: "şu tarihte:"
-      Search: "Sitede Ara"
-      Home: "Anasayfa"
-      About: "Hakkında"
-      Guestbook: "Konuk Defteri"
-      Subscribe: "Abone Ol"
-    id:
-      Aboutme: "Tentang Saya"
-      Archives: "Arsip"
-      Blogroll: "Blog teman"
-      Categories: "Kategori"
-      Copyright_Notice: "Legal Formal"
-      Recent_Posts: "Post Terkini"
-      Tags: "Tag"
-      Previous: "Lebih lama"
-      Next: "Lebih baru"
-      PostedInCategories: "Diposting di"
-      Taggedwith: "dan ditag"
-      PostDate: "pada "
-      Search: "Pencarian Situs"
-      Home: "Beranda"
-      About: "Tentang"
-      Guestbook: "Buku tamu"
-      Subscribe: "Langganan"
-
-### Blog-roll info, only name can be shown on the page.
-
-Blogroll:
-     - name: Joel on Software
-       href: https://www.joelonsoftware.com/
-       title: Joel on Software
-     - name: Kevin Risden's Blog
-       href: https://risdenk.github.io/
-       title: Blog and Tutorials by Kevin Risden
-     - name: Flavio Copes
-       href: https://flaviocopes.com/
-       title: Blog and Tutorials by Flavio Copes
-     - name: X-Team
-       href: https://x-team.com/blog/
-       title: X-Team
-     - name: The Overflow
-       href: https://stackoverflow.blog/
-       title: Stack Overflow's Blog, The Overflow
-     - name: Real Python
-       href: https://realpython.com/
-       title: Real Python
-     - name: Emerging Tech Brew
-       href: https://www.emergingtechbrew.com/r?kid=51d204
-       title: Emerging Tech Brew Email Newsletter
-     - name: Morning Brew
-       href: https://morningbrew.com/daily/r/?kid=51d204
-       title: Morning Brew Email Newsletter
-     - name: The Pixel Grimoire
-       href: https://medium.com/pixel-grimoire
-       title: Articles on pixel art and game development
-
-
-
-
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+remote_theme: sundayj/DevSculptor

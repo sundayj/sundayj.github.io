@@ -1,0 +1,165 @@
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+
+<script>
+    const search = instantsearch({
+        appId: '{{ site.algolia.application_id }}',
+        apiKey: '{{ site.algolia.search_only_api_key }}',
+        indexName: '{{ site.algolia.index_name }}'
+    });
+
+    function checkForContent(hit) {
+        let content = '';
+        let chipContent = '';
+        if (hit.hasOwnProperty('_snippetResult')){
+            const snippetResult = hit._snippetResult;
+            if (typeof snippetResult === 'object'){
+                for (const key of Object.keys(snippetResult)) {
+                    if (snippetResult[key].hasOwnProperty('matchLevel') && snippetResult[key].matchLevel !== 'none'){
+                        content = content.length > 0 ? content.concat('<br>', snippetResult[key].value) : snippetResult[key].value;
+                    }
+                }
+            }
+        }
+        if (hit.hasOwnProperty('_highlightResult')){
+
+            if (typeof hit._highlightResult === 'object'){
+                const highlightResult = hit._highlightResult;
+                for (const key of Object.keys(highlightResult)) {
+                    if (key === 'html'){continue}
+                    if (key === 'title'){continue}
+                    if (typeof highlightResult[key] === 'object'){
+                        if (Array.isArray(highlightResult[key])){
+                            for (const item of highlightResult[key]){
+                                if (typeof item === 'object') {
+                                    if (item.hasOwnProperty('matchLevel') && item.matchLevel !== 'none') {
+                                        chipContent = chipContent.length > 0 ? chipContent.concat(' ', `<span class="chip-item">${item.value}</span>`) : `<span><b>${key}:</b> </span><span class="chip-item">${item.value}</span>`;
+                                    }
+                                }
+                            }
+                        } else if (highlightResult[key].hasOwnProperty('matchLevel') && highlightResult[key].matchLevel !== 'none'){
+                            content = content.length > 0 ? content.concat('<br>', highlightResult[key].value) : highlightResult[key].value;
+                        }
+                    }
+                }
+            }
+        }
+        return content.length > 0 ? chipContent.length > 0 ? content.concat('<br>', chipContent) : content : '';
+    }
+
+    const hitTemplate = function(hit) {
+        // Don't show anything until the user types in the box
+        const searchBox = document.getElementById('search-searchbar').getElementsByClassName('ais-search-box--input')[0];
+        if (searchBox?.value.length <= 0){return '';}
+
+        // Only show hits if they are posts; Don't show pages.
+        if (hit.hasOwnProperty('type') && hit.type !== 'post'){return '';}
+
+        const date = hit.date ? moment.unix(hit.date).format('MMM D, YYYY') : '';
+
+        let url = `{{ site.baseurl }}${hit.url}`;
+
+        const title = hit._highlightResult.title.value;
+
+        // TODO: Add breadcrumbs once I have more content
+        // let breadcrumbs = '';
+        // if (hit._highlightResult.headings) {
+        //     breadcrumbs = hit._highlightResult.headings.map(match => {
+        //         return `<span class="post-breadcrumb">${match.value}</span>`
+        //     }).join(' > ')
+        // }
+
+        const postSummary = hit.hasOwnProperty('summary') ? hit.summary : '';
+
+        const content = checkForContent(hit);
+
+        let postTemplate = `
+            <span class="post-meta">${date}</span>
+            <h2><a class="post-link" href="${url}">${title}</a></h2>
+        `
+
+        if (postSummary.length > 0){
+            postTemplate = postTemplate.concat(' ', `<div class="post-snippet">${postSummary}</div>`)
+        }
+        if (content.length > 0){
+            postTemplate = postTemplate.concat(' ',
+                    `
+                        <h4 class="relevant-matches">Relevent matches within post:</h4>
+                        <div class="post-snippet">${content}</div>
+                    `
+            );
+        }
+
+        return `
+            <div class="post-item">
+              ${postTemplate}
+            </div>
+        `;
+    }
+
+
+    search.addWidget(
+            instantsearch.widgets.searchBox({
+                container: '#search-searchbar',
+                placeholder: 'Search through posts. Press ENTER to submit.',
+                searchAsYouType: false,
+                showReset: true,
+                showSubmit: true,
+                searchOnEnterKeyPressOnly: true,
+                showLoadingIndicator: true,
+                poweredBy: true, // This is required if you're on the free Community plan
+                cssClasses: {
+                    input: 'bg-body'
+                }
+            })
+    );
+
+    search.addWidget(
+            instantsearch.widgets.hits({
+                container: '#search-hits',
+                templates: {
+                    item: hitTemplate,
+                    empty: '<p class="info">No results were found... Try changing your query or checking out the "Categories" or "Tags" pages.</p>'
+                }
+            })
+    );
+
+    search.start();
+</script>
+
+<style>
+    .ais-search-box {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    .post-item {
+        margin-bottom: 30px;
+    }
+    .post-link .ais-Highlight {
+        color: #111;
+        font-style: normal;
+        text-decoration: underline;
+    }
+    .post-breadcrumbs {
+        color: #424242;
+        display: block;
+    }
+    .post-breadcrumb {
+        font-size: 18px;
+        color: #424242;
+    }
+    .post-breadcrumb .ais-Highlight {
+        font-weight: bold;
+        font-style: normal;
+    }
+    .post-snippet .ais-Highlight {
+        color: #2a7ae2;
+        font-style: normal;
+        font-weight: bold;
+    }
+    .post-snippet img {
+        display: none;
+    }
+</style>

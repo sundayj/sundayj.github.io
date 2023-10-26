@@ -1,40 +1,48 @@
-<nav class="site-nav">
-    <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-            <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-            <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-            <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
+{%- include navigation/theme-switcher-svg.html -%}
+{%- assign siteLogoLight = site.logo_light | prepend: site.url -%}
+{%- assign siteLogoDark = site.logo_dark | prepend: site.url -%}
+
+<nav id="navbar" class="navbar navbar-expand-lg bg-body">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img
+        id="site-logo"
+        src="{{ site.logo_light | prepend: site.url }}"
+        alt="DevSculptor"
+        width="200"
+      />
     </a>
-    <div class="trigger">
-        {% for page in site.pages %}
-        {% if page.title %}
-        {% if page.url != '/feed.xml' %}
-        {% if page.url != '/privacy-policy/' %}
-        {% if page.url != '/terms-of-service/' %}
-        {% if page.url != '/cookie-policy/' %}
-        {% if page.url != '/Sprite-Editor-Comparison-Table/' %}
-        <a class="page-link"
-           href="{{ page.url | prepend: site.url }}">{{ page.title | replace: page.title, site.locales[site.default_locale].[page.title] }}
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarToggler"
+      aria-controls="navbarToggler"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav collapse navbar-collapse justify-content-center" id="navbarToggler">
+      <ul class="navbar-nav">
+      {%- for page in site.data.page-list.pages -%}
+      {%- if page.title != "" && page.url != "" -%}
+      <li class="nav-item">
+        <a
+          class="nav-link link-body-emphasis"
+          aria-current="page"
+          href="{{ page.url | prepend: site.url }}"
+          {%- if page.new-tab == true -%}
+          target="_blank" rel="noopener noreferrer"
+          {%- endif -%}
+          >
+          {{ page.title | replace: page.title, site.data.locales[site.default_locale].[page.title] }}
         </a>
-        {% endif %}
-        {% endif %}
-        {% endif %}
-        {% endif %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
-        <a href="{{ '/assets/JustinSunday_Resume_2023-09-14.pdf' |  prepend: site.url }}" target="_blank" rel="noopener noreferrer" class="page-link">
-            My Résumé
-        </a>
-        {% comment %}<span class="page-link">Résumé</span>{% endcomment %}
-        {% comment %}<div class="resume-dropdown">{% endcomment %}
-        {% comment %}<a href="https://rxresu.me/r/1zmmc6" target="_blank" rel="noopener noreferrer" class="page-link">{% endcomment %}
-            {% comment %}Résumé{% endcomment %}
-            {% comment %}</a>{% endcomment %}
-        {% comment %}<a href="" target="_blank" rel="noopener noreferrer" class="page-link">{% endcomment %}
-            {% comment %}Printable Résumé{% endcomment %}
-            {% comment %}</a>{% endcomment %}
-        {% comment %}</div>{% endcomment %}
+      </li>
+      {%- endif -%}
+      {%- endfor -%}
+      </ul>
     </div>
+    {%- include navigation/color-theme-switcher.html -%}
+  </div>
 </nav>

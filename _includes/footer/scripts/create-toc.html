@@ -1,0 +1,51 @@
+<script type="text/javascript">
+    function generateTableOfContents() {
+        const tocContents = document.getElementById('toc-contents');
+        if (!tocContents) return;
+
+        const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+        if (headings.length === 0) return;
+
+        const tocList = document.createElement('ul');
+        let currentLevel = 2;
+        let currentList = tocList;
+
+        // Create an array to store the last list for each level
+        const lastLists = [tocList];
+
+        for (let i = 0; i < headings.length; i++) {
+            const heading = headings[i];
+            const headingLevel = parseInt(heading.tagName.charAt(1));
+
+            // Ensure the level is within bounds
+            if (headingLevel < 2 || headingLevel > 6) continue;
+
+            // Adjust currentLevel and currentList based on the encountered heading level
+            while (currentLevel < headingLevel) {
+                const newList = document.createElement('ul');
+                currentList.appendChild(newList);
+                lastLists[currentLevel] = currentList;
+                currentList = newList;
+                currentLevel++;
+            }
+
+            while (currentLevel > headingLevel) {
+                currentList = lastLists[currentLevel - 1];
+                currentLevel--;
+            }
+
+            const listItem = document.createElement('li');
+            const anchor = document.createElement('a');
+            anchor.textContent = heading.textContent;
+            anchor.href = `#${heading.id}`;
+            listItem.appendChild(anchor);
+            currentList.appendChild(listItem);
+
+            lastLists[currentLevel] = currentList;
+        }
+
+        tocContents.appendChild(tocList);
+    }
+
+    generateTableOfContents();
+</script>

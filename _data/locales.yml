@@ -1,0 +1,280 @@
+en: # English
+  Aboutme: "About Me" # About Author
+  Archives: "Archives" # Blog Archive
+  Blogroll: "Blogroll"
+  Categories: "Categories"
+  Tags: "Tags"
+  Previous: "Older" # Previous Post
+  Next: "Newer" # Next Post
+  PostDate: "Date Posted"
+  EditDate: "Date Edited"
+  Search: "Site Search"
+  Home: "Home" # Home Page
+  About: "About" # About site/blog
+  Subscribe: "Subscribe"
+  Résumé: "Résumé"
+  Projects: "Projects"
+  Site_Map: "Site Map"
+  Privacy_Policy: "Privacy Policy"
+  Cookie_Policy: "Cookie Policy"
+  Terms_of_Service: "Terms of Service"
+es: # Spanish (Español)
+  Aboutme: "Acerca de Mí" # Acerca del Autor
+  Archives: "Archivos" # Archivo de Blog
+  Blogroll: "Lista de Blogs"
+  Categories: "Categorías"
+  Tags: "Etiquetas"
+  Previous: "Anterior" # Publicación Anterior
+  Next: "Siguiente" # Publicación Siguiente
+  PostDate: "Fecha de Publicación"
+  EditDate: "Fecha de Edición"
+  Search: "Buscar en el Sitio"
+  Home: "Inicio" # Página de Inicio
+  About: "Acerca de" # Acerca del sitio/blog
+  Subscribe: "Suscribirse"
+  Résumé: "Resumen"
+  Projects: "Proyectos"
+  Site_Map: "Mapa del Sitio"
+  Privacy_Policy: "Política de Privacidad"
+  Cookie_Policy: "Política de Cookies"
+  Terms_of_Service: "Términos de Servicio"
+fr: # French (Français)
+  Aboutme: "À propos de Moi" # À propos de l'Auteur
+  Archives: "Archives" # Archive du Blog
+  Blogroll: "Liste de Blogs"
+  Categories: "Catégories"
+  Tags: "Mots-clés" # "Étiquettes"
+  Previous: "Plus Ancien" # Article Précédent
+  Next: "Plus Récent" # Article Suivant
+  PostDate: "Date de Publication"
+  EditDate: "Date de Modification"
+  Search: "Recherche sur le Site"
+  Home: "Accueil" # Page d'Accueil
+  About: "À Propos" # À Propos du site/blog
+  Subscribe: "S'Abonner"
+  Résumé: "CV"
+  Projects: "Projets"
+  Site_Map: "Plan du Site"
+  Privacy_Policy: "Politique de Confidentialité"
+  Cookie_Policy: "Politique de Cookies"
+  Terms_of_Service: "Conditions d'Utilisation"
+de: # German (Deutsch)
+  Aboutme: "Über Mich" # Über den Autor
+  Archives: "Archiv" # Blogarchiv
+  Blogroll: "Blogroll"
+  Categories: "Kategorien"
+  Tags: "Tags"
+  Previous: "Älter" # Älterer Beitrag
+  Next: "Neuer" # Neuerer Beitrag
+  PostDate: "Veröffentlichungsdatum"
+  EditDate: "Bearbeitungsdatum"
+  Search: "Website-Suche"
+  Home: "Startseite" # Startseite
+  About: "Über" # Über die Website/den Blog
+  Subscribe: "Abonnieren"
+  Résumé: "Lebenslauf"
+  Projects: "Projekte"
+  Site_Map: "Seitenverzeichnis" # "Sitemap"
+  Privacy_Policy: "Datenschutzrichtlinie" # "Datenschutzerklärung"
+  Cookie_Policy: "Cookie-Richtlinie"
+  Terms_of_Service: "Nutzungsbedingungen"
+pt: # Portuguese (Português)
+  Aboutme: "Sobre Mim" # Sobre o Autor
+  Archives: "Arquivos" # Arquivo do Blog
+  Blogroll: "Lista de Blogs"
+  Categories: "Categorias"
+  Tags: "Tags"
+  Previous: "Anterior" # Postagem Anterior
+  Next: "Próxima" # Próxima Postagem
+  PostDate: "Data da Publicação"
+  EditDate: "Data de Edição"
+  Search: "Pesquisa no Site"
+  Home: "Página Inicial" # Página Inicial
+  About: "Sobre" # Sobre o site/blog
+  Subscribe: "Inscrever-se"
+  Résumé: "Currículo"
+  Projects: "Projetos"
+  Site_Map: "Mapa do Site"
+  Privacy_Policy: "Política de Privacidade"
+  Cookie_Policy: "Política de Cookies"
+  Terms_of_Service: "Termos de Serviço"
+it: # Italian (Italiano)
+  Aboutme: "Chi Sono" # Chi è l'Autore
+  Archives: "Archivi" # Archivio del Blog
+  Blogroll: "Elenco dei Blog"
+  Categories: "Categorie"
+  Tags: "Tag"
+  Previous: "Precedente" # Articolo Precedente
+  Next: "Successivo" # Prossimo Articolo
+  PostDate: "Data di Pubblicazione"
+  EditDate: "Data di Modifica"
+  Search: "Ricerca nel Sito"
+  Home: "Home" # Pagina Principale
+  About: "Informazioni" # Informazioni sul sito/blog
+  Subscribe: "Iscriviti"
+  Résumé: "CV"
+  Projects: "Progetti"
+  Site_Map: "Mappa del Sito"
+  Privacy_Policy: "Informativa sulla Privacy"
+  Cookie_Policy: "Informativa sui Cookie"
+  Terms_of_Service: "Termini di Servizio"
+nl: # Dutch (Nederlands)
+  Aboutme: "Over Mij" # Over de Auteur
+  Archives: "Archief" # Blogarchief
+  Blogroll: "Bloglijst"
+  Categories: "Categorieën"
+  Tags: "Tags"
+  Previous: "Ouder" # Vorige Bericht
+  Next: "Nieuwer" # Volgende Bericht
+  PostDate: "Publicatiedatum"
+  EditDate: "Bewerkingsdatum"
+  Search: "Site Zoeken"
+  Home: "Home" # Startpagina
+  About: "Over" # Over de Website/het Blog
+  Subscribe: "Abonneren"
+  Résumé: "CV"
+  Projects: "Projecten"
+  Site_Map: "Sitemap"
+  Privacy_Policy: "Privacybeleid"
+  Cookie_Policy: "Cookiebeleid"
+  Terms_of_Service: "Gebruiksvoorwaarden"
+cn: # Chinese (Simplified) - 中文 (Zhōngwén)
+  Aboutme: "关于我"
+  Archives: "存档"
+  Blogroll: "博客链接"
+  Categories: "分类"
+  Tags: "标签"
+  Previous: "前一页"
+  Next: "后一页"
+  PostDate: "发表时间"
+  EditDate: "编辑日期" # Biānjí Rìqī
+  Search: "站内搜索"
+  Home: "首页"
+  About: "关于"
+  Subscribe: "订阅"
+  Résumé: "简历"
+  Projects: "项目"
+  Site_Map: "网站地图" # Wǎngzhàn Dìtú
+  Privacy_Policy: "隐私政策" # Yǐnsī Zhèngcè
+  Cookie_Policy: "Cookie政策" # Cookie Zhèngcè
+  Terms_of_Service: "服务条款" # Fúwù Tiáokuǎn
+jp: # Japanese - 日本語 (Nihongo)
+  Aboutme: "自己紹介"
+  Archives: "アーカイブ"
+  Blogroll: "ブログロール"
+  Categories: "カテゴリー"
+  Tags: "タグ"
+  Previous: "前の記事"
+  Next: "次の記事"
+  PostDate: "投稿日時"
+  EditDate: "編集日" # Henshū-bi
+  Search: "サイト内検索"
+  Home: "ホーム"
+  About: "このブログについて"
+  Subscribe: "購読"
+  Résumé: "履歴書"
+  Projects: "プロジェクト"
+  Site_Map: "サイトマップ" # Saito Mappu
+  Privacy_Policy: "プライバシーポリシー" # Puraibashī Porishī
+  Cookie_Policy: "クッキーポリシー" # Kukkī Porishī
+  Terms_of_Service: "利用規約" # Riyō Kiyaku
+pl: # Polish - Polski
+  Aboutme: "O mnie"
+  Archives: "Archiwum"
+  Blogroll: "Blogroll"
+  Categories: "Kategorie"
+  Tags: "Tagi"
+  Previous: "Starsze"
+  Next: "Nowsze"
+  PostDate: "Data publikacji"
+  EditDate: "Data Edycji"
+  Search: "Wyszukiwanie na stronie"
+  Home: "Strona główna"
+  About: "O witrynie"
+  Subscribe: "Subskrybuj"
+  Résumé: "Życiorys"
+  Projects: "Projekty"
+  Site_Map: "Mapa Strony"
+  Privacy_Policy: "Polityka Prywatności"
+  Cookie_Policy: "Polityka Cookies" # "Polityka Plików Cookies"
+  Terms_of_Service: "Regulamin"
+kr: # Korean - 한국어 (Hangugeo)
+  Aboutme: "저자 소개"
+  Archives: "아카이브"
+  Blogroll: "블로그 롤"
+  Categories: "카테고리"
+  Tags: "태그"
+  Previous: "이전 게시물"
+  Next: "다음 게시물"
+  PostDate: "게시 날짜"
+  EditDate: "편집 일자" # Pyeonjib Ilja
+  Search: "사이트 내 검색"
+  Home: "홈"
+  About: "정보"
+  Subscribe: "구독하기"
+  Résumé: "이력서"
+  Projects: "프로젝트"
+  Site_Map: "사이트 맵" # Saiteu Maep
+  Privacy_Policy: "개인정보 처리방침" # Gaeinjeongbo Cheoribangchim
+  Cookie_Policy: "쿠키 정책" # Kuki Jeongchaeg
+  Terms_of_Service: "이용 약관" # Iyong Yaggwan
+ru: # Russian - Русский (Russkiy)
+  Aboutme: "Обо мне"
+  Archives: "Архив"
+  Blogroll: "Список блогов"
+  Categories: "Категории"
+  Tags: "Теги"
+  Previous: "Предыдущий пост"
+  Next: "Следующий пост"
+  PostDate: "Дата публикации"
+  EditDate: "Дата Редактирования" # Data Redaktirovaniya
+  Search: "Поиск по сайту"
+  Home: "Главная"
+  About: "О блоге"
+  Subscribe: "Подписаться"
+  Résumé: "Резюме"
+  Projects: "Проекты"
+  Site_Map: "Карта сайта" # Karta saita
+  Privacy_Policy: "Политика конфиденциальности" # Politika konfidentsial'nosti
+  Cookie_Policy: "Политика использования файлов cookie" # Politika ispol'zovaniya faylov cookie
+  Terms_of_Service: "Условия использования" # Usloviya ispol'zovaniya
+tr: # Turkish - Türkçe
+  Aboutme: "Hakkımda"
+  Archives: "Arşiv"
+  Blogroll: "Blog Listesi"
+  Categories: "Kategoriler"
+  Tags: "Etiketler"
+  Previous: "Daha Eski"
+  Next: "Daha Yeni"
+  PostDate: "Yayınlanma Tarihi"
+  EditDate: "Düzenleme Tarihi"
+  Search: "Sitede Ara"
+  Home: "Ana Sayfa"
+  About: "Hakkında"
+  Subscribe: "Abone Ol"
+  Résumé: "Özgeçmiş"
+  Projects: "Projeler"
+  Site_Map: "Site Haritası"
+  Privacy_Policy: "Gizlilik Politikası"
+  Cookie_Policy: "Çerez Politikası"
+  Terms_of_Service: "Kullanım Koşulları"
+id: # Indonesian - Bahasa Indonesia
+  Aboutme: "Tentang Saya"
+  Archives: "Arsip"
+  Blogroll: "Daftar Blog"
+  Categories: "Kategori"
+  Tags: "Tag"
+  Previous: "Lebih Lama"
+  Next: "Lebih Baru"
+  PostDate: "Tanggal Diposting"
+  EditDate: "Tanggal Diedit"
+  Search: "Pencarian Situs"
+  Home: "Beranda"
+  About: "Tentang"
+  Subscribe: "Langganan"
+  Résumé: "Riwayat Hidup"
+  Projects: "Proyek"
+  Site_Map: "Peta Situs"
+  Privacy_Policy: "Kebijakan Privasi"
+  Cookie_Policy: "Kebijakan Cookie"
+  Terms_of_Service: "Syarat dan Ketentuan"

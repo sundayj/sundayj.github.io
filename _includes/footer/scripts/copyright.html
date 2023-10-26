@@ -1,0 +1,14 @@
+<script>
+    function updateCopyYear(){
+        const startYear = 2023;
+        let text = `${startYear}`;
+        const copyElement = document.getElementById("copyYear");
+        if (!copyElement){return;}
+        const currentYear = new Date().getFullYear();
+        if (currentYear > startYear){
+            text = text + `-${currentYear}`;
+        }
+        copyElement.innerText = text;
+    }
+    updateCopyYear();
+</script>

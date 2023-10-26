@@ -1,0 +1,75 @@
+<div id="project-{{ proj.name }}" class="card h-100 d-block">
+    <div class="card-body">
+        <h2 class="card-title">{{ proj.name }}</h2>
+        <div class="card-text">
+            {%- if proj.start-year and proj.start-year != "" -%}
+                <p><b>Project Started</b>: {{ proj.start-year }}</p>
+            {%- endif -%}
+            {%- if proj.end-year and proj.end-year != "" and proj.ongoing == false -%}
+                <p><b>Project Ended</b>: {{ proj.end-year }}</p>
+            {%- endif -%}
+            {%- if proj.ongoing and proj.ongoing == true -%}
+                <p><b>Project Ended</b>: Ongoing</p>
+            {%- endif -%}
+            {%- if proj.website != "" -%}
+                <p>
+                    <b>Project Website</b>:
+                    <a
+                            href="{{ proj.website }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="{{ proj.website }}"
+                    >
+                        {{ proj.website }}
+                    </a>
+                </p>
+            {%- endif -%}
+            {%- if proj.client and proj.client.name != '' -%}
+                <p>
+                    <b>Client</b>:
+                    {%- if proj.client.website != '' -%}
+                        <a
+                                href="{{ proj.client.website }}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="{{ proj.client.website }}"
+                        >
+                            {{ proj.client.name }}
+                        </a>
+                    {%- else -%}
+                        {{ proj.client.name }}
+                    {%- endif -%}
+                </p>
+            {%- endif -%}
+            {% if proj.tags %}
+                <p>
+                    <b>Tags</b>: {{ proj.tags | array_to_sentence_string }}
+                </p>
+            {% endif %}
+            {% if proj.skills %}
+                <p><b>Skills</b>: {{ proj.skills | array_to_sentence_string }}</p>
+            {% endif %}
+            {% if proj.description %}
+                <p>
+                    <b>Description</b>: <br>
+                </p>
+                    <p>{{ proj.description }}</p>
+            {% endif %}
+            <p><b>Project Images</b>:<br></p>
+            <div class="container row">
+                {%- for image in proj.images -%}
+                    <div class="col-sm-12 col-md-6">
+                        <figure>
+                            <a href="{{ image.path | prepend: site.url }}" target="_blank" rel="noopener noreferrer">
+                                <img alt="{{ image.title }}" src="{{ image.path | prepend: site.url }}" loading="lazy" title="Click to see larger image">
+                            </a>
+                            <figcaption>
+                                {{ image.caption }}
+                            </figcaption>
+                        </figure>
+                    </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</div>

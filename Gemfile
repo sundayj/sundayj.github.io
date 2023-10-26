@@ -39,3 +39,5 @@ gem 'eventmachine', git: 'https://github.com/eventmachine/eventmachine.git', tag
 
 gem "webrick"
 gem 'jekyll-admin', group: :jekyll_plugins
+gem 'DevSculptor', '~> 1.0'
+gem 'jekyll-remote-theme', '~> 0.4.3'

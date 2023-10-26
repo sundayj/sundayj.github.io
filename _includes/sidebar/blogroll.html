@@ -1,0 +1,7 @@
+<div class="sidebar-module container">
+    <h4>{{ site.data.locales[site.default_locale].Blogroll }} <span><i class="bi bi-info-circle" title="Hover over the links below for extra details"></i></span></h4>
+    {%- for friend in site.data.blogroll -%}
+        <li><a href="{{ friend.href }}" target="_blank" rel="noopener noreferrer"
+               title="{{ friend.title }}">{{ friend.name }}</a></li>
+    {%- endfor -%}
+</div>
