@@ -27,7 +27,7 @@
       <ul class="navbar-nav">
       {% for page in site.data.page-list.pages %}
       {% if page.title and page.title != empty%}
-        {% if page.url and page.url != empty %}
+        {% if page.url != "" %}
           <li class="nav-item">
             <a
               class="nav-link link-body-emphasis"
