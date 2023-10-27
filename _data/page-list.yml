@@ -21,8 +21,20 @@ pages:
     url: /subscribe
     new-tab: false
   - title: Projects
-    url: /projects
     new-tab: false
+    submenu:
+      - title: Gallery - Summaries of All Projects
+        url: /projects
+        group: 0
+        new-tab: false
+      - title: "DevSculptor - Jekyll Theme"
+        url: "https://jlsunday.com/DevSculptor"
+        group: 1
+        new-tab: true
+      - title: "NPM Script Selector - Node CLI App"
+        url: "https://jlsunday.com/npm-script-selector"
+        group: 1
+        new-tab: true
   - title: Résumé
     url: /assets/JustinSunday_Resume_2023-09-14.pdf
     new-tab: true
