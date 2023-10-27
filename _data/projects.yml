@@ -15,10 +15,10 @@
       path: "/assets/images/projects/devsculptor/home-page-example-light.png"
       caption: "Home page example with the DevSculptor theme in light mode."
     - title: "Home Page Example on Mobile - Dark Theme"
-      path: "/assets/images/projects/desvsculptor/20230926-localhost-iphone14promax-homepage-fotor-bg-remover-20231002163813.png"
+      path: "/assets/images/projects/devsculptor/20230926-samsung-galaxy-s20-ultra-homepage-screenshot-rocks.png"
       caption: "Home page example on mobile in dark mode."
     - title: "Home Page Example on Mobile - Light Theme"
-      path: "/assets/images/projects/devsculptor/20231026-jlsunday.com-iphone14promax-fotor-bg-remover-2023102692716.png"
+      path: "/assets/images/projects/devsculptor/20230926-samsung-galaxy-s20-ultra-homepage-screenshot-rocks-light-mode.png"
       caption: "Home page example on mobile in light mode."
 - name: NPM Script Selector
   display: true
