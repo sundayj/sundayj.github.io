@@ -15,7 +15,7 @@
         </h3>
         <hr>
         <meta itemprop="keywords" content="{{ post.tags | join: ',' }}"/>
-        <h6 class="card-subtitle mb-2 text-body-secondary">
+        <p class="card-subtitle mb-2 text-body-secondary">
             <time itemprop="datePublished" datetime="{{ post.date | date: '%Y-%m-%d' }}">
                 <span class="post-meta"><i class="bi bi-calendar-event"
                                            title="{{ locales[site.default_locale].PostDate }}"></i></span>{{ post.date | date: "%b %-d, %Y" }}
@@ -41,7 +41,7 @@
                        title="{{ tag }}">{{ tag }}</a>{% unless post.tags.last == tag %}, {% endunless %}
                 {% endfor %}
             {% endif %}
-        </h6>
+        </p>
         <hr>
         <article itemprop="articleBody">
             {%- if post.summary -%}
