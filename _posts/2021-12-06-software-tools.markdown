@@ -57,7 +57,7 @@ elsewhere, this is my favorite site for these tools.
 <div class="tool-list">
     <details open>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="json-formatter-json-tools" style="display: inline">
                 <b>JSON Tools</b>
             </h5>
         </summary>
@@ -75,7 +75,7 @@ elsewhere, this is my favorite site for these tools.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="json-formatter-converters" style="display: inline">
                 <b>Converters</b>
             </h5>
         </summary>
@@ -100,7 +100,7 @@ elsewhere, this is my favorite site for these tools.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="json-formatter-xml-tools" style="display: inline">
                 <b>XML Tools</b>
             </h5>
         </summary>
@@ -116,7 +116,7 @@ elsewhere, this is my favorite site for these tools.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="json-formatter-yaml-tools" style="display: inline">
                 <b>YAML Tools</b>
             </h5>
         </summary>
@@ -129,7 +129,7 @@ elsewhere, this is my favorite site for these tools.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="json-formatter-html-tools" style="display: inline">
                 <b>HTML Tools</b>
             </h5>
         </summary>
@@ -148,7 +148,7 @@ elsewhere, this is my favorite site for these tools.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="json-formatter-code-escaping-tools" style="display: inline">
                 <b>Code Escaping Tools</b>
             </h5>
         </summary>
@@ -165,7 +165,7 @@ elsewhere, this is my favorite site for these tools.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="json-formatter-javascript-tools" style="display: inline">
                 <b>JavaScript Tools</b>
             </h5>
         </summary>
@@ -176,7 +176,7 @@ elsewhere, this is my favorite site for these tools.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="json-formatter-json5-tools" style="display: inline">
                 <b>JSON5 Tools</b>
             </h5>
         </summary>
@@ -187,7 +187,7 @@ elsewhere, this is my favorite site for these tools.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="json-formatter-url-encoding-tools" style="display: inline">
                 <b>URL Encoding Tools</b>
             </h5>
         </summary>
@@ -200,7 +200,7 @@ elsewhere, this is my favorite site for these tools.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="json-formatter-base64-encoders" style="display: inline">
                 <b>Base64 Encoders</b>
             </h5>
         </summary>
@@ -212,7 +212,7 @@ elsewhere, this is my favorite site for these tools.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="json-formatter-css-converters" style="display: inline">
                 <b>CSS Converters</b>
             </h5>
         </summary>
@@ -245,7 +245,7 @@ elsewhere, this is my favorite site for these tools.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="json-formatter-data-to-class" style="display: inline">
                 <b>Data to Class - :star: My Personal Favorites!</b>
             </h5>
         </summary>
@@ -292,7 +292,7 @@ elsewhere, this is my favorite site for these tools.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="json-formatter-online-formatters" style="display: inline">
                 <b>Online Formatters</b>
             </h5>
         </summary>
@@ -363,7 +363,7 @@ them all out.
 <div class="tool-list">
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="fromdev-string-utility-tools" style="display: inline">
                 <b>String Utility Tools</b>
             </h5>
         </summary>
@@ -389,7 +389,7 @@ them all out.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="fromdev-seo" style="display: inline">
                 <b>SEO</b>
             </h5>
         </summary>
@@ -400,7 +400,7 @@ them all out.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="fromdev-converters" style="display: inline">
                 <b>Converters</b>
             </h5>
         </summary>
@@ -425,7 +425,7 @@ them all out.
     </details>
     <details>
         <summary style="cursor: pointer">
-            <h5 style="display: inline">
+            <h5 id="fromdev-code-generators" style="display: inline">
                 <b>Code Generators</b>
             </h5>
         </summary>
