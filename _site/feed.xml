@@ -5,200 +5,12 @@
     <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 Oct 2023 11:59:32 -0400</pubDate>
-    <lastBuildDate>Fri, 27 Oct 2023 11:59:32 -0400</lastBuildDate>
+    <pubDate>Mon, 30 Oct 2023 12:20:38 -0400</pubDate>
+    <lastBuildDate>Mon, 30 Oct 2023 12:20:38 -0400</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
     
       <item>
-        <title>Announcing the DevSculptor Jekyll Theme</title>
-        <description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;I’m super excited to share with you my latest project: &lt;a href=&quot;https://jlsunday.com/DevSculptor/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;DevSculptor&lt;/a&gt;, a Jekyll blog theme designed for developers who want to showcase their skills and projects. DevSculptor is
-compatible with GitHub pages, so you can easily host your blog on your own domain without any hassle. You can also install DevSculptor as a gem or a remote theme,
-depending on your preference. DevSculptor has a sleek and modern design, with features such as syntax highlighting, responsive layout, social media icons, pagination, and
-more. You can customize DevSculptor to suit your personal style and brand, by changing the colors, fonts, logo, and other elements. DevSculptor is also SEO-friendly and fast-loading,
-so you can reach more readers and rank higher on search engines.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-is-jekyll&quot;&gt;What is Jekyll?&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Jekyll&lt;/a&gt; is a static site generator that transforms your plain text into beautiful websites. Jekyll is perfect for blogs, portfolios, documentation, and more. Jekyll is easy to set up,
-secure, and fast. You can write your content in Markdown, HTML, or any other format you like. You can also use themes, plugins, and custom layouts to make your site look
-amazing. Jekyll is powered by &lt;a href=&quot;https://www.ruby-lang.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Ruby&lt;/a&gt; and works well with GitHub pages, which means you can host your site for free on GitHub.&lt;/p&gt;
-
-&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
-
-&lt;p&gt;DevSculptor has a lot of features that make it stand out from other Jekyll themes. Here are some of them:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Responsive&lt;/li&gt;
-  &lt;li&gt;Dark and Light theme toggler&lt;/li&gt;
-  &lt;li&gt;SEO friendly&lt;/li&gt;
-  &lt;li&gt;Social Network friendly with Twitter Card support&lt;/li&gt;
-  &lt;li&gt;Site Search with &lt;a href=&quot;https://www.algolia.com&quot;&gt;Algolia&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Google Analytics Ready&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://fabform.io/&quot;&gt;Fabform&lt;/a&gt; Contact Form Ready&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.htmlcommentbox.com/&quot;&gt;HTML Comment Box&lt;/a&gt; Ready&lt;/li&gt;
-  &lt;li&gt;Code blocks use &lt;a href=&quot;https://github.blog/2017-03-14-a-formal-spec-for-github-markdown/&quot;&gt;GitHub Flavored Markdown&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Github gists for posts via the &lt;a href=&quot;https://github.com/jekyll/jekyll-gist&quot;&gt;jekyll-gist plugin&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Responsive Collapsible and Sticky TOC (Table of Contents) for posts&lt;/li&gt;
-  &lt;li&gt;Anchor links for headings within posts&lt;/li&gt;
-  &lt;li&gt;“Reading time” for posts to give readers estimates on how long it may take them to read.&lt;/li&gt;
-  &lt;li&gt;Includes Jekyll Admin (Optional)&lt;/li&gt;
-  &lt;li&gt;Emoji Ready&lt;/li&gt;
-  &lt;li&gt;RSS Feed for feed reader subscriptions&lt;/li&gt;
-  &lt;li&gt;Includes site map, privacy policy, cookie policy, and terms of service (It is your responsibility to
-make sure that the details outlined in the provided files match fit within your country/state’s laws.)&lt;/li&gt;
-  &lt;li&gt;Blog Roll&lt;/li&gt;
-  &lt;li&gt;Résumé link opens your provided résumé as a PDF in a new tab&lt;/li&gt;
-  &lt;li&gt;Localization support with help from ChatGPT
-    &lt;ul&gt;
-      &lt;li&gt;English&lt;/li&gt;
-      &lt;li&gt;Spanish (Español)&lt;/li&gt;
-      &lt;li&gt;French (Français)&lt;/li&gt;
-      &lt;li&gt;German (Deutsch)&lt;/li&gt;
-      &lt;li&gt;Portuguese (Português)&lt;/li&gt;
-      &lt;li&gt;Italian (Italiano)&lt;/li&gt;
-      &lt;li&gt;Dutch (Nederlands)&lt;/li&gt;
-      &lt;li&gt;Chinese (Simplified) - 中文 (Zhōngwén)&lt;/li&gt;
-      &lt;li&gt;Japanese - 日本語 (Nihongo)&lt;/li&gt;
-      &lt;li&gt;Polish - Polski&lt;/li&gt;
-      &lt;li&gt;Korean - 한국어 (Hangugeo)&lt;/li&gt;
-      &lt;li&gt;Russian - Русский (Russkiy)&lt;/li&gt;
-      &lt;li&gt;Turkish - Türkçe&lt;/li&gt;
-      &lt;li&gt;Indonesian - Bahasa Indonesia&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You can customize the colors, fonts, and logo to suit your personal brand. You can also add more features by using Jekyll plugins or editing the code.&lt;/p&gt;
-
-&lt;h2 id=&quot;screen-shots&quot;&gt;Screen Shots&lt;/h2&gt;
-
-&lt;p&gt;To give you a better idea of how DevSculptor looks, I’ve added some screenshots below. You can see the homepage, the post page, and the archive page. As you can
-see, DevSculptor has a clean and minimalist aesthetic, with a focus on the content and the code. You can also see how DevSculptor adapts to different screen sizes and devices.&lt;/p&gt;
-
-&lt;h3 id=&quot;home-page&quot;&gt;Home Page&lt;/h3&gt;
-
-&lt;figure style=&quot;margin-top: 20px;&quot; class=&quot;figure&quot;&gt;
-    &lt;img class=&quot;figure-img rounded&quot; alt=&quot;Homepage Example - Dark Theme&quot; src=&quot;http://localhost:4000/assets/images/projects/devsculptor/home-page-example.png&quot; loading=&quot;lazy&quot; title=&quot;Homepage Example - Dark Theme&quot; /&gt;
-    &lt;figcaption class=&quot;figure-caption text-center&quot;&gt;
-        Home page example with the DevSculptor theme in dark mode.
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;figure style=&quot;margin-top: 20px;&quot; class=&quot;figure&quot;&gt;
-    &lt;img class=&quot;figure-img rounded&quot; alt=&quot;Home Page Example - Light Theme&quot; src=&quot;http://localhost:4000/assets/images/projects/devsculptor/home-page-example-light.png&quot; loading=&quot;lazy&quot; title=&quot;Home Page Example - Light Theme&quot; /&gt;
-    &lt;figcaption class=&quot;figure-caption text-center&quot;&gt;
-        Home page example with the DevSculptor theme in light mode
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;div class=&quot;container&quot;&gt;
-  &lt;div class=&quot;row row-cols-1 row-cols-md-2&quot;&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-          &lt;img alt=&quot;Home Page Example on Mobile - Dark Theme&quot; src=&quot;http://localhost:4000/assets/images/projects/devsculptor/20230926-samsung-galaxy-s20-ultra-homepage-screenshot-rocks.png&quot; loading=&quot;lazy&quot; title=&quot;Home Page Example on Mobile - Dark Theme&quot; /&gt;
-          &lt;figcaption class=&quot;figure-caption text-center&quot;&gt;
-              Home page example on mobile in dark mode.
-          &lt;/figcaption&gt;
-      &lt;/figure&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-          &lt;img alt=&quot;Home Page Example on Mobile - Light Theme&quot; src=&quot;http://localhost:4000/assets/images/projects/devsculptor/20230926-samsung-galaxy-s20-ultra-homepage-screenshot-rocks-light-mode.png&quot; loading=&quot;lazy&quot; title=&quot;Home Page Example on Mobile - Light Theme&quot; /&gt;
-          &lt;figcaption class=&quot;figure-caption text-center&quot;&gt;
-             Home page example on mobile in light mode.
-          &lt;/figcaption&gt;
-      &lt;/figure&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
-
-&lt;p&gt;Now that you know what DevSculptor is and why you should use it, you might be wondering: how do I install DevSculptor? Well, there are two ways to install DevSculptor: as a
-gem or as a remote theme. Let me explain the difference and how to do it.&lt;/p&gt;
-
-&lt;h3 id=&quot;using-the-ruby-gem&quot;&gt;Using the Ruby Gem&lt;/h3&gt;
-&lt;p&gt;If you install DevSculptor as a gem, you will need to add it to your Gemfile and run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle install&lt;/code&gt;. Then you will need to add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;theme: devsculptor&lt;/code&gt; to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;
-file. This way, you will have the theme files locally on your computer, and you can edit them as you wish. However, this also means that you will need to update the theme
-manually whenever there is a new version available.&lt;/p&gt;
-
-&lt;h3 id=&quot;using-the-remote-theme&quot;&gt;Using the Remote Theme&lt;/h3&gt;
-&lt;p&gt;If you install DevSculptor as a remote theme, you will need to add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;remote_theme: sundayj/DevSculptor&lt;/code&gt; to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file. Then you will need to create a file
-called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; in your root directory and add the following lines:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-gemfile&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&quot;manual-conversion&quot;&gt;Manual Conversion&lt;/h3&gt;
-&lt;p&gt;To install DevSculptor without using a gem or a remote theme, you need to download the source code from GitHub and copy the files to your Jekyll site folder. You also need to
-update your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file with the following settings:&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;# Theme settings&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;devsculptor&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;plugins&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-paginate&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-seo-tag&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-sitemap&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-feed&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-gist&lt;/span&gt;
-  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jemoji&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Pagination settings&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;paginate&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;paginate_path&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/page:num/&quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Then run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle install&lt;/code&gt;. This way, you will use the theme files directly from GitHub and you will always have the latest version of the theme. However, this also means that
-you will not be able to edit the theme files directly, and you will need to use overrides or customizations instead.&lt;/p&gt;
-
-&lt;p&gt;You can choose whichever method suits you best. For more details on how to install DevSculptor, please refer to the &lt;a href=&quot;https://jlsunday.com/DevSculptor/documentation/2023/09/17/about-devsculptor.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;final-words&quot;&gt;Final Words&lt;/h2&gt;
-
-&lt;p&gt;If you’re looking for a Jekyll blog theme that is easy to use, elegant, and powerful, look no further than DevSculptor. You can check out the demo site
-&lt;a href=&quot;https://jlsunday.com/DevSculptor&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt; and the documentation
-&lt;a href=&quot;https://jlsunday.com/DevSculptor/documentation/2023/09/17/about-devsculptor.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;. You can also download or fork the source
-code from GitHub, &lt;a href=&quot;https://github.com/sundayj/devsculptor&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;sundayj/DevSculptor&lt;/a&gt;. I hope you enjoy using DevSculptor
-as much as I enjoyed creating it. Please let me know what you think of it and if you have any feedback or suggestions. Happy blogging!&lt;/p&gt;
-</description>
-        <pubDate>Thu, 26 Oct 2023 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/jekyll/2023/10/26/announcing-devsculptor-jekyll-theme.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/2023/10/26/announcing-devsculptor-jekyll-theme.html</guid>
-        
-        <category>announcement</category>
-        
-        <category>jekyll-theme</category>
-        
-        <category>github-pages</category>
-        
-        <category>ruby-gem</category>
-        
-        <category>remote-theme</category>
-        
-        <category>project</category>
-        
-        
-        <category>Jekyll</category>
-        
-      </item>
-    
-      <item>
-        <title>Comparing Pixel Art Editors, Part One: Aseprite</title>
+        <title>Comparing Pixel Art Editors</title>
         <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
         &lt;img alt=&quot;Design Components&quot; src=&quot;http://localhost:4000/assets/images/posts/undraw/undraw_design_components_9vy6.png&quot; loading=&quot;lazy&quot; title=&quot;Design Components&quot; /&gt;
     &lt;figcaption&gt;
@@ -207,6 +19,18 @@ as much as I enjoyed creating it. Please let me know what you think of it and if
 &lt;/figure&gt;
 
 &lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;div class=&quot;alert alert-primary d-flex align-items-center&quot; role=&quot;alert&quot;&gt;
+  &lt;div&gt;
+    GENERAL BLOG UPDATE
+  &lt;hr /&gt;
+    I know it&apos;s been a few months since I last posted, and I sincerely apologize if you were following my Angular series.
+    I started a new job as a senior developer back in February, and it has consumed most of my time.
+    I do plan to get back to the Angular tutorial eventually, but I have no immediate plans for it.
+    If anyone is really interested in the Angular series, then please contact me; I&apos;m much more likely to get back to it
+    if I know there are people interested or dependent on the series.
+  &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Hello again! In this post I will be comparing various pixel art editing tools. My ADD has decided it is time for me to
 create my own video game, which is something I have been wanting to do for years. I may decide to do more posts on video
@@ -239,392 +63,15 @@ noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Open this table in a separate tab by clicking&lt;/strong&gt; &lt;a href=&quot;http://localhost:4000/Sprite-Editor-Comparison-Table&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;table-responsive&quot;&gt;
-    &lt;table class=&quot;table table-striped table-bordered&quot;&gt;
-        &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Feature&lt;/th&gt;
-            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#aseprite&quot;&gt;Aseprite&lt;/a&gt;&lt;/th&gt;
-            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#grafx2&quot;&gt;GrafX2&lt;/a&gt;&lt;/th&gt;
-            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#pixieditor&quot;&gt;PixiEditor&lt;/a&gt;&lt;/th&gt;
-            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#libresprite&quot;&gt;LibreSprite&lt;/a&gt;&lt;/th&gt;
-            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#libresprite-dotto&quot;&gt;LibreSprite Dotto&lt;/a&gt;&lt;/th&gt;
-            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#jpixel&quot;&gt;JPixel&lt;/a&gt;&lt;/th&gt;
-            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#pixelorama&quot;&gt;Pixelorama&lt;/a&gt;&lt;/th&gt;
-            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#pixel-studio&quot;&gt;Pixel Studio&lt;/a&gt;&lt;/th&gt;
-            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#graphics-gale&quot;&gt;Graphics Gale&lt;/a&gt;&lt;/th&gt;
-            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#piskel&quot;&gt;Piskel&lt;/a&gt;&lt;/th&gt;
-            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#lospec-pixel-editor&quot;&gt;LoSpec Pixel Editor&lt;/a&gt;&lt;/th&gt;
-            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#pixilart&quot;&gt;PixilArt&lt;/a&gt;&lt;/th&gt;
-            &lt;!--- th&gt;Pyxel Edit&lt;/th&gt; --&gt;
-            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#pro-motion&quot;&gt;Pro Motion Free&lt;/a&gt;&lt;/th&gt;
-            &lt;th&gt;&lt;a href=&quot;http://localhost:4000/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors.html#pro-motion&quot;&gt;Pro Motion Full&lt;/a&gt;&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Pixel Perfect&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Layers&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Symmetry Mirror Pen&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Auto-Shade/Shading Mode&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;RotSprite Rotation&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Custom Brushes&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Anti-Aliasing&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Tile Mode&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;File Export - PNG Image Sequences&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;File Export - Animated GIFs&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;File Export - Sprite Sheets&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Animation - Frames&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Animation - Frame Tags&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Animation - Onion Skin&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Animation - Playback Modes&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Palette - Export/Import&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Extensibility&lt;/th&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-check&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-question&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;&lt;i class=&quot;fa fa-&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-
-        &lt;tr class=&quot;costTable&quot;&gt;
-            &lt;th&gt;Cost&lt;/th&gt;
-            &lt;td&gt;
-                &lt;b&gt;Three Options:&lt;/b&gt;&lt;br /&gt;
-                &lt;b&gt;1.&lt;/b&gt; &lt;b&gt;Free*&lt;/b&gt;&lt;br /&gt;
-                &lt;b&gt;2.&lt;/b&gt; Trial Version&lt;br /&gt;
-                &lt;b&gt;3.&lt;/b&gt; $20&lt;br /&gt;
-            &lt;/td&gt;&lt;!--- Aseprite --&gt;
-            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- Grafx2 --&gt;
-            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- PixiEditor --&gt;
-            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- LibreSprite --&gt;
-            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- LibreSprite Dotto --&gt;
-            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- JPixel --&gt;
-            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- Pixelorama --&gt;
-            &lt;td&gt;&lt;b&gt;Three Options:&lt;/b&gt;&lt;br /&gt;
-                &lt;b&gt;1.&lt;/b&gt; &lt;b&gt;Free&lt;/b&gt;&lt;br /&gt;
-                &lt;b&gt;2.&lt;/b&gt; Pro&lt;br /&gt;
-                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- $7.99&lt;br /&gt;
-                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Removes Ads&lt;br /&gt;
-                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Unlocks features like Tile mode&lt;br /&gt;
-                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- More details &lt;a href=&quot;https://github.com/hippogamesunity/PixelStudioHub/wiki/Shop&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;&lt;br /&gt;
-                &lt;b&gt;3.&lt;/b&gt; Pro Cross&lt;br /&gt;
-                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- $11.99&lt;br /&gt;
-                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Same as Pro&lt;br /&gt;
-                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Allows you to use Pro cross-platform&lt;br /&gt;
-                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- More details &lt;a href=&quot;https://github.com/hippogamesunity/PixelStudioHub/wiki/Shop&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;
-            &lt;/td&gt;&lt;!--- Pixel Studio --&gt;
-            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- Graphics Gale --&gt;
-            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- Piskel --&gt;
-            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- LoSpec Pixel Editor --&gt;
-            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- PixilArt --&gt;
-            &lt;!--- td&gt;&lt;i class=&quot;fa fa-remove&quot;&gt;&lt;/i&gt;&lt;/td&gt;&lt;--- Pyxel Edit --&gt;
-            &lt;td class=&quot;singleOption&quot;&gt;&lt;b&gt;Free&lt;/b&gt;&lt;/td&gt;&lt;!--- Pro Motion Free --&gt;
-            &lt;td&gt;
-                - $39.00&lt;br /&gt;
-                - $19 to upgrade from previous version&lt;br /&gt;
-                - More details &lt;a href=&quot;https://www.cosmigo.com/pixel_animation_software/downloads&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;
-            &lt;/td&gt;&lt;!--- Pro Motion Full --&gt;
-        &lt;/tr&gt;
-        &lt;/tbody&gt;
-    &lt;/table&gt;
+&lt;div class=&quot;alert alert-primary d-flex align-items-center&quot; role=&quot;alert&quot;&gt;
+  &lt;div&gt;
+    The Comparison Table has been moved!
+  &lt;hr /&gt;
+    Due to the large size of the comparison table, I decided to break it out into its own page. To see the table in a new tab, please click &lt;a href=&quot;http://localhost:4000/Sprite-Editor-Comparison-Table&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;. 
+  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;&lt;strong&gt;GENERAL BLOG UPDATE&lt;/strong&gt;&lt;/em&gt;&lt;br /&gt;
-I know it’s been a few months since I last posted, and I sincerely apologize if you were following my Angular series.
-I started a new job as a senior developer back in February, and it has consumed most of my time.
-I do plan to get back to the Angular tutorial eventually, but I have no immediate plans for it.
-If anyone is really interested in the Angular series, then please contact me; I’m much more likely to get back to it
-if I know there are people interested or dependent on the series.&lt;/p&gt;
-&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -828,6 +275,8 @@ if I know there are people interested or dependent on the series.&lt;/p&gt;
         new capabilities to the tool. Now, this isn&apos;t a deal-breaker by any means, but it is a very-nice-to-have.
     &lt;/details&gt;
 &lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;tools&quot;&gt;Tools&lt;/h2&gt;
 
@@ -1175,18 +624,24 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 
 &lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;IMPORTANT&lt;/strong&gt;&lt;br /&gt;
-This tutorial utilizes Angular 12. I realize Angular 13 is now published. If enough people request it, then I may make a tutorial
-on how to upgrade between the two versions. Afterwards, the new version will be available in this project’s repo.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div class=&quot;alert alert-primary d-flex align-items-center&quot; role=&quot;alert&quot;&gt;
+  &lt;div&gt;
+    IMPORTANT
+  &lt;hr /&gt;
+    This tutorial utilizes Angular 12. I realize Angular 13 is now published. If enough people request it, then I may make a tutorial
+    on how to upgrade between the two versions. Afterwards, the new version will be available in this project&apos;s repo.
+  &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Part One - Intro Repo&lt;/strong&gt;&lt;br /&gt;
-If you want to follow along with the progression of the app, you can find the repo for this part of the project under the
-&lt;a href=&quot;https://github.com/sundayj/JLSundayAngular/tree/PartOne-Introduction&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;PartOne-Introduction&lt;/a&gt;
-branch.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div class=&quot;alert alert-primary d-flex align-items-center&quot; role=&quot;alert&quot;&gt;
+  &lt;div&gt;
+    Part One - Intro Repo
+  &lt;hr /&gt;
+    If you want to follow along with the progression of the app, you can find the repo for this part of the project under the
+    &lt;a href=&quot;https://github.com/sundayj/JLSundayAngular/tree/PartOne-Introduction&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;PartOne-Introduction&lt;/a&gt;
+    branch.
+  &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Hello, and welcome to my first posted Angular tutorial! Originally, I was going to go over how to create an Angular app from scratch,
 but the &lt;a href=&quot;https://v12.angular.io/tutorial#tour-of-heroes-app-and-tutorial&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Angular Tour of Heroes App and Tutorial&lt;/a&gt;
@@ -1637,12 +1092,15 @@ like me to add to these tutorials? Just let me know!&lt;/p&gt;
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;&lt;strong&gt;UPDATED 2021/12/29&lt;/strong&gt;&lt;/em&gt;&lt;br /&gt;
-Added “Best practices for writing code comments” to “General”.&lt;br /&gt;
-Added Stack Overflow’s newsletter, &lt;em&gt;The Overflow&lt;/em&gt;, to “Newsletters”.&lt;br /&gt;
-Appended info to the end of “My Newsletter” in “Newsletters”.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div class=&quot;alert alert-primary d-flex align-items-center&quot; role=&quot;alert&quot;&gt;
+  &lt;div&gt;
+    UPDATED 2021/12/29
+  &lt;hr /&gt;
+    Added &quot;Best practices for writing code comments&quot; to &quot;General&quot;.&lt;br /&gt;
+    Added Stack Overflow&apos;s newsletter, &lt;i&gt;The Overflow&lt;/i&gt;, to &quot;Newsletters&quot;.&lt;br /&gt;
+    Appended info to the end of &quot;My Newsletter&quot; in &quot;Newsletters&quot;.
+  &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;First off, I just want to mention that this post, actually, the majority of this site was written in markdown.
 Markdown is extremely useful in reading and writing documentation for source code, taking notes, and even writing websites. I’ll have more on Markdown below.&lt;/p&gt;
@@ -1655,9 +1113,13 @@ that didn’t appear in the original document.&lt;/p&gt;
 
 &lt;p&gt;Finally, believe it or not, I’m not making money (yet :wink:) from any of the sites, tools, or resources I’ve linked to here. I honestly just think they all rock and are worth sharing.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;&lt;strong&gt;Pro-Tip:&lt;/strong&gt;&lt;/em&gt; Be on the lookout for list items marked with :star:! These are the tools I use often and highly recommend.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div class=&quot;alert alert-primary d-flex align-items-center&quot; role=&quot;alert&quot;&gt;
+  &lt;div&gt;
+    Pro-Tip
+  &lt;hr /&gt;
+    Be on the lookout for list items marked with :star:! These are the tools I use often and highly recommend.
+  &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;tools&quot;&gt;Tools&lt;/h2&gt;
 
@@ -1941,9 +1403,13 @@ you can’t develop great software without great development tools! :sunglasses:
 developers. Many of these focus on web-development, but many are useful
 regardless of the development you’re focusing on.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;&lt;strong&gt;Pro-Tip:&lt;/strong&gt;&lt;/em&gt; Be on the lookout for list items marked with :star:! These are the tools I use often and highly recommend.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div class=&quot;alert alert-primary d-flex align-items-center&quot; role=&quot;alert&quot;&gt;
+  &lt;div&gt;
+    Pro-Tip
+  &lt;hr /&gt;
+    Be on the lookout for list items marked with :star:! These are the tools I use often and highly recommend.
+  &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;jsonformatterorg&quot;&gt;&lt;a href=&quot;https://jsonformatter.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JSONFormatter.org&lt;/a&gt;&lt;/h3&gt;
 
@@ -2231,16 +1697,17 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
     &lt;/details&gt;
 &lt;/div&gt;
 
-&lt;blockquote&gt;
-  &lt;dl&gt;
-    &lt;dt&gt;&lt;em&gt;&lt;strong&gt;FAVORITES:&lt;/strong&gt;&lt;/em&gt;&lt;/dt&gt;
-    &lt;dt&gt;:star: &lt;a href=&quot;https://jsonformatter.org/json-to-typescript#Sample&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JSON to TypeScript&lt;/a&gt;&lt;/dt&gt;
-    &lt;dt&gt;:star: &lt;a href=&quot;https://jsonformatter.org/json-to-python#Sample&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JSON to Python&lt;/a&gt;&lt;/dt&gt;
-    &lt;dd&gt;I use these tools often when designing programs/interfaces that consume JSON REST API responses. Utilizing these tools
-allow you to transform JSON objects to TypeScript Interfaces or Python classes, respectively. You may need to make a few tweaks,
-but they will still save you a ton of time.&lt;/dd&gt;
-  &lt;/dl&gt;
-&lt;/blockquote&gt;
+&lt;div class=&quot;alert alert-primary d-flex align-items-center&quot; role=&quot;alert&quot;&gt;
+  &lt;div&gt;
+    FAVORITES
+  &lt;hr /&gt;
+    :star: &lt;a href=&quot;https://jsonformatter.org/json-to-typescript#Sample&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JSON to TypeScript&lt;/a&gt;&lt;br /&gt;
+    :star: &lt;a href=&quot;https://jsonformatter.org/json-to-python#Sample&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;JSON to Python&lt;/a&gt;&lt;br /&gt;
+    I use these tools often when designing programs/interfaces that consume JSON REST API responses. Utilizing these tools
+    allow you to transform JSON objects to TypeScript Interfaces or Python classes, respectively. You may need to make a few tweaks,
+    but they will still save you a ton of time.
+  &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;toolsfromdev&quot;&gt;&lt;a href=&quot;https://tools.fromdev.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Tools.FromDev&lt;/a&gt;&lt;/h3&gt;
 
@@ -2341,13 +1808,14 @@ them all out.&lt;/p&gt;
     &lt;/details&gt;
 &lt;/div&gt;
 
-&lt;blockquote&gt;
-  &lt;dl&gt;
-    &lt;dt&gt;&lt;em&gt;&lt;strong&gt;FAVORITE:&lt;/strong&gt;&lt;/em&gt;&lt;/dt&gt;
-    &lt;dt&gt;:star: &lt;a href=&quot;https://tools.fromdev.com/csv-to-json-converter.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;CSV / JSON Converter&lt;/a&gt;&lt;/dt&gt;
-    &lt;dd&gt;If you’re given test/mock data in CSV format, but you need it to be in JSON format to truly utilize/test it, then look no further than this converter!&lt;/dd&gt;
-  &lt;/dl&gt;
-&lt;/blockquote&gt;
+&lt;div class=&quot;alert alert-primary d-flex align-items-center&quot; role=&quot;alert&quot;&gt;
+  &lt;div&gt;
+    FAVORITES
+  &lt;hr /&gt;
+    :star: &lt;a href=&quot;CSV / JSON Converter&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;https://tools.fromdev.com/csv-to-json-converter.html&lt;/a&gt;&lt;br /&gt;
+    If you&apos;re given test/mock data in CSV format, but you need it to be in JSON format to truly utilize/test it, then look no further than this converter!
+  &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;dbdiagramio&quot;&gt;&lt;a href=&quot;https://dbdiagram.io/home&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;dbdiagram.io&lt;/a&gt;&lt;/h3&gt;
 
