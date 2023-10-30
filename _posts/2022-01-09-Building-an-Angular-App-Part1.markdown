@@ -28,15 +28,25 @@ sort: 0
 
 ## Intro
 
-> **IMPORTANT**<br>
-> This tutorial utilizes Angular 12. I realize Angular 13 is now published. If enough people request it, then I may make a tutorial
-> on how to upgrade between the two versions. Afterwards, the new version will be available in this project's repo.
+<div class="alert alert-primary d-flex align-items-center" role="alert">
+  <div>
+    IMPORTANT
+  <hr>
+    This tutorial utilizes Angular 12. I realize Angular 13 is now published. If enough people request it, then I may make a tutorial
+    on how to upgrade between the two versions. Afterwards, the new version will be available in this project's repo.
+  </div>
+</div>
 
+<div class="alert alert-primary d-flex align-items-center" role="alert">
+  <div>
+    Part One - Intro Repo
+  <hr>
+    If you want to follow along with the progression of the app, you can find the repo for this part of the project under the
+    <a href="https://github.com/sundayj/JLSundayAngular/tree/PartOne-Introduction" target="_blank" rel="noopener noreferrer">PartOne-Introduction</a>
+    branch.
+  </div>
+</div>
 
-> **Part One - Intro Repo**<br>
-> If you want to follow along with the progression of the app, you can find the repo for this part of the project under the
-> [PartOne-Introduction](https://github.com/sundayj/JLSundayAngular/tree/PartOne-Introduction){:target="_blank"}{:rel="noopener noreferrer"}
-> branch.
 
 Hello, and welcome to my first posted Angular tutorial! Originally, I was going to go over how to create an Angular app from scratch,
 but the [Angular Tour of Heroes App and Tutorial](https://v12.angular.io/tutorial#tour-of-heroes-app-and-tutorial){:target="_blank"}{:rel="noopener noreferrer"}

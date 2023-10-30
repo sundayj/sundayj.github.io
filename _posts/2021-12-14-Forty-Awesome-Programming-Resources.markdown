@@ -26,10 +26,15 @@ sort: 0
     </figcaption>
 </figure>
 
-> _**UPDATED 2021/12/29**_<br>
-> Added "Best practices for writing code comments" to "General".<br>
-> Added Stack Overflow's newsletter, _The Overflow_, to "Newsletters".<br>
-> Appended info to the end of "My Newsletter" in "Newsletters".
+<div class="alert alert-primary d-flex align-items-center" role="alert">
+  <div>
+    UPDATED 2021/12/29
+  <hr>
+    Added "Best practices for writing code comments" to "General".<br>
+    Added Stack Overflow's newsletter, <i>The Overflow</i>, to "Newsletters".<br>
+    Appended info to the end of "My Newsletter" in "Newsletters".
+  </div>
+</div>
 
 First off, I just want to mention that this post, actually, the majority of this site was written in markdown.
 Markdown is extremely useful in reading and writing documentation for source code, taking notes, and even writing websites. I'll have more on Markdown below.
@@ -42,7 +47,13 @@ that didn't appear in the original document.
 
 Finally, believe it or not, I'm not making money (yet :wink:) from any of the sites, tools, or resources I've linked to here. I honestly just think they all rock and are worth sharing.
 
-> _**Pro-Tip:**_ Be on the lookout for list items marked with :star:! These are the tools I use often and highly recommend.
+<div class="alert alert-primary d-flex align-items-center" role="alert">
+  <div>
+    Pro-Tip
+  <hr>
+    Be on the lookout for list items marked with :star:! These are the tools I use often and highly recommend.
+  </div>
+</div>
 
 ## Tools
 
