@@ -1,22 +1,22 @@
 ---
 layout: post
-title: "Comparing Pixel Art Editors, Part One: Aseprite"
+title: "Comparing Pixel Art Editors"
 summary: >-
     Part one of a series of posts comparing various Pixel Art Editors. Part one gives an intro to this series of posts
-    and gives a short review of Aseprite.A comparison of various pixel art editing tools.
+    and gives a short review of Aseprite. A comparison of various pixel art editing tools.
 excerpt: >-
     Part one of a series of posts comparing various Pixel Art Editors. Part one gives an intro to this series of posts
-    and gives a short review of Aseprite.A comparison of various pixel art editing tools.
+    and gives a short review of Aseprite. A comparison of various pixel art editing tools.
 description: >-
     Part one of a series of posts comparing various Pixel Art Editors. Part one gives an intro to this series of posts
-    and gives a short review of Aseprite.A comparison of various pixel art editing tools.
-canonical_url: https://JLSunday.com/tools/reviews/2022/06/11/Comparing-Pixel-Art-Editors-Part-1.html
+    and gives a short review of Aseprite. A comparison of various pixel art editing tools.
+canonical_url: https://JLSunday.com/tools/2022/06/11/Comparing-Pixel-Art-Editors.html
 category: Tools
 tags: [tools,pixel-art,game-development,tool-comparison,tool-review]
 image: https://JLSunday.com/images/posts/undraw_design_components_9vy6.png
 comments: true
 date: 2022-06-11
-last_modified_at: 2022/06/11
+last_modified_at: 2023/10/30
 author: {{ site.author.name }}
 include_TOC: true
 featured: false
@@ -31,6 +31,18 @@ sort: 0
 </figure>
   
 ## Intro
+
+<div class="alert alert-primary d-flex align-items-center" role="alert">
+  <div>
+    GENERAL BLOG UPDATE
+  <hr>
+    I know it's been a few months since I last posted, and I sincerely apologize if you were following my Angular series.
+    I started a new job as a senior developer back in February, and it has consumed most of my time.
+    I do plan to get back to the Angular tutorial eventually, but I have no immediate plans for it.
+    If anyone is really interested in the Angular series, then please contact me; I'm much more likely to get back to it
+    if I know there are people interested or dependent on the series.
+  </div>
+</div>
 
 Hello again! In this post I will be comparing various pixel art editing tools. My ADD has decided it is time for me to
 create my own video game, which is something I have been wanting to do for years. I may decide to do more posts on video
@@ -61,19 +73,15 @@ Finally, a few notes about the icons in the table:
   noopener noreferrer"}.
 
 <br>
-
-**Open this table in a separate tab by clicking** [here]({{ '/Sprite-Editor-Comparison-Table' | prepend: site.url }}){:target="_blank"}{:rel="noopener noreferrer"}
-
-{% include Sprite-Editor-Comparison-Table.html %}
+<div class="alert alert-primary d-flex align-items-center" role="alert">
+  <div>
+    The Comparison Table has been moved!
+  <hr>
+    Due to the large size of the comparison table, I decided to break it out into its own page. To see the table in a new tab, please click <a href="{{ '/Sprite-Editor-Comparison-Table' | prepend: site.url }}" target="_blank" rel="noopener noreferrer">here</a>. 
+  </div>
+</div>
 
 <br>
-
-> _**GENERAL BLOG UPDATE**_<br>
-> I know it's been a few months since I last posted, and I sincerely apologize if you were following my Angular series.
-> I started a new job as a senior developer back in February, and it has consumed most of my time.
-> I do plan to get back to the Angular tutorial eventually, but I have no immediate plans for it.
-> If anyone is really interested in the Angular series, then please contact me; I'm much more likely to get back to it
-> if I know there are people interested or dependent on the series.
 
 <br>
 
@@ -277,6 +285,8 @@ Finally, a few notes about the icons in the table:
         new capabilities to the tool. Now, this isn't a deal-breaker by any means, but it is a very-nice-to-have.
     </details>
 </div>
+
+<br>
 
 ## Tools
 

@@ -26,7 +26,14 @@ This list contains online-based tools, or sites full of tools, for
 developers. Many of these focus on web-development, but many are useful
 regardless of the development you're focusing on.
 
-> _**Pro-Tip:**_ Be on the lookout for list items marked with :star:! These are the tools I use often and highly recommend.
+<div class="alert alert-primary d-flex align-items-center" role="alert">
+  <div>
+    Pro-Tip
+  <hr>
+    Be on the lookout for list items marked with :star:! These are the tools I use often and highly recommend.
+  </div>
+</div>
+
 
 ### [JSONFormatter.org](https://jsonformatter.org/){:target="_blank"}{:rel="noopener noreferrer"}
 
@@ -315,12 +322,18 @@ elsewhere, this is my favorite site for these tools.
     </details>
 </div>
 
-> _**FAVORITES:**_
-:star: [JSON to TypeScript](https://jsonformatter.org/json-to-typescript#Sample){:target="_blank"}{:rel="noopener noreferrer"}
-:star: [JSON to Python](https://jsonformatter.org/json-to-python#Sample){:target="_blank"}{:rel="noopener noreferrer"}
-: I use these tools often when designing programs/interfaces that consume JSON REST API responses. Utilizing these tools
-allow you to transform JSON objects to TypeScript Interfaces or Python classes, respectively. You may need to make a few tweaks,
-but they will still save you a ton of time.
+<div class="alert alert-primary d-flex align-items-center" role="alert">
+  <div>
+    FAVORITES
+  <hr>
+    :star: <a href="https://jsonformatter.org/json-to-typescript#Sample" target="_blank" rel="noopener noreferrer">JSON to TypeScript</a><br>
+    :star: <a href="https://jsonformatter.org/json-to-python#Sample" target="_blank" rel="noopener noreferrer">JSON to Python</a><br>
+    I use these tools often when designing programs/interfaces that consume JSON REST API responses. Utilizing these tools
+    allow you to transform JSON objects to TypeScript Interfaces or Python classes, respectively. You may need to make a few tweaks,
+    but they will still save you a ton of time.
+  </div>
+</div>
+
 
 
 ### [Tools.FromDev](https://tools.fromdev.com/){:target="_blank"}{:rel="noopener noreferrer"}
@@ -424,9 +437,15 @@ them all out.
     </details>
 </div>
 
-> _**FAVORITE:**_
-> :star: [CSV / JSON Converter](https://tools.fromdev.com/csv-to-json-converter.html){:target="_blank"}{:rel="noopener noreferrer"}
-> : If you're given test/mock data in CSV format, but you need it to be in JSON format to truly utilize/test it, then look no further than this converter!
+<div class="alert alert-primary d-flex align-items-center" role="alert">
+  <div>
+    FAVORITES
+  <hr>
+    :star: <a href="CSV / JSON Converter" target="_blank" rel="noopener noreferrer">https://tools.fromdev.com/csv-to-json-converter.html</a><br>
+    If you're given test/mock data in CSV format, but you need it to be in JSON format to truly utilize/test it, then look no further than this converter!
+  </div>
+</div>
+
 
 ### [dbdiagram.io](https://dbdiagram.io/home){:target="_blank"}{:rel="noopener noreferrer"}
 

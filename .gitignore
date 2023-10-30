@@ -6,3 +6,5 @@ vendor
 /_site/*
 _site/**
 _site/.*
+/_site/feed.xml
+/_site/index.html
