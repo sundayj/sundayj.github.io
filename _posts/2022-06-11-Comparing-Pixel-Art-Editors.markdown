@@ -36,11 +36,19 @@ sort: 0
   <div>
     GENERAL BLOG UPDATE
   <hr>
-    I know it's been a few months since I last posted, and I sincerely apologize if you were following my Angular series.
-    I started a new job as a senior developer back in February, and it has consumed most of my time.
-    I do plan to get back to the Angular tutorial eventually, but I have no immediate plans for it.
-    If anyone is really interested in the Angular series, then please contact me; I'm much more likely to get back to it
-    if I know there are people interested or dependent on the series.
+    <ul>
+      <li>
+        I know it's been a few months since I last posted, and I sincerely apologize if you were following my Angular series.
+        I started a new job as a senior developer back in February, and it has consumed most of my time.
+        I do plan to get back to the Angular tutorial eventually, but I have no immediate plans for it.
+        If anyone is really interested in the Angular series, then please contact me; I'm much more likely to get back to it
+        if I know there are people interested or dependent on the series.
+      </li>
+      <li>
+        This post was actually published by accident before it was completed. So be warned that this is a work-in-progress. I will get back to it as soon as I can.
+        In the meantime, if you'd like to suggest edits, or anything else, please feel free to comment or message me and I will add your suggestions very quickly.
+      </li>
+    </ul>
   </div>
 </div>
 
