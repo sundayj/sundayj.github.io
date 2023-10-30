@@ -25,7 +25,7 @@
   start-month: 10
   start-year: 2023 # Optional
   ongoing: true
-  tags: [typescript, npm, package, utility, scripts, script, runner, dev tool, tool]
+  tags: [typescript, npm, package, utility, scripts, runner, dev tool]
   skills: [Node, TypeScript, JavaScript]
   website: "https://www.npmjs.com/package/npm-script-selector"
   description: >-

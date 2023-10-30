@@ -26,48 +26,40 @@
     <div class="nav collapse navbar-collapse justify-content-center" id="navbarToggler">
       <ul class="navbar-nav">
       {% for page in site.data.page-list.pages %}
-      {% if page.title and page.title != empty%}
-        {% if page.url != "" %}
-          <li class="nav-item">
-            <a
-              class="nav-link link-body-emphasis"
-              aria-current="page"
-              href="{{ page.url | prepend: site.url }}"
-              {% if page.new-tab == true %}
-                target="_blank" rel="noopener noreferrer"
-              {% endif %}
-            >
-              {{ page.title | replace: page.title, site.data.locales[site.default_locale].[page.title] }}
-            </a>
-          </li>
-          {% elsif page.submenu and page.sumenu != empty %}
-          <li class="nav-item dropdown">
-            <a class="nav-link link-body-emphasis dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-              {{ page.title | replace: page.title, site.data.locales[site.default_locale].[page.title] }}
-            </a>
-            <ul class="dropdown-menu">
-              {% assign subpageGroups = page.submenu | group_by: "group" %}
-              {% for subpageGroup in subpageGroups %}
-                {% for item in subpageGroup.items %}
-                  {% unless item.title == empty or item.url == empty %}
-                    <li>
-                      <a class="dropdown-item" href="{{ item.url }}"
-                              {% if item.new-tab == true %}
-                                  target="_blank" rel="noopener noreferrer"
-                              {% endif %}
-                      >{{ item.title }}</a>
-                    </li>
-                {% endunless %}
-                {% endfor %}
-                {% unless subpageGroups.last == subpageGroup %}
-                  <li><hr class="dropdown-divider"></li>
-                {% endunless %}
-              {% endfor %}
-            </ul>
-          </li>
-      {% endif %}
-      {% endif %}
-        {% endfor %}
+          {% if page.title and page.title != empty%}
+            {% if page.url != "" %}
+              <li class="nav-item">
+                <a
+                  class="nav-link link-body-emphasis"
+                  aria-current="page"
+                  href="{{ page.url | prepend: site.url }}"{% if page.new-tab == true %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                  {{ page.title | replace: page.title, site.data.locales[site.default_locale].[page.title] }}
+                </a>
+              </li>
+            {% elsif page.submenu and page.sumenu != empty %}
+              <li class="nav-item dropdown">
+                <a class="nav-link link-body-emphasis dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                  {{ page.title | replace: page.title, site.data.locales[site.default_locale].[page.title] }}
+                </a>
+                <ul class="dropdown-menu">
+                  {% assign subpageGroups = page.submenu | group_by: "group" %}
+                  {% for subpageGroup in subpageGroups %}
+                    {% for item in subpageGroup.items %}
+                      {% unless item.title == empty or item.url == empty %}
+                        <li>
+                          <a class="dropdown-item" href="{{ item.url }}"{% if item.new-tab == true %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.title }}</a>
+                        </li>
+                      {% endunless %}
+                    {% endfor %}
+                    {% unless subpageGroups.last == subpageGroup %}
+                      <li><hr class="dropdown-divider"></li>
+                    {% endunless %}
+                  {% endfor %}
+                </ul>
+              </li>
+            {% endif %}
+          {% endif %}
+      {% endfor %}
       </ul>
     </div>
     {% include navigation/color-theme-switcher.html %}
