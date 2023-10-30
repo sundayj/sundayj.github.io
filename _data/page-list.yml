@@ -22,6 +22,7 @@ pages:
     new-tab: false
   - title: Projects
     new-tab: false
+    url: ""
     submenu:
       - title: Gallery - Summaries of All Projects
         url: /projects
