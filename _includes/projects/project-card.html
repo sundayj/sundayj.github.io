@@ -2,58 +2,70 @@
     <div class="card-body">
         <h2 class="card-title">{{ proj.name }}</h2>
         <div class="card-text">
-            {%- if proj.start-year and proj.start-year != "" -%}
-                <p><b>Project Started</b>: {{ proj.start-year }}</p>
-            {%- endif -%}
-            {%- if proj.end-year and proj.end-year != "" and proj.ongoing == false -%}
-                <p><b>Project Ended</b>: {{ proj.end-year }}</p>
-            {%- endif -%}
-            {%- if proj.ongoing and proj.ongoing == true -%}
-                <p><b>Project Ended</b>: Ongoing</p>
-            {%- endif -%}
-            {%- if proj.website != "" -%}
-                <p>
+                {%- if proj.start-year and proj.start-year != "" -%}
+                    <p>
+                        <b>Project Started</b>:&nbsp;
+                        {%- if proj.start-month and proj.start-month != "" -%}
+                            {{ proj.start-month }}/
+                        {%- endif -%}
+                            {{ proj.start-year }}
+                    </p>
+                {%- endif -%}
+                {% if proj.end-year or proj.ongoing %}
+                    {%- if proj.end-year != "" and proj.ongoing == false -%}
+                        <p>
+                            <b>Project Ended</b>:&nbsp;
+                            {%- if proj.end-month and proj.end-month != "" -%}
+                                {{ proj.end-month }}/
+                            {%- endif -%}
+                            {{ proj.end-year }}
+                            </p>
+                        {%- endif -%}
+                    {%- if proj.ongoing == true -%}
+                        <p><b>Project Ended</b>: Ongoing</p>
+                    {%- endif -%}
+                {% endif %}
+                {%- if proj.website != "" -%}
+                        <p>
                     <b>Project Website</b>:
-                    <a
-                            href="{{ proj.website }}"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title="{{ proj.website }}"
-                    >
-                        {{ proj.website }}
-                    </a>
-                </p>
-            {%- endif -%}
-            {%- if proj.client and proj.client.name != '' -%}
-                <p>
+                            <a
+                                    href="{{ proj.website }}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    title="{{ proj.website }}"
+                            >
+                                {{ proj.website }}
+                            </a>
+                        </p>
+                {%- endif -%}
+                {%- if proj.client and proj.client.name != '' -%}
+                        <p>
                     <b>Client</b>:
                     {%- if proj.client.website != '' -%}
-                        <a
-                                href="{{ proj.client.website }}"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                title="{{ proj.client.website }}"
-                        >
-                            {{ proj.client.name }}
-                        </a>
-                    {%- else -%}
-                        {{ proj.client.name }}
-                    {%- endif -%}
-                </p>
-            {%- endif -%}
-            {% if proj.tags %}
+                                <a
+                                        href="{{ proj.client.website }}"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        title="{{ proj.client.website }}"
+                                >
+                                    {{ proj.client.name }}
+                                </a>
+                            {%- else -%}
+                                {{ proj.client.name }}
+                            {%- endif -%}
+                        </p>
+                {%- endif -%}
+                    {% if proj.tags %}
                 <p>
                     <b>Tags</b>: {{ proj.tags | array_to_sentence_string }}
                 </p>
-            {% endif %}
-            {% if proj.skills %}
+                    {% endif %}
+                    {% if proj.skills %}
                 <p><b>Skills</b>: {{ proj.skills | array_to_sentence_string }}</p>
             {% endif %}
             {% if proj.description %}
-                <p>
-                    <b>Description</b>: <br>
-                </p>
-                    <p>{{ proj.description }}</p>
+                <h5><b>Description</b></h5>
+                <p>{{ proj.description }}</p>
             {% endif %}
             <p><b>Project Images</b>:<br></p>
             <div class="container row">
