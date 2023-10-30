@@ -3,12 +3,24 @@
         <h2 class="card-title">{{ proj.name }}</h2>
         <div class="card-text">
                 {%- if proj.start-year and proj.start-year != "" -%}
-                    <p><b>Project Started</b>: {{ proj.start-year }}</p>
+                    <p>
+                        <b>Project Started</b>:&nbsp;
+                        {%- if proj.start-month and proj.start-month != "" -%}
+                            {{ proj.start-month }}/
+                        {%- endif -%}
+                            {{ proj.start-year }}
+                    </p>
                 {%- endif -%}
                 {% if proj.end-year or proj.ongoing %}
                     {%- if proj.end-year != "" and proj.ongoing == false -%}
-                        <p><b>Project Ended</b>: {{ proj.end-year }}</p>
-                    {%- endif -%}
+                        <p>
+                            <b>Project Ended</b>:&nbsp;
+                            {%- if proj.end-month and proj.end-month != "" -%}
+                                {{ proj.end-month }}/
+                            {%- endif -%}
+                            {{ proj.end-year }}
+                            </p>
+                        {%- endif -%}
                     {%- if proj.ongoing == true -%}
                         <p><b>Project Ended</b>: Ongoing</p>
                     {%- endif -%}
