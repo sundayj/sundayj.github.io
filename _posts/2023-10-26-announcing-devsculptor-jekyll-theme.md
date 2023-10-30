@@ -27,32 +27,38 @@ sort: 0
 
 ##  Introduction
 
-I'm super excited to share with you my latest project: [DevSculptor](https://jlsunday.com/DevSculptor/){:target="_blank"}{:rel="noopener noreferrer"}, a Jekyll blog theme designed for developers who want to showcase their skills and projects. DevSculptor is
-compatible with GitHub pages, so you can easily host your blog on your own domain without any hassle. You can also install DevSculptor as a gem or a remote theme,
-depending on your preference. DevSculptor has a sleek and modern design, with features such as syntax highlighting, responsive layout, social media icons, pagination, and
-more. You can customize DevSculptor to suit your personal style and brand, by changing the colors, fonts, logo, and other elements. DevSculptor is also SEO-friendly and fast-loading,
-so you can reach more readers and rank higher on search engines.
+I'm super excited to share with you my latest project: [DevSculptor](https://jlsunday.com/DevSculptor/){:target="_blank"}{:rel="noopener noreferrer"},
+a Jekyll blog theme designed for developers who want to showcase their skills and projects. DevSculptor is
+compatible with GitHub pages, so you can easily host your blog on your own domain without any hassle. You can also
+install DevSculptor as a gem or a remote theme, depending on your preference. DevSculptor has a sleek and modern design,
+with features such as syntax highlighting, responsive layout, social media icons, pagination, and more. You can
+customize DevSculptor to suit your personal style and brand by changing the colors, fonts, logo, and other elements.
+DevSculptor is also SEO-friendly and fast-loading, so you can reach more readers and rank higher on search engines.
 
 ### What is Jekyll?
 
-[Jekyll](https://jekyllrb.com/){:target="_blank"}{:rel="noopener noreferrer"} is a static site generator that transforms your plain text into beautiful websites. Jekyll is perfect for blogs, portfolios, documentation, and more. Jekyll is easy to set up,
-secure, and fast. You can write your content in Markdown, HTML, or any other format you like. You can also use themes, plugins, and custom layouts to make your site look
-amazing. Jekyll is powered by [Ruby](https://www.ruby-lang.org/en/){:target="_blank"}{:rel="noopener noreferrer"} and works well with GitHub pages, which means you can host your site for free on GitHub.
+[Jekyll](https://jekyllrb.com/){:target="_blank"}{:rel="noopener noreferrer"} is a static site generator that transforms your plain text
+into beautiful websites. Jekyll is perfect for blogs, portfolios, documentation, and more. Jekyll is easy to set up,
+secure, and fast. You can write your content in Markdown or HTML. You can also use themes, plugins, and custom layouts
+to make your site look amazing. Jekyll is powered by [Ruby](https://www.ruby-lang.org/en/){:target="_blank"}{:rel="noopener noreferrer"} and works
+well with GitHub pages, which means you can host your site for free on GitHub.
 
 ## Features
 
 DevSculptor has a lot of features that make it stand out from other Jekyll themes. Here are some of them:
 
 - Responsive
+  - Regardless of whether your readers are visiting your site on mobile, tablet, laptop, or desktop, you can be sure that your blog will be readable and consistent.
 - Dark and Light theme toggler
+  - Your readers can toggle the theme between light and dark modes. I've even added functionality to assist with displaying different logos depending on the chosen theme.
 - SEO friendly
 - Social Network friendly with Twitter Card support
-- Site Search with [Algolia](https://www.algolia.com)
+- Site Search with [Algolia](https://www.algolia.com){:target="_blank"}{:rel="noopener noreferrer"}
 - Google Analytics Ready
-- [Fabform](https://fabform.io/) Contact Form Ready
-- [HTML Comment Box](https://www.htmlcommentbox.com/) Ready
-- Code blocks use [GitHub Flavored Markdown](https://github.blog/2017-03-14-a-formal-spec-for-github-markdown/)
-- Github gists for posts via the [jekyll-gist plugin](https://github.com/jekyll/jekyll-gist)
+- [Fabform](https://fabform.io/){:target="_blank"}{:rel="noopener noreferrer"} Contact Form Ready
+- [HTML Comment Box](https://www.htmlcommentbox.com/){:target="_blank"}{:rel="noopener noreferrer"} Ready
+- Code blocks use [GitHub Flavored Markdown](https://github.blog/2017-03-14-a-formal-spec-for-github-markdown/){:target="_blank"}{:rel="noopener noreferrer"}
+- Github gists for posts via the [jekyll-gist plugin](https://github.com/jekyll/jekyll-gist){:target="_blank"}{:rel="noopener noreferrer"}
 - Responsive Collapsible and Sticky TOC (Table of Contents) for posts
 - Anchor links for headings within posts
 - "Reading time" for posts to give readers estimates on how long it may take them to read.
@@ -64,20 +70,20 @@ DevSculptor has a lot of features that make it stand out from other Jekyll theme
 - Blog Roll
 - Résumé link opens your provided résumé as a PDF in a new tab
 - Localization support with help from ChatGPT
-    - English
-    - Spanish (Español)
-    - French (Français)
-    - German (Deutsch)
-    - Portuguese (Português)
-    - Italian (Italiano)
-    - Dutch (Nederlands)
-    - Chinese (Simplified) - 中文 (Zhōngwén)
-    - Japanese - 日本語 (Nihongo)
-    - Polish - Polski
-    - Korean - 한국어 (Hangugeo)
-    - Russian - Русский (Russkiy)
-    - Turkish - Türkçe
-    - Indonesian - Bahasa Indonesia
+  - English
+  - Spanish (Español)
+  - French (Français)
+  - German (Deutsch)
+  - Portuguese (Português)
+  - Italian (Italiano)
+  - Dutch (Nederlands)
+  - Chinese (Simplified) - 中文 (Zhōngwén)
+  - Japanese - 日本語 (Nihongo)
+  - Polish - Polski
+  - Korean - 한국어 (Hangugeo)
+  - Russian - Русский (Russkiy)
+  - Turkish - Türkçe
+  - Indonesian - Bahasa Indonesia
 
 You can customize the colors, fonts, and logo to suit your personal brand. You can also add more features by using Jekyll plugins or editing the code.
 
