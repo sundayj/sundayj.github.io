@@ -44,9 +44,9 @@
     id="totop"
     style="position: fixed; bottom: 150px; right: 50px; cursor: pointer"
   >
-    <a title="Back To Top"
-      ><img src="{{ '/assets/images/topbutton.png' | prepend: site.url }}" alt="To Top" title="To Top"/></a
-    >
+    <button id="totop-button" type="button" title="Back To Top" aria-label="Back to top">
+      <img src="{{ '/assets/images/topbutton.png' | relative_url }}" alt="To Top" title="To Top"/>
+    </button>
   </div>
 
   {%- include footer/scripts.html -%}

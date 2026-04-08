@@ -1,12 +1,22 @@
 <script>
-    function toggleTOC() {
-        const sidenav = document.getElementById("toc-sidebar");
-        const chevron = document.getElementById("chevron");
-        const btn = document.getElementById("tocOpenBtn");
-        let ariaValue = btn.getAttribute("aria-expanded");
+    (() => {
+        function toggleTOC() {
+            const sidenav = document.getElementById("toc-sidebar");
+            const chevron = document.getElementById("chevron");
+            const btn = document.getElementById("tocOpenBtn");
+            if (!sidenav || !chevron || !btn) {
+                return;
+            }
 
-        sidenav.style.width = sidenav.style.width === "175px" ? "0" : "175px";
-        chevron.style.transform = chevron.style.transform === "rotate(-180deg)" ? "rotate(0deg)" : "rotate(-180deg)";
-        ariaValue === "true" ? btn.setAttribute("aria-expanded", "false") : btn.setAttribute("aria-expanded", "true");
-    }
+            const expanded = btn.getAttribute("aria-expanded") === "true";
+            sidenav.style.width = expanded ? "0" : "175px";
+            chevron.style.transform = expanded ? "rotate(-180deg)" : "rotate(0deg)";
+            btn.setAttribute("aria-expanded", expanded ? "false" : "true");
+        }
+
+        const btn = document.getElementById("tocOpenBtn");
+        if (btn) {
+            btn.addEventListener("click", toggleTOC);
+        }
+    })();
 </script>

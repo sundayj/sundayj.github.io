@@ -1,35 +1,57 @@
 {%- if page.comments != false -%}
 
-<!-- begin wwww.htmlcommentbox.com -->
-<div id="HCB_comment_box">
-  <a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...
+<div id="comment-loader" class="comment-loader">
+  <p>
+    Comments are powered by HTML Comment Box and are loaded only if you choose to enable them for this page.
+  </p>
+  <button id="load-comments" class="btn btn-outline-secondary" type="button">
+    Load comments
+  </button>
 </div>
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0"
-/>
 <script type="text/javascript" id="hcb">
-  /*<!--*/ if (!window.hcb_user) {
-    hcb_user = {};
-  }
-  (function () {
-    var s = document.createElement("script"),
-      l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
-      h = "https://www.htmlcommentbox.com";
-    s.setAttribute("type", "text/javascript");
-    s.setAttribute(
-      "src",
-      h +
+  (() => {
+    const button = document.getElementById("load-comments");
+    const loader = document.getElementById("comment-loader");
+    if (!button || !loader) {
+      return;
+    }
+
+    button.addEventListener("click", () => {
+      button.disabled = true;
+      button.textContent = "Loading comments...";
+
+      if (!document.getElementById("hcb-style")) {
+        const style = document.createElement("link");
+        style.id = "hcb-style";
+        style.rel = "stylesheet";
+        style.type = "text/css";
+        style.href = "https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0";
+        document.head.appendChild(style);
+      }
+
+      const container = document.createElement("div");
+      container.id = "HCB_comment_box";
+      container.innerHTML = '<a href="https://www.htmlcommentbox.com" rel="noopener noreferrer">Widget</a> is loading comments...';
+      loader.replaceWith(container);
+
+      if (!window.hcb_user) {
+        window.hcb_user = {};
+      }
+
+      const script = document.createElement("script");
+      const pageUrl = window.hcb_user.PAGE || String(window.location).replace(/'/g, "%27");
+      const host = "https://www.htmlcommentbox.com";
+      script.type = "text/javascript";
+      script.referrerPolicy = "no-referrer";
+      script.src =
+        host +
         "/jread?page=" +
-        encodeURIComponent(l).replace("+", "%2B") +
+        encodeURIComponent(pageUrl).replace("+", "%2B") +
         "&mod=%241%24wq1rdBcg%24nloVSlWq%2FJCcagZMx%2FYB40" +
-        "&opts=16798&num=10&ts=1695242013304"
-    );
-    if (typeof s != "undefined")
-      document.getElementsByTagName("head")[0].appendChild(s);
-  })(); /*-->*/
+        "&opts=16798&num=10&ts=1695242013304";
+      document.head.appendChild(script);
+    });
+  })();
 </script>
-<!-- end www.htmlcommentbox.com -->
 
 {%- endif -%}

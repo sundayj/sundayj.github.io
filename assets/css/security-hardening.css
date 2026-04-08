@@ -1,0 +1,73 @@
+.fa,
+.far,
+.fas {
+  display: inline-block;
+  font-style: normal;
+  line-height: 1;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa.fa-check::before {
+  content: "\2713";
+}
+
+.fa.fa-remove::before {
+  content: "\2715";
+}
+
+.fa.fa-question::before {
+  content: "?";
+  font-weight: 700;
+}
+
+.far.fa-clock::before {
+  content: "\1F551";
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+
+.far.fa-frown-open::before {
+  content: "\2639";
+}
+
+.fas.fa-rss-square::before {
+  content: "RSS";
+  font-family: inherit;
+  font-size: 0.45em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+#totop {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease;
+}
+
+#totop.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#totop-button {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+#tocOpenBtn {
+  border: 0;
+}
+
+.comment-loader {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}

@@ -5,8 +5,8 @@
     <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Oct 2023 12:20:38 -0400</pubDate>
-    <lastBuildDate>Mon, 30 Oct 2023 12:20:38 -0400</lastBuildDate>
+    <pubDate>Wed, 08 Apr 2026 11:44:50 -0400</pubDate>
+    <lastBuildDate>Wed, 08 Apr 2026 11:44:50 -0400</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
     
       <item>
@@ -24,11 +24,19 @@
   &lt;div&gt;
     GENERAL BLOG UPDATE
   &lt;hr /&gt;
-    I know it&apos;s been a few months since I last posted, and I sincerely apologize if you were following my Angular series.
-    I started a new job as a senior developer back in February, and it has consumed most of my time.
-    I do plan to get back to the Angular tutorial eventually, but I have no immediate plans for it.
-    If anyone is really interested in the Angular series, then please contact me; I&apos;m much more likely to get back to it
-    if I know there are people interested or dependent on the series.
+    &lt;ul&gt;
+      &lt;li&gt;
+        I know it&apos;s been a few months since I last posted, and I sincerely apologize if you were following my Angular series.
+        I started a new job as a senior developer back in February, and it has consumed most of my time.
+        I do plan to get back to the Angular tutorial eventually, but I have no immediate plans for it.
+        If anyone is really interested in the Angular series, then please contact me; I&apos;m much more likely to get back to it
+        if I know there are people interested or dependent on the series.
+      &lt;/li&gt;
+      &lt;li&gt;
+        This post was actually published by accident before it was completed. So be warned that this is a work-in-progress. I will get back to it as soon as I can.
+        In the meantime, if you&apos;d like to suggest edits, or anything else, please feel free to comment or message me and I will add your suggestions very quickly.
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -1432,7 +1440,7 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
 &lt;div class=&quot;tool-list&quot;&gt;
     &lt;details open=&quot;&quot;&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;json-formatter-json-tools&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;JSON Tools&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1450,7 +1458,7 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;json-formatter-converters&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;Converters&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1475,7 +1483,7 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;json-formatter-xml-tools&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;XML Tools&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1491,7 +1499,7 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;json-formatter-yaml-tools&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;YAML Tools&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1504,7 +1512,7 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;json-formatter-html-tools&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;HTML Tools&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1523,7 +1531,7 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;json-formatter-code-escaping-tools&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;Code Escaping Tools&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1540,7 +1548,7 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;json-formatter-javascript-tools&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;JavaScript Tools&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1551,7 +1559,7 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;json-formatter-json5-tools&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;JSON5 Tools&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1562,7 +1570,7 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;json-formatter-url-encoding-tools&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;URL Encoding Tools&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1575,7 +1583,7 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;json-formatter-base64-encoders&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;Base64 Encoders&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1587,7 +1595,7 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;json-formatter-css-converters&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;CSS Converters&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1620,7 +1628,7 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;json-formatter-data-to-class&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;Data to Class - :star: My Personal Favorites!&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1667,7 +1675,7 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;json-formatter-online-formatters&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;Online Formatters&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1734,7 +1742,7 @@ them all out.&lt;/p&gt;
 &lt;div class=&quot;tool-list&quot;&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;fromdev-string-utility-tools&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;String Utility Tools&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1760,7 +1768,7 @@ them all out.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;fromdev-seo&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;SEO&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1771,7 +1779,7 @@ them all out.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;fromdev-converters&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;Converters&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
@@ -1796,7 +1804,7 @@ them all out.&lt;/p&gt;
     &lt;/details&gt;
     &lt;details&gt;
         &lt;summary style=&quot;cursor: pointer&quot;&gt;
-            &lt;h5 style=&quot;display: inline&quot;&gt;
+            &lt;h5 id=&quot;fromdev-code-generators&quot; style=&quot;display: inline&quot;&gt;
                 &lt;b&gt;Code Generators&lt;/b&gt;
             &lt;/h5&gt;
         &lt;/summary&gt;
