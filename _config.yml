@@ -31,8 +31,8 @@
 title: JLSunday
 email: admin@jlsunday.com
 description: >- # this means to ignore newlines
-  Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!
-tagline: Programming and web development tutorials, snippets, and other resources.
+  Musings, product notes, and practical insights on software development, AI agents, tools, and the changing craft of programming.
+tagline: Musings and practical insights for programming in the age of AI agents.
 google_site_verification: ''
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jlsunday.com" # the base hostname & protocol for your site, e.g. http://example.com
@@ -55,8 +55,7 @@ aboutme:
   include: true
   text: >-
     Hello, my name is Justin! I live in the US with my wife, amazing daughters, and our crazy canines. 
-    I'm extremely passionate about software development, programming, absorbing every bit of knowledge
-    I can, and sharing that knowledge with anyone interested in learning.
+    I'm extremely passionate about software development, building useful tools, and making sense of how AI agents are changing the way we write, review, and ship code.
   photo:
     use_github_avatar: false
     asset_path: "/assets/images/author/profile-photo-1352x1098.png" # "/path/to/profile-photo.png"

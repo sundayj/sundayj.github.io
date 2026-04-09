@@ -26,6 +26,10 @@ Use it for:
 - Use `AgentSkillsAndTools` for catalog metadata and teaser listings.
 - Use `AgentSkillsHQ` for private planning and launch notes.
 
+## Planning Reference
+
+- For the current site improvement roadmap, publishing sequence, and suggested new post topics, consult `/home/jsunday/GitHub/AgentSkillsWorkspace/jlsunday-site-improvement-plan.md` before making broad structural or editorial changes.
+
 ## Working Rules
 
 - Treat this repo as public.

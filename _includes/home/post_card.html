@@ -3,13 +3,13 @@
 
     {%- if post.featured -%}
         <div class="card-header">
-            Featured
+            Featured Note
         </div>
     {%- endif -%}
 
     <div class="card-body">
         <h3 itemprop="name" class="card-title">
-            <a itemprop="url" class="post-link" href="{{ post.url | prepend: site.url }}">
+            <a itemprop="url" class="post-link" href="{{ post.url | relative_url }}">
                 {{ post.title }}
             </a>
         </h3>
@@ -46,10 +46,10 @@
         <article itemprop="articleBody">
             {%- if post.summary -%}
                 <p class="card-text">{{ post.summary }}</p>
-                <div style="text-align: right"><a href="{{ post.url | prepend: site.url }}">Read more</a></div>
+                <div style="text-align: right"><a href="{{ post.url | relative_url }}">Read note</a></div>
             {%- elsif post.content contains site.excerpt_separator -%}
                 <p class="card-text">{{ post.summary }}</p>
-                <div style="text-align: right"><a href="{{ post.url | prepend: site.url }}">Read more</a></div>
+                <div style="text-align: right"><a href="{{ post.url | relative_url }}">Read note</a></div>
             {%- else -%}
                 <p class="card-text">{{ post.content }}</p>
             {%- endif -%}

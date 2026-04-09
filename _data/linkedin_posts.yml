@@ -1,0 +1,36 @@
+# Curated LinkedIn posts to feature on JLSunday.com.
+# Keep this list small and high-signal.
+#
+# Example:
+# posts:
+#   - title: Why package trust matters more with AI agents
+#     date: 2026-04-09
+#     url: https://www.linkedin.com/feed/update/urn:li:activity:0000000000000000000/
+#     summary: A short summary of the LinkedIn post that explains why it is worth clicking through.
+#     topics:
+#       - AI Agents
+#       - Dependencies
+#       - Security
+
+posts:
+  - title: From Invisible Complexity To Visible Simplicity
+    url: https://www.linkedin.com/posts/justin-sunday_a-dear-client-of-ours-was-using-a-separate-activity-7379877919386664961-0TI7
+    summary: Building an ACH payments workflow with Payabli meant handling vendor creation, invoice authorization, and bulk-payment state management so customers could reduce a paper-check process to a few simple clicks.
+    topics:
+      - Product Engineering
+      - Integrations
+      - Fintech
+  - title: Choosing Wix Over A Custom CMS
+    url: https://www.linkedin.com/in/justin-sunday
+    summary: A short note on why stopping a custom Wagtail-based website builder and moving clients to Wix created more leverage by freeing development time for core product work instead of maintaining internal tooling.
+    topics:
+      - Build vs Buy
+      - Product Focus
+      - Developer Workflow
+  - title: Retention Matters More Than Flashy Feature Drops
+    url: https://www.linkedin.com/in/justin-sunday
+    summary: A post about why product teams should optimize for features that reduce friction and improve retention, not just announcements that create attention for a week and then disappear.
+    topics:
+      - Product Thinking
+      - UX
+      - SaaS

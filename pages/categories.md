@@ -1,8 +1,7 @@
 ---
 layout: page
-title: Categories
+title: Topics
 permalink: /categories/
 ---
 
 {%- include categories.html -%}
-

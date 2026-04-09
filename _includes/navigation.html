@@ -1,13 +1,13 @@
 {% include navigation/theme-switcher-svg.html %}
-{% assign siteLogoLight = site.logo_light | prepend: site.url %}
-{% assign siteLogoDark = site.logo_dark | prepend: site.url %}
+{% assign siteLogoLight = site.logo_light | relative_url %}
+{% assign siteLogoDark = site.logo_dark | relative_url %}
 
 <nav id="navbar" class="navbar navbar-expand-lg bg-body">
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">
       <img
         id="site-logo"
-        src="{{ site.logo_light | prepend: site.url }}"
+        src="{{ site.logo_light | relative_url }}"
         alt="DevSculptor"
         width="200"
       />
@@ -32,7 +32,7 @@
                 <a
                   class="nav-link link-body-emphasis"
                   aria-current="page"
-                  href="{{ page.url | prepend: site.url }}"{% if page.new-tab == true %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                  href="{% if page.url contains '://' %}{{ page.url }}{% else %}{{ page.url | relative_url }}{% endif %}"{% if page.new-tab == true %} target="_blank" rel="noopener noreferrer"{% endif %}>
                   {{ page.title | replace: page.title, site.data.locales[site.default_locale].[page.title] }}
                 </a>
               </li>
@@ -47,7 +47,7 @@
                     {% for item in subpageGroup.items %}
                       {% unless item.title == empty or item.url == empty %}
                         <li>
-                          <a class="dropdown-item" href="{{ item.url }}"{% if item.new-tab == true %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.title }}</a>
+                          <a class="dropdown-item" href="{% if item.url contains '://' %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}"{% if item.new-tab == true %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.title }}</a>
                         </li>
                       {% endunless %}
                     {% endfor %}

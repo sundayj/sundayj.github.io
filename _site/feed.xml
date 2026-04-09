@@ -2,17 +2,191 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JLSunday</title>
-    <description>Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 08 Apr 2026 11:44:50 -0400</pubDate>
-    <lastBuildDate>Wed, 08 Apr 2026 11:44:50 -0400</lastBuildDate>
+    <description>Musings, product notes, and practical insights on software development, AI agents, tools, and the changing craft of programming.</description>
+    <link>https://jlsunday.com/</link>
+    <atom:link href="https://jlsunday.com/zfeed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 09 Apr 2026 10:47:29 -0400</pubDate>
+    <lastBuildDate>Thu, 09 Apr 2026 10:47:29 -0400</lastBuildDate>
     <generator>Jekyll v3.9.3</generator>
+    
+      <item>
+        <title>Why I&apos;m Not Writing Tutorials Anymore</title>
+        <description>&lt;p&gt;Hello again! It’s been quite a while.&lt;/p&gt;
+
+&lt;p&gt;If you have followed this site for any length of time, then you probably know that I originally intended for JLSunday.com to be a place for tutorials, tool recommendations, project breakdowns, and the occasional rambling post on whatever I happened to be learning at the time.&lt;/p&gt;
+
+&lt;p&gt;And honestly, I still like that idea.&lt;/p&gt;
+
+&lt;p&gt;I still like tutorials. I still like detailed write-ups. I still like explaining why I built something a certain way, or sharing tools that made my life easier. That part has not changed.&lt;/p&gt;
+
+&lt;p&gt;What &lt;em&gt;has&lt;/em&gt; changed is the world around programming.&lt;/p&gt;
+
+&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;Over the last few years, AI assistants and coding agents have gotten good enough that the value of a traditional tutorial is just not what it used to be.&lt;/p&gt;
+
+&lt;p&gt;If you need:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;a quick explanation of a library&lt;/li&gt;
+  &lt;li&gt;an example config file&lt;/li&gt;
+  &lt;li&gt;a starter component&lt;/li&gt;
+  &lt;li&gt;help wiring up a Docker container&lt;/li&gt;
+  &lt;li&gt;a basic walkthrough of some framework feature&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;…you can usually get a decent first pass from an AI tool in seconds.&lt;/p&gt;
+
+&lt;p&gt;Now, to be clear, I am not saying those answers are always correct. They definitely are not. Sometimes they are incomplete, sometimes they are misleading, and sometimes they are just flat-out wrong. But they are fast, interactive, and usually good enough to get someone moving.&lt;/p&gt;
+
+&lt;p&gt;That changes things.&lt;/p&gt;
+
+&lt;p&gt;If I spend a bunch of time writing a long tutorial on a framework setup, there is a pretty good chance that by the time someone reads it:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the framework version has changed&lt;/li&gt;
+  &lt;li&gt;the package list has shifted&lt;/li&gt;
+  &lt;li&gt;some CLI command is different&lt;/li&gt;
+  &lt;li&gt;the screenshots are outdated&lt;/li&gt;
+  &lt;li&gt;and an AI assistant can already recreate most of the basic steps on demand anyway&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So lately I have been asking myself a different question.&lt;/p&gt;
+
+&lt;p&gt;Not, “Should I still write technical content?”&lt;/p&gt;
+
+&lt;p&gt;But rather, “What kind of technical writing still feels worth writing?”&lt;/p&gt;
+
+&lt;h2 id=&quot;what-still-seems-worth-writing&quot;&gt;What Still Seems Worth Writing&lt;/h2&gt;
+
+&lt;p&gt;For me, the answer is less about step-by-step instruction and more about judgment.&lt;/p&gt;
+
+&lt;p&gt;Because if I am being honest, the hard part of modern development is not always getting &lt;em&gt;an&lt;/em&gt; answer anymore. The hard part is deciding whether the answer you got is actually any good.&lt;/p&gt;
+
+&lt;p&gt;That seems especially true now that AI agents are being used to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;suggest packages&lt;/li&gt;
+  &lt;li&gt;scaffold projects&lt;/li&gt;
+  &lt;li&gt;make code changes&lt;/li&gt;
+  &lt;li&gt;explain code they did not write&lt;/li&gt;
+  &lt;li&gt;recommend architecture decisions&lt;/li&gt;
+  &lt;li&gt;and generally sound much more confident than they deserve to sound&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That is where I think human-written posts still matter a lot.&lt;/p&gt;
+
+&lt;p&gt;I am much more interested these days in questions like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;When should you trust an agent’s recommendation?&lt;/li&gt;
+  &lt;li&gt;When should you add a new dependency versus reuse what you already have?&lt;/li&gt;
+  &lt;li&gt;How do you evaluate whether a package is worth the risk?&lt;/li&gt;
+  &lt;li&gt;What should code review look like when part of the code came from an agent?&lt;/li&gt;
+  &lt;li&gt;What parts of programming are becoming easier, and what parts are quietly becoming more dangerous?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Those questions feel much more alive to me right now than “Here is how to click through a setup wizard” or “Here is how to create a component in framework X.”&lt;/p&gt;
+
+&lt;h2 id=&quot;why-this-shift-feels-personal&quot;&gt;Why This Shift Feels Personal&lt;/h2&gt;
+
+&lt;p&gt;Part of this is also just where my own head has been lately.&lt;/p&gt;
+
+&lt;p&gt;A lot of what I have been thinking about recently has less to do with tutorials and more to do with tooling, workflow, package discovery, trust, security checks, and the awkward but fascinating reality of programming alongside AI agents.&lt;/p&gt;
+
+&lt;p&gt;I keep coming back to problems like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;how an agent should decide which package is a good fit for a project objective&lt;/li&gt;
+  &lt;li&gt;how to compare similar packages in a way that is actually useful&lt;/li&gt;
+  &lt;li&gt;how to avoid blindly introducing risky dependencies&lt;/li&gt;
+  &lt;li&gt;how to organize public and private workspaces while building tools in public&lt;/li&gt;
+  &lt;li&gt;how to design tools that make agents genuinely more helpful instead of just more active&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That is the stuff I find myself wanting to write about.&lt;/p&gt;
+
+&lt;p&gt;Not because tutorials are bad, but because these questions feel more durable and more honest for where software development is right now.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-am-i-done-writing-tutorials&quot;&gt;So, Am I Done Writing Tutorials?&lt;/h2&gt;
+
+&lt;p&gt;Not necessarily.&lt;/p&gt;
+
+&lt;p&gt;I would not be surprised if I still write the occasional tutorial or walkthrough when I have something specific that seems truly worth documenting in depth. There are still plenty of situations where a good tutorial is useful, especially for fundamentals or for topics where context matters more than raw instructions.&lt;/p&gt;
+
+&lt;p&gt;But I do not want the site as a whole to be centered around tutorial-first content anymore.&lt;/p&gt;
+
+&lt;p&gt;There is already a massive amount of how-to content out there, and now AI tools can generate even more of it on demand. I do not think the best use of this site is to compete with an endless stream of interchangeable setup guides.&lt;/p&gt;
+
+&lt;p&gt;What feels more worthwhile to me is writing the kind of post that helps someone think through a problem more clearly.&lt;/p&gt;
+
+&lt;p&gt;That means more posts about:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;tradeoffs&lt;/li&gt;
+  &lt;li&gt;tooling choices&lt;/li&gt;
+  &lt;li&gt;package trust&lt;/li&gt;
+  &lt;li&gt;workflow design&lt;/li&gt;
+  &lt;li&gt;product decisions&lt;/li&gt;
+  &lt;li&gt;agent-assisted development&lt;/li&gt;
+  &lt;li&gt;security and review concerns&lt;/li&gt;
+  &lt;li&gt;and whatever other weird corners of modern programming I end up stuck in&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, yes, there will probably be fewer tutorials here than I originally planned.&lt;/p&gt;
+
+&lt;p&gt;But ideally, there will also be more signal.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-i-expect-to-write-about-next&quot;&gt;What I Expect To Write About Next&lt;/h2&gt;
+
+&lt;p&gt;At the moment, I expect a lot of future posts to revolve around:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AI-agent skills and tools for developers&lt;/li&gt;
+  &lt;li&gt;safer package and dependency selection&lt;/li&gt;
+  &lt;li&gt;the difference between useful automation and noisy automation&lt;/li&gt;
+  &lt;li&gt;build-vs-buy decisions&lt;/li&gt;
+  &lt;li&gt;workspace and repository organization&lt;/li&gt;
+  &lt;li&gt;practical thoughts on programming when agents are part of the workflow&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some of those posts will probably be half musing, half technical write-up. Some may turn into project notes. Some may become proper deep-dives. I am fine with that. I would rather let the writing follow the actual work than force it into the shape I imagined for this site a few years ago.&lt;/p&gt;
+
+&lt;h2 id=&quot;final-words&quot;&gt;Final Words&lt;/h2&gt;
+
+&lt;p&gt;So, in short: this site is still about programming, but the writing is shifting.&lt;/p&gt;
+
+&lt;p&gt;Less tutorial-first.&lt;/p&gt;
+
+&lt;p&gt;More musings, insights, experiments, and practical thinking about development in the age of AI agents.&lt;/p&gt;
+
+&lt;p&gt;If you have been around since the earlier version of the site, thanks for sticking with me. And if any of these topics sound interesting to you, I think the next phase of this site will be a lot more fun to write than the old one would have been.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Apr 2026 00:00:00 -0400</pubDate>
+        <link>https://jlsunday.com/musings/ai-agents/2026/04/09/why-im-not-writing-tutorials-anymore.html</link>
+        <guid isPermaLink="true">https://jlsunday.com/musings/ai-agents/2026/04/09/why-im-not-writing-tutorials-anymore.html</guid>
+        
+        <category>musings</category>
+        
+        <category>ai-agents</category>
+        
+        <category>software-development</category>
+        
+        <category>site-update</category>
+        
+        <category>writing</category>
+        
+        
+        <category>Musings</category>
+        
+        <category>AI-Agents</category>
+        
+      </item>
     
       <item>
         <title>Comparing Pixel Art Editors</title>
         <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Design Components&quot; src=&quot;http://localhost:4000/assets/images/posts/undraw/undraw_design_components_9vy6.png&quot; loading=&quot;lazy&quot; title=&quot;Design Components&quot; /&gt;
+        &lt;img alt=&quot;Design Components&quot; src=&quot;https://jlsunday.com/assets/images/posts/undraw/undraw_design_components_9vy6.png&quot; loading=&quot;lazy&quot; title=&quot;Design Components&quot; /&gt;
     &lt;figcaption&gt;
         Image provided by &lt;a href=&quot;https://undraw.co/search&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;unDraw.co&lt;/a&gt;
     &lt;/figcaption&gt;
@@ -75,7 +249,7 @@ noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
   &lt;div&gt;
     The Comparison Table has been moved!
   &lt;hr /&gt;
-    Due to the large size of the comparison table, I decided to break it out into its own page. To see the table in a new tab, please click &lt;a href=&quot;http://localhost:4000/Sprite-Editor-Comparison-Table&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;. 
+    Due to the large size of the comparison table, I decided to break it out into its own page. To see the table in a new tab, please click &lt;a href=&quot;https://jlsunday.com/Sprite-Editor-Comparison-Table&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;here&lt;/a&gt;. 
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -94,7 +268,7 @@ noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
         Perfect helps with this either by deleting extra pixels as you go, or by creating a pixel at a diagonal to
         give a better angled look.
         &lt;figure&gt;
-            &lt;img alt=&quot;Layer Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/pixel-perfect-example.png&quot; loading=&quot;lazy&quot; title=&quot;Layer Example&quot; /&gt;
+            &lt;img alt=&quot;Layer Example&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/pixel-perfect-example.png&quot; loading=&quot;lazy&quot; title=&quot;Layer Example&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://medium.com/pixel-grimoire/how-to-start-making-pixel-art-7-e504bfa4ddf2&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Pixel Grimoire&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -108,7 +282,7 @@ noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
         on one layer without fear of affecting other layers. This helps greatly with animation, or giving a feeling of
         depth to your art.
         &lt;figure&gt;
-            &lt;img alt=&quot;Pixel Perfect Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/1Layer-Layers-9.webp&quot; loading=&quot;lazy&quot; title=&quot;Pixel Perfect Example&quot; /&gt;
+            &lt;img alt=&quot;Pixel Perfect Example&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/1Layer-Layers-9.webp&quot; loading=&quot;lazy&quot; title=&quot;Pixel Perfect Example&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://learnindie.com/pixel-art-aseprite-1-layers/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;LearnIndie.com&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -121,7 +295,7 @@ noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
         Symmetry tools, or mirror pens, allow you to draw art that is perfectly symmetrical vertically and/or horizontally.
         This can be useful for patterns and designs, or even drawing the front view of a characters face.
         &lt;figure&gt;
-            &lt;img alt=&quot;Symmetry Pen Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/symmetry-tool-example.gif&quot; loading=&quot;lazy&quot; title=&quot;Symmetry Pen Example&quot; /&gt;
+            &lt;img alt=&quot;Symmetry Pen Example&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/symmetry-tool-example.gif&quot; loading=&quot;lazy&quot; title=&quot;Symmetry Pen Example&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://i.imgur.com/pj3ykyd.gif&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;https://i.imgur.com/pj3ykyd.gif&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -133,7 +307,7 @@ noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
         &lt;/summary&gt;
         Auto-Shade tools allow you to darken or lighten an area of your art by simply drawing over it again.
         &lt;figure&gt;
-            &lt;img alt=&quot;Shading Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/shading_example.gif&quot; loading=&quot;lazy&quot; title=&quot;Shading Example&quot; /&gt;
+            &lt;img alt=&quot;Shading Example&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/shading_example.gif&quot; loading=&quot;lazy&quot; title=&quot;Shading Example&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://www.aseprite.org/docs/shading/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Aseprite.org&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -146,7 +320,7 @@ noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
         RotSprite allows you to rotate all, or part, of your artwork without losing any resolution. In the image below,
         the sprite on the left was rotated without RotSprite, but the sprite on the right was rotated with RotSprite.
         &lt;figure&gt;
-            &lt;img alt=&quot;RotSprite Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/rotsprite-example.png&quot; loading=&quot;lazy&quot; title=&quot;RotSprite Example&quot; /&gt;
+            &lt;img alt=&quot;RotSprite Example&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/rotsprite-example.png&quot; loading=&quot;lazy&quot; title=&quot;RotSprite Example&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://forum.yoyogames.com/index.php?threads/solved-image_angle-ruins-sprites.54514/#lg=_xfUid-2-1655259916&amp;amp;slide=0&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;https://i.imgur.com/vHOtruN.png&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -158,7 +332,7 @@ noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
         &lt;/summary&gt;
         Custom brushes allow you to recreate a look/feel of an area of art and use it as the pen itself.
         &lt;figure&gt;
-            &lt;img alt=&quot;Custom Brush Gif&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/custom-brush.gif&quot; loading=&quot;lazy&quot; title=&quot;Custom Brush Gif&quot; /&gt;
+            &lt;img alt=&quot;Custom Brush Gif&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/custom-brush.gif&quot; loading=&quot;lazy&quot; title=&quot;Custom Brush Gif&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://www.aseprite.org/assets/images/custom-brush.gif&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Aseprite.org&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -170,7 +344,7 @@ noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
         &lt;/summary&gt;
         Anti-Aliasing is useful for softening edges of your art and removing the bumpy look in places where the edges should be softer.
         &lt;figure&gt;
-            &lt;img alt=&quot;Anti-Aliasing Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/anti-alias-example.png&quot; loading=&quot;lazy&quot; title=&quot;Anti-Aliasing Example&quot; /&gt;
+            &lt;img alt=&quot;Anti-Aliasing Example&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/anti-alias-example.png&quot; loading=&quot;lazy&quot; title=&quot;Anti-Aliasing Example&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://medium.com/pixel-grimoire/how-to-start-making-pixel-art-4-ff4bfcd2d085&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Pixel Grimoire&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -182,7 +356,7 @@ noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
         &lt;/summary&gt;
         Tiles are images that can be duplicated and placed throughout an artwork to create a pattern or texture.
         &lt;figure&gt;
-            &lt;img alt=&quot;Small Tile Tutorial&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/tile-tutorial.gif&quot; loading=&quot;lazy&quot; title=&quot;Small Tile Tutorial&quot; /&gt;
+            &lt;img alt=&quot;Small Tile Tutorial&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/tile-tutorial.gif&quot; loading=&quot;lazy&quot; title=&quot;Small Tile Tutorial&quot; /&gt;
             &lt;figcaption&gt;
                 Image borrowed from &lt;a href=&quot;https://blog.studiominiboss.com/pixelart&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Studio Mini Boss&lt;/a&gt;
             &lt;/figcaption&gt;
@@ -205,7 +379,7 @@ noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
                 &lt;/li&gt;
             &lt;/ul&gt;
             &lt;figure&gt;
-                &lt;img alt=&quot;Sprite Sheet Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/sonic3_spritesheet_example.png&quot; loading=&quot;lazy&quot; title=&quot;Sprite Sheet Example&quot; /&gt;
+                &lt;img alt=&quot;Sprite Sheet Example&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/sonic3_spritesheet_example.png&quot; loading=&quot;lazy&quot; title=&quot;Sprite Sheet Example&quot; /&gt;
                 &lt;figcaption&gt;
                     Image borrowed from &lt;a href=&quot;https://demyanov.dev/javascript-canvas-sprite-animation&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;demyanov.dev&lt;/a&gt;
                 &lt;/figcaption&gt;
@@ -243,7 +417,7 @@ noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
                     huge time saver.
                     &lt;/li&gt;
                 &lt;figure&gt;
-                    &lt;img alt=&quot;Onion Skin Example&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/screenshot_onion_skinning.jpg&quot; loading=&quot;lazy&quot; title=&quot;Onion Skin Example&quot; /&gt;
+                    &lt;img alt=&quot;Onion Skin Example&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/screenshot_onion_skinning.jpg&quot; loading=&quot;lazy&quot; title=&quot;Onion Skin Example&quot; /&gt;
                     &lt;figcaption&gt;
                         Image borrowed from &lt;a href=&quot;https://www.cosmigo.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Cosmigo&lt;/a&gt;
                     &lt;/figcaption&gt;
@@ -293,7 +467,7 @@ noopener noreferrer&quot;&gt;roadmap&lt;/a&gt;.&lt;/li&gt;
 &lt;h3 id=&quot;aseprite&quot;&gt;&lt;a href=&quot;https://www.aseprite.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Aseprite&lt;/a&gt;&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Aseprite Trial Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/aseprite-trial-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Aseprite Trial Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Aseprite Trial Screenshot&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/aseprite-trial-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Aseprite Trial Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         Screenshot of a new sprite window in Aseprite.
     &lt;/figcaption&gt;
@@ -388,7 +562,7 @@ noopener noreferrer&quot;&gt;Steam&lt;/a&gt;, or &lt;a href=&quot;https://dacap.
 &lt;h3 id=&quot;grafx2&quot;&gt;&lt;a href=&quot;http://grafx2.chez.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;GrafX2&lt;/a&gt;&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;GrafX2 Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/grafx2-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;GrafX2 Screenshot&quot; /&gt;
+        &lt;img alt=&quot;GrafX2 Screenshot&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/grafx2-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;GrafX2 Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         Image borrowed from &lt;a href=&quot;http://grafx2.chez.com/index.php?static2/screenshots&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;grafx2.chez.com&lt;/a&gt;
     &lt;/figcaption&gt;
@@ -434,7 +608,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;pixieditor&quot;&gt;&lt;a href=&quot;https://pixieditor.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;PixiEditor&lt;/a&gt;&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Pixi Editor Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/pixi-editor-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixi Editor Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Pixi Editor Screenshot&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/pixi-editor-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixi Editor Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         Image provided by &lt;a href=&quot;https://pixieditor.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;pixieditor.net.&lt;/a&gt;
     &lt;/figcaption&gt;
@@ -443,7 +617,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;libresprite&quot;&gt;LibreSprite&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;LibreSprite Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/libresprite-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LibreSprite Screenshot&quot; /&gt;
+        &lt;img alt=&quot;LibreSprite Screenshot&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/libresprite-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LibreSprite Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a new window and canvas in LibreSprite.
     &lt;/figcaption&gt;
@@ -457,7 +631,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;libresprite-dotto&quot;&gt;LibreSprite Dotto&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;LibreSprite Dotto Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/dotto-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LibreSprite Dotto Screenshot&quot; /&gt;
+        &lt;img alt=&quot;LibreSprite Dotto Screenshot&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/dotto-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LibreSprite Dotto Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a new window and canvas in LibreSprite Dotto.
     &lt;/figcaption&gt;
@@ -471,7 +645,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;jpixel&quot;&gt;JPixel&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;JPixel Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/jpixel-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;JPixel Screenshot&quot; /&gt;
+        &lt;img alt=&quot;JPixel Screenshot&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/jpixel-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;JPixel Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a new window and canvas in JPixel.
     &lt;/figcaption&gt;
@@ -484,7 +658,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;pixelorama&quot;&gt;Pixelorama&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Pixelorama Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/pixelorama-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixelorama Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Pixelorama Screenshot&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/pixelorama-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixelorama Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a new window and canvas in Pixelorama.
     &lt;/figcaption&gt;
@@ -498,7 +672,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;pixel-studio&quot;&gt;Pixel Studio&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Pixel Studio Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/pixel-studio-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixel Studio Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Pixel Studio Screenshot&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/pixel-studio-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixel Studio Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a new window and canvas in Pixel Studio.
     &lt;/figcaption&gt;
@@ -513,7 +687,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;graphics-gale&quot;&gt;Graphics Gale&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Graphics Gale Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/graphics-gale-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Graphics Gale Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Graphics Gale Screenshot&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/graphics-gale-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Graphics Gale Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a new window and canvas in Graphics Gale.
     &lt;/figcaption&gt;
@@ -526,7 +700,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;piskel&quot;&gt;Piskel&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Piskel Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/piskel-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Piskel Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Piskel Screenshot&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/piskel-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Piskel Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a project inside Piskel.
     &lt;/figcaption&gt;
@@ -540,7 +714,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;lospec-pixel-editor&quot;&gt;LoSpec Pixel Editor&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;LoSpec Editor Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/lospec-editor-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LoSpec Editor Screenshot&quot; /&gt;
+        &lt;img alt=&quot;LoSpec Editor Screenshot&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/lospec-editor-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;LoSpec Editor Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a project inside the LoSpec editor. This beautiful artwork has been provided by my 4-year-old. :heart_eyes:
     &lt;/figcaption&gt;
@@ -554,7 +728,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;pixilart&quot;&gt;PixilArt&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Pixil Art Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/pixil-art-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixil Art Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Pixil Art Screenshot&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/pixil-art-screenshot.png&quot; loading=&quot;lazy&quot; title=&quot;Pixil Art Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of a new window and canvas in Pixil Art.
     &lt;/figcaption&gt;
@@ -567,7 +741,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;h3 id=&quot;pro-motion&quot;&gt;Pro Motion&lt;/h3&gt;
 
 &lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Promotion Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/pixel-editors/promotion-screenshot.jpg&quot; loading=&quot;lazy&quot; title=&quot;Promotion Screenshot&quot; /&gt;
+        &lt;img alt=&quot;Promotion Screenshot&quot; src=&quot;https://jlsunday.com/assets/images/posts/pixel-editors/promotion-screenshot.jpg&quot; loading=&quot;lazy&quot; title=&quot;Promotion Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         Image provided by &lt;a href=&quot;https://www.cosmigo.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Cosmigo&lt;/a&gt;
     &lt;/figcaption&gt;
@@ -603,8 +777,8 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 11 Jun 2022 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/tools/2022/06/11/Comparing-Pixel-Art-Editors.html</link>
-        <guid isPermaLink="true">http://localhost:4000/tools/2022/06/11/Comparing-Pixel-Art-Editors.html</guid>
+        <link>https://jlsunday.com/tools/2022/06/11/Comparing-Pixel-Art-Editors.html</link>
+        <guid isPermaLink="true">https://jlsunday.com/tools/2022/06/11/Comparing-Pixel-Art-Editors.html</guid>
         
         <category>tools</category>
         
@@ -624,7 +798,7 @@ certainly keep it in my toolbox, but as it stands, I think I will be going for a
       <item>
         <title>Building an App with Angular, Part 1: Introduction</title>
         <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Angular Windows&quot; src=&quot;http://localhost:4000/assets/images/posts/undraw/undraw_Maker_launch_re_rq81.png&quot; loading=&quot;lazy&quot; title=&quot;How do you like these angles?&quot; /&gt;
+        &lt;img alt=&quot;Angular Windows&quot; src=&quot;https://jlsunday.com/assets/images/posts/undraw/undraw_Maker_launch_re_rq81.png&quot; loading=&quot;lazy&quot; title=&quot;How do you like these angles?&quot; /&gt;
     &lt;figcaption&gt;
         Photo by &lt;a href=&quot;https://undraw.co/search&quot;&gt;unDraw.co&lt;/a&gt;
     &lt;/figcaption&gt;
@@ -678,7 +852,7 @@ branch. The following post will have its own branch containing the final state o
 
 &lt;p&gt;So, effectively, you can clone the PartOne-Introduction branch and get familiar with it during this post. Then, when the next
 post is published, you can follow along with that post. Finally, by the end of the next post, what you have should match what sits in the repo
-for that specific post. I hope that is easy to understand. If not, please leave a comment at the bottom, via the &lt;a href=&quot;http://localhost:4000/about/#contact-me&quot;&gt;Contact Form&lt;/a&gt;
+for that specific post. I hope that is easy to understand. If not, please leave a comment at the bottom, via the &lt;a href=&quot;https://jlsunday.com/about/#contact-me&quot;&gt;Contact Form&lt;/a&gt;
 , or contact me via one of the many means in the sidebar.&lt;/p&gt;
 
 &lt;h3 id=&quot;requirements&quot;&gt;Requirements&lt;/h3&gt;
@@ -1009,8 +1183,8 @@ like me to add to these tutorials? Just let me know!&lt;/p&gt;
 &lt;p&gt;See you soon!&lt;/p&gt;
 </description>
         <pubDate>Sun, 09 Jan 2022 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/angular/2022/01/09/Building-an-Angular-App-Part1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/angular/2022/01/09/Building-an-Angular-App-Part1.html</guid>
+        <link>https://jlsunday.com/angular/2022/01/09/Building-an-Angular-App-Part1.html</link>
+        <guid isPermaLink="true">https://jlsunday.com/angular/2022/01/09/Building-an-Angular-App-Part1.html</guid>
         
         <category>tutorial</category>
         
@@ -1044,7 +1218,7 @@ like me to add to these tutorials? Just let me know!&lt;/p&gt;
       <item>
         <title>Site Updates</title>
         <description>&lt;figure style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;Under Construction&quot; src=&quot;http://localhost:4000/assets/images/posts/undraw/undraw_Building_re_xfcm.png&quot; loading=&quot;lazy&quot; title=&quot;Under Construction&quot; /&gt;
+        &lt;img alt=&quot;Under Construction&quot; src=&quot;https://jlsunday.com/assets/images/posts/undraw/undraw_Building_re_xfcm.png&quot; loading=&quot;lazy&quot; title=&quot;Under Construction&quot; /&gt;
     &lt;figcaption&gt;
         Image provided by &lt;a href=&quot;https://undraw.co/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;unDraw&lt;/a&gt;
     &lt;/figcaption&gt;
@@ -1077,8 +1251,8 @@ like me to add to these tutorials? Just let me know!&lt;/p&gt;
 &lt;p&gt;Well, that’s all I have for today. As always, feel free to leave a comment below, or contact me via any of the many methods available. Don’t forget to &lt;a href=&quot;/subscribe/&quot;&gt;subscribe&lt;/a&gt;! More posts are coming your way. As always, thanks for reading!&lt;/p&gt;
 </description>
         <pubDate>Thu, 06 Jan 2022 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/updates/2022/01/06/site-update.html</link>
-        <guid isPermaLink="true">http://localhost:4000/updates/2022/01/06/site-update.html</guid>
+        <link>https://jlsunday.com/updates/2022/01/06/site-update.html</link>
+        <guid isPermaLink="true">https://jlsunday.com/updates/2022/01/06/site-update.html</guid>
         
         <category>updates</category>
         
@@ -1094,7 +1268,7 @@ like me to add to these tutorials? Just let me know!&lt;/p&gt;
         <description>&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot; style=&quot;margin-top: 20px;&quot;&gt;
-        &lt;img alt=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; src=&quot;http://localhost:4000/assets/images/posts/40-awesome-programming-resources-markdown-screenshot.png&quot; class=&quot;kg-image&quot; loading=&quot;lazy&quot; title=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; /&gt;
+        &lt;img alt=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; src=&quot;https://jlsunday.com/assets/images/posts/40-awesome-programming-resources-markdown-screenshot.png&quot; class=&quot;kg-image&quot; loading=&quot;lazy&quot; title=&quot;40 Awesome Programming Resources Markdown Screenshot&quot; /&gt;
     &lt;figcaption&gt;
         A screenshot of this post as a Markdown WIP. Image created by the author.
     &lt;/figcaption&gt;
@@ -1355,8 +1529,8 @@ Thanks for reading, and stay tuned; There is more where this came from!&lt;/p&gt
 &lt;p&gt;See you soon!&lt;/p&gt;
 </description>
         <pubDate>Tue, 14 Dec 2021 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/resources/2021/12/14/Forty-Awesome-Programming-Resources.html</link>
-        <guid isPermaLink="true">http://localhost:4000/resources/2021/12/14/Forty-Awesome-Programming-Resources.html</guid>
+        <link>https://jlsunday.com/resources/2021/12/14/Forty-Awesome-Programming-Resources.html</link>
+        <guid isPermaLink="true">https://jlsunday.com/resources/2021/12/14/Forty-Awesome-Programming-Resources.html</guid>
         
         <category>tools</category>
         
@@ -1423,7 +1597,7 @@ regardless of the development you’re focusing on.&lt;/p&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://jsonformatter.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/images/posts/jsonformatterscreenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;https://jsonformatter.org/&quot; title=&quot;JSONFormatter&quot; loading=&quot;lazy&quot; /&gt;
+        &lt;img src=&quot;https://jlsunday.com/assets/images/posts/jsonformatterscreenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;https://jsonformatter.org/&quot; title=&quot;JSONFormatter&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
@@ -1721,7 +1895,7 @@ elsewhere, this is my favorite site for these tools.&lt;/p&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://tools.fromdev.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/images/posts/toolsfromdevscreenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;https://tools.fromdev.com/&quot; title=&quot;Tools.FromDev&quot; loading=&quot;lazy&quot; /&gt;
+        &lt;img src=&quot;https://jlsunday.com/assets/images/posts/toolsfromdevscreenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;https://tools.fromdev.com/&quot; title=&quot;Tools.FromDev&quot; loading=&quot;lazy&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
@@ -1829,7 +2003,7 @@ them all out.&lt;/p&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://dbdiagram.io/home&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/images/posts/dbdiagramio-screenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;Screenshot image generated by Screenshot Rocks&quot; loading=&quot;lazy&quot; title=&quot;DBDiagram.io&quot; /&gt;
+        &lt;img src=&quot;https://jlsunday.com/assets/images/posts/dbdiagramio-screenshot.png&quot; class=&quot;kg-image&quot; alt=&quot;Screenshot image generated by Screenshot Rocks&quot; loading=&quot;lazy&quot; title=&quot;DBDiagram.io&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
@@ -1845,7 +2019,7 @@ diagram as an image or pdf, but it also allows you to integrate with your databa
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://screenshot.rocks/app&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/images/posts/screenshot-rocks.png&quot; class=&quot;kg-image&quot; alt=&quot;https://screenshot.rocks/app&quot; loading=&quot;lazy&quot; title=&quot;Screenshot.Rocks&quot; /&gt;
+        &lt;img src=&quot;https://jlsunday.com/assets/images/posts/screenshot-rocks.png&quot; class=&quot;kg-image&quot; alt=&quot;https://screenshot.rocks/app&quot; loading=&quot;lazy&quot; title=&quot;Screenshot.Rocks&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
@@ -1861,7 +2035,7 @@ browser, and media type used to display the screenshot.&lt;/p&gt;
 
 &lt;figure class=&quot;kg-card kg-image-card kg-card-hascaption&quot;&gt;
     &lt;a href=&quot;https://radio.x-team.com/?utm_source=xweekly&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;
-        &lt;img src=&quot;http://localhost:4000/assets/images/posts/x-team-radio.png&quot; class=&quot;kg-image&quot; alt=&quot;https://radio.x-team.com/?utm_source=xweekly&quot; loading=&quot;lazy&quot; title=&quot;X-Team Radio&quot; /&gt;
+        &lt;img src=&quot;https://jlsunday.com/assets/images/posts/x-team-radio.png&quot; class=&quot;kg-image&quot; alt=&quot;https://radio.x-team.com/?utm_source=xweekly&quot; loading=&quot;lazy&quot; title=&quot;X-Team Radio&quot; /&gt;
     &lt;/a&gt;
     &lt;figcaption&gt;
         Screenshot provided by Screenshot.Rocks - https://screenshot.rocks/app
@@ -1880,8 +2054,8 @@ Any comments, concerns, suggestions, or requests? Please leave a comment below, 
 Thanks for reading, and stay tuned; There is more where this came from!&lt;/p&gt;
 </description>
         <pubDate>Mon, 06 Dec 2021 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/tools/2021/12/06/software-tools.html</link>
-        <guid isPermaLink="true">http://localhost:4000/tools/2021/12/06/software-tools.html</guid>
+        <link>https://jlsunday.com/tools/2021/12/06/software-tools.html</link>
+        <guid isPermaLink="true">https://jlsunday.com/tools/2021/12/06/software-tools.html</guid>
         
         <category>tools</category>
         

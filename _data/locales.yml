@@ -1,17 +1,17 @@
 en: # English
   Aboutme: "About Me" # About Author
-  Archives: "Archives" # Blog Archive
-  Blogroll: "Blogroll"
-  Categories: "Categories"
+  Archives: "Journal" # Blog Archive
+  Blogroll: "Reading List"
+  Categories: "Topics"
   Tags: "Tags"
   Previous: "Older" # Previous Post
   Next: "Newer" # Next Post
   PostDate: "Date Posted"
   EditDate: "Date Edited"
-  Search: "Site Search"
+  Search: "Search Notes"
   Home: "Home" # Home Page
   About: "About" # About site/blog
-  Subscribe: "Subscribe"
+  Subscribe: "Follow"
   Résumé: "Résumé"
   Projects: "Projects"
   Site_Map: "Site Map"

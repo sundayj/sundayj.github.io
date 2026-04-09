@@ -1,0 +1,73 @@
+{%- assign linkedin_posts = site.data.linkedin_posts.posts -%}
+{%- assign linkedin = site.data.social | where: "name", "linkedin" | first -%}
+
+{%- if linkedin_posts != empty or linkedin.url -%}
+<section class="mt-5" aria-labelledby="linkedin-notes-title">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+        <div>
+            <h2 id="linkedin-notes-title" class="mb-1">From LinkedIn</h2>
+            <p class="text-body-secondary mb-0">Selected short-form posts and ideas from my LinkedIn profile.</p>
+        </div>
+        {%- if linkedin and linkedin.url -%}
+        <a
+            class="btn btn-outline-primary"
+            href="{{ linkedin.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="bi bi-linkedin" aria-hidden="true"></i> View Profile
+        </a>
+        {%- endif -%}
+    </div>
+
+    {%- if linkedin_posts != empty -%}
+    <div class="row g-4">
+        {%- for item in linkedin_posts limit: 3 -%}
+        <div class="col-md-6 col-lg-4">
+            <article class="card h-100">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-subtitle mb-2 text-body-secondary">
+                        <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        LinkedIn
+                        {%- if item.date and item.date != "" -%}
+                        <span aria-hidden="true">·</span>
+                        <time datetime="{{ item.date }}">{{ item.date | date: "%b %-d, %Y" }}</time>
+                        {%- endif -%}
+                    </p>
+                    <h3 class="card-title h5">{{ item.title }}</h3>
+                    {%- if item.topics -%}
+                    <p class="mb-3">
+                        {%- for topic in item.topics -%}
+                        <span class="badge bg-info text-dark">{{ topic }}</span>
+                        {%- endfor -%}
+                    </p>
+                    {%- endif -%}
+                    <p class="card-text">{{ item.summary }}</p>
+                    <div class="mt-auto pt-3">
+                        <a
+                            class="stretched-link"
+                            href="{{ item.url }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Read on LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        {%- endfor -%}
+    </div>
+    {%- elsif linkedin and linkedin.url -%}
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title h5">Follow For Shorter Updates</h3>
+            <p class="card-text mb-0">
+                I use LinkedIn for shorter notes, in-progress ideas, and links back to longer writing and projects.
+                Visit the profile directly to follow along until curated posts are added here.
+            </p>
+        </div>
+    </div>
+    {%- endif -%}
+</section>
+{%- endif -%}

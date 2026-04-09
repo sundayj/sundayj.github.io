@@ -24,7 +24,7 @@ pages:
     new-tab: false
     url: ""
     submenu:
-      - title: Gallery - Summaries of All Projects
+      - title: Project Index
         url: /projects
         group: 0
         new-tab: false

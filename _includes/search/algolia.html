@@ -4,6 +4,9 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css" integrity="sha384-VzUGdSDk+HLoSg+ptudZxGZyaFVN7q7Eqh7QaUU19cWL2fK0kyz1belH38z7MbcZ" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 <script>
+    const localizedCategoriesLabel = {{ site.data.locales[site.default_locale].Categories | jsonify }};
+    const localizedTagsLabel = {{ site.data.locales[site.default_locale].Tags | jsonify }};
+
     const search = instantsearch({
         appId: '{{ site.algolia.application_id }}',
         apiKey: '{{ site.algolia.search_only_api_key }}',
@@ -103,7 +106,7 @@
     search.addWidget(
             instantsearch.widgets.searchBox({
                 container: '#search-searchbar',
-                placeholder: 'Search through posts. Press ENTER to submit.',
+                placeholder: 'Search through notes and posts. Press ENTER to submit.',
                 searchAsYouType: false,
                 showReset: true,
                 showSubmit: true,
@@ -121,7 +124,7 @@
                 container: '#search-hits',
                 templates: {
                     item: hitTemplate,
-                    empty: '<p class="info">No results were found... Try changing your query or checking out the "Categories" or "Tags" pages.</p>'
+                    empty: `<p class="info">No results were found. Try changing your query or checking out the "${localizedCategoriesLabel}" or "${localizedTagsLabel}" pages.</p>`
                 }
             })
     );

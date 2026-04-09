@@ -1,9 +1,26 @@
 <div class="home row">
     <div class="post col-md-8 mx-auto" itemscope itemtype="https://schema.org/BlogPosting">
 
+        <section class="card mb-4">
+            <div class="card-body">
+                <h1 class="card-title">Notes On Programming In The Age Of AI Agents</h1>
+                <p class="card-text">
+                    JLSunday is shifting away from tutorial-first content and toward musings, product notes, workflow experiments,
+                    and practical insights for developers working with AI agents.
+                </p>
+                <p class="card-text mb-0">
+                    Expect writing about tooling, package trust, security tradeoffs, code review, and the judgment calls that still
+                    matter when implementation gets cheaper.
+                </p>
+            </div>
+        </section>
+
         {%- assign locales = site.data.locales -%}
         {%- assign featuredPosts = paginator.posts | where: "featured", true -%}
         {%- assign otherPosts = paginator.posts | where: "featured", false -%}
+
+        <h2>Latest Notes</h2>
+        <hr>
 
         {% unless featuredPosts == empty %}
             {%- assign featuredPosts = featuredPosts -%}
@@ -22,8 +39,10 @@
         {% endunless %}
 
         {% unless otherPosts != empty or featuredPosts != empty %}
-            <p><b>There don't appear to be ay posts...</b></p>
+            <p><b>There do not appear to be any notes yet.</b></p>
         {% endunless %}
+
+        {%- include home/linkedin_cards.html -%}
 
     </div>
     <div class="vr d-none d-md-block" style="padding: 0;"></div>
