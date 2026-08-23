@@ -24,6 +24,6 @@ jobs:
         run: bundle install --jobs 4 --retry 3
 
       - name: Update Algolia search index
-        uses: dieghernan/algolia-jekyll-action@37e24cce44f139a20726bbb37f3e4df00109a17b # v1
+        uses: dieghernan/algolia-jekyll-action@3833a231d89565a8e37d53e815c36a3ba8714f62 # v2
         with:
           APIKEY: '${{ secrets.ALGOLIA_API_KEY }}'
