@@ -54,6 +54,7 @@ Do not use these habits unless the surrounding prose genuinely calls for them:
 - "Let's dive in."
 - "At the end of the day..."
 - repeated "However," / "Moreover," / "Furthermore," transitions
+- repeated binary correction structures such as "it's not X, it's Y," "not X but Y," or "the goal isn't X; it's Y"; legitimate contrasts are fine, but do not use this construction as a recurring rhetorical rhythm
 - symmetrical three-item lists used only for rhetorical polish
 - excessive em dashes
 - a summary paragraph after every section
