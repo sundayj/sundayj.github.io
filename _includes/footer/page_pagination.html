@@ -1,0 +1,23 @@
+<script>
+  document.addEventListener('keydown', (event) => {
+    const target = event.target;
+    if (!(target instanceof Element) || target.tagName !== 'BODY') {
+      return;
+    }
+
+    let url = '';
+    if (event.key === 'ArrowLeft' || event.key.toLowerCase() === 'j') {
+      {% if page.previous %}
+      url = '{{ site.url }}{{ page.previous.url }}';
+      {% endif %}
+    } else if (event.key === 'ArrowRight' || event.key.toLowerCase() === 'k') {
+      {% if page.next %}
+      url = '{{ site.url }}{{ page.next.url }}';
+      {% endif %}
+    }
+
+    if (url) {
+      window.location.assign(url);
+    }
+  });
+</script>
