@@ -1,0 +1,79 @@
+name: Blog post
+about: Capture a blog idea and move it through research, drafting, and publication review
+name: Blog post
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this issue as the durable editorial record. Sparse answers are fine; research and drafting agents can fill in missing detail.
+
+  - type: input
+    id: working_title
+    attributes:
+      label: Working title
+      placeholder: A concise working title
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Core idea or question
+      description: What should this post investigate, explain, compare, or argue?
+    validations:
+      required: true
+
+  - type: textarea
+    id: position
+    attributes:
+      label: Current position
+      description: What do you currently think? It is fine to be uncertain or undecided.
+
+  - type: input
+    id: audience
+    attributes:
+      label: Intended audience
+      placeholder: e.g. working software engineers, engineering managers, developers learning Angular
+
+  - type: textarea
+    id: why_now
+    attributes:
+      label: Why now?
+      description: Why is this worth researching or publishing now?
+
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions the post should answer
+      placeholder: |
+        - Question one
+        - Question two
+        - Question three
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Starting sources or examples
+      description: Optional links, conversations, repos, papers, tools, or experiences that should be considered.
+
+  - type: textarea
+    id: voice_notes
+    attributes:
+      label: Voice or editorial notes
+      description: Anything to emphasize, avoid, challenge, or preserve in the final article.
+
+  - type: dropdown
+    id: research_depth
+    attributes:
+      label: Research depth
+      options:
+        - Deep research with counterarguments
+        - Standard research
+        - Primarily personal/experiential
+      default: 0
+
+  - type: checkboxes
+    id: publication_gate
+    attributes:
+      label: Publication gate
+      options:
+        - label: I understand that creating this issue does not authorize publication; the post still requires final human approval before merge.
+          required: true
