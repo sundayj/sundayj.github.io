@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -11,6 +12,7 @@ permissions:
 jobs:
   algolia-search:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Check out repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -23,7 +25,17 @@ jobs:
       - name: Install dependencies
         run: bundle install --jobs 4 --retry 3
 
+      - name: Verify Algolia credentials are configured
+        env:
+          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+        run: |
+          if [ -z "$ALGOLIA_API_KEY" ]; then
+            echo "ALGOLIA_API_KEY repository secret is not configured."
+            exit 1
+          fi
+
       - name: Update Algolia search index
-        uses: dieghernan/algolia-jekyll-action@3833a231d89565a8e37d53e815c36a3ba8714f62 # v2
-        with:
-          APIKEY: '${{ secrets.ALGOLIA_API_KEY }}'
+        env:
+          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+          JEKYLL_ENV: production
+        run: bundle exec jekyll algolia
