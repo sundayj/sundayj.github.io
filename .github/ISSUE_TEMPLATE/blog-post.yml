@@ -1,6 +1,8 @@
 name: Blog post
 description: Capture a blog idea and move it through research, drafting, and publication review
 title: "[Blog] "
+labels:
+  - blog:idea
 body:
   - type: markdown
     attributes:
