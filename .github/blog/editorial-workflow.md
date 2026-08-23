@@ -8,6 +8,16 @@ This file is the durable workflow for producing JLSunday blog posts with AI assi
 
 A post may move backward at any time. `published` requires an author-approved merge to `master`.
 
+## Artifact chain
+
+For posts with an editorial issue, keep one explicit chain of durable artifacts:
+
+`issue #N -> blog/N-<slug> working branch -> _drafts/<slug>.markdown -> publication PR (Closes #N) -> merge`
+
+The issue is the editorial record, the branch is the working artifact, the draft is the prose artifact, and the PR is the publication gate. The repository remains the source of truth for code/content that actually exists.
+
+For new posts, create the working branch when the issue enters `blog:drafting`. Use `blog/<issue-number>-<slug>` so the relationship is visible even outside GitHub's UI. If GitHub's native Development relationship can be created, use it. If the available agent/tooling cannot create that relationship, add a concise issue comment recording the branch. Do not create a duplicate branch solely to retrofit this naming convention onto an existing draft.
+
 ## 1. Idea intake
 
 Capture the idea in a GitHub issue using the Blog Post issue form when possible. The issue is the durable record for:
@@ -20,6 +30,7 @@ Capture the idea in a GitHub issue using the Blog Post issue form when possible.
 - research notes
 - counterarguments
 - decisions and revisions
+- working draft branch
 - publication PR link
 
 A sparse issue is acceptable. Agents should fill gaps through research rather than forcing the author to complete every field.
@@ -56,7 +67,11 @@ The outline should include:
 
 ## 4. Draft
 
-Create the initial post at `_drafts/<slug>.markdown`.
+When the editorial issue enters `blog:drafting`:
+
+1. Create or identify its dedicated working branch. For new work, use `blog/<issue-number>-<slug>`.
+2. Link the branch through GitHub's Development UI when supported by the available tooling; otherwise record the branch on the issue.
+3. Create the initial post at `_drafts/<slug>.markdown` on that branch.
 
 Use the site's established Jekyll front matter, but drafts may omit final publication-only values such as canonical URL and final date.
 
@@ -105,14 +120,15 @@ The author may request revisions in prose, GitHub comments, or chat. Continue re
 
 After explicit approval to prepare publication:
 
-1. Move/rename the draft to `_posts/YYYY-MM-DD-<slug>.markdown`.
-2. Complete front matter: title, summary, excerpt, description, category, tags, date, canonical URL, author, and other established fields.
-3. Add or verify imagery and alt text.
-4. Run `python3 scripts/validate_blog_posts.py`.
-5. Run the Jekyll build when available.
-6. Create a dedicated `blog/<slug>` branch if one does not already exist.
-7. Open a PR to `master`.
-8. Leave the final human-approval checklist item unchecked.
+1. Stay on the issue's existing working branch; do not create a second publication branch unless there is a concrete reason.
+2. Move/rename the draft to `_posts/YYYY-MM-DD-<slug>.markdown`.
+3. Complete front matter: title, summary, excerpt, description, category, tags, date, canonical URL, author, and other established fields.
+4. Add or verify imagery and alt text.
+5. Run `python3 scripts/validate_blog_posts.py`.
+6. Run the Jekyll build when available.
+7. Open a PR to `master` from the working branch.
+8. Include `Closes #<issue-number>` in the PR body. Do not rely only on a bare URL or `Refs`; the closing keyword is part of the editorial-state automation contract.
+9. Leave the final human-approval checklist item unchecked.
 
 ## 8. Publication
 
@@ -120,7 +136,7 @@ The author reviews the PR and CI results and decides whether to merge.
 
 Agents must not enable auto-merge or merge a blog-post PR without an explicit request to merge that specific PR.
 
-Merging to `master` is the publication action. GitHub Pages then deploys the site.
+Merging to `master` is the publication action. GitHub Pages then deploys the site, and the linked editorial issue can transition to `blog:published`.
 
 ## Suggested labels
 

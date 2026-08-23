@@ -24,17 +24,19 @@ This repository is both the source for jlsunday.com and the editorial system for
 
 ## Editorial workflow
 
-1. Start from a GitHub issue or an explicit author request.
+1. Start from a GitHub issue or an explicit author request. Prefer a Blog Post issue as the durable editorial record.
 2. Clarify the thesis, intended reader, why the post matters now, and what evidence could change the conclusion.
 3. Research current, credible sources. Prefer primary sources and distinguish evidence from opinion.
 4. Research the strongest counterarguments rather than only supporting the initial thesis.
 5. Record research and important decisions in the issue when an issue exists.
-6. Draft into `_drafts/<slug>.markdown` using existing Jekyll conventions.
-7. Run a factual/technical critique, an argument critique, and a voice edit as separate passes.
-8. Present uncertain claims, major editorial choices, and unresolved counterarguments to the author.
-9. Revise until the author explicitly approves publication.
-10. Move the draft to `_posts/YYYY-MM-DD-<slug>.markdown`, complete publication metadata, run validation/build checks, and open a PR to `master`.
-11. Stop at the PR. The author owns the final merge decision.
+6. When the issue enters `blog:drafting`, create a dedicated working branch using `blog/<issue-number>-<slug>` when possible. Treat the issue, branch, and eventual PR as one editorial chain. Do not rename an already-established legacy draft branch merely to satisfy this convention.
+7. Draft into `_drafts/<slug>.markdown` using existing Jekyll conventions. Record the working branch on the issue if GitHub's native Development relationship cannot be created by the available tooling.
+8. Run a factual/technical critique, an argument critique, and a voice edit as separate passes.
+9. Present uncertain claims, major editorial choices, and unresolved counterarguments to the author.
+10. Revise until the author explicitly approves publication.
+11. Move the draft to `_posts/YYYY-MM-DD-<slug>.markdown`, complete publication metadata, run validation/build checks, and open a PR to `master` from the existing working branch.
+12. The publication PR must explicitly reference and close its editorial issue with `Closes #<issue-number>` (or the fully qualified equivalent for a cross-repository issue). This linkage is required for editorial-state automation.
+13. Stop at the PR. The author owns the final merge decision.
 
 ## Research rules
 
@@ -71,4 +73,5 @@ Before declaring a publication PR ready:
 - Run `bundle exec jekyll build` when the Ruby environment is available.
 - Confirm repository-only files are absent from `_site/` after a build.
 - Confirm no draft placeholders such as `TODO`, `TBD`, or `SOURCE NEEDED` remain in a file being moved into `_posts/`.
+- Confirm the publication PR contains `Closes #<issue-number>` for its editorial issue.
 - Confirm the PR checklist is complete except for the final human approval checkbox.
