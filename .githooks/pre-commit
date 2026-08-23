@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+set -eu
+
+python3 scripts/validate_blog_posts.py

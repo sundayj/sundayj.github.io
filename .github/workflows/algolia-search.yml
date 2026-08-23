@@ -1,29 +1,29 @@
+name: algolia-search
+
 on:
   push:
     branches:
       - master
-      - main
 
-name: algolia-search
+permissions:
+  contents: read
+
 jobs:
   algolia-search:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
-      - uses: ruby/setup-ruby@v1
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1
         with:
           ruby-version: '3.2'
-          bundler-cache: true
 
-      - uses: actions/cache@v2.1.6
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
+      - name: Install dependencies
+        run: bundle install --jobs 4 --retry 3
 
-      - name: Algolia Jekyll Action
-        uses: dieghernan/algolia-jekyll-action@v1
+      - name: Update Algolia search index
+        uses: dieghernan/algolia-jekyll-action@37e24cce44f139a20726bbb37f3e4df00109a17b # v1
         with:
           APIKEY: '${{ secrets.ALGOLIA_API_KEY }}'
