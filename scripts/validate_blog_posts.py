@@ -31,6 +31,8 @@ PLACEHOLDERS = (
     "CITATION NEEDED",
     "FIXME",
 )
+EMPTY_YAML_VALUES = {"", "''", '""', "[]", "{}", "null", "~"}
+BLOCK_SCALAR_MARKERS = {">", ">-", ">+", "|", "|-", "|+"}
 
 
 def git_lines(*args: str) -> list[str]:
@@ -70,12 +72,37 @@ def parse_front_matter(text: str) -> tuple[dict[str, str], str | None]:
         return {}, "missing closing YAML front-matter delimiter"
 
     values: dict[str, str] = {}
-    for line in lines[1:end]:
+    i = 1
+    while i < end:
+        line = lines[i]
         if not line or line[0].isspace() or line.lstrip().startswith("#") or ":" not in line:
+            i += 1
             continue
-        key, value = line.split(":", 1)
-        values[key.strip()] = value.strip()
+
+        key, raw_value = line.split(":", 1)
+        key = key.strip()
+        value = raw_value.strip()
+
+        if value in BLOCK_SCALAR_MARKERS:
+            block_lines: list[str] = []
+            i += 1
+            while i < end and (not lines[i].strip() or lines[i][0].isspace()):
+                block_lines.append(lines[i].strip())
+                i += 1
+            values[key] = "\n".join(part for part in block_lines if part).strip()
+            continue
+
+        values[key] = value
+        i += 1
+
     return values, None
+
+
+def has_value(value: str | None) -> bool:
+    if value is None:
+        return False
+    normalized = value.strip()
+    return normalized.lower() not in EMPTY_YAML_VALUES
 
 
 def validate(path_str: str) -> list[str]:
@@ -101,11 +128,11 @@ def validate(path_str: str) -> list[str]:
         return errors
 
     required = PUBLISHED_REQUIRED if is_post else DRAFT_REQUIRED
-    missing = sorted(key for key in required if not front_matter.get(key))
+    missing = sorted(key for key in required if not has_value(front_matter.get(key)))
     if missing:
-        errors.append("missing required front matter: " + ", ".join(missing))
+        errors.append("missing or empty required front matter: " + ", ".join(missing))
 
-    if front_matter.get("layout") and front_matter["layout"].strip("'\"") != "post":
+    if has_value(front_matter.get("layout")) and front_matter["layout"].strip("'\"") != "post":
         errors.append("`layout` must be `post`")
 
     if is_post:
