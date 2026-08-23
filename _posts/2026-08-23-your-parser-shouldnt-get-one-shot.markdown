@@ -10,7 +10,7 @@ description: >-
 canonical_url: "https://jlsunday.com/software-development/2026/08/23/your-parser-shouldnt-get-one-shot.html"
 category: "Software Development"
 tags: [parsing,ocr,software-architecture,pdf,ai]
-image: "https://jlsunday.com/assets/images/posts/parser-redundancy-social.svg"
+image: "https://jlsunday.com/assets/images/posts/parser-redundancy-social.png"
 comments: true
 date: 2026-08-23
 last_modified_at: 2026-08-23
@@ -21,7 +21,7 @@ sort: 0
 ---
 
 <figure style="margin-top: 20px;">
-  <img alt="A resilient parser pipeline moving from native text extraction through validation, recovery, review, and a trusted result" src="{{ '/assets/images/posts/parser-redundancy-social.svg' | prepend: site.url }}" title="Your Parser Shouldn't Get One Shot">
+  <img alt="A resilient parser pipeline moving from native text extraction through validation, recovery, review, and a trusted result" src="{{ '/assets/images/posts/parser-redundancy-social.png' | prepend: site.url }}" title="Your Parser Shouldn't Get One Shot">
 </figure>
 
 [A Reddit post about resume parsing](https://www.reddit.com/r/resumes/comments/1vv5c63/i_parse_resumes_for_a_living_here_is_what_broke/){:target="_blank"}{:rel="noopener noreferrer"} caught my attention recently because the problem was familiar even though the domain wasn't. The author had built a resume parser intended to show job seekers what an applicant tracking system might actually see. The failures were the usual ugly document-processing problems: tables flattened into nonsense, two-column layouts read in the wrong order, punctuation mangled, fields dropped, and scanned PDFs with no useful text layer at all.
