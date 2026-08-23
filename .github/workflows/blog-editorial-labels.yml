@@ -1,8 +1,6 @@
 name: blog-editorial-labels
 
 on:
-  issues:
-    types: [opened]
   pull_request:
     types: [opened, reopened, ready_for_review, closed]
 
@@ -12,25 +10,10 @@ permissions:
   pull-requests: write
 
 jobs:
-  label-blog-issue:
-    if: >-
-      github.event_name == 'issues' &&
-      contains(github.event.issue.body || '', 'Publication gate')
-    runs-on: ubuntu-latest
-    steps:
-      - name: Add blog:idea label
-        env:
-          GH_TOKEN: ${{ github.token }}
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
-          REPO: ${{ github.repository }}
-        run: gh issue edit "$ISSUE_NUMBER" --repo "$REPO" --add-label "blog:idea"
-
   label-blog-pr:
     if: >-
-      github.event_name == 'pull_request' &&
       github.event.action != 'closed' &&
-      (startsWith(github.head_ref, 'blog/') ||
-       contains(github.event.pull_request.body || '', 'Justin explicitly approved this post for publication'))
+      startsWith(github.head_ref, 'blog/')
     runs-on: ubuntu-latest
     steps:
       - name: Add blog:review label
@@ -42,11 +25,9 @@ jobs:
 
   publish-linked-issue:
     if: >-
-      github.event_name == 'pull_request' &&
       github.event.action == 'closed' &&
       github.event.pull_request.merged == true &&
-      (startsWith(github.event.pull_request.head.ref, 'blog/') ||
-       contains(github.event.pull_request.body || '', 'Justin explicitly approved this post for publication'))
+      startsWith(github.event.pull_request.head.ref, 'blog/')
     runs-on: ubuntu-latest
     steps:
       - name: Mark explicitly linked blog issues as published
