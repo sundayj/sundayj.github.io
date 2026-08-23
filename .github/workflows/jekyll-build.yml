@@ -17,6 +17,14 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate changed blog files
+        if: github.event_name == 'pull_request'
+        env:
+          BLOG_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: python3 scripts/validate_blog_posts.py
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1
@@ -28,3 +36,10 @@ jobs:
 
       - name: Build site
         run: bundle exec jekyll build --trace
+
+      - name: Verify repository-only files are not published
+        run: |
+          test ! -e _site/AGENTS.md
+          test ! -e _site/.github
+          test ! -e _site/.githooks
+          test ! -e _site/scripts
