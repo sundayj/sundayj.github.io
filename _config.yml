@@ -95,6 +95,15 @@ comment_box: 5706851450617856-proj # project Id
 fab_form: Aj7sjuE # form Id
 
 ### Build Settings
+# Keep repository-only agent/editorial automation out of the generated site.
+exclude:
+  - AGENTS.md
+  - .github
+  - .githooks
+  - scripts
+  - vendor
+  - README.md
+
 # Kramdown Configuration
 markdown: kramdown
 highlighter: rouge
