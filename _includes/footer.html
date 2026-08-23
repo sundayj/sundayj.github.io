@@ -40,14 +40,14 @@
     {% endif %}
   </p>
 
-  <div
+  <button
     id="totop"
-    style="position: fixed; bottom: 150px; right: 50px; cursor: pointer"
+    type="button"
+    aria-label="Back to top"
+    style="position: fixed; bottom: 150px; right: 50px; cursor: pointer; border: 0; background: transparent; padding: 0"
   >
-    <a title="Back To Top"
-      ><img src="{{ '/assets/images/topbutton.png' | prepend: site.url }}" alt="To Top" title="To Top"/></a
-    >
-  </div>
+    <img src="{{ '/assets/images/topbutton.png' | prepend: site.url }}" alt="" />
+  </button>
 
   {%- include footer/scripts.html -%}
 </footer>
