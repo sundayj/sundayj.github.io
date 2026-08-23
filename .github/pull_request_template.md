@@ -8,6 +8,7 @@
 
 - [ ] N/A or this PR does not publish a blog post
 - [ ] Post began as a draft or otherwise received author review before being placed in `_posts/`
+- [ ] This publication PR explicitly closes its editorial issue with `Closes #N`
 - [ ] Facts and technical claims were checked against current sources
 - [ ] Meaningful counterarguments/edge cases were considered
 - [ ] Voice review completed against `.github/blog/voice-guide.md`
@@ -24,7 +25,9 @@
 
 ## Sources / related issue
 
-<!-- Link the editorial issue and key sources when applicable. -->
+<!-- REQUIRED for blog publication PRs: use `Closes #N` for the editorial issue so merge closes the issue and drives publication-state automation. -->
+
+Closes #
 
 ## Publication rule
 
