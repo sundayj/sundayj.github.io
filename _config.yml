@@ -126,4 +126,5 @@ plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
 
-remote_theme: sundayj/DevSculptor
+# Temporary cross-repo validation pin. Revert to sundayj/DevSculptor after the theme PR merges.
+remote_theme: sundayj/DevSculptor@1601648385faa74ec2a31a49fa90095df274f034
