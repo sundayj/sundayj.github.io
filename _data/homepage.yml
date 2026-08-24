@@ -1,0 +1,48 @@
+hero:
+  eyebrow: Senior Software Engineer
+  title: Justin L. Sunday
+  subtitle: Building production software and writing about AI-assisted engineering, architecture, and automation.
+  description: >-
+    I work across C#/.NET, Python/Django, Angular, SQL, cloud infrastructure, and modern developer tooling,
+    with a growing focus on what increasingly capable AI agents change about how real software gets built.
+  actions:
+    - label: Read my writing
+      url: /archives
+    - label: Explore my projects
+      url: /projects
+    - label: About me
+      url: /about
+
+writing_url: /archives
+projects_url: /projects
+latest_count: 5
+
+featured_writing:
+  - "Your Parser Shouldn't Get One Shot"
+  - "Building an App with Angular, Part 1: Introduction"
+
+topics:
+  - title: AI & Software Engineering
+    description: >-
+      Coding agents, context engineering, automation, architecture, and what increasingly capable models mean for software development.
+    url: /tags/#ai
+  - title: Software Architecture & Engineering
+    description: >-
+      Practical engineering across C#/.NET, Python/Django, Angular, APIs, testing, debugging, data, cloud infrastructure, and system design.
+    url: /categories/#Software%20Development
+  - title: Building Real Software
+    description: >-
+      Projects, implementation decisions, failures, experiments, and lessons that come from shipping and maintaining real systems.
+    url: /projects
+
+projects:
+  - title: DevSculptor
+    description: >-
+      A GitHub Pages-compatible Jekyll theme built for software-engineering blogs, including project and résumé support, localization, and light/dark themes.
+    url: https://jlsunday.com/DevSculptor
+    technologies: [Jekyll, Liquid, Sass, JavaScript]
+  - title: NPM Script Selector
+    description: >-
+      A TypeScript CLI for discovering and interactively running scripts from package.json files without repeatedly opening the project configuration.
+    url: https://www.npmjs.com/package/npm-script-selector
+    technologies: [TypeScript, Node.js, JavaScript]
