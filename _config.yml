@@ -33,8 +33,8 @@ email: admin@jlsunday.com
 description: >-
   Software engineering, architecture, AI-assisted development, and lessons from building real systems with Python/Django, Angular, C#/.NET, SQL, cloud infrastructure, and modern developer tooling.
 tagline: Software engineering, architecture, AI, and building real systems.
-baseurl: ""
-url: "https://jlsunday.com"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jlsunday.com" # the base hostname & protocol for your site, e.g. http://example.com
 author:
   name: Justin L. Sunday
   url: https://JLSunday.com/
@@ -64,20 +64,21 @@ author:
 default_locale: "en"
 logo_light: "/assets/images/JLSunday-logo/JLSunday-no-background.png"
 logo_dark: "/assets/images/JLSunday-logo/JLSunday-no-background.png"
-show_contact_info: true
+show_contact_info: true # Personal Info (twitter,GitHub,email) can be seen in `\_includes\sidebar\aboutme.html`, this info only shown where show_contact_info == true
 include_blogroll: true
 feed:
   excerpt_only: true
-footer:
+footer: # Optional links for sitemap, privacy policy, cookie policy, and terms of service. These have placeholders inside that specify the author's/website's names. So, if you are in the United States, theis should be pretty much plug and play. I would definitely recommend that you look these over yourself for safety reasons. I assume no responsibility if you use these provided files. They are meant as placeholders/ templates to be edited for your specific use-case.
   include_sitemap: true
   include_privacypolicy: true
   include_cookiepolicy: true
   include_terms: true
 aboutme:
   include: true
-google_analytics_key: "G-4Z30BJZ3LK"
+google_analytics_key: "G-4Z30BJZ3LK" # UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
 
 #### Search
+# If you would like to include algolia search in your site, please refer to this blog post by Algolia: https://www.algolia.com/blog/engineering/instant-search-blog-documentation-jekyll-plugin/
 algolia:
   application_id: NOSLLDLG24
   index_name: posts
@@ -102,12 +103,13 @@ algolia:
       - summary:10
 
 #### CommentBox
-comment_box: 5706851450617856-proj
+comment_box: 5706851450617856-proj # project Id
 
 #### Contact Form
-fab_form: Aj7sjuE
+fab_form: Aj7sjuE # form Id
 
 ### Build Settings
+# Keep repository-only agent/editorial automation out of the generated site.
 exclude:
   - AGENTS.md
   - .github
@@ -116,6 +118,7 @@ exclude:
   - vendor
   - README.md
 
+# Kramdown Configuration
 markdown: kramdown
 highlighter: rouge
 kramdown:
