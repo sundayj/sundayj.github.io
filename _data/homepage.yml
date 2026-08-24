@@ -36,13 +36,13 @@ topics:
     url: /projects
 
 projects:
+  - title: PaySpan
+    description: >-
+      A personal finance application for planning pay periods, reconciling bills and payments, and reducing the manual work required to understand what is due, paid, and affordable.
+    url: /projects
+    technologies: [Python, Django, Angular, SQL]
   - title: DevSculptor
     description: >-
       A GitHub Pages-compatible Jekyll theme built for software-engineering blogs, including project and résumé support, localization, and light/dark themes.
     url: https://jlsunday.com/DevSculptor
     technologies: [Jekyll, Liquid, Sass, JavaScript]
-  - title: NPM Script Selector
-    description: >-
-      A TypeScript CLI for discovering and interactively running scripts from package.json files without repeatedly opening the project configuration.
-    url: https://www.npmjs.com/package/npm-script-selector
-    technologies: [TypeScript, Node.js, JavaScript]
