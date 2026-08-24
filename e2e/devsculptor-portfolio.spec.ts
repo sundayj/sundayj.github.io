@@ -1,4 +1,4 @@
-import { expect, test, type Page } from '@playwright/test';
+import { expect, test, type Locator, type Page } from '@playwright/test';
 import { resolve } from 'node:path';
 
 const outputDir = resolve(
@@ -38,8 +38,10 @@ test('capture projects desktop light', async ({ page }) => {
   await prepare(page, 'light', { width: 1440, height: 1000 });
   await page.goto('/projects/');
   await expect(page.getByRole('heading', { name: /projects/i, level: 1 })).toBeVisible();
+  const firstProjectActions = page.locator('.project-actions').first();
+  await expect(firstProjectActions).toBeVisible();
   await settle(page);
-  await capture(page, 'devsculptor-projects-desktop-light.png');
+  await captureThrough(page, firstProjectActions, 'devsculptor-projects-desktop-light.png');
 });
 
 test('capture home mobile dark', async ({ page }) => {
@@ -100,6 +102,32 @@ async function capture(page: Page, filename: string): Promise<void> {
   await page.screenshot({
     path: resolve(outputDir, filename),
     fullPage: false,
+    animations: 'disabled',
+    caret: 'hide',
+  });
+}
+
+async function captureThrough(page: Page, locator: Locator, filename: string): Promise<void> {
+  const box = await locator.boundingBox();
+  const viewport = page.viewportSize();
+  if (!box || !viewport) {
+    throw new Error(`Could not calculate deterministic crop for ${filename}.`);
+  }
+
+  const bottomPadding = 28;
+  const captureHeight = Math.min(
+    viewport.height,
+    Math.ceil(box.y + box.height + bottomPadding),
+  );
+
+  await page.screenshot({
+    path: resolve(outputDir, filename),
+    clip: {
+      x: 0,
+      y: 0,
+      width: viewport.width,
+      height: captureHeight,
+    },
     animations: 'disabled',
     caret: 'hide',
   });
