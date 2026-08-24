@@ -64,6 +64,7 @@ def main() -> int:
     about_link_sections = 0
     author_eyebrows = 0
     about_cards = 0
+    post_cards = 0
 
     for html_file in SITE_DIR.rglob("*.html"):
         html = html_file.read_text(encoding="utf-8", errors="replace")
@@ -78,8 +79,6 @@ def main() -> int:
                 failures.append(f"{html_file}: author card is missing the accessible Author profiles nav")
             if "author-card-profile-image" not in card:
                 failures.append(f"{html_file}: author card is missing the profile-image structural hook")
-            if 'width="112"' not in card or 'height="112"' not in card:
-                failures.append(f"{html_file}: author portrait must render at 112x112")
             if "author-card-eyebrow" not in card:
                 failures.append(f"{html_file}: author card must retain the shared About the author eyebrow")
             else:
@@ -87,8 +86,22 @@ def main() -> int:
 
             if html_file == ABOUT_PAGE:
                 about_cards += 1
+                if "author-card-profile-image-about" not in card:
+                    failures.append(f"{html_file}: About-page author card must use the About portrait variant")
+                if 'width="144"' not in card or 'height="144"' not in card:
+                    failures.append(f"{html_file}: About portrait must render at 144x144")
+                if "rounded-3" not in card or "rounded-circle" in card:
+                    failures.append(f"{html_file}: About portrait must render as a square, softly rounded image")
                 if 'aria-label="Engineering focus areas"' not in card:
                     failures.append(f"{html_file}: About-page author card must show engineering focus areas")
+            else:
+                post_cards += 1
+                if "author-card-profile-image-post" not in card:
+                    failures.append(f"{html_file}: post author card must use the post portrait variant")
+                if 'width="112"' not in card or 'height="112"' not in card:
+                    failures.append(f"{html_file}: post author portrait must render at 112x112")
+                if "rounded-circle" not in card:
+                    failures.append(f"{html_file}: post author portrait must remain circular")
 
             parser = AnchorParser()
             parser.feed(card)
@@ -132,6 +145,8 @@ def main() -> int:
         failures.append("No generated author-card markup was found.")
     if about_cards != 1:
         failures.append(f"Expected exactly one About-page author card, found {about_cards}.")
+    if post_cards == 0:
+        failures.append("No post-style author card was found.")
     if author_eyebrows != author_cards:
         failures.append("Not every author card retained the shared About the author eyebrow.")
     if about_link_sections == 0:
@@ -146,8 +161,9 @@ def main() -> int:
         return 1
 
     print(
-        f"Validated {author_cards} author card(s), {about_link_sections} About link section(s), "
-        f"{author_eyebrows} shared author eyebrow(s), and {social_links} external author/social link occurrence(s)."
+        f"Validated {author_cards} author card(s), including {about_cards} About variant and "
+        f"{post_cards} post variant(s), {about_link_sections} About link section(s), and "
+        f"{social_links} external author/social link occurrence(s)."
     )
     return 0
 
