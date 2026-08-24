@@ -1,0 +1,11 @@
+{
+  "name": "jlsunday-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "portfolio:screenshots": "node scripts/capture-devsculptor-screenshots.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  }
+}

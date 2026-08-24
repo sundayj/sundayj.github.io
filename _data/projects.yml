@@ -55,18 +55,26 @@
     - Supports responsive light/dark presentation, navigation, long-form reading UX, TOC behavior, and enhanced code blocks.
     - Serves as the shared presentation layer for JLSunday.com and the ongoing EGCA modernization case study.
   images:
-    - title: "Home Page Example - Dark Theme"
-      path: "/assets/images/projects/devsculptor/home-page-example.png"
-      caption: "Home page example with the DevSculptor theme in dark mode."
-    - title: "Home Page Example - Light Theme"
-      path: "/assets/images/projects/devsculptor/home-page-example-light.png"
-      caption: "Home page example with the DevSculptor theme in light mode."
-    - title: "Home Page Example on Mobile - Dark Theme"
-      path: "/assets/images/projects/devsculptor/20230926-samsung-galaxy-s20-ultra-homepage-screenshot-rocks.png"
-      caption: "Home page example on mobile in dark mode."
-    - title: "Home Page Example on Mobile - Light Theme"
-      path: "/assets/images/projects/devsculptor/20230926-samsung-galaxy-s20-ultra-homepage-screenshot-rocks-light-mode.png"
-      caption: "Home page example on mobile in light mode."
+    - title: "DevSculptor Home Page - Dark Theme"
+      path: "/assets/images/projects/devsculptor/devsculptor-home-desktop-dark.png"
+      caption: "JLSunday's current homepage rendered through DevSculptor in dark mode, including the engineering-focused hero and featured-writing presentation."
+    - title: "DevSculptor Home Page - Light Theme"
+      path: "/assets/images/projects/devsculptor/devsculptor-home-desktop-light.png"
+      caption: "The same responsive DevSculptor homepage rendered deterministically in light mode."
+    - title: "DevSculptor Article Experience - Dark Theme"
+      path: "/assets/images/projects/devsculptor/devsculptor-article-desktop-dark.png"
+      caption: "A current long-form article showing DevSculptor's desktop typography, navigation, metadata, sticky table of contents, and content presentation."
+    - title: "DevSculptor Projects Experience - Light Theme"
+      path: "/assets/images/projects/devsculptor/devsculptor-projects-desktop-light.png"
+      caption: "The current Projects experience showing summary-first project cards, technology chips, engineering highlights, role and timeline metadata, and case-study actions."
+    - title: "DevSculptor Home Page on Mobile - Dark Theme"
+      path: "/assets/images/projects/devsculptor/devsculptor-home-mobile-dark.png"
+      mobile: true
+      caption: "The current homepage adapted to a narrow mobile viewport in dark mode."
+    - title: "DevSculptor Article Experience on Mobile - Light Theme"
+      path: "/assets/images/projects/devsculptor/devsculptor-article-mobile-light.png"
+      mobile: true
+      caption: "The long-form article experience adapted to a narrow mobile viewport, including responsive navigation and table-of-contents treatment."
 
 - name: NPM Script Selector
   slug: npm-script-selector

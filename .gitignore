@@ -4,3 +4,7 @@ _site/
 .jekyll-metadata
 vendor/
 .idea/
+node_modules/
+playwright-report/
+test-results/
+artifacts/devsculptor-portfolio-screenshots/
