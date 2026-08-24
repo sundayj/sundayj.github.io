@@ -38,6 +38,29 @@ url: "https://jlsunday.com" # the base hostname & protocol for your site, e.g. h
 author:
   name: Justin L. Sunday
   url: https://JLSunday.com/
+  role: Senior Software Engineer
+  image: "/assets/images/author/profile-photo-1352x1098.png"
+  bio: >-
+    Senior software engineer building backend and frontend systems with C#/.NET, Python/Django, Angular, SQL, cloud infrastructure, and increasingly AI-assisted and agentic engineering workflows.
+  focus:
+    - Software architecture
+    - AI-assisted engineering
+    - C# / .NET
+    - Python / Django
+    - Angular
+    - Developer tooling
+  about:
+    - >-
+      I work across the full software stack, from domain modeling, APIs, data and background processing to modern web interfaces and the tooling that keeps those systems maintainable. My experience spans C#/.NET as well as Python/Django, Angular, SQL, cloud infrastructure, and the operational concerns around shipping real software.
+    - >-
+      A growing part of my work is figuring out where AI and software agents genuinely improve engineering rather than simply adding novelty. I am especially interested in agentic development workflows, evidence-driven automation, architecture under uncertainty, and how increasingly capable models change the responsibilities of software engineers.
+    - >-
+      I use personal projects as practical proving grounds. PaySpan explores paycheck-oriented cash-flow planning and evidence-driven reconciliation; DevSculptor is the reusable Jekyll theme behind this site; and Evidence-Gated Capability Adoption is a methodology for testing promising capabilities before committing them to an architecture.
+  writing:
+    - Software architecture, design decisions, and engineering tradeoffs.
+    - AI-assisted development, agents, and how engineering work is changing.
+    - Python/Django, C#/.NET, Angular, SQL, APIs, and developer tooling.
+    - Lessons from building, debugging, modernizing, and operating real systems.
 default_locale: "en"
 logo_light: "/assets/images/JLSunday-logo/JLSunday-no-background.png"
 logo_dark: "/assets/images/JLSunday-logo/JLSunday-no-background.png"
@@ -52,14 +75,6 @@ footer: # Optional links for sitemap, privacy policy, cookie policy, and terms o
   include_terms: true
 aboutme:
   include: true
-  text: >-
-    Hello, my name is Justin! I live in the US with my wife, amazing daughters, and our crazy canines. 
-    I'm extremely passionate about software development, programming, absorbing every bit of knowledge
-    I can, and sharing that knowledge with anyone interested in learning.
-  photo:
-    use_github_avatar: false
-    asset_path: "/assets/images/author/profile-photo-1352x1098.png" # "/path/to/profile-photo.png"
-    hosted_aboutme_photo: # "https://github.com/sundayj/sundayj.github.io/blob/master/assets/images/author/profile-photo-1352x1098.png?raw=true" # Use if you want to use a photo from somewhere else on the web
 google_analytics_key: "G-4Z30BJZ3LK" # UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
 
 #### Search
