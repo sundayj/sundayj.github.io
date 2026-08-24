@@ -6,9 +6,9 @@
 # feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# `bundle exec jekyll serve`. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -31,7 +31,7 @@
 title: JLSunday
 email: admin@jlsunday.com
 description: >-
-  Software engineering, architecture, AI-assisted development, and lessons from building real systems with C#/.NET, Python/Django, Angular, SQL, cloud infrastructure, and modern developer tooling.
+  Software engineering, architecture, AI-assisted development, and lessons from building real systems with Python/Django, Angular, C#/.NET, SQL, cloud infrastructure, and modern developer tooling.
 tagline: Software engineering, architecture, AI, and building real systems.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jlsunday.com" # the base hostname & protocol for your site, e.g. http://example.com
@@ -41,25 +41,25 @@ author:
   role: Senior Software Engineer
   image: "/assets/images/author/profile-photo-1352x1098.png"
   bio: >-
-    Senior software engineer building backend and frontend systems with C#/.NET, Python/Django, Angular, SQL, cloud infrastructure, and increasingly AI-assisted and agentic engineering workflows.
+    Senior software engineer building backend and frontend systems with Python/Django, Angular, C#/.NET, SQL, cloud infrastructure, and increasingly AI-assisted and agentic engineering workflows, with human engineering judgment and verification kept firmly in the loop.
   focus:
     - Software architecture
     - AI-assisted engineering
-    - C# / .NET
     - Python / Django
     - Angular
+    - C# / .NET
     - Developer tooling
   about:
     - >-
-      I work across the full software stack, from domain modeling, APIs, data and background processing to modern web interfaces and the tooling that keeps those systems maintainable. My experience spans C#/.NET as well as Python/Django, Angular, SQL, cloud infrastructure, and the operational concerns around shipping real software.
+      I work across the full software stack, from domain modeling, APIs, data and background processing to modern web interfaces and the tooling that keeps those systems maintainable. My experience spans Python/Django, Angular, C#/.NET, SQL, cloud infrastructure, and the operational concerns around shipping real software.
     - >-
-      A growing part of my work is figuring out where AI and software agents genuinely improve engineering rather than simply adding novelty. I am especially interested in agentic development workflows, evidence-driven automation, architecture under uncertainty, and how increasingly capable models change the responsibilities of software engineers.
+      A growing part of my work is figuring out where AI and software agents genuinely improve engineering rather than simply adding novelty. I use AI extensively, but I do not accept "AI slop" as an engineering outcome. I treat models as capable collaborators whose work still needs context, constraints, review, testing, and evidence. The goal is not to generate more code faster; it is to work with AI while applying engineering judgment to make sure the resulting software, analysis, and writing are actually up to standard.
     - >-
-      I use personal projects as practical proving grounds. PaySpan explores paycheck-oriented cash-flow planning and evidence-driven reconciliation; DevSculptor is the reusable Jekyll theme behind this site; and Evidence-Gated Capability Adoption is a methodology for testing promising capabilities before committing them to an architecture.
+      I am especially interested in agentic development workflows, evidence-driven automation, architecture under uncertainty, and how increasingly capable models change the responsibilities of software engineers. I use personal projects as practical proving grounds: PaySpan explores paycheck-oriented cash-flow planning and evidence-driven reconciliation; DevSculptor is the reusable Jekyll theme behind this site; and Evidence-Gated Capability Adoption is a methodology for testing promising capabilities before committing them to an architecture.
   writing:
     - Software architecture, design decisions, and engineering tradeoffs.
-    - AI-assisted development, agents, and how engineering work is changing.
-    - Python/Django, C#/.NET, Angular, SQL, APIs, and developer tooling.
+    - AI-assisted development and agents, with an emphasis on verification, quality, and avoiding AI slop.
+    - Python/Django, Angular, C#/.NET, SQL, APIs, and developer tooling.
     - Lessons from building, debugging, modernizing, and operating real systems.
 default_locale: "en"
 logo_light: "/assets/images/JLSunday-logo/JLSunday-no-background.png"
