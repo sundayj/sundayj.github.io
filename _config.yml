@@ -30,10 +30,9 @@
 #### Site Settings, Meta, and SEO
 title: JLSunday
 email: admin@jlsunday.com
-description: >- # this means to ignore newlines
-  Programming and web development tutorials, snippets, and other resources for C#, Python, Angular, Docker, SQL, Azure and more!
-tagline: Programming and web development tutorials, snippets, and other resources.
-google_site_verification: ''
+description: >-
+  Software engineering, architecture, AI-assisted development, and lessons from building real systems with C#/.NET, Python/Django, Angular, SQL, cloud infrastructure, and modern developer tooling.
+tagline: Software engineering, architecture, AI, and building real systems.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jlsunday.com" # the base hostname & protocol for your site, e.g. http://example.com
 author:
@@ -125,6 +124,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-seo
   - jekyll-remote-theme
-  #  - jekyll-sitemap
+  - jekyll-sitemap
 
 remote_theme: sundayj/DevSculptor
