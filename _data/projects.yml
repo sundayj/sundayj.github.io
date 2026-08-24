@@ -30,6 +30,7 @@
       caption: "Transaction Review reconciles imported bank activity against PaySpan's bill model, separating suggested matches, duplicates, refunds or reversals, and resolved evidence."
     - title: "PaySpan Funding Plan on Mobile"
       path: "/assets/images/projects/payspan/payspan-funding-plan-mobile.png"
+      mobile: true
       caption: "The responsive Funding Plan preserves the same decision-oriented paycheck context and catch-up planning workflow on a narrow mobile viewport."
 
 - name: DevSculptor Jekyll Theme
