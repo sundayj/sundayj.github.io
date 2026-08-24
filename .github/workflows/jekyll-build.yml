@@ -37,6 +37,9 @@ jobs:
       - name: Build site
         run: bundle exec jekyll build --trace
 
+      - name: Validate generated SEO metadata
+        run: python3 scripts/validate_generated_seo.py
+
       - name: Verify repository-only files are not published
         run: |
           test ! -e _site/AGENTS.md
