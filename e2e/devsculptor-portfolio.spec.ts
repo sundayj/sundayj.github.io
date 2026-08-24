@@ -114,7 +114,7 @@ async function captureThrough(page: Page, locator: Locator, filename: string): P
     throw new Error(`Could not calculate deterministic crop for ${filename}.`);
   }
 
-  const bottomPadding = 28;
+  const bottomPadding = 12;
   const captureHeight = Math.min(
     viewport.height,
     Math.ceil(box.y + box.height + bottomPadding),
