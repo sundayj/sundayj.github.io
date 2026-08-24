@@ -7,16 +7,31 @@
   ongoing: true
   status: Active
   role: Creator / Lead Engineer
-  tags: [personal finance, planning, bills, reconciliation]
-  skills: [Python, Django, Angular, SQL]
+  tags: [personal finance, cash flow, planning, bills, reconciliation, document parsing]
+  skills: [Python, Django, Django REST Framework, Angular, PostgreSQL, Celery, Redis]
+  case_study: "/projects/payspan/"
   summary: >-
     A personal finance application focused on pay-period planning, bill reconciliation, and reducing the manual work required to understand what is due, paid, and affordable.
   description: >-
-    A personal finance application for planning pay periods, reconciling bills and payments, and reducing the manual work required to understand what is due, paid, and affordable.
+    A self-hosted cash-flow planning system that models bills against real pay periods, reconciles statement and transaction evidence, and turns fragmented financial data into an actionable funding plan.
   highlights:
     - Models bills and occurrences against real pay periods instead of treating budgeting as a monthly snapshot.
-    - Reconciles payments, transactions, and bill state to reduce repetitive manual verification.
-    - Uses structured import and parsing workflows to turn statements and billing data into planning inputs.
+    - Reconciles payments, transactions, statement parsing, and bill state to reduce repetitive manual verification.
+    - Combines a deterministic Django domain core with an Angular SPA, REST API, asynchronous ingestion, and evidence-oriented automation.
+  images:
+    - title: "PaySpan Funding Plan"
+      path: "/assets/images/projects/payspan/payspan-funding-plan-desktop.png"
+      caption: "Funding Plan turns upcoming bills and pay periods into an actionable view of safe-to-spend cash, reserved obligations, and the next decisions that need attention."
+    - title: "PaySpan Bills to Pay"
+      path: "/assets/images/projects/payspan/payspan-bills-to-pay-desktop.png"
+      caption: "Bills to Pay groups bill occurrences into funding periods and exposes reserved amounts, auto-pay commitments, manual payments, transfers, and remaining account availability."
+    - title: "PaySpan Transaction Review"
+      path: "/assets/images/projects/payspan/payspan-transaction-review-desktop.png"
+      caption: "Transaction Review reconciles imported bank activity against PaySpan's bill model, separating suggested matches, duplicates, refunds or reversals, and resolved evidence."
+    - title: "PaySpan Funding Plan on Mobile"
+      path: "/assets/images/projects/payspan/payspan-funding-plan-mobile.png"
+      mobile: true
+      caption: "The responsive Funding Plan preserves the same decision-oriented paycheck context and catch-up planning workflow on a narrow mobile viewport."
 
 - name: DevSculptor Jekyll Theme
   slug: devsculptor
