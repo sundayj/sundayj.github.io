@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate generated author/About links without depending on external availability."""
+"""Validate generated author/About links and author-card structure."""
 
 from __future__ import annotations
 
@@ -8,6 +8,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 SITE_DIR = Path("_site")
+ABOUT_PAGE = SITE_DIR / "about" / "index.html"
 
 
 class AnchorParser(HTMLParser):
@@ -61,6 +62,8 @@ def main() -> int:
     author_cards = 0
     social_links = 0
     about_link_sections = 0
+    post_eyebrows = 0
+    about_cards = 0
 
     for html_file in SITE_DIR.rglob("*.html"):
         html = html_file.read_text(encoding="utf-8", errors="replace")
@@ -68,6 +71,23 @@ def main() -> int:
         card = extract_section(html, 'class="author-card', "</aside>")
         if card:
             author_cards += 1
+
+            if "author-card-actions" not in card:
+                failures.append(f"{html_file}: author card is missing the separated action footer")
+            if 'aria-label="Author profiles"' not in card:
+                failures.append(f"{html_file}: author card is missing the accessible Author profiles nav")
+            if "author-card-profile-image" not in card:
+                failures.append(f"{html_file}: author card is missing the profile-image structural hook")
+            if 'width="128"' not in card or 'height="128"' not in card:
+                failures.append(f"{html_file}: author portrait must render at 128x128")
+
+            if html_file == ABOUT_PAGE:
+                about_cards += 1
+                if "author-card-eyebrow" in card:
+                    failures.append(f"{html_file}: About-page author card must not repeat the author eyebrow")
+            elif "author-card-eyebrow" in card:
+                post_eyebrows += 1
+
             parser = AnchorParser()
             parser.feed(card)
             for anchor in parser.anchors:
@@ -108,6 +128,10 @@ def main() -> int:
 
     if author_cards == 0:
         failures.append("No generated author-card markup was found.")
+    if about_cards != 1:
+        failures.append(f"Expected exactly one About-page author card, found {about_cards}.")
+    if post_eyebrows == 0:
+        failures.append("No post-style author card retained the About the author eyebrow.")
     if about_link_sections == 0:
         failures.append("No generated About links section was found.")
     if social_links == 0:
@@ -121,7 +145,7 @@ def main() -> int:
 
     print(
         f"Validated {author_cards} author card(s), {about_link_sections} About link section(s), "
-        f"and {social_links} external author/social link occurrence(s)."
+        f"{post_eyebrows} post author eyebrow(s), and {social_links} external author/social link occurrence(s)."
     )
     return 0
 
