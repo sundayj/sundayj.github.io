@@ -84,3 +84,23 @@
     - title: NPM Script Selector Screenshot 20231025
       path: "/assets/images/projects/npmss/npm-script-selector-screenshot-20231025.png"
       caption: NPM Script Selector Screenshot 20231025
+
+- name: Evidence-Gated Capability Adoption
+  slug: evidence-gated-capability-adoption
+  display: true
+  homepage: false
+  start-year: 2026
+  ongoing: true
+  status: Active
+  role: Creator / Author
+  tags: [AI agents, software architecture, experimentation, methodology, engineering workflow]
+  skills: [Agentic AI, Software Architecture, Experiment Design, Technical Writing]
+  repository: "https://github.com/sundayj/EvidenceGatedCapabilityAdoption"
+  summary: >-
+    An evidence-gated methodology and reusable agent skill for evaluating and adopting software capabilities through bounded, decision-oriented experiments.
+  description: >-
+    Evidence-Gated Capability Adoption provides a structured way to move from promising ideas to justified engineering decisions by defining hypotheses, bounded experiments, acceptance criteria, evidence, and explicit adoption gates.
+  highlights:
+    - Separates capability discovery from implementation commitment so new ideas are evaluated before they become architecture.
+    - Uses explicit hypotheses, acceptance criteria, experiment results, and decision gates to make adoption decisions traceable.
+    - Includes a reusable agent skill and is being exercised through the JLSunday and DevSculptor modernization case study.
