@@ -1,41 +1,37 @@
 pages:
-  - title: Home
-    url: 
+  - title: Writing
+    url: /archives
+    new-tab: false
+  - title: Projects
+    url: /projects
     new-tab: false
   - title: About
     url: /about
     new-tab: false
-  - title: Archives
-    url: /archives
-    new-tab: false
-  - title: Categories
-    url: /categories
-    new-tab: false
-  - title: Tags
-    url: /tags
-    new-tab: false
   - title: Search
     url: /search
     new-tab: false
-  - title: Subscribe
-    url: /subscribe
-    new-tab: false
-  - title: Projects
-    new-tab: false
+  - title: More
     url: ""
+    new-tab: false
     submenu:
-      - title: Gallery - Summaries of All Projects
-        url: /projects
+      - title: Archives
+        url: /archives
         group: 0
         new-tab: false
-      - title: "DevSculptor - Jekyll Theme"
-        url: "https://jlsunday.com/DevSculptor"
+      - title: Categories
+        url: /categories
+        group: 0
+        new-tab: false
+      - title: Tags
+        url: /tags
+        group: 0
+        new-tab: false
+      - title: Subscribe
+        url: /subscribe
+        group: 1
+        new-tab: false
+      - title: Résumé
+        url: /assets/JustinSunday_Resume_2023-09-14.pdf
         group: 1
         new-tab: true
-      - title: "NPM Script Selector - Node CLI App"
-        url: "https://jlsunday.com/npm-script-selector"
-        group: 1
-        new-tab: true
-  - title: Résumé
-    url: /assets/JustinSunday_Resume_2023-09-14.pdf
-    new-tab: true
