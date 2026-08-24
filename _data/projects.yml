@@ -56,8 +56,7 @@
 - name: NPM Script Selector
   slug: npm-script-selector
   display: true
-  homepage: true
-  homepage_order: 3
+  homepage: false
   start-month: 10
   start-year: 2023
   ongoing: true
@@ -88,7 +87,8 @@
 - name: Evidence-Gated Capability Adoption
   slug: evidence-gated-capability-adoption
   display: true
-  homepage: false
+  homepage: true
+  homepage_order: 3
   start-year: 2026
   ongoing: true
   status: Active
