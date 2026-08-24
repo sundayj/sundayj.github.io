@@ -1,5 +1,18 @@
+- name: PaySpan
+  display: true
+  homepage: true
+  homepage_order: 1
+  start-year: 2025
+  ongoing: true
+  tags: [personal finance, planning, bills, reconciliation]
+  skills: [Python, Django, Angular, SQL]
+  description: >-
+    A personal finance application for planning pay periods, reconciling bills and payments, and reducing the manual work required to understand what is due, paid, and affordable.
+
 - name: DevSculptor Jekyll Theme
   display: true # Whether to display this project on the projects page.
+  homepage: true
+  homepage_order: 2
   start-month: 9
   start-year: 2023 # Optional
   ongoing: true
@@ -20,8 +33,11 @@
     - title: "Home Page Example on Mobile - Light Theme"
       path: "/assets/images/projects/devsculptor/20230926-samsung-galaxy-s20-ultra-homepage-screenshot-rocks-light-mode.png"
       caption: "Home page example on mobile in light mode."
+
 - name: NPM Script Selector
   display: true
+  homepage: true
+  homepage_order: 3
   start-month: 10
   start-year: 2023 # Optional
   ongoing: true
