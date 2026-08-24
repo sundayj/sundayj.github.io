@@ -126,4 +126,4 @@ plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
 
-remote_theme: sundayj/DevSculptor@22edc7b9c39e29488519695a14392c3f2c24bfe3
+remote_theme: sundayj/DevSculptor
