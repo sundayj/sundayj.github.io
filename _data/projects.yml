@@ -1,25 +1,44 @@
 - name: PaySpan
+  slug: payspan
   display: true
   homepage: true
   homepage_order: 1
   start-year: 2025
   ongoing: true
+  status: Active
+  role: Creator / Lead Engineer
   tags: [personal finance, planning, bills, reconciliation]
   skills: [Python, Django, Angular, SQL]
+  summary: >-
+    A personal finance application focused on pay-period planning, bill reconciliation, and reducing the manual work required to understand what is due, paid, and affordable.
   description: >-
     A personal finance application for planning pay periods, reconciling bills and payments, and reducing the manual work required to understand what is due, paid, and affordable.
+  highlights:
+    - Models bills and occurrences against real pay periods instead of treating budgeting as a monthly snapshot.
+    - Reconciles payments, transactions, and bill state to reduce repetitive manual verification.
+    - Uses structured import and parsing workflows to turn statements and billing data into planning inputs.
 
 - name: DevSculptor Jekyll Theme
-  display: true # Whether to display this project on the projects page.
+  slug: devsculptor
+  display: true
   homepage: true
   homepage_order: 2
   start-month: 9
-  start-year: 2023 # Optional
+  start-year: 2023
   ongoing: true
+  status: Active
+  role: Creator / Maintainer
   tags: [Jekyll, Theme]
   skills: [HTML, Liquid, Sass, JavaScript]
   website: "https://jlsunday.com/DevSculptor"
+  repository: "https://github.com/sundayj/DevSculptor"
+  summary: >-
+    A reusable GitHub Pages-compatible Jekyll theme for software-engineering sites, with responsive navigation, project presentation, search integration, and light/dark theming.
   description: "A full-featured, GitHub Pages compatible, Jekyll blog theme tailored to software devs that contains project and resume pages. Contains localization support for multiple languages."
+  highlights:
+    - Keeps reusable presentation logic in the theme while allowing consuming sites to own their content and data.
+    - Supports responsive light/dark presentation, navigation, long-form reading UX, TOC behavior, and enhanced code blocks.
+    - Serves as the shared presentation layer for JLSunday.com and the ongoing EGCA modernization case study.
   images:
     - title: "Home Page Example - Dark Theme"
       path: "/assets/images/projects/devsculptor/home-page-example.png"
@@ -35,15 +54,20 @@
       caption: "Home page example on mobile in light mode."
 
 - name: NPM Script Selector
+  slug: npm-script-selector
   display: true
   homepage: true
   homepage_order: 3
   start-month: 10
-  start-year: 2023 # Optional
+  start-year: 2023
   ongoing: true
+  status: Active
+  role: Creator / Maintainer
   tags: [typescript, npm, package, utility, scripts, runner, dev tool]
   skills: [Node, TypeScript, JavaScript]
   website: "https://www.npmjs.com/package/npm-script-selector"
+  summary: >-
+    A small CLI for discovering and interactively running scripts from package.json without repeatedly opening the package file or memorizing large script sets.
   description: >-
     The NPM Script Selector is a CLI tool for discovering and running project scripts within package.json files.
     Have you ever worked on a project that contains so many scripts that you can't always remember the available options? That's what happened to me.
@@ -52,6 +76,10 @@
     to the package.json file, the NPM Script Selector will then list the available scripts for you, where you can
     interactively select the one you want. It will then run the script for you within the selected project's directory.
     I plan to add more functionality in the near future. Uses figlet, commander, and inquirer.
+  highlights:
+    - Discovers npm scripts directly from package.json.
+    - Provides an interactive selector instead of requiring developers to remember long script lists.
+    - Runs the selected script in the target project's working directory.
   images:
     - title: NPM Script Selector Screenshot 20231025
       path: "/assets/images/projects/npmss/npm-script-selector-screenshot-20231025.png"
