@@ -126,5 +126,4 @@ plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
 
-# JE-002 experiment pin: consume the bounded DevSculptor homepage prototype without changing production theme resolution.
-remote_theme: sundayj/DevSculptor@310990f723fd801e7d309d72726aebb8078f26d3
+remote_theme: sundayj/DevSculptor
