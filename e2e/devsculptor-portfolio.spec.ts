@@ -6,7 +6,7 @@ const outputDir = resolve(
     'artifacts/devsculptor-portfolio-screenshots',
 );
 
-const articlePath = '/software-development/2026/08/23/your-parser-shouldnt-get-one-shot.html';
+const articleTitle = "Your Parser Shouldn't Get One Shot";
 
 test.describe.configure({ mode: 'serial' });
 
@@ -28,8 +28,8 @@ test('capture home desktop light', async ({ page }) => {
 
 test('capture article desktop dark', async ({ page }) => {
   await prepare(page, 'dark', { width: 1440, height: 1000 });
-  await page.goto(articlePath);
-  await expect(page.getByRole('heading', { name: "Your Parser Shouldn't Get One Shot", level: 1 })).toBeVisible();
+  await gotoRepresentativeArticle(page);
+  await expect(page.getByRole('heading', { name: articleTitle, level: 1 })).toBeVisible();
   await settle(page);
   await capture(page, 'devsculptor-article-desktop-dark.png');
 });
@@ -52,11 +52,22 @@ test('capture home mobile dark', async ({ page }) => {
 
 test('capture article mobile light', async ({ page }) => {
   await prepare(page, 'light', { width: 430, height: 932 });
-  await page.goto(articlePath);
-  await expect(page.getByRole('heading', { name: "Your Parser Shouldn't Get One Shot", level: 1 })).toBeVisible();
+  await gotoRepresentativeArticle(page);
+  await expect(page.getByRole('heading', { name: articleTitle, level: 1 })).toBeVisible();
   await settle(page);
   await capture(page, 'devsculptor-article-mobile-light.png');
 });
+
+async function gotoRepresentativeArticle(page: Page): Promise<void> {
+  await page.goto('/');
+  const articleLink = page.getByRole('link', { name: articleTitle }).first();
+  await expect(articleLink).toBeVisible();
+  const href = await articleLink.getAttribute('href');
+  if (!href) {
+    throw new Error(`Could not resolve a local URL for representative article: ${articleTitle}`);
+  }
+  await page.goto(href);
+}
 
 async function prepare(
   page: Page,
