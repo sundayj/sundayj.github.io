@@ -10,7 +10,7 @@
 #
 # If you need help with YAML syntax, here are some quick references for you: 
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
+# https://learnxminutes.com/docs/yaml/
 #
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
@@ -126,4 +126,5 @@ plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
 
-remote_theme: sundayj/DevSculptor
+# Temporary CI-009 cross-repo validation pin.
+remote_theme: sundayj/DevSculptor@8a000d16eec9972ac4d6eda5a01d295e0c2a2daa
