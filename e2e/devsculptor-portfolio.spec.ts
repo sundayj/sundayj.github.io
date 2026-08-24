@@ -36,12 +36,39 @@ test('capture article desktop dark', async ({ page }) => {
 
 test('capture projects desktop light', async ({ page }) => {
   await prepare(page, 'light', { width: 1440, height: 1000 });
-  await page.goto('/projects/');
+  await page.goto('/projects');
   await expect(page.getByRole('heading', { name: /projects/i, level: 1 })).toBeVisible();
   const firstProjectActions = page.locator('.project-actions').first();
   await expect(firstProjectActions).toBeVisible();
   await settle(page);
   await captureThrough(page, firstProjectActions, 'devsculptor-projects-desktop-light.png');
+});
+
+test('author card projects and social links are valid', async ({ page }) => {
+  await prepare(page, 'dark', { width: 1440, height: 1000 });
+  await page.goto('/about/');
+  const authorCard = page.locator('.author-card');
+  await expect(authorCard).toBeVisible();
+
+  const projectsLink = authorCard.getByRole('link', { name: 'Projects' });
+  await expect(projectsLink).toHaveAttribute('href', '/projects');
+  await projectsLink.click();
+  await expect(page).toHaveURL(/\/projects$/);
+  await expect(page.getByRole('heading', { name: /projects/i, level: 1 })).toBeVisible();
+
+  await page.goto('/about/');
+  const socialLinks = authorCard.locator('a[target="_blank"]');
+  const count = await socialLinks.count();
+  expect(count).toBeGreaterThan(0);
+  for (let index = 0; index < count; index += 1) {
+    const link = socialLinks.nth(index);
+    const href = await link.getAttribute('href');
+    expect(href).toMatch(/^https:\/\//);
+    await expect(link).toHaveAttribute('aria-label', /.+/);
+    await expect(link).toHaveAttribute('title', /.+/);
+    await expect(link).toHaveAttribute('rel', /noopener/);
+    await expect(link).toHaveAttribute('rel', /noreferrer/);
+  }
 });
 
 test('capture home mobile dark', async ({ page }) => {
