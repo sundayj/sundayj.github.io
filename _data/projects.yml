@@ -7,16 +7,17 @@
   ongoing: true
   status: Active
   role: Creator / Lead Engineer
-  tags: [personal finance, planning, bills, reconciliation]
-  skills: [Python, Django, Angular, SQL]
+  tags: [personal finance, cash flow, planning, bills, reconciliation, document parsing]
+  skills: [Python, Django, Django REST Framework, Angular, PostgreSQL, Celery, Redis]
+  case_study: "/projects/payspan/"
   summary: >-
     A personal finance application focused on pay-period planning, bill reconciliation, and reducing the manual work required to understand what is due, paid, and affordable.
   description: >-
-    A personal finance application for planning pay periods, reconciling bills and payments, and reducing the manual work required to understand what is due, paid, and affordable.
+    A self-hosted cash-flow planning system that models bills against real pay periods, reconciles statement and transaction evidence, and turns fragmented financial data into an actionable funding plan.
   highlights:
     - Models bills and occurrences against real pay periods instead of treating budgeting as a monthly snapshot.
-    - Reconciles payments, transactions, and bill state to reduce repetitive manual verification.
-    - Uses structured import and parsing workflows to turn statements and billing data into planning inputs.
+    - Reconciles payments, transactions, statement parsing, and bill state to reduce repetitive manual verification.
+    - Combines a deterministic Django domain core with an Angular SPA, REST API, asynchronous ingestion, and evidence-oriented automation.
 
 - name: DevSculptor Jekyll Theme
   slug: devsculptor
