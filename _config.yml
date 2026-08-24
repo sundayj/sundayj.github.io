@@ -126,5 +126,5 @@ plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
 
-# Temporary cross-repo validation pin for CI-011/CI-012.
-remote_theme: sundayj/DevSculptor@869d15fd2c7316e2ca0bfe6d79f0d48289e7f046
+# Temporary cross-repo validation pin for the TOC stylesheet cache fix.
+remote_theme: sundayj/DevSculptor@a4bb1e7cf7d6e3fec00cb1dc5c971b5a447d8a35
