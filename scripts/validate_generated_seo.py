@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Validate generated HTML metadata used by the JE-001 evidence gate."""
+"""Validate generated Jekyll page metadata used by the JE-001 evidence gate."""
 
 from __future__ import annotations
 
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
+
+SEO_MARKER = "<!-- Begin Jekyll SEO tag"
 
 
 class HeadMetadataParser(HTMLParser):
@@ -40,9 +42,9 @@ class HeadMetadataParser(HTMLParser):
             self.in_head = False
 
 
-def validate_html(path: Path) -> list[str]:
+def validate_html(path: Path, html: str) -> list[str]:
     parser = HeadMetadataParser()
-    parser.feed(path.read_text(encoding="utf-8"))
+    parser.feed(html)
 
     errors: list[str] = []
     expected_counts = {
@@ -69,9 +71,20 @@ def main() -> int:
         return 2
 
     failures: list[str] = []
+    validated = 0
     for path in html_files:
-        errors = validate_html(path)
+        html = path.read_text(encoding="utf-8")
+        # Raw verification files and vendored/demo HTML assets do not use the
+        # Jekyll layout or SEO tag and are intentionally outside this gate.
+        if SEO_MARKER not in html:
+            continue
+        validated += 1
+        errors = validate_html(path, html)
         failures.extend(f"{path}: {error}" for error in errors)
+
+    if validated == 0:
+        print("No Jekyll-rendered HTML pages containing the SEO tag were found", file=sys.stderr)
+        return 2
 
     if failures:
         print("Generated SEO metadata validation failed:", file=sys.stderr)
@@ -79,7 +92,7 @@ def main() -> int:
             print(f"- {failure}", file=sys.stderr)
         return 1
 
-    print(f"Validated SEO metadata ownership across {len(html_files)} generated HTML files.")
+    print(f"Validated SEO metadata ownership across {validated} Jekyll-rendered HTML pages.")
     return 0
 
 
