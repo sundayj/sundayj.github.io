@@ -24,7 +24,14 @@ The central rule is straightforward:
 
 > A new capability or abstraction does not earn a place in the architecture because it sounds reasonable or because an agent can implement it. It earns that place when evidence survives an explicit gate.
 
+<div class="article-tldr">
+<p class="article-tldr-title">TLDR</p>
+<p class="article-tldr-deck">The Short Version</p>
+<p>Coding agents can turn plausible architecture into working code extremely quickly. EGCA keeps a substantial architectural idea in a candidate state until investigation and a bounded experiment produce enough evidence to adopt it, adapt it, reject it, or test it again. The reasoning lives in durable state so a future human or agent can see why the architecture took the shape it did.</p>
+</div>
+
 ## The PaySpan feature that made the problem obvious
+<p class="article-deck">A feature that looked like it needed a new subsystem turned out to need very little new architecture.</p>
 
 One of the clearest examples came from PaySpan, a private personal-finance application I have been building and using as a proving ground for agent-assisted development.
 
@@ -46,7 +53,10 @@ That is the moment the methodology became much more interesting to me.
 
 The experiment did not merely produce a better implementation. It stopped us from building an implementation that did not need to exist.
 
+<blockquote class="pull-quote">A rejected abstraction can be a successful experiment.</blockquote>
+
 ## Put the burden of proof on the abstraction
+<p class="article-deck">Treat a plausible architectural idea as a candidate until evidence earns its promotion into the system.</p>
 
 EGCA treats architecture proposals as candidates rather than commitments.
 
@@ -87,6 +97,7 @@ Then comes the part I care about most: the evidence gate.
 The outcome must be allowed to be **Adopt, Adapt, Reject, or Repeat**. If every experiment eventually becomes "Adopt," there is no meaningful gate. There is only a slower implementation process.
 
 ## Isn't this just normal software development?
+<p class="article-deck">Mostly. EGCA makes one implicit engineering habit explicit: architectural ideas must cross a promotion boundary before they become commitments.</p>
 
 Mostly, yes.
 
@@ -142,9 +153,12 @@ A few rules make that boundary more concrete:
 
 That last point matters more than I expected. A repository shows what exists. It is much worse at showing the architectures that were considered and rejected, or the evidence that made the team stop. Humans often carry that history informally. Agents make that implicit memory much less reliable across sessions.
 
-So I do not think EGCA replaces ordinary iterative development. It formalizes a hesitation experienced engineers already practice before turning a plausible idea into permanent architecture. Coding agents made that hesitation worth making explicit.
+<blockquote class="pull-quote">EGCA formalizes the hesitation experienced engineers already practice before turning a plausible idea into permanent architecture.</blockquote>
+
+So I do not think EGCA replaces ordinary iterative development. Coding agents made that hesitation worth making explicit.
 
 ## Sometimes the abstraction earns its way in
+<p class="article-deck">The gate is a test for justified architecture, not a mandate to minimize classes or lines of code.</p>
 
 I also do not want the method to become a philosophy of "always write less code."
 
@@ -165,6 +179,7 @@ In PaySpan, evidence removed architecture. In the workplace case, evidence justi
 That is exactly what I want from the gate.
 
 ## Durable state turned out to be just as important as the experiments
+<p class="article-deck">The code tells future agents what exists; durable decision state explains what was tested, rejected, and why.</p>
 
 The experimentation itself was only half of the breakthrough.
 
@@ -183,7 +198,10 @@ I do not want a spreadsheet or a Markdown tracker duplicating the repository. Th
 
 Stable experiment IDs also matter more than I expected. If `E-007` suddenly becomes more important than `E-003`, I change priority or dependencies. I do not renumber history. That keeps decisions and evidence referentially stable for both humans and agents.
 
+<blockquote class="pull-quote">Implementation progress is evidence that code was written. It is not evidence that the architectural idea deserved to exist.</blockquote>
+
 ## Google Sheets was useful. It was not the methodology.
+<p class="article-deck">The durable state can live wherever humans and agents can reliably inspect and maintain it.</p>
 
 My first EGCA trackers lived in Google Sheets.
 
@@ -202,6 +220,7 @@ Google Sheets is a good adapter when humans and heterogeneous agents all need co
 Agent memory systems and runtime persistence can complement any of those, but they solve different problems.
 
 ## The public test: JLSunday and DevSculptor
+<p class="article-deck">A public two-repository modernization gave EGCA a reproducible test outside the private project where it originated.</p>
 
 The most useful case study is also the easiest one to inspect because the repositories are public.
 
@@ -240,6 +259,7 @@ Skill revision
 ```
 
 ## Keep experimental success away from production until the program is ready
+<p class="article-deck">A successful experiment can join the candidate architecture without becoming a piecemeal production release.</p>
 
 One of the larger changes that emerged from those runs was the branch model.
 
@@ -263,6 +283,7 @@ The feature branch is the cumulative architecture we are evaluating. Only after 
 This became especially important when later experiments depended on earlier accepted work or when evidence changed the interpretation of an earlier decision.
 
 ## EGCA has plenty of ways to fail
+<p class="article-deck">Evidence gates can become bureaucracy, misleading metrics, or self-confirming ceremony if they are applied mechanically.</p>
 
 Any process that makes architecture more deliberate can become architecture bureaucracy.
 
@@ -284,6 +305,7 @@ The mitigations are mostly procedural:
 The method should reduce speculative architecture without wrapping every change in ceremony.
 
 ## This is a synthesis, not a new scientific method
+<p class="article-deck">EGCA gives a reusable shape to established engineering practices rather than claiming to invent experimentation.</p>
 
 I gave the workflow a name because I needed a way to reproduce it across repositories and agents. The useful part is the explicit promotion boundary and durable state, not a claim that experimentation itself is new.
 
@@ -298,6 +320,7 @@ EGCA adds an operational shape around that problem: source investigation, falsif
 I have not found an established methodology that matches that entire workflow closely enough that using its name would be more accurate than describing EGCA as a synthesis.
 
 ## A practical starter version
+<p class="article-deck">You can test the idea with one Markdown file before adopting any tooling or process around it.</p>
 
 You do not need my tracker to try the idea. A minimal EGCA run can fit in a Markdown file.
 
@@ -351,6 +374,7 @@ I have packaged the fuller workflow as a public, reusable Agent Skill in the [Ev
 That is probably appropriate for a methodology built around evidence.
 
 ## Implementation is cheap now. Architecture still is not.
+<p class="article-deck">Agent speed is valuable; the question is how much of that speed we spend learning before a design becomes permanent.</p>
 
 I do not want coding agents to become slower. Their speed is the point.
 
@@ -358,4 +382,10 @@ What I want is to spend more of that speed on learning before speculation harden
 
 An agent can produce a convincing architecture in minutes. That no longer tells me whether the architecture deserves to exist.
 
-**Implementation cost is no longer a reliable filter for whether an architectural idea deserves to exist. Evidence can be.**
+<blockquote class="pull-quote">Implementation cost is no longer a reliable filter for whether an architectural idea deserves to exist. Evidence can be.</blockquote>
+
+<div class="article-cta">
+<h2>Try it on a decision you are not sure about</h2>
+<p>I've published EGCA as an open-source Agent Skill with the methodology and reusable templates in the <a href="https://github.com/sundayj/EvidenceGatedCapabilityAdoption">EvidenceGatedCapabilityAdoption repository</a>. If you use Codex or another coding agent, try it on a capability where you genuinely do not know whether the proposed architecture belongs in your system.</p>
+<p>If the workflow fails, I am interested in that too. If it creates ceremony, produces misleading evidence, misses an important architectural concern, or pushes you toward the wrong decision, <a href="https://github.com/sundayj/EvidenceGatedCapabilityAdoption/issues">open an issue</a>. A methodology built around evidence should learn more from real failure cases than from people agreeing with it.</p>
+</div>
