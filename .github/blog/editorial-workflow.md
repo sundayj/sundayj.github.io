@@ -73,7 +73,7 @@ When the editorial issue enters `blog:drafting`:
 2. Link the branch through GitHub's Development UI when supported by the available tooling; otherwise record the branch on the issue.
 3. Create the initial post at `_drafts/<slug>.markdown` on that branch.
 
-Use the site's established Jekyll front matter, but drafts may omit final publication-only values such as canonical URL and final date.
+Drafts require only `layout: post` and a working `title`; publication metadata may remain incomplete until the article is approved for publication. When adding metadata early, follow `docs/editorial-content-contract.md` rather than the legacy front matter found in older posts.
 
 Read `.github/blog/voice-guide.md` before drafting.
 
@@ -121,14 +121,17 @@ The author may request revisions in prose, GitHub comments, or chat. Continue re
 After explicit approval to prepare publication:
 
 1. Stay on the issue's existing working branch; do not create a second publication branch unless there is a concrete reason.
-2. Move/rename the draft to `_posts/YYYY-MM-DD-<slug>.markdown`.
-3. Complete front matter: title, summary, excerpt, description, category, tags, date, canonical URL, author, and other established fields.
-4. Add or verify imagery and alt text.
-5. Run `python3 scripts/validate_blog_posts.py`.
-6. Run the Jekyll build when available.
-7. Open a PR to `master` from the working branch.
-8. Include `Closes #<issue-number>` in the PR body. Do not rely only on a bare URL or `Refs`; the closing keyword is part of the editorial-state automation contract.
-9. Leave the final human-approval checklist item unchecked.
+2. Move/rename the draft to `_posts/YYYY-MM-DD-kebab-case-slug.markdown`.
+3. Complete the current front-matter contract from `docs/editorial-content-contract.md`: `layout`, `title`, `date`, one canonical `description`, plural `categories`, and focused `tags`, plus optional fields only when they add real value.
+4. Do not add legacy duplicate `summary`, `excerpt`, `canonical_url`, or singular `category` fields to a new/current-contract post.
+5. Add or verify imagery and alt text. A featured post must have a valid image.
+6. Verify body headings start at H2 and remove draft placeholders/local-only URLs.
+7. Run `python3 scripts/test_validate_blog_posts.py`.
+8. Run `python3 scripts/validate_blog_posts.py`.
+9. Run the Jekyll build when available; CI will also validate generated internal links/assets in the changed article body.
+10. Open a PR to `master` from the working branch.
+11. Include `Closes #<issue-number>` in the PR body. Do not rely only on a bare URL or `Refs`; the closing keyword is part of the editorial-state automation contract.
+12. Leave the final human-approval checklist item unchecked.
 
 ## 8. Publication
 
