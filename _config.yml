@@ -61,6 +61,17 @@ author:
     - AI-assisted development and agents, with an emphasis on verification, quality, and avoiding AI slop.
     - Python/Django, Angular, C#/.NET, SQL, APIs, and developer tooling.
     - Lessons from building, debugging, modernizing, and operating real systems.
+
+# `jekyll-seo-tag` owns OG/Twitter image tags. Pages/posts may override this
+# default with front-matter `image`; otherwise branded social previews remain useful.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/images/JLSunday-logo/cover2-Logo.png
+        alt: "JLSunday — software engineering, architecture, and AI-assisted development"
+
 default_locale: "en"
 logo_light: "/assets/images/JLSunday-logo/JLSunday-no-background.png"
 logo_dark: "/assets/images/JLSunday-logo/JLSunday-no-background.png"
@@ -142,4 +153,4 @@ plugins:
   - jekyll-sitemap
 
 # Pin the theme to an immutable, integration-tested commit. Theme upgrades are explicit PRs.
-remote_theme: sundayj/DevSculptor@f027396f637d4f53b63d22f2b4f2ad6c996b4ece
+remote_theme: sundayj/DevSculptor@7ddfec71560a707cecf06abe0f1e4584523ad02b
