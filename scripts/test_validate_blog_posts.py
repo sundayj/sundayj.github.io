@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from scripts import validate_blog_posts as validator
+import validate_blog_posts as validator
 
 
 VALID_POST = """---
