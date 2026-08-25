@@ -100,7 +100,7 @@ algolia:
       - title
     attributesToSnippet:
       - content:10
-      - summary:10
+      - description:10
 
 #### CommentBox
 comment_box: 5706851450617856-proj # project Id
@@ -142,4 +142,4 @@ plugins:
   - jekyll-sitemap
 
 # Pin the theme to an immutable, integration-tested commit. Theme upgrades are explicit PRs.
-remote_theme: sundayj/DevSculptor@e49c57eaa9a86f7b51a1557752dd741f2c5e445f
+remote_theme: sundayj/DevSculptor@f027396f637d4f53b63d22f2b4f2ad6c996b4ece
