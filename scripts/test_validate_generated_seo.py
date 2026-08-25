@@ -21,13 +21,15 @@ VALID_HTML = """<!doctype html>
 <meta property="og:url" content="https://jlsunday.com/posts/example.html">
 <meta property="og:image" content="https://jlsunday.com/assets/images/posts/example.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Example post">
 <meta name="twitter:description" content="Example description for a generated blog post.">
-<meta name="twitter:image" content="https://jlsunday.com/assets/images/posts/example.png">
 <!-- End Jekyll SEO tag -->
 </head>
 <body></body>
 </html>
+"""
+
+EXPLICIT_TWITTER_TAGS = """<meta name="twitter:title" content="Example post">
+<meta name="twitter:image" content="https://jlsunday.com/assets/images/posts/example.png">
 """
 
 
@@ -59,39 +61,47 @@ class GeneratedSeoValidatorTests(unittest.TestCase):
         path.write_bytes(content)
         return path
 
-    def test_valid_social_card_metadata_passes(self) -> None:
-        errors, _ = validator.validate_html(Path("example.html"), VALID_HTML)
-        self.assertEqual([], errors)
-
-    def test_missing_twitter_image_is_rejected(self) -> None:
-        html = VALID_HTML.replace(
-            '<meta name="twitter:image" content="https://jlsunday.com/assets/images/posts/example.png">\n',
-            "",
+    def validate_contract(self, html: str) -> list[str]:
+        errors, _ = validator.validate_html(
+            Path("example.html"),
+            html,
+            require_social_card_contract=True,
         )
-        errors, _ = validator.validate_html(Path("example.html"), html)
-        self.assertTrue(any("twitter:image: expected 1, found 0" in error for error in errors))
+        return errors
+
+    def test_open_graph_fallback_is_valid_for_x_card(self) -> None:
+        self.assertEqual([], self.validate_contract(VALID_HTML))
+
+    def test_explicit_twitter_title_and_image_are_valid(self) -> None:
+        html = VALID_HTML.replace(
+            '<meta name="twitter:description"',
+            EXPLICIT_TWITTER_TAGS + '<meta name="twitter:description"',
+        )
+        self.assertEqual([], self.validate_contract(html))
 
     def test_twitter_card_must_be_large_image(self) -> None:
-        html = VALID_HTML.replace("summary_large_image", "summary")
-        errors, _ = validator.validate_html(Path("example.html"), html)
+        errors = self.validate_contract(VALID_HTML.replace("summary_large_image", "summary"))
         self.assertTrue(any("twitter:card must be `summary_large_image`" in error for error in errors))
 
-    def test_twitter_image_must_match_open_graph_image(self) -> None:
-        html = VALID_HTML.replace(
-            'name="twitter:image" content="https://jlsunday.com/assets/images/posts/example.png"',
-            'name="twitter:image" content="https://jlsunday.com/assets/images/posts/other.png"',
+    def test_explicit_twitter_image_must_match_open_graph_image(self) -> None:
+        explicit = EXPLICIT_TWITTER_TAGS.replace(
+            "https://jlsunday.com/assets/images/posts/example.png",
+            "https://jlsunday.com/assets/images/posts/other.png",
         )
-        errors, _ = validator.validate_html(Path("example.html"), html)
+        html = VALID_HTML.replace(
+            '<meta name="twitter:description"',
+            explicit + '<meta name="twitter:description"',
+        )
+        errors = self.validate_contract(html)
         self.assertTrue(any("twitter:image must match og:image" in error for error in errors))
 
-    def test_social_urls_must_be_absolute_https(self) -> None:
+    def test_social_image_url_must_be_absolute_https(self) -> None:
         html = VALID_HTML.replace(
             "https://jlsunday.com/assets/images/posts/example.png",
             "/assets/images/posts/example.png",
         )
-        errors, _ = validator.validate_html(Path("example.html"), html)
+        errors = self.validate_contract(html)
         self.assertTrue(any("og:image must be an absolute HTTPS URL" in error for error in errors))
-        self.assertTrue(any("twitter:image must be an absolute HTTPS URL" in error for error in errors))
 
     def test_built_social_image_must_exist(self) -> None:
         errors = validator.validate_social_image(
