@@ -9,7 +9,7 @@ from pathlib import Path
 
 SEO_MARKER = "<!-- Begin Jekyll SEO tag"
 DEFAULT_SOCIAL_IMAGE = "https://jlsunday.com/assets/images/JLSunday-logo/cover2-Logo.png"
-PARSER_ARTICLE_SUFFIX = "software-development/2026/08/23/your-parser-shouldnt-get-one-shot.html"
+PARSER_ARTICLE_TITLE = "Your Parser Shouldn't Get One Shot"
 PARSER_ARTICLE_IMAGE = "https://jlsunday.com/assets/images/posts/undraw/undraw_Design_objectives_re_94pd.png"
 
 
@@ -22,6 +22,7 @@ class HeadMetadataParser(HTMLParser):
         self.twitter_description: list[str] = []
         self.og_description: list[str] = []
         self.og_image: list[str] = []
+        self.og_title: list[str] = []
         self.twitter_card: list[str] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
@@ -46,6 +47,8 @@ class HeadMetadataParser(HTMLParser):
                 self.og_description.append(content)
             if attributes.get("property") == "og:image":
                 self.og_image.append(content)
+            if attributes.get("property") == "og:title":
+                self.og_title.append(content)
 
     def handle_endtag(self, tag: str) -> None:
         if tag == "head":
@@ -125,11 +128,15 @@ def main() -> int:
         )
 
     parser_fixture = next(
-        ((path, metadata) for path, metadata in metadata_by_path.items() if path.as_posix().endswith(PARSER_ARTICLE_SUFFIX)),
+        (
+            (path, metadata)
+            for path, metadata in metadata_by_path.items()
+            if metadata.og_title == [PARSER_ARTICLE_TITLE]
+        ),
         None,
     )
     if parser_fixture is None:
-        failures.append(f"expected parser article fixture ending in `{PARSER_ARTICLE_SUFFIX}` was not generated")
+        failures.append(f"expected parser article fixture titled `{PARSER_ARTICLE_TITLE}` was not generated")
     else:
         path, metadata = parser_fixture
         if metadata.og_image != [PARSER_ARTICLE_IMAGE]:
