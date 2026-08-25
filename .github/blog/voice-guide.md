@@ -19,6 +19,19 @@ This is a living guide derived from the existing public blog. It should be refin
 - Use lists and tables when they improve scanning, but do not turn prose arguments into listicles.
 - Conclusions should synthesize what the evidence means, not simply repeat earlier sections.
 
+## Long-form scanability
+
+For long technical articles, preserve depth while giving scanning readers enough structure to decide whether to keep reading.
+
+- Consider a concise **TLDR** block near the beginning. Use the deck label **The Short Version** when appropriate.
+- Major conversational headings may be followed by a one-sentence explanatory **section deck** that states the technical point of the section more formally.
+- Use a small number of **pull quotes** for conclusions worth remembering. They should surface claims already supported by nearby prose rather than introduce new claims.
+- Use a substantive end-of-article **call to action** when the post has a natural next step such as trying a tool, inspecting a repository, or reporting failure cases. Avoid generic engagement prompts.
+- A reader should be able to scan the title, TLDR, headings, section decks, pull quotes, and conclusion and understand the article's argument before committing to the full read.
+- Do not add these devices mechanically to every post. They are aids for long-form material, not a required template.
+
+The DevSculptor theme provides reusable classes for these elements: `article-tldr`, `article-deck`, `pull-quote`, and `article-cta`.
+
 ## Sentence-level style
 
 - Favor direct sentences and concrete nouns/verbs.
