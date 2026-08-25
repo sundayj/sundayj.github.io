@@ -27,7 +27,7 @@ Capture the idea in a GitHub issue using the Blog Post issue form when possible.
 - intended reader
 - why the topic matters now
 - author's initial position
-- research notes
+- research notes and research ledger
 - counterarguments
 - decisions and revisions
 - working draft branch
@@ -51,6 +51,29 @@ Expected output:
 - proposed thesis adjustments, if evidence warrants them
 
 Do not draft around a conclusion that the evidence no longer supports.
+
+### Durable research ledger
+
+For research-heavy posts, maintain a compact research ledger in the editorial issue alongside synthesis and conclusion notes. The ledger exists to preserve research coverage and provenance, including sources that ultimately do not appear in the article.
+
+Record every materially evaluated source, project, methodology, tool, competing approach, or adjacent system. Do not limit the ledger to sources selected for citation.
+
+Each entry should record at minimum:
+
+- **Name / source**
+- **Date investigated**
+- **Canonical URL or repository**, when available
+- **Why it is relevant**
+- **Key finding / relationship to the thesis**
+- **Disposition**, such as `foundational lineage`, `related work`, `competing approach`, `supporting evidence`, `counterevidence`, `rejected/irrelevant`, or `revisit`
+
+Keep entries concise. Full research synthesis may live in separate issue comments; the ledger answers the narrower questions "Did we investigate this?", "Why?", "What did we conclude?", and "Where did it come from?"
+
+When later evidence introduces a materially relevant source that was missed or cannot be confirmed in the existing ledger, add it explicitly and mark it as post-publication or late-stage research rather than implying it was part of the original research pass.
+
+Before moving from research to outlining, review the ledger for obvious gaps in competing approaches, intellectual lineage, counterevidence, and primary sources. For claims of novelty or methodological distinctiveness, perform an adversarial related-work pass and record the closest alternatives even when the conclusion is that they differ materially.
+
+The research ledger is durable editorial state, not a citation requirement. The final article should cite only sources that materially support the published argument.
 
 ## 3. Outline
 
