@@ -26,6 +26,9 @@ jobs:
       - name: Test blog voice validator
         run: python3 scripts/test_validate_blog_voice.py
 
+      - name: Test generated SEO validator
+        run: python3 scripts/test_validate_generated_seo.py
+
       - name: Test editorial related-content scorer
         run: python3 scripts/test_suggest_related_posts.py
 
