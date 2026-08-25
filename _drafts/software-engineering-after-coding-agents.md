@@ -9,7 +9,8 @@ tags: [AI, Codex, Agentic Engineering, Architecture, Career, software-architectu
 comments: true
 include_TOC: true
 featured: false
-image: /assets/images/posts/software-engineering-after-coding-agents.jpg
+image: /assets/images/posts/software-engineering-after-coding-agents.png
+image_alt: "A small coding robot draws a path while a human engineer points toward the chosen direction beside a signpost."
 ---
 
 I keep seeing versions of the same argument about AI and software engineering: the models can write code now, but engineers will still be needed because somebody has to understand requirements, navigate ambiguity, make tradeoffs, debug systems, and verify the result.
@@ -28,7 +29,7 @@ The more interesting shift is this:
 
 That changes what engineering work is worth getting exceptionally good at.
 
-My previous post, [Make Your Coding Agent Earn the Architecture]({% post_url 2026-08-24-make-your-coding-agent-earn-the-architecture %}), looked at one consequence of that shift from inside the repository: when implementation becomes cheap, speculative architecture becomes cheap too, so ideas need to earn their way into a system through evidence rather than plausibility. This post zooms out from the same premise. If agents can increasingly handle implementation, planning, debugging, and review, what part of the software engineer's job is actually becoming more valuable?
+My previous post, [Make Your Coding Agent Earn the Architecture]({% post_url 2026-08-24-make-your-coding-agent-earn-the-architecture %}), looked at one consequence of that shift from inside the repository. When implementation becomes cheap, speculative architecture becomes cheap too, so ideas need to earn their way into a system through evidence rather than plausibility. This post zooms out from the same premise. If agents can increasingly handle implementation, planning, debugging, and review, what part of the software engineer's job is actually becoming more valuable?
 
 <div class="article-tldr">
 <p class="article-tldr-title">TLDR</p>
@@ -48,7 +49,7 @@ What I find more important is what happened to trust at the same time.
 
 Stack Overflow found that 46% of developers distrusted the accuracy of AI-tool output while only 33% trusted it. Sixty-six percent cited solutions that were “almost right” as a major frustration, and 45% complained that debugging AI-generated code could take more time.
 
-That combination—high adoption and low trust—looks much closer to my actual experience than either the booster or doomer version of the story.
+That combination of high adoption and low trust looks much closer to my actual experience than either the booster or doomer version of the story.
 
 I use coding agents heavily because the leverage is real. I also assume they can produce an internally coherent answer that is still wrong.
 
@@ -177,7 +178,7 @@ Reasoning models, parallel agents, long context windows, browser automation, hos
 
 A workflow that is impressive at $40 per task may be useless when run 5,000 times a month.
 
-Engineers who can decide where expensive reasoning is justified—and where a deterministic script is better—will have an advantage over teams that throw the largest model at every problem.
+Engineers who can decide where expensive reasoning is justified and where a deterministic script is better will have an advantage over teams that throw the largest model at every problem.
 
 ### 6. Own outcomes instead of artifacts
 
@@ -213,7 +214,7 @@ I would not build a career plan around the assumption that there is some comfort
 
 I would build it around a different assumption:
 
-**As capability rises, the person who can decide what deserves to be built, shape the environment in which agents work, detect when the result is wrong, and take responsibility for the system becomes more leveraged—not less.**
+**As capability rises, the person who can decide what deserves to be built, shape the environment in which agents work, detect when the result is wrong, and take responsibility for the system becomes more leveraged, not less.**
 
 That is a different job from the software engineer many of us trained to be.
 
