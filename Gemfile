@@ -27,5 +27,5 @@ gem "eventmachine", "~> 1.2.7"
 
 gem "webrick"
 gem "jekyll-admin", group: :jekyll_plugins
-gem "DevSculptor", "~> 1.0"
+# DevSculptor is consumed exclusively through the pinned remote_theme ref in _config.yml.
 gem "jekyll-remote-theme", "~> 0.4.3"
