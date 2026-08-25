@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Human-judgment benchmark for JE-003's current six-post corpus."""
+"""Human-judgment benchmark for JE-003's current published corpus."""
 
 from __future__ import annotations
 
@@ -16,6 +16,7 @@ EXPECTED_RELATED = {
     "Building an App with Angular, Part 1: Introduction": [],
     "Comparing Pixel Art Editors": [],
     "Your Parser Shouldn't Get One Shot": [],
+    "Make Your Coding Agent Earn the Architecture": [],
 }
 
 
@@ -51,6 +52,16 @@ class RelatedContentBenchmarkTests(unittest.TestCase):
 
         evidence = benchmark.score_pair(dev_tools, pixel_art)
         self.assertLess(evidence["score"], benchmark.MIN_SCORE)
+
+    def test_broad_ai_overlap_does_not_force_architecture_recommendation(self) -> None:
+        posts = benchmark.load_posts()
+        by_title = {post.title: post for post in posts}
+        parser = by_title["Your Parser Shouldn't Get One Shot"]
+        agent_architecture = by_title["Make Your Coding Agent Earn the Architecture"]
+
+        evidence = benchmark.score_pair(parser, agent_architecture)
+        self.assertLess(evidence["score"], benchmark.MIN_SCORE)
+        self.assertEqual(["ai"], evidence["shared_tags"])
 
 
 if __name__ == "__main__":
