@@ -23,6 +23,12 @@ jobs:
       - name: Test publishing validator
         run: python3 scripts/test_validate_blog_posts.py
 
+      - name: Run JE-003 related-content benchmark
+        if: github.event_name == 'pull_request'
+        run: |
+          python3 scripts/benchmark_related_posts.py
+          python3 scripts/test_related_content_benchmark.py
+
       - name: Validate changed blog files
         if: github.event_name == 'pull_request'
         env:
