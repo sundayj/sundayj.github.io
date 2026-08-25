@@ -6,7 +6,9 @@ Can a deterministic metadata-only scorer produce genuinely useful related-post r
 
 ## Current corpus
 
-The published corpus contains six posts. Most predate the current taxonomy contract and use legacy singular `category` plus heterogeneous tags. The newest parser-architecture article has essentially no topical neighbor in the older corpus.
+The published corpus currently contains seven posts. Most of the older posts predate the current taxonomy contract and use legacy singular `category` plus heterogeneous tags. The two 2026 posts use substantially newer topics/metadata and do not have strong direct neighbors in the older corpus.
+
+The seventh post, `Make Your Coding Agent Earn the Architecture`, was published after the initial experiment inventory. The first benchmark run intentionally failed because the human-judgment fixture did not silently accept an unreviewed corpus member. After review, it is classified as no automatic recommendation: it shares broad AI/architecture themes with the parser article, but not enough direct topical overlap to justify an always-visible related-post card.
 
 Because the corpus is sparse, the experiment treats **no recommendation** as a valid and often preferable result.
 
@@ -25,15 +27,19 @@ The scorer emits the score components and overlapping metadata for every returne
 
 ## Human relevance judgments
 
-For the current six-post corpus, the conservative expected relationship is:
+For the current seven-post corpus, the conservative expected relationship is:
 
 - `5 Great Free Software Development Tools` ↔ `40 Awesome Programming Resources`
 - `Site Updates` → none
 - `Building an App with Angular, Part 1: Introduction` → none
 - `Comparing Pixel Art Editors` → none
 - `Your Parser Shouldn't Get One Shot` → none
+- `Make Your Coding Agent Earn the Architecture` → none
 
-The key negative case is Pixel Art Editors. It shares legacy `category: Tools` and tag `tools` with the development-tools article, but that superficial overlap should remain below threshold rather than produce a weak recommendation.
+The key negative cases are:
+
+- Pixel Art Editors shares legacy `category: Tools` and tag `tools` with the development-tools article, but that superficial overlap should remain below threshold.
+- The parser and coding-agent articles share `ai`, but broad AI/architecture affinity alone should not force a recommendation.
 
 ## Evidence commands
 
