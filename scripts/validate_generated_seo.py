@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import re
 import struct
 import sys
 from html.parser import HTMLParser
@@ -18,6 +19,10 @@ REQUIRED_TWITTER_CARD = "summary_large_image"
 MAX_SOCIAL_IMAGE_BYTES = 5 * 1024 * 1024
 MIN_SOCIAL_IMAGE_WIDTH = 300
 MIN_SOCIAL_IMAGE_HEIGHT = 157
+POST_RE = re.compile(
+    r"^\d{4}-\d{2}-\d{2}-(?P<slug>[a-z0-9]+(?:-[a-z0-9]+)*)\.(?:md|markdown)$",
+    re.IGNORECASE,
+)
 
 
 class HeadMetadataParser(HTMLParser):
@@ -84,6 +89,14 @@ def validate_single(name: str, values: list[str]) -> list[str]:
     return errors
 
 
+def validate_optional_single(name: str, values: list[str]) -> list[str]:
+    if len(values) > 1:
+        return [f"{name}: expected at most 1, found {len(values)}"]
+    if len(values) == 1 and not values[0].strip():
+        return [f"{name}: value is empty"]
+    return []
+
+
 def parse_metadata(html: str) -> HeadMetadataParser:
     parser = HeadMetadataParser()
     parser.feed(html)
@@ -97,6 +110,29 @@ def validate_https_url(name: str, values: list[str]) -> list[str]:
     if parsed.scheme != "https" or not parsed.netloc:
         return [f"{name} must be an absolute HTTPS URL, found `{values[0]}`"]
     return []
+
+
+def current_contract_post_slugs(posts_dir: Path = Path("_posts")) -> set[str]:
+    slugs: set[str] = set()
+    if not posts_dir.is_dir():
+        return slugs
+
+    for path in posts_dir.iterdir():
+        match = POST_RE.match(path.name)
+        if not match or not path.is_file():
+            continue
+        text = path.read_text(encoding="utf-8")
+        lines = text.splitlines()
+        if not lines or lines[0].strip() != "---":
+            continue
+        try:
+            end = next(i for i in range(1, len(lines)) if lines[i].strip() == "---")
+        except StopIteration:
+            continue
+        front_matter = "\n".join(lines[1:end])
+        if re.search(r"^categories\s*:", front_matter, re.MULTILINE):
+            slugs.add(match.group("slug"))
+    return slugs
 
 
 def png_dimensions(path: Path) -> tuple[int, int] | None:
@@ -157,7 +193,7 @@ def validate_social_image(site_dir: Path, image_url: str) -> list[str]:
     errors: list[str] = []
     parsed = urlparse(image_url)
     site = urlparse(SITE_ORIGIN)
-    if parsed.scheme != "https" or parsed.netloc != site.netloc:
+    if parsed.scheme != "https" or parsed.hostname != site.hostname:
         errors.append(f"social image must resolve to `{SITE_ORIGIN}` over HTTPS, found `{image_url}`")
         return errors
 
@@ -189,45 +225,65 @@ def validate_social_image(site_dir: Path, image_url: str) -> list[str]:
     return errors
 
 
-def validate_html(path: Path, html: str) -> tuple[list[str], HeadMetadataParser]:
+def validate_html(
+    path: Path,
+    html: str,
+    *,
+    require_social_card_contract: bool = False,
+) -> tuple[list[str], HeadMetadataParser]:
     parser = parse_metadata(html)
 
     errors: list[str] = []
-    metadata = {
-        "canonical": parser.canonical,
-        "description": parser.description,
-        "og:title": parser.og_title,
-        "og:description": parser.og_description,
-        "og:url": parser.og_url,
-        "og:image": parser.og_image,
-        "twitter:card": parser.twitter_card,
-        "twitter:title": parser.twitter_title,
-        "twitter:description": parser.twitter_description,
-        "twitter:image": parser.twitter_image,
-    }
-    for name, values in metadata.items():
-        errors.extend(validate_single(name, values))
-
     for name, values in {
         "canonical": parser.canonical,
-        "og:url": parser.og_url,
+        "description": parser.description,
+        "twitter:description": parser.twitter_description,
+        "og:description": parser.og_description,
         "og:image": parser.og_image,
-        "twitter:image": parser.twitter_image,
+        "twitter:card": parser.twitter_card,
     }.items():
-        errors.extend(validate_https_url(name, values))
+        errors.extend(validate_single(name, values))
+
+    errors.extend(validate_https_url("og:image", parser.og_image))
 
     if parser.twitter_card and parser.twitter_card[0] != REQUIRED_TWITTER_CARD:
         errors.append(
             f"twitter:card must be `{REQUIRED_TWITTER_CARD}`, found `{parser.twitter_card[0]}`"
         )
-    if parser.og_image and parser.twitter_image and parser.og_image[0] != parser.twitter_image[0]:
-        errors.append(
-            f"twitter:image must match og:image; found `{parser.twitter_image[0]}` vs `{parser.og_image[0]}`"
-        )
-    if parser.canonical and parser.og_url and parser.canonical[0] != parser.og_url[0]:
-        errors.append(
-            f"og:url must match canonical URL; found `{parser.og_url[0]}` vs `{parser.canonical[0]}`"
-        )
+
+    if require_social_card_contract:
+        for name, values in {
+            "og:title": parser.og_title,
+            "og:url": parser.og_url,
+        }.items():
+            errors.extend(validate_single(name, values))
+        for name, values in {
+            "twitter:title": parser.twitter_title,
+            "twitter:image": parser.twitter_image,
+        }.items():
+            errors.extend(validate_optional_single(name, values))
+
+        errors.extend(validate_https_url("canonical", parser.canonical))
+        errors.extend(validate_https_url("og:url", parser.og_url))
+        if parser.twitter_image:
+            errors.extend(validate_https_url("twitter:image", parser.twitter_image))
+
+        if parser.canonical and parser.og_url and parser.canonical[0] != parser.og_url[0]:
+            errors.append(
+                f"og:url must match canonical URL; found `{parser.og_url[0]}` vs `{parser.canonical[0]}`"
+            )
+        if parser.twitter_image and parser.og_image and parser.twitter_image[0] != parser.og_image[0]:
+            errors.append(
+                f"twitter:image must match og:image when explicitly emitted; "
+                f"found `{parser.twitter_image[0]}` vs `{parser.og_image[0]}`"
+            )
+
+        effective_title = parser.twitter_title or parser.og_title
+        effective_image = parser.twitter_image or parser.og_image
+        if not effective_title or not effective_title[0].strip():
+            errors.append("X card has no usable title after Open Graph fallback")
+        if not effective_image or not effective_image[0].strip():
+            errors.append("X card has no usable image after Open Graph fallback")
 
     return errors, parser
 
@@ -243,24 +299,31 @@ def main() -> int:
         print("No generated HTML files found in _site", file=sys.stderr)
         return 2
 
+    current_slugs = current_contract_post_slugs()
     failures: list[str] = []
     metadata_by_path: dict[Path, HeadMetadataParser] = {}
+    current_metadata: list[tuple[Path, HeadMetadataParser]] = []
     validated = 0
-    validated_images: set[str] = set()
+
     for path in html_files:
         html = path.read_text(encoding="utf-8")
         if SEO_MARKER not in html:
             continue
+
+        preliminary = parse_metadata(html)
+        canonical = preliminary.canonical[0] if len(preliminary.canonical) == 1 else ""
+        is_current_post = any(slug in canonical for slug in current_slugs)
+
         validated += 1
-        errors, parser = validate_html(path, html)
+        errors, parser = validate_html(
+            path,
+            html,
+            require_social_card_contract=is_current_post,
+        )
         metadata_by_path[path] = parser
         failures.extend(f"{path}: {error}" for error in errors)
-
-        if len(parser.og_image) == 1 and parser.og_image[0] not in validated_images:
-            validated_images.add(parser.og_image[0])
-            failures.extend(
-                f"{path}: {error}" for error in validate_social_image(site_dir, parser.og_image[0])
-            )
+        if is_current_post:
+            current_metadata.append((path, parser))
 
     if validated == 0:
         print("No Jekyll-rendered HTML pages containing the SEO tag were found", file=sys.stderr)
@@ -272,6 +335,22 @@ def main() -> int:
     elif homepage.og_image != [DEFAULT_SOCIAL_IMAGE]:
         failures.append(
             f"_site/index.html: expected default social image `{DEFAULT_SOCIAL_IMAGE}`, found {homepage.og_image}"
+        )
+    else:
+        failures.extend(
+            f"_site/index.html: {error}"
+            for error in validate_social_image(site_dir, DEFAULT_SOCIAL_IMAGE)
+        )
+
+    validated_images: set[str] = set()
+    for path, metadata in current_metadata:
+        effective_image = (metadata.twitter_image or metadata.og_image)[0]
+        if effective_image in validated_images:
+            continue
+        validated_images.add(effective_image)
+        failures.extend(
+            f"{path}: {error}"
+            for error in validate_social_image(site_dir, effective_image)
         )
 
     parser_fixture = next(
@@ -304,8 +383,9 @@ def main() -> int:
         return 1
 
     print(
-        f"Validated SEO/social metadata across {validated} Jekyll-rendered HTML pages and "
-        f"{len(validated_images)} distinct social images."
+        f"Validated SEO/social metadata across {validated} Jekyll-rendered HTML pages, "
+        f"including {len(current_metadata)} current-contract posts and "
+        f"{len(validated_images) + 1} checked social images."
     )
     return 0
 
