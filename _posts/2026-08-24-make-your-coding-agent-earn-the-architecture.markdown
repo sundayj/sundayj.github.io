@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Make Your Coding Agent Earn the Architecture"
+date: 2026-08-24 21:00:00 -0400
 description: "Evidence-Gated Capability Adoption is the workflow I use to keep coding agents from turning plausible ideas into permanent architecture before the evidence justifies it."
-categories: [Software Engineering, AI]
+categories: ["AI & Software Engineering", "Software Architecture"]
 tags: [AI, Codex, Agentic Engineering, Architecture, EGCA]
 ---
 
@@ -369,7 +370,7 @@ Update evidence and decisions as the work progresses. New abstractions must be
 justified by observed evidence before they enter the cumulative feature branch.
 ```
 
-I have packaged the fuller workflow as a public, reusable Agent Skill in the [EvidenceGatedCapabilityAdoption repository](https://github.com/sundayj/EvidenceGatedCapabilityAdoption). The skill is intentionally still evolving. Some of its current rules exist because real uses exposed failures in earlier versions, including a broken installation package, ambiguous experiment integration, and validation states that were too coarse.
+I have packaged the fuller workflow as a public, reusable [Agent Skill](https://github.com/sundayj/EvidenceGatedCapabilityAdoption/tree/main/skills/evidence-gated-capability-adoption) in the [EvidenceGatedCapabilityAdoption repository](https://github.com/sundayj/EvidenceGatedCapabilityAdoption). The skill is intentionally still evolving. Some of its current rules exist because real uses exposed failures in earlier versions, including a broken installation package, ambiguous experiment integration, and validation states that were too coarse.
 
 That is probably appropriate for a methodology built around evidence.
 
@@ -386,6 +387,6 @@ An agent can produce a convincing architecture in minutes. That no longer tells 
 
 <div class="article-cta">
 <h2>Try it on a decision you are not sure about</h2>
-<p>I've published EGCA as an open-source Agent Skill with the methodology and reusable templates in the <a href="https://github.com/sundayj/EvidenceGatedCapabilityAdoption">EvidenceGatedCapabilityAdoption repository</a>. If you use Codex or another coding agent, try it on a capability where you genuinely do not know whether the proposed architecture belongs in your system.</p>
+<p>I've published EGCA as an open-source <a href="https://github.com/sundayj/EvidenceGatedCapabilityAdoption/tree/main/skills/evidence-gated-capability-adoption">Agent Skill</a> with the methodology and reusable templates in the <a href="https://github.com/sundayj/EvidenceGatedCapabilityAdoption">EvidenceGatedCapabilityAdoption repository</a>. If you use Codex or another coding agent, try it on a capability where you genuinely do not know whether the proposed architecture belongs in your system.</p>
 <p>If the workflow fails, I am interested in that too. If it creates ceremony, produces misleading evidence, misses an important architectural concern, or pushes you toward the wrong decision, <a href="https://github.com/sundayj/EvidenceGatedCapabilityAdoption/issues">open an issue</a>. A methodology built around evidence should learn more from real failure cases than from people agreeing with it.</p>
 </div>
