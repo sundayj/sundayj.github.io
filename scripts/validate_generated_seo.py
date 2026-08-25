@@ -106,8 +106,6 @@ def main() -> int:
     validated = 0
     for path in html_files:
         html = path.read_text(encoding="utf-8")
-        # Raw verification files and vendored/demo HTML assets do not use the
-        # Jekyll layout or SEO tag and are intentionally outside this gate.
         if SEO_MARKER not in html:
             continue
         validated += 1
@@ -131,7 +129,7 @@ def main() -> int:
         (
             (path, metadata)
             for path, metadata in metadata_by_path.items()
-            if metadata.og_title == [PARSER_ARTICLE_TITLE]
+            if metadata.og_title and metadata.og_title[0].startswith(PARSER_ARTICLE_TITLE)
         ),
         None,
     )
