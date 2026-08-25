@@ -70,7 +70,7 @@ Record
 
 Those states sound obvious when written down. In practice, coding agents can move through them so quickly that they blur together.
 
-A useful idea becomes a proposed implementation. A proposed implementation becomes a branch. The tests pass, so the branch becomes evidence that the idea was correct. A few iterations later, the architecture is permanent and nobody quite remembers which assumptions were ever tested.
+A useful idea becomes a proposed implementation. A proposed implementation becomes a branch. The tests pass, so the branch starts to look like evidence that the idea was correct. A few iterations later, the architecture is permanent and nobody quite remembers which assumptions were ever tested.
 
 The workflow forces a harder question at each transition.
 
@@ -80,31 +80,87 @@ An **investigation** asks how the current system and any source implementation a
 
 A **hypothesis** states the expected improvement in falsifiable terms. It also records what evidence would count against the idea before implementation starts.
 
-The **smallest useful experiment** is the cheapest bounded change that can answer the architectural question. It is not a miniature production rollout.
+The **smallest useful experiment** is the cheapest bounded change that can answer the architectural question. It exists to reduce uncertainty before more architecture accumulates.
 
 Then comes the part I care about most: the evidence gate.
 
-The outcome must be allowed to be **Adopt, Adapt, Reject, or Repeat**. If every experiment eventually becomes "Adopt," there is no gate. There is only a slower implementation process.
+The outcome must be allowed to be **Adopt, Adapt, Reject, or Repeat**. If every experiment eventually becomes "Adopt," there is no meaningful gate. There is only a slower implementation process.
+
+## Isn't this just normal software development?
+
+Mostly, yes.
+
+Experienced engineers have always formed ideas, tried things, learned from bugs and constraints, and adjusted designs as they went. Hypothesis-driven development, Lean, technical spikes, evolutionary architecture, and decades of ordinary engineering practice already cover that territory. If EGCA were simply a renamed version of "iterate on your code," the name would deserve the eye roll.
+
+The part I found useful enough to make explicit is narrower: **separating an architectural candidate from an implementation commitment and requiring evidence before promoting it into the architecture.**
+
+That distinction is easy to handle implicitly when one engineer is carrying the reasoning in their head. It becomes much easier to lose when an agent can turn an architectural suggestion into a convincing implementation before the underlying assumption has been challenged.
+
+Consider the arrears example again. A normal iterative path could have looked like this:
+
+```text
+"Arrears probably needs its own subsystem"
+          ↓
+Start building the subsystem
+          ↓
+Models, services, migrations, APIs, tests
+          ↓
+Learn from the implementation
+          ↓
+Refactor, simplify, or remove pieces
+```
+
+That is legitimate iterative development. It might eventually converge on the same answer.
+
+EGCA moves the expensive learning question earlier:
+
+```text
+"Arrears may need its own subsystem"
+          ↓
+Record it as a candidate
+          ↓
+Inspect the existing system deeply
+          ↓
+Hypothesis: existing primitives may already cover most of it
+          ↓
+Run the smallest experiment that can answer that question
+          ↓
+Evidence: most of the proposed subsystem is unnecessary
+          ↓
+Never build it
+```
+
+The gain is not the existence of iteration. The gain is **moving iteration upstream of architectural commitment**.
+
+A few rules make that boundary more concrete:
+
+- A candidate is allowed to remain merely interesting. It does not automatically become backlog work.
+- Rejection is a successful experimental outcome when it prevents unjustified complexity.
+- Where practical, rejection criteria are written before implementation so the same agent cannot quietly redefine success after seeing the result.
+- Implementation momentum is not treated as proof that the original idea was good.
+- The reasoning is preserved in durable state so another engineer or agent can understand why an idea was adopted, adapted, deferred, or deliberately never built.
+
+That last point matters more than I expected. A repository shows what exists. It is much worse at showing the architectures that were considered and rejected, or the evidence that made the team stop. Humans often carry that history informally. Agents make that implicit memory much less reliable across sessions.
+
+So I do not think EGCA replaces ordinary iterative development. It formalizes a hesitation experienced engineers already practice before turning a plausible idea into permanent architecture. Coding agents made that hesitation worth making explicit.
 
 ## Sometimes the abstraction earns its way in
 
-I do not want this to become a philosophy of "always write less code."
+I also do not want the method to become a philosophy of "always write less code."
 
 A workplace use of EGCA gave me a useful counterexample.
 
 The work began with a real production support regression involving financial semantics across several state-specific document generators. The obvious long-term concern was duplicated mapping logic. It would have been easy to jump from the bug directly into a broad typed configuration or policy registry.
 
-We did not start there.
-
-The first experiments characterized the actual regression and isolated two narrower problems. Once those were understood, a later experiment tested whether a shared typed financial-bucket abstraction reduced the risk without forcing a general registry across every state.
+We started by characterizing the actual regression and isolating two narrower problems. Once those were understood, a later experiment tested whether a shared typed financial-bucket abstraction reduced the risk without forcing a general registry across every state.
 
 That smaller abstraction held up across multiple independently verified paths, so it earned adoption.
 
 The broader policy registry did not. Several states still had semantics that had not been verified well enough to encode into a universal abstraction. That part stayed deferred.
 
-This is an important property of the method. EGCA is not biased toward the minimum number of classes or the fewest lines of code. It is biased toward **justified architecture**.
+This is an important property of the method. EGCA is biased toward **justified architecture**, whether the evidence leads to less structure or a carefully bounded new abstraction.
 
-In PaySpan, evidence removed architecture. In the workplace case, evidence justified a narrow abstraction while continuing to reject a larger one.
+In PaySpan, evidence removed architecture. In the workplace case, evidence justified a narrow abstraction while continuing to defer a larger one.
 
 That is exactly what I want from the gate.
 
@@ -157,9 +213,9 @@ One early experiment, `JE-001`, started from a plausible assumption about duplic
 
 Even the evidence harness failed usefully. A validation step initially reported a problem because the validator itself contained a bad assumption. Fixing the harness became part of the learning rather than being mistaken for evidence against the architecture.
 
-Other items bypassed experimentation entirely. Once the existing code and generated output provided enough evidence, running a formal spike would have been ceremony. EGCA should add friction where uncertainty exists, not manufacture uncertainty so the process has something to do.
+Other items bypassed experimentation entirely. Once the existing code and generated output provided enough evidence, running a formal spike would have been ceremony. EGCA should add friction where uncertainty exists rather than manufacture uncertainty so the process has something to do.
 
-The Algolia/search work became another good example. Peeling away wrapper actions, theme behavior, and repository responsibilities progressively changed our understanding of where indexing belonged. The eventual answer was not merely "fix the failing action." Part of the responsibility did not belong in the reusable theme at all.
+The Algolia/search work became another good example. Peeling away wrapper actions, theme behavior, and repository responsibilities progressively changed our understanding of where indexing belonged. The eventual answer went beyond "fix the failing action." Part of the responsibility did not belong in the reusable theme at all.
 
 Cross-repository validation mattered too. A theme can look correct in isolation and still fail at its consumption boundary. We tested DevSculptor changes against JLSunday using the exact theme commit that would be consumed, rather than assuming a green theme repository meant the integrated system was safe.
 
@@ -225,11 +281,11 @@ The mitigations are mostly procedural:
 - record environment-blocked validation separately from a failed hypothesis;
 - allow direct implementation when the evidence already exists.
 
-The method should reduce speculative architecture, not create a new speculative process layer around every change.
+The method should reduce speculative architecture without wrapping every change in ceremony.
 
 ## This is a synthesis, not a new scientific method
 
-I gave the workflow a name because I needed a way to reproduce it across repositories and agents. I do not think I invented experimental software development.
+I gave the workflow a name because I needed a way to reproduce it across repositories and agents. The useful part is the explicit promotion boundary and durable state, not a claim that experimentation itself is new.
 
 The closest lineage includes **Hypothesis-Driven Development**, the scientific method as applied to engineering, Lean's Build-Measure-Learn loop, technical and architectural spikes, Continuous Architecture, evolutionary architecture and fitness functions, Real Options/last-responsible-moment thinking, and Architecture Decision Records.
 
@@ -237,7 +293,7 @@ Each contributes something important.
 
 The specific combination I care about is narrower: evaluating whether a capability, external idea, dependency, or abstraction deserves adoption into an existing system while coding agents are capable of implementing the idea very quickly.
 
-EGCA adds a particular operational shape around that problem: source investigation, falsifiable hypotheses, predeclared evidence gates, stable experiment identities, durable human/agent state, explicit Adopt/Adapt/Reject/Repeat outcomes, and cumulative integration isolation.
+EGCA adds an operational shape around that problem: source investigation, falsifiable hypotheses, predeclared evidence gates, stable experiment identities, durable human/agent state, explicit Adopt/Adapt/Reject/Repeat outcomes, and cumulative integration isolation.
 
 I have not found an established methodology that matches that entire workflow closely enough that using its name would be more accurate than describing EGCA as a synthesis.
 
@@ -253,7 +309,7 @@ For each substantial capability:
 4. **Write a falsifiable hypothesis.** Include what evidence would weaken or reject it.
 5. **Design the smallest useful experiment.** Change only enough to answer the architectural question.
 6. **Record actual evidence.** Tests, runtime behavior, UX, performance, review findings, or domain validation.
-7. **Choose Adopt, Adapt, Reject, or Repeat.** Do not rewrite the question after seeing the answer.
+7. **Choose Adopt, Adapt, Reject, or Repeat.** Keep the decision tied to the evidence gathered.
 8. **Integrate accepted work on a cumulative candidate branch.** Keep experiments away from production until the program is ready.
 9. **Record the decision.** Preserve the reasoning so another human or agent does not have to reconstruct it.
 10. **Run a final program-level gate.** Validate the cumulative architecture before it reaches the production branch.
