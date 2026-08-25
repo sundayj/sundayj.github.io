@@ -18,8 +18,8 @@ projects_url: /projects
 latest_count: 5
 
 featured_writing:
+  - "Make Your Coding Agent Earn the Architecture"
   - "Your Parser Shouldn't Get One Shot"
-  - "Building an App with Angular, Part 1: Introduction"
 
 topics:
   - title: AI & Software Engineering
