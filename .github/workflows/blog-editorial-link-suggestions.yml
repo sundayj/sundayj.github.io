@@ -1,0 +1,60 @@
+name: blog-editorial-link-suggestions
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+    paths:
+      - '_drafts/**'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  suggest-links:
+    if: >-
+      startsWith(github.head_ref, 'blog/') &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Build editorial suggestions
+        env:
+          BLOG_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          marker='<!-- jlsunday-editorial-link-suggestions -->'
+          printf '%s\n\n# Automated editorial link review\n\n' "$marker" > /tmp/editorial-links.md
+
+          mapfile -t drafts < <(git diff --name-only --diff-filter=ACMR "$BLOG_BASE_SHA"...HEAD -- '_drafts/*.md' '_drafts/*.markdown')
+          if [ "${#drafts[@]}" -eq 0 ]; then
+            printf 'No changed draft files found.\n' >> /tmp/editorial-links.md
+          else
+            for draft in "${drafts[@]}"; do
+              [ -f "$draft" ] || continue
+              python3 scripts/suggest_internal_links.py "$draft" >> /tmp/editorial-links.md
+              printf '\n\n---\n\n' >> /tmp/editorial-links.md
+            done
+          fi
+
+      - name: Create or update PR review comment
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          marker='<!-- jlsunday-editorial-link-suggestions -->'
+          comment_id=$(gh api "repos/$REPO/issues/$PR_NUMBER/comments" --paginate --jq ".[] | select(.body | contains(\"$marker\")) | .id" | head -n 1 || true)
+
+          if [ -n "$comment_id" ]; then
+            gh api --method PATCH "repos/$REPO/issues/comments/$comment_id" -F body=@/tmp/editorial-links.md >/dev/null
+          else
+            gh api --method POST "repos/$REPO/issues/$PR_NUMBER/comments" -F body=@/tmp/editorial-links.md >/dev/null
+          fi
