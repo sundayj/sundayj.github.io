@@ -103,6 +103,26 @@ Treat these as separate passes even if the same model performs them.
 - Preserve technical nuance and the author's actual position.
 - Do not introduce new factual claims during this pass.
 
+### Final anti-slop review
+
+This is the final automated editorial step before the draft is presented for human approval. Run it only after fact, technical, argument, and normal voice review are complete.
+
+Apply the full checklist in `.github/blog/voice-guide.md`, including these non-negotiable requirements:
+
+- Remove every em dash (`—`) from authored prose. Justin does not use them in his own writing.
+- Remove generic throat-clearing and canned AI transitions.
+- Prefer concrete engineering experience, named tools, traceable evidence, and falsifiable specificity over generic claims.
+- Preserve real opinions, disagreement, counterarguments, and uncertainty rather than smoothing the article into artificial consensus.
+- Reduce unnecessary headings, repeated summaries, listicle structure, and overly symmetrical organization.
+- Vary sentence rhythm and remove repetitive rhetorical patterns.
+- Scrutinize stock AI vocabulary, inflated language, and fake profundity.
+- Never manufacture personal anecdotes or first-person experiences.
+- Flag paragraphs that could be pasted unchanged into an unrelated AI-generated article.
+
+This pass is allowed to revise style, structure, rhythm, and emphasis. It must not introduce new factual claims, citations, statistics, technical claims, or personal anecdotes. Any factual addition goes back through fact review. Any personal experience must come from information the author actually supplied.
+
+The purpose of this gate is not to conceal AI assistance. It is to ensure the draft reaches the author as specific, evidence-based writing that reflects Justin's actual voice and engineering judgment rather than default model prose.
+
 ## 6. Human editorial review
 
 Before publication, present the author with:
@@ -113,6 +133,7 @@ Before publication, present the author with:
 - important sources
 - unresolved uncertainties
 - major editorial choices the agent made
+- confirmation that the final anti-slop pass completed and no em dashes remain in authored prose
 
 The author may request revisions in prose, GitHub comments, or chat. Continue revising until the author explicitly says the post is ready for publication.
 
@@ -124,7 +145,7 @@ After explicit approval to prepare publication:
 2. Move/rename the draft to `_posts/YYYY-MM-DD-kebab-case-slug.markdown`.
 3. Complete the current front-matter contract from `docs/editorial-content-contract.md`: `layout`, `title`, `date`, one canonical `description`, plural `categories`, and focused `tags`, plus optional fields only when they add real value.
 4. Do not add legacy duplicate `summary`, `excerpt`, `canonical_url`, or singular `category` fields to a new/current-contract post.
-5. Add or verify imagery and alt text. A featured post must have a valid image.
+5. Add or verify imagery and alt text. Substantial authored hero illustrations should follow `.github/blog/voice-guide.md`; use PNG for the current editorial-illustration style. A featured post must have a valid image.
 6. Verify body headings start at H2 and remove draft placeholders/local-only URLs.
 7. Run `python3 scripts/test_validate_blog_posts.py`.
 8. Run `python3 scripts/validate_blog_posts.py`.
