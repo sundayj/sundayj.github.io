@@ -9,6 +9,7 @@ tags: [AI, Codex, Agentic Engineering, Architecture, Career, software-architectu
 comments: true
 include_TOC: true
 featured: false
+image: /assets/images/posts/software-engineering-after-coding-agents.jpg
 ---
 
 I keep seeing versions of the same argument about AI and software engineering: the models can write code now, but engineers will still be needed because somebody has to understand requirements, navigate ambiguity, make tradeoffs, debug systems, and verify the result.
