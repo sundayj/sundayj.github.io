@@ -6,6 +6,7 @@ description: "Evidence-Gated Capability Adoption is the workflow I use to keep c
 categories: ["AI & Software Engineering", "Software Architecture"]
 tags: [AI, Codex, Agentic Engineering, Architecture, EGCA]
 image: "/assets/images/posts/make-your-coding-agent-earn-the-architecture.png"
+include_TOC: true
 ---
 
 <figure style="margin-top: 20px;">
