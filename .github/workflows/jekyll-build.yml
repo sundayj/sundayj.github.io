@@ -23,6 +23,9 @@ jobs:
       - name: Test publishing validator
         run: python3 scripts/test_validate_blog_posts.py
 
+      - name: Test blog voice validator
+        run: python3 scripts/test_validate_blog_voice.py
+
       - name: Test editorial related-content scorer
         run: python3 scripts/test_suggest_related_posts.py
 
@@ -34,6 +37,12 @@ jobs:
         env:
           BLOG_BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: python3 scripts/validate_blog_posts.py
+
+      - name: Validate changed blog voice
+        if: github.event_name == 'pull_request'
+        env:
+          BLOG_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: python3 scripts/validate_blog_voice.py
 
       - name: Validate theme distribution
         run: python3 scripts/validate_theme_distribution.py
