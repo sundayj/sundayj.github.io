@@ -252,8 +252,8 @@ def validate(path_str: str, status: str = "M") -> list[str]:
         return errors
 
     match = POST_RE.match(path_str) if is_post else None
-    if is_post and not match:
-        errors.append("published post filename must be lowercase `_posts/YYYY-MM-DD-kebab-case-slug.md` or `.markdown`")
+    if is_post and status == "A" and not match:
+        errors.append("new published post filename must be lowercase `_posts/YYYY-MM-DD-kebab-case-slug.md` or `.markdown`")
     if is_draft and not DRAFT_RE.match(path_str):
         errors.append("draft must be a Markdown file under `_drafts/`")
 
