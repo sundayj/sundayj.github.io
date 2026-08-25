@@ -20,6 +20,7 @@ This repository is both the source for jlsunday.com and the editorial system for
 - `.github/ISSUE_TEMPLATE/blog-post.yml`: structured intake form for post ideas.
 - `.github/pull_request_template.md`: review gate and publication checklist.
 - `scripts/validate_blog_posts.py`: mechanical publication checks.
+- `scripts/validate_blog_voice.py`: mechanical voice checks, including the no-em-dash rule for current drafts/posts.
 - `.githooks/pre-commit`: optional fast local validation hook.
 
 ## Editorial workflow
@@ -31,8 +32,8 @@ This repository is both the source for jlsunday.com and the editorial system for
 5. Record research and important decisions in the issue when an issue exists.
 6. When the issue enters `blog:drafting`, create a dedicated working branch using `blog/<issue-number>-<slug>` when possible. Treat the issue, branch, and eventual PR as one editorial chain. Do not rename an already-established legacy draft branch merely to satisfy this convention.
 7. Draft into `_drafts/<slug>.markdown` using existing Jekyll conventions. Record the working branch on the issue if GitHub's native Development relationship cannot be created by the available tooling.
-8. Run a factual/technical critique, an argument critique, and a voice edit as separate passes.
-9. Present uncertain claims, major editorial choices, and unresolved counterarguments to the author.
+8. Run factual/technical critique, argument critique, voice editing, and the final anti-slop pass from `.github/blog/editorial-workflow.md` as distinct passes.
+9. Present uncertain claims, major editorial choices, unresolved counterarguments, and the final anti-slop result to the author.
 10. Revise until the author explicitly approves publication.
 11. Move the draft to `_posts/YYYY-MM-DD-<slug>.markdown`, complete publication metadata, run validation/build checks, and open a PR to `master` from the existing working branch.
 12. The publication PR must explicitly reference and close its editorial issue with `Closes #<issue-number>` (or the fully qualified equivalent for a cross-repository issue). This linkage is required for editorial-state automation.
@@ -51,8 +52,11 @@ This repository is both the source for jlsunday.com and the editorial system for
 
 - Read `.github/blog/voice-guide.md` before drafting or materially rewriting a post.
 - Preserve the author's substantive position. Do not manufacture stronger opinions than the evidence or author supports.
-- Avoid generic AI prose, canned transitions, repetitive conclusions, excessive sectioning, and empty rhetorical flourishes.
-- Prefer concrete examples, technical specificity, and explicit tradeoffs.
+- Do not use em dashes (`—`) in authored blog prose.
+- Avoid generic AI prose, canned transitions, repetitive conclusions, excessive sectioning, fake profundity, and empty rhetorical flourishes.
+- Prefer concrete first-hand engineering experience, named tools, traceable evidence, technical specificity, and explicit tradeoffs.
+- Preserve genuine disagreement and uncertainty instead of smoothing the article into artificial consensus.
+- Never invent personal anecdotes or first-person experiences.
 - Explain jargon when the likely reader may not know it.
 - Keep factual editing separate from voice editing; a voice pass must not introduce new factual claims.
 
@@ -61,6 +65,7 @@ This repository is both the source for jlsunday.com and the editorial system for
 - Use `layout: post`.
 - Follow the front-matter patterns in existing `_posts/` files.
 - Use descriptive alt text for new images.
+- Authored editorial hero illustrations should be PNG and follow the visual guidance in `.github/blog/voice-guide.md`.
 - Use `rel="noopener noreferrer"` on new `target="_blank"` links.
 - Do not add agent/editorial documentation to site navigation.
 - `AGENTS.md`, `.github/`, `.githooks/`, and `scripts/` are repository-only and are explicitly excluded by `_config.yml`.
@@ -69,9 +74,13 @@ This repository is both the source for jlsunday.com and the editorial system for
 
 Before declaring a publication PR ready:
 
+- Run `python3 scripts/test_validate_blog_posts.py`.
+- Run `python3 scripts/test_validate_blog_voice.py`.
 - Run `python3 scripts/validate_blog_posts.py`.
+- Run `python3 scripts/validate_blog_voice.py`.
 - Run `bundle exec jekyll build` when the Ruby environment is available.
 - Confirm repository-only files are absent from `_site/` after a build.
 - Confirm no draft placeholders such as `TODO`, `TBD`, or `SOURCE NEEDED` remain in a file being moved into `_posts/`.
+- Confirm no em dashes remain in current draft/post prose.
 - Confirm the publication PR contains `Closes #<issue-number>` for its editorial issue.
 - Confirm the PR checklist is complete except for the final human approval checkbox.
