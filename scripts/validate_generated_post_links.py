@@ -11,7 +11,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlparse
 
-from scripts.validate_blog_posts import parse_front_matter, parse_name_status
+from validate_blog_posts import parse_front_matter, parse_name_status
 
 SITE_DIR = Path("_site")
 
@@ -50,11 +50,10 @@ class PostHTMLParser(HTMLParser):
             self.in_h1 = True
         if attr.get("id"):
             self.ids.add(str(attr["id"]))
-        if tag == "article" and attr.get("id") == "article":
-            self.article_depth = 1
-            return
+        if tag == "article":
+            if attr.get("id") == "article" or self.article_depth:
+                self.article_depth += 1
         if self.article_depth:
-            self.article_depth += 1
             for name in ("href", "src"):
                 if attr.get(name):
                     self.urls.append(str(attr[name]))
@@ -71,7 +70,7 @@ class PostHTMLParser(HTMLParser):
     def handle_endtag(self, tag: str) -> None:
         if tag == "h1":
             self.in_h1 = False
-        if self.article_depth:
+        if tag == "article" and self.article_depth:
             self.article_depth -= 1
 
     def handle_data(self, data: str) -> None:
