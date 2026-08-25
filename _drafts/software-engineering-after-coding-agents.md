@@ -27,6 +27,8 @@ The more interesting shift is this:
 
 That changes what engineering work is worth getting exceptionally good at.
 
+My previous post, [Make Your Coding Agent Earn the Architecture]({% post_url 2026-08-24-make-your-coding-agent-earn-the-architecture %}), looked at one consequence of that shift from inside the repository: when implementation becomes cheap, speculative architecture becomes cheap too, so ideas need to earn their way into a system through evidence rather than plausibility. This post zooms out from the same premise. If agents can increasingly handle implementation, planning, debugging, and review, what part of the software engineer's job is actually becoming more valuable?
+
 <div class="article-tldr">
 <p class="article-tldr-title">TLDR</p>
 <p class="article-tldr-deck">The Short Version</p>
