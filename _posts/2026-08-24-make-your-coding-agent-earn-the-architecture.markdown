@@ -5,7 +5,12 @@ date: 2026-08-24 21:00:00 -0400
 description: "Evidence-Gated Capability Adoption is the workflow I use to keep coding agents from turning plausible ideas into permanent architecture before the evidence justifies it."
 categories: ["AI & Software Engineering", "Software Architecture"]
 tags: [AI, Codex, Agentic Engineering, Architecture, EGCA]
+image: "/assets/images/posts/make-your-coding-agent-earn-the-architecture.png"
 ---
+
+<figure style="margin-top: 20px;">
+  <img alt="Illustration of a coding agent evaluating evidence before architecture is adopted" src="{{ '/assets/images/posts/make-your-coding-agent-earn-the-architecture.png' | prepend: site.url }}" loading="eager" title="Evidence-Gated Capability Adoption">
+</figure>
 
 Coding agents have changed one of the constraints I used to rely on without realizing it.
 
