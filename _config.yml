@@ -153,4 +153,4 @@ plugins:
   - jekyll-sitemap
 
 # Pin the theme to an immutable, integration-tested commit. Theme upgrades are explicit PRs.
-remote_theme: sundayj/DevSculptor@7ddfec71560a707cecf06abe0f1e4584523ad02b
+remote_theme: sundayj/DevSculptor@b3555e88ccfd1515817f4e785ec16467fb259a3d
