@@ -11,7 +11,7 @@ canonical_url: https://jlsunday.com/updates/2022/01/06/site-update.html
 category: Updates
 tags: [updates, site-updates]
 comments: true
-image: '/assets/images/posts/undraw_Building_re_xfcm.png'
+image: '/assets/images/posts/undraw/undraw_Building_re_xfcm.png'
 author: {{ site.author.name }}
 include_TOC: false
 featured: false
