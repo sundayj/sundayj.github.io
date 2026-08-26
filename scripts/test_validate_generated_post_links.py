@@ -91,6 +91,18 @@ class GeneratedSiteIntegrityTests(unittest.TestCase):
 
         self.assertEqual({}, validator.validate_site(self.site))
 
+    def test_vendored_font_demo_html_is_not_a_site_page(self) -> None:
+        self.write(
+            "assets/fonts/CascadiaCode-WebFont/demo.html",
+            '<html><body><a href="#missing">Vendored demo fragment</a></body></html>',
+        )
+        self.write("index.html", "<html><body>Home</body></html>")
+
+        pages = validator.generated_html_pages(self.site)
+
+        self.assertEqual([self.site / "index.html"], pages)
+        self.assertEqual({}, validator.validate_site(self.site))
+
 
 if __name__ == "__main__":
     unittest.main()
