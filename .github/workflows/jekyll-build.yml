@@ -35,6 +35,9 @@ jobs:
       - name: Test editorial internal-link suggestions
         run: python3 scripts/test_suggest_internal_links.py
 
+      - name: Test generated-site link integrity validator
+        run: python3 scripts/test_validate_generated_post_links.py
+
       - name: Validate changed blog files
         if: github.event_name == 'pull_request'
         env:
@@ -67,10 +70,7 @@ jobs:
       - name: Validate generated author links
         run: python3 scripts/validate_generated_author_links.py
 
-      - name: Validate generated links in changed posts
-        if: github.event_name == 'pull_request'
-        env:
-          BLOG_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+      - name: Validate generated site links and images
         run: python3 scripts/validate_generated_post_links.py
 
       - name: Verify repository-only files are not published

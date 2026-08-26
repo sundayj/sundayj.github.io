@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Subscribe
-permalink: /subscribe
+permalink: /subscribe/
 ---
 
 If you'd like to receive updates from {{ site.title }}, please subscribe to the provided RSS feed via the button below.

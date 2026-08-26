@@ -441,7 +441,7 @@ them all out.
   <div>
     FAVORITES
   <hr>
-    :star: <a href="CSV / JSON Converter" target="_blank" rel="noopener noreferrer">https://tools.fromdev.com/csv-to-json-converter.html</a><br>
+    :star: <a href="https://tools.fromdev.com/csv-to-json-converter.html" target="_blank" rel="noopener noreferrer">CSV / JSON Converter</a><br>
     If you're given test/mock data in CSV format, but you need it to be in JSON format to truly utilize/test it, then look no further than this converter!
   </div>
 </div>
