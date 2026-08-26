@@ -10,6 +10,8 @@ from urllib.parse import unquote, urljoin, urlparse
 
 SITE_DIR = Path("_site")
 SKIPPED_SCHEMES = {"http", "https", "mailto", "tel", "data", "javascript"}
+# Static font specimen/demo HTML is vendored tooling, not a Jekyll site page.
+IGNORED_HTML_PREFIXES = ("assets/fonts/",)
 
 
 class SiteHTMLParser(HTMLParser):
@@ -42,7 +44,13 @@ def parse_html(path: Path) -> SiteHTMLParser:
 
 
 def generated_html_pages(site_dir: Path = SITE_DIR) -> list[Path]:
-    return sorted(site_dir.rglob("*.html"))
+    pages: list[Path] = []
+    for path in site_dir.rglob("*.html"):
+        relative = path.relative_to(site_dir).as_posix()
+        if any(relative.startswith(prefix) for prefix in IGNORED_HTML_PREFIXES):
+            continue
+        pages.append(path)
+    return sorted(pages)
 
 
 def site_url_for(path: Path, site_dir: Path = SITE_DIR) -> str:
