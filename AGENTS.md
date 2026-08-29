@@ -2,6 +2,28 @@
 
 This repository is both the source for jlsunday.com and the editorial system for the blog.
 
+## Shared Project State
+
+This repository participates in the shared project-state system defined in
+`sundayj/project-state`.
+
+Project identifier: `blog`
+
+Agents with access to `sundayj/project-state` must follow its current
+cross-repository integration protocol and use the `blog` project state for
+cross-session context, capture, research, decisions, workstreams, and handoffs.
+
+This repository remains authoritative for blog source files, editorial issues,
+drafts, publication workflow, validation rules, and Git history.
+`project-state` is authoritative for cross-session context, reasoning state,
+research/workstream state, decision provenance, unresolved questions, and
+handoffs.
+
+Local blog `AGENTS.md` instructions remain authoritative for editorial and
+repository-specific behavior. Project-state never constitutes publication
+approval and does not override the human publication gate.
+
+
 ## Non-negotiable publication rule
 
 - Never publish a new blog post directly to `master`.
